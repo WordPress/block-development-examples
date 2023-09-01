@@ -1,17 +1,16 @@
-Welcome to the `wp-blocks-examples` Monorepo on GitHub. Here you can find a bunch of examples for WordPress blocks that you can use as a reference to create your own. 
+Welcome to the `wp-blocks-examples` repo on GitHub. Here you can find a bunch of examples for WordPress blocks that you can use as a reference to create your own. 
 
 ## Getting Started
 
-To get up and running within the `wp-blocks-examples` Monorepo, you will need to make sure that you have installed all of the prerequisites.
+To get up and running within the `wp-blocks-examples` repo, you will need to make sure that you have installed the prerequisites.
 
 ### Prerequisites
 
-- [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
- - While you can always install Node through other means, we recommend using NVM to ensure you're aligned with the version used by our development teams. Our repository contains [an `.nvmrc` file](.nvmrc) which helps ensure you are using the correct version of Node.
+- [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)- While you can always install Node through other means, we recommend using NVM to ensure you're aligned with the version used by our development teams. Our repository contains [an `.nvmrc` file](.nvmrc) which helps ensure you are using the correct version of Node.
 - [PNPM](https://pnpm.io/installation) - Our repository utilizes PNPM to manage project dependencies and run various scripts involved in building and testing projects.
 
 ```bash
-# Install pnpm globally. See https://pnpm.io/installation
+# Install pnpm globally if you don't have it already. See https://pnpm.io/installation
 npm i -g pnpm
 # Ensure that you're using the correct version of Node
 nvm use

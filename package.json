@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "main:start": "pnpm -F @levelup/main run start",
-    "build:all": "pnpm -r run build",
-    "start:all": "pnpm -r run start",
+    "build": "pnpm -r run build",
+    "start": "pnpm -r run start",
     "env:start": "pnpm wp-env start",
     "env:update": "pnpm wp-env start --update",
     "env:restart": "pnpm wp-env destroy && pnpm wp-env start --update",
