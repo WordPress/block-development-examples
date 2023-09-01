@@ -14,9 +14,9 @@ To get up and running within the `wp-blocks-examples` repo, you will need to mak
 npm i -g pnpm
 # Ensure that you're using the correct version of Node
 nvm use
-# Install the PHP and Composer dependencies for all of the plugins, packages, and tools
+# Install the dependencies for all of the plugins
 pnpm install
-# Build all of the plugins, packages, and tools in the monorepo
+# Build all of the plugins in the monorepo
 pnpm run build
 ```
 
