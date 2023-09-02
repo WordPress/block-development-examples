@@ -60,6 +60,6 @@ If you get some errors you can try the following:
 
 |                                                                                    | code   | title                   | folder               | description | zip                      |
 |------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
-| <span style="color:transparent;  text-shadow: 0 0 0 #64756b;"> ⬛️ </span> | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
-| <span style="color:transparent;  text-shadow: 0 0 0 #3df23d;"> ⬛️ </span> | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
+| <span style="color:#64756b;">◼︎</span> | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
+| <span style="color:#3df23d;">◼︎</span> | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
 |                                                                                    |        |                         |                      |             |                          |
