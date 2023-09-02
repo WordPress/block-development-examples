@@ -32,3 +32,10 @@
 - On **`<root-folder>/README.md`**
     - Add a new row with the plugin info
         - Ex: `| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |        |`
+
+After ensuring these changes a new install of dependencies and build should be run from the root of the project
+
+```
+pnpm i
+npm run build
+```
