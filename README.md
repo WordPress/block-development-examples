@@ -57,8 +57,8 @@ If you get some errors you can try the following:
 
 ## Block Examples
 
-| &nbsp; | code   | title                   | folder               | description | zip                      |
-|------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
-| ![](https://placehold.co/15x15/64756b/64756b) | 64756b | Block Dynamic           | [dynamic-block-64756b](./plugins/dynamic-block-64756b) |             | dynamic-block-64756b.zip |
-| ![](https://placehold.co/15x15/3df23d/3df23d) | 3df23d | Example: Basic (ESNext) | [esnext-basic-3df23d](./plugins/esnext-basic-3df23d)  |             | esnext-basic-3df23d.zip  |
-|                                                                                    |        |                         |                      |             |                          |
+| &nbsp; | code | title | folder | description |
+|--------|------|-------|--------|-------------|
+| ![]( https://placehold.co/15x15/64756b/64756b ) | 64756b | Block Dynamic | dynamic-block-64756b |             |
+| ![]( https://placehold.co/15x15/3df23d/3df23d ) | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |        |
+|                                                 |        |                         |                      |             |
