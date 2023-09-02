@@ -57,6 +57,8 @@ If you get some errors you can try the following:
 
 ## Block Examples
 
+<span style="color:#64756b;">▶︎</span>
+<span style="color:#3df23d;">▶︎</span> 
 
 |                                                                                    | code   | title                   | folder               | description | zip                      |
 |------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
