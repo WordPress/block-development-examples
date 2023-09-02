@@ -55,7 +55,7 @@ If you get some errors you can try the following:
 </details>
 <br/>
 
-## Block Examples
+## Examples
 
 | &nbsp; | code | title | folder | tags |
 |--------|------|-------|--------|-------------|
@@ -64,4 +64,4 @@ If you get some errors you can try the following:
 | ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |  ![](https://img.shields.io/badge/CREATE_BLOCK_TEMPLATE-afd2e3.svg) ![](https://img.shields.io/badge/INTERACTIVITY_API-afd2e3.svg) |
 | ![]( https://placehold.co/15x15/b16608/b16608 ) | b16608 | Block Static | [static-block-b16608](./plugins/static-block-b16608)  |        |
 | ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | 1b8c51 | Block Editable | [esnext-editable-1b8c51](./plugins/esnext-editable-1b8c51)  |        |
-| ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | 56d6f3 | Non-block wp data with React | [non-block-react-wp-data-56d6f3](./plugins/non-block-react-wp-data-56d6f3)  | ![](https://img.shields.io/badge/MENU_SIDEBAR-afd2e3.svg) ![](https://img.shields.io/badge/WP_DATA-afd2e3.svg)      |
+| ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | 56d6f3 | Non-block wp data with React | [non-block-react-wp-data-56d6f3](./plugins/non-block-react-wp-data-56d6f3)  | ![](https://img.shields.io/badge/NON_BLOCK-afd2e3.svg) ![](https://img.shields.io/badge/MENU_SIDEBAR-afd2e3.svg) ![](https://img.shields.io/badge/WP_DATA-afd2e3.svg)      |
