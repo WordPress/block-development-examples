@@ -60,6 +60,6 @@ If you get some errors you can try the following:
 
 |                                                                                    | code   | title                   | folder               | description | zip                      |
 |------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
-| <span style="color:#64756b;">◼︎</span> | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
-| <span style="color:#3df23d;">◼︎</span> | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
+| ![#64756b](https://placehold.co/15x15/64756b/64756b.png) | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
+| ![#3df23d](https://placehold.co/15x15/3df23d/3df23d.png) | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
 |                                                                                    |        |                         |                      |             |                          |
