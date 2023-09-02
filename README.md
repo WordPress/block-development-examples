@@ -22,6 +22,10 @@ pnpm run build
 
 At this point you are now ready to begin developing and testing. All of the build outputs are cached running `pnpm run build` again will only build the plugins that have changed since the last time you ran the command.
 
+## Repository Structure
+
+-   [**Plugins**](plugins): This repository contains plugins that register each one of the block examples.
+
 ## See the block examples in action
 
 ### Individually
@@ -51,15 +55,12 @@ If you get some errors you can try the following:
 </details>
 <br/>
 
-## Repository Structure
-
--   [**Plugins**](plugins): This repository contains plugins that register each one of the block examples.
-
 ## Block Examples
 
-| &nbsp; | code | title | folder | description |
+| &nbsp; | code | title | folder | tags |
 |--------|------|-------|--------|-------------|
-| ![]( https://placehold.co/15x15/64756b/64756b ) | 64756b | Block Dynamic | [dynamic-block-64756b](./plugins/dynamic-block-64756b) |             |
-| ![]( https://placehold.co/15x15/3df23d/3df23d ) | 3df23d | Example: Basic (ESNext) | [esnext-basic-3df23d](./plugins/esnext-basic-3df23d)  |        |
-| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |        |
+| ![]( https://placehold.co/15x15/64756b/64756b ) | 64756b | Block Dynamic | [dynamic-block-64756b](./plugins/dynamic-block-64756b) | ![](https://img.shields.io/badge/DYNAMIC-afd2e3.svg) ![](https://img.shields.io/badge/CREATE_BLOCK-afd2e3.svg) |
+| ![]( https://placehold.co/15x15/3df23d/3df23d ) | 3df23d | Example: Basic (ESNext) | [esnext-basic-3df23d](./plugins/esnext-basic-3df23d)  | ![](https://img.shields.io/badge/ESNEXT-afd2e3.svg)  |
+| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |  ![](https://img.shields.io/badge/CREATE_BLOCK_TEMPLATE-afd2e3.svg) ![](https://img.shields.io/badge/INTERACTIVITY_API-afd2e3.svg) |
 | ![]( https://placehold.co/15x15/b16608/b16608 ) | b16608 | Block Static | [static-block-b16608](./plugins/static-block-b16608)  |        |
+| ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | 1b8c51 | Block Editable | [esnext-editable-1b8c51](./plugins/esnext-editable-1b8c51)  |        |

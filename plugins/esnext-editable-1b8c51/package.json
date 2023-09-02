@@ -1,7 +1,7 @@
 {
-	"name": "@gutenberg-examples/dynamic-block-64756b",
+	"name": "@gutenberg-examples/esnext-editable-1b8c51",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Very basic editable block",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

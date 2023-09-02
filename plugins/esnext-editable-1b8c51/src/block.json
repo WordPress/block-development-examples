@@ -1,11 +1,12 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 2,
-	"name": "gutenberg-examples/example-03-editable-esnext",
-	"title": "Example: Editable (ESNext)",
+	"name": "gutenberg-examples/esnext-editable-1b8c51",
+	"title": "⭐️ Example: Editable (ESNext)",
 	"textdomain": "gutenberg-examples",
 	"icon": "universal-access-alt",
-	"category": "jsx-examples",
+	"category": "widgets",
+	"keywords": [ "1b8c51" ],
 	"attributes": {
 		"content": {
 			"type": "string",

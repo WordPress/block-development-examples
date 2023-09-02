@@ -7,7 +7,6 @@
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build --webpack-copy-php",
-		"zip": "bestzip esnext-basic-3df23d ./",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
@@ -16,7 +15,6 @@
 		"start": "wp-scripts start --webpack-copy-php"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.12.0",
-		"bestzip": "^2.2.1"
+		"@wordpress/scripts": "^26.12.0"
 	}
 }
