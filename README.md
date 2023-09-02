@@ -57,11 +57,8 @@ If you get some errors you can try the following:
 
 ## Block Examples
 
-<span style="color:#64756b;">▶︎</span>
-<span style="color:#3df23d;">▶︎</span> 
-
-|                                                                                    | code   | title                   | folder               | description | zip                      |
+| &nbsp; | code   | title                   | folder               | description | zip                      |
 |------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
-| <span style="color:#64756b;">▶︎</span> | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
-| <span style="color:#3df23d;">▶︎</span> | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
+| ![](https://placehold.co/15x15/64756b/FFF) | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
+| ![](https://placehold.co/15x15/3df23d/FFF) | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
 |                                                                                    |        |                         |                      |             |                          |
