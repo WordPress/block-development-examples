@@ -4,10 +4,10 @@
 
 - [ ] Each plugin has its own `<unique-code>` 
     - Get it by running `npm run code:get` from the root of the project
-- [ ] Plugin **folder name** should follow the convention `<plugin-name>-<unique-code>` 
+- [ ] Plugin **folder name** should follow the convention `<plugin-slug>-<unique-code>` 
     - Ex: `dynamic-block-64756b`
 - On **`<plugin-folder>/package.json`**
-    - [ ] **`name`** should follow the convention `@gutenberg-examples/<plugin-name>-<unique-code>` 
+    - [ ] **`name`** should follow the convention `@gutenberg-examples/<plugin-slug>-<unique-code>` 
         - Ex: `"name": "@gutenberg-examples/static-block-b16608"`
     - [ ] **`description`** should be descriptive and brief 
         - Ex: `"description": "Very basic static block"`
@@ -16,21 +16,23 @@
             - `"build": "wp-scripts build --webpack-copy-php"`
             - `"plugin-zip": "wp-scripts plugin-zip"`
             - `"start": "wp-scripts start --webpack-copy-php"`
+- On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<plugin-title>` + `<unique-code>`
+     - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**
-    - [ ] **`name`** should follow the convention `gutenberg-examples/<plugin-name>-<unique-code>` 
+    - [ ] **`name`** should follow the convention `gutenberg-examples/<plugin-slug>-<unique-code>` 
         - Ex: `"name": "gutenberg-examples/static-block-b16608"`
     - [ ] **`title`** should start with the emoji ⭐️
         - Ex: `"title": "⭐️ Block Dynamic"`
     "title": "⭐️ Block Dynamic",
     - [ ] **`keywords`** should include the `<unique-code>`
         - Ex: `"keywords": [ "64756b" ]`    
-- Block Class should follow the convention `.wp-block-gutenberg-examples-<plugin-name>-<unique-code>`
+- [ ] Block Class should follow the convention `.wp-block-gutenberg-examples-<plugin-slug>-<unique-code>`
     - Ex: `.wp-block-gutenberg-examples-esnext-editable-1b8c51`    
 - On **`<root-folder>/.wp-env.json`**
-    - The local path of the plugin (starting from root) should be included in the array `"plugins"` 
+    - [ ] The local path of the plugin (starting from root) should be included in the array `"plugins"` 
         - Ex: `"./plugins/esnext-basic-3df23d"`
 - On **`<root-folder>/README.md`**
-    - Add a new row with the plugin info
+    - [ ] Add a new row with the plugin info
         - Ex: `| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |        |`
 
 After ensuring these changes a new install of dependencies and build should be run from the root of the project

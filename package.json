@@ -11,6 +11,7 @@
     "env:config:all": "node ./bin/randomHexCode.js",
     "code:get": "node ./bin/randomHexCode.js",
     "env:start": "pnpm wp-env start",
+    "env:start:debug": "wp-env start --xdebug",
     "env:update": "pnpm wp-env start --update",
     "env:restart": "pnpm wp-env destroy && pnpm wp-env start --update",
     "env:stop": "pnpm wp-env stop",

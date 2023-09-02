@@ -97,3 +97,6 @@ changes.json
 
 # Support .gitkeep Files
 !.gitkeep
+
+# Temp files
+_temp/
