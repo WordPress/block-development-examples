@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Gutenberg Examples Basic EsNext
+ * Plugin Name: Gutenberg Examples - EsNext Basic Block 3df23d
  * Plugin URI: https://github.com/WordPress/gutenberg-examples
  * Description: This is a plugin demonstrating how to register new blocks for the Gutenberg editor.
  * Version: 1.1.0

@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name:       Gutenberg Examples - Dynamic Block 64756b
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin Name:       Gutenberg Examples - Interactive Block 833d15
+ * Description:       An interactive block with the Interactivity API
+ * Version:           0.1.0
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       01-block-dynamic
+ * Text Domain:       03-block-interactive
  *
  * @package           create-block
  */
@@ -20,7 +20,7 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_01_block_dynamic_block_init() {
+function create_block_03_block_interactive_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_01_block_dynamic_block_init' );
+add_action( 'init', 'create_block_03_block_interactive_block_init' );
