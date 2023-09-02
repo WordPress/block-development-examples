@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "gutenberg-examples/esnext-basic-3df23d",
+	"title": "⭐️ Example: Basic (ESNext)",
+	"textdomain": "gutenberg-examples",
+	"icon": "universal-access-alt",
+	"category": "widgets",
+	"example": {},
+	"editorScript": "file:./index.js",
+	"keywords": [ "3df23d" ]
+}

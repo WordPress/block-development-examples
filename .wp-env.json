@@ -1,15 +1,15 @@
 {
     "phpVersion": "7.4",
     "plugins": [
-        "./plugins/01-block-dynamic",
-        "./plugins/02-block-static",
-        "./plugins/03-block-interactive",
-        "./plugins/copyright-date-block",
+        "./plugins/dynamic-block-64756b",
+        "./plugins/esnext-basic-3df23d",
         "https://downloads.wordpress.org/plugin/gutenberg.16.5.1.zip"
     ],
     "config": {
         "JETPACK_AUTOLOAD_DEV": true,
+        "WP_DEBUG": true,
         "WP_DEBUG_LOG": true,
-        "WP_DEBUG_DISPLAY": true
+        "WP_DEBUG_DISPLAY": true,
+        "SCRIPT_DEBUG": true
     }
 }

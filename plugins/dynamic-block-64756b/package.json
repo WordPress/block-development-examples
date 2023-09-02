@@ -1,5 +1,5 @@
 {
-	"name": "01-block-dynamic",
+	"name": "@gutenberg-examples/dynamic-block-64756b",
 	"version": "0.1.0",
 	"description": "Example block scaffolded with Create Block tool.",
 	"author": "The WordPress Contributors",
@@ -7,6 +7,7 @@
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build --webpack-copy-php",
+		"zip": "bestzip dynamic-block-64756b.zip ./",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
@@ -15,6 +16,7 @@
 		"start": "wp-scripts start --webpack-copy-php"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.12.0"
+		"@wordpress/scripts": "^26.12.0",
+		"bestzip": "^2.2.1"
 	}
 }

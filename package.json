@@ -6,13 +6,17 @@
   "scripts": {
     "main:start": "pnpm -F @levelup/main run start",
     "build": "pnpm -r run build",
+    "zip": "pnpm -r run zip",
+    "env:config:all": "node ./bin/randomHexCode.js",
+    "code:get": "node ./bin/randomHexCode.js",
     "start": "pnpm -r run start",
     "env:start": "pnpm wp-env start",
     "env:update": "pnpm wp-env start --update",
     "env:restart": "pnpm wp-env destroy && pnpm wp-env start --update",
     "env:stop": "pnpm wp-env stop",
     "env:down": "pnpm wp-env stop",
-    "env:destroy": "pnpm wp-env destroy"
+    "env:destroy": "pnpm wp-env destroy",
+    "env:logs": "pnpm wp-env logs all"
   },
   "keywords": [],
   "author": "",

@@ -55,3 +55,11 @@ If you get some errors you can try the following:
 
 -   [**Plugins**](plugins): This repository contains plugins that register each one of the block examples.
 
+## Block Examples
+
+
+|                                                                                    | code   | title                   | folder               | description | zip                      |
+|------------------------------------------------------------------------------------|--------|-------------------------|----------------------|-------------|--------------------------|
+| <span style="color:transparent;  text-shadow: 0 0 0 #64756b;"> ⬛️ </span> | 64756b | Block Dynamic           | dynamic-block-64756b |             | dynamic-block-64756b.zip |
+| <span style="color:transparent;  text-shadow: 0 0 0 #3df23d;"> ⬛️ </span> | 3df23d | Example: Basic (ESNext) | esnext-basic-3df23d  |             | esnext-basic-3df23d.zip  |
+|                                                                                    |        |                         |                      |             |                          |

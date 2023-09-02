@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/block-dynamic-01",
+	"name": "gutenberg-examples/dynamic-block-64756b",
 	"version": "0.1.0",
-	"title": "01 Block Dynamic",
+	"title": "⭐️ Block Dynamic",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
@@ -11,6 +11,7 @@
 	"supports": {
 		"html": false
 	},
+	"keywords": [ "64756b" ],
 	"textdomain": "01-block-dynamic",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
