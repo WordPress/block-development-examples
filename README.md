@@ -1,32 +1,40 @@
-Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bunch of examples for WordPress blocks that you can use as a reference to create your own. 
+Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bunch of block and non-block examples for Gutenberg that you can use to learn about Block Development and other related Gutenberg topics. 
+
+Every example is contained in a plugin so in order to see the example in action you'll need to install the related plugin in a WordPress installation.
 
 ## Getting Started
 
-This `gutenberg-examples-2023` repo is a monorepo multipackage because it contains several packages and is prepared to manage them collectively. To get up and running with it, you will need to make sure that you have installed the prerequisites.
+This `gutenberg-examples-2023` repo is a monorepo multipackage because it contains several packages (plugins) and is prepared to manage them collectively. To get up and running with it, you will need to make sure that you have installed the prerequisites.
 
 ### Prerequisites
 
 - [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)- While you can always install Node through other means, we recommend using NVM to ensure you're aligned with the version used by our development teams. Our repository contains [an `.nvmrc` file](.nvmrc) which helps ensure you are using the correct version of Node.
 - [PNPM](https://pnpm.io/installation) - This monorepo utilizes PNPM to manage project dependencies and run various scripts involved in building and testing projects. You can easily install it with `npm i -g pnpm`.
 
+### Quick Start Guide
+
+Before checking the examples of this repo, do the following from the root of the project:
+
 ```bash
 # Set your Node version to the right one for this project (as defined on .nvmrc)
 nvm use
 # Install the dependencies for all of the plugins
 pnpm install
-# Build all of the plugins in the monorepo
+# Build all of the plugins in the monorepo and generate a .zip version for each one
 pnpm run build
 ```
 
-At this point you are now ready to begin developing and testing. All of the build outputs are cached so running `pnpm run build` again will only build the plugins that have changed since the last time you ran the command.
+At this point you are now ready to begin developing and testing. 
 
-## See the examples in action
+To see the examples in action you can:
+- Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
+- Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
+  - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin inside  `<plugin-folder>/@gutenberg-examples`.
+- Directly copy the the plugins folders for the examples you're insterested under the `plugins` folder of your own WordPress installation.
+- Use `wp-env` as explained in [Development](#development)
 
-> **Note**
-> Before using these examples in a WordPress installation make sure you have the dependencies installed (`node_modules` folder) and the build generated (`build` folder) for the examples that require them. You can ensure this by running `pnpm install` & `pnpm run build` from the root of the project
 
-<details>
-  <summary><em>With <code>wp-env</code></em></summary>
+## Development
 
 With `wp-env` you'll be able to set up a local WordPress environment with all the examples defined at `.wp-env.json` (property `"plugins"`) installed and activated 
 
@@ -49,56 +57,6 @@ Some other scripts related to `wp-env` that are available in this project are:
 If you get some errors you can try the following:
 - Run `npm run env:restart`
 - Go to Docker, remove all containers and then run again `npm run env:start`
-<br/>
-</details>
-
-<details>
-  <summary><em>With <code>wp-now</code></em></summary>
-
-With this method you'll be able to launch a WordPress inslallation to check individually a specific example of this repo.
-
-In order to do that, go to to the plugin folder of the example you're interested to see in action and run `wp-now` from that folder
-
-```
-cd plugins/01-block-dynamic
-npx @wp-now/wp-now start
-```
-
-Once inside WordPress, ensure the proper plugin is activated and add the block to a post (if it's a block example).
-</details>
-
-<!--
-
-
-- All of them with `wp-env`
-- Individually with `wp-now`
-- A selection of them:
-  - with `wp-env` by editing `.wp-env.json` 
-  - copying the examples you're interested into the `plugins` folder of your own WordPress installation
-  - generating the zips and selectively installing the ones you're interested in into your own WordPress installation
-
-Once inside WordPress, check the plugins you're interested in are activated:
-- For block examples: explore the blocks that are available (examples in this repo should start with ⭐️) and insert them in your content (you can look for them using the code of each block).
-- For non-block examples: check the new functionalities available in your WordPress installation
-
-### Individually with `wp-now`
-
-
-
-### All of them
-
-
-
-<details>
-  <summary><em>Troubleshooting</em></summary>
-
-If you get some errors you can try the following:
-- Run `npm run env:restart`
-- Go to Docker, remove all containers and then run again `npm run env:start`
-
-</details>
-<br/>
--->
 
 ## List of Examples
 

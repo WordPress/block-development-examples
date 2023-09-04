@@ -4,25 +4,31 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "build": "wp-scripts build --webpack-copy-php",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
     "format": "wp-scripts format",
     "lint:css": "wp-scripts lint-style",
     "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
-    "start": "wp-scripts start --webpack-copy-php"
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/dependency-extraction-webpack-plugin": "^3.3.2",
-    "@wordpress/scripts": "^16.1.4"
+    "@wordpress/scripts": "^26.12.0"
   },
   "dependencies": {
     "@wordpress/compose": "^4.1.3",
     "@wordpress/data": "^5.1.3",
     "lodash": "^4.17.21",
     "uuid": "^9.0.0"
-  }
+  },
+  "files": [ "*" ]
 }

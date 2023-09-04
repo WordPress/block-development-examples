@@ -11,11 +11,28 @@
         - Ex: `"name": "@gutenberg-examples/static-block-b16608"`
     - [ ] **`description`** should be descriptive and brief 
         - Ex: `"description": "Very basic static block"`
+    - [ ] **`files`** property should be set to `*`
+        - Ex: `"files": [ "*" ]`
     - [ ] **`scripts`** 
-        - It should have the following [scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) defined run :
-            - `"build": "wp-scripts build --webpack-copy-php"`
-            - `"plugin-zip": "wp-scripts plugin-zip"`
-            - `"start": "wp-scripts start --webpack-copy-php"`
+        - It should have the following [scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/) defined:
+```
+        "scripts": {
+            "build": "wp-scripts build",
+            "check-engines": "wp-scripts check-engines",
+            "check-licenses": "wp-scripts check-licenses",
+            "format": "wp-scripts format",
+            "lint:css": "wp-scripts lint-style",
+            "lint:js": "wp-scripts lint-js",
+            "lint:md:docs": "wp-scripts lint-md-docs",
+            "lint:pkg-json": "wp-scripts lint-pkg-json",
+            "packages-update": "wp-scripts packages-update",
+            "plugin-zip": "wp-scripts plugin-zip",
+            "start": "wp-scripts start",
+            "test:e2e": "wp-scripts test-e2e",
+            "test:unit": "wp-scripts test-unit-js"
+        }
+```
+    
 - On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<plugin-title>` + `<unique-code>`
      - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**

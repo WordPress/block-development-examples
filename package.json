@@ -7,8 +7,6 @@
     "start": "pnpm -r run start",
     "build": "pnpm -r run build",
     "plugin-zip": "pnpm -r run plugin-zip",
-    "zip": "pnpm -r run zip",
-    "env:config:all": "node ./bin/randomHexCode.js",
     "code:get": "node ./bin/randomHexCode.js",
     "env:start": "pnpm wp-env start",
     "env:start:debug": "wp-env start --xdebug",
@@ -23,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/env": "^8.7.0"
+    "@wordpress/env": "^8.7.0",
+    "@wordpress/scripts": "^26.12.0"
   }
 }

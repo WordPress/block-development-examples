@@ -1,0 +1,31 @@
+{
+	"name": "@gutenberg-examples/esnext-code-data-basics-541457",
+	"version": "1.1.0",
+	"private": true,
+	"description": "Example of using Data Store",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"block"
+	],
+	"homepage": "https://github.com/WordPress/gutenberg-examples/",
+	"repository": "git+https://github.com/WordPress/gutenberg-examples.git",
+	"bugs": {
+		"url": "https://github.com/WordPress/gutenberg-examples/issues"
+	},
+	"main": "build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^24.0.0"
+	},
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"files": [ "*" ]
+}
