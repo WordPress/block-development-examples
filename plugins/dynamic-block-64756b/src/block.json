@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "gutenberg-examples/dynamic-block-64756b",
 	"version": "0.1.0",
-	"title": "⭐️ Block Dynamic",
+	"title": "⭐️ Dynamic Block",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",

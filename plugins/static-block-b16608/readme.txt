@@ -1,4 +1,4 @@
-=== 02 Block Static ===
+=== 02 Static Block ===
 Contributors:      The WordPress Contributors
 Tags:              block
 Tested up to:      6.1

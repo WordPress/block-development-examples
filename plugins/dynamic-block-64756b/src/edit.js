@@ -33,7 +33,7 @@ export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
 			{ __(
-				'01 Block Dynamic – hello from the editor!',
+				'01 Dynamic Block – hello from the editor!',
 				'01-block-dynamic'
 			) }
 		</p>

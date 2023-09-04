@@ -31,7 +31,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<p { ...blockProps }>
 			{ __(
-				'03 Block Interactive – hello from the editor!',
+				'03 Interactivity API Block – hello from the editor!',
 				'03-block-interactive'
 			) }
 		</p>

@@ -4,5 +4,5 @@
  */
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( '01 Block Dynamic – hello from a dynamic block!', '01-block-dynamic' ); ?>
+	<?php esc_html_e( '01 Dynamic Block – hello from a dynamic block!', '01-block-dynamic' ); ?>
 </p>

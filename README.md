@@ -65,10 +65,10 @@ The folder [**`plugins`**](plugins) contains all the plugins that register each 
 
 | &nbsp; | code | title | folder | tags |
 |--------|------|-------|--------|-------------|
-| ![]( https://placehold.co/15x15/64756b/64756b ) | 64756b | Block Dynamic | [dynamic-block-64756b](./plugins/dynamic-block-64756b) | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
+| ![]( https://placehold.co/15x15/64756b/64756b ) | 64756b | Dynamic Block | [dynamic-block-64756b](./plugins/dynamic-block-64756b) | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
 | ![]( https://placehold.co/15x15/3df23d/3df23d ) | 3df23d | Example: Basic (ESNext) | [esnext-basic-3df23d](./plugins/esnext-basic-3df23d)  |<small> [`ESNEXT`](#esnext)  </small> |
-| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |  <small> [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) </small>|
-| ![]( https://placehold.co/15x15/b16608/b16608 ) | b16608 | Block Static | [static-block-b16608](./plugins/static-block-b16608)  |        |
+| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Interactivity API Block | [interactive-block-833d15](./plugins/interactive-block-833d15)  |  <small> [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) </small>|
+| ![]( https://placehold.co/15x15/b16608/b16608 ) | b16608 | Static Block | [static-block-b16608](./plugins/static-block-b16608)  |        |
 | ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | 1b8c51 | Block Editable | [esnext-editable-1b8c51](./plugins/esnext-editable-1b8c51)  |        |
 | ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | 56d6f3 | Non-block wp data with React | [non-block-react-wp-data-56d6f3](./plugins/non-block-react-wp-data-56d6f3)  | <small> [`NON BLOCK`](#create-block-template) [`WP DATA`](#wp-data) </small>   |
 

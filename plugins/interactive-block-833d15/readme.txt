@@ -1,4 +1,4 @@
-=== 03 Block Interactive ===
+=== 03 Interactivity API Block ===
 Contributors:      The WordPress Contributors
 Tags:              block
 Tested up to:      6.1

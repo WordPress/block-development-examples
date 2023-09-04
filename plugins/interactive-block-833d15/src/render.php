@@ -32,7 +32,7 @@ $unique_id = uniqid( 'p-' );
 		data-wp-bind--hidden="!context.create-block.isOpen"
 	>
 		<?php
-			esc_html_e( '03 Block Interactive - hello from an interactive block!', '03-block-interactive' );
+			esc_html_e( '03 Interactivity API Block - hello from an interactive block!', '03-block-interactive' );
 		?>
 	</p>
 </div>

@@ -33,7 +33,7 @@ export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
 			{ __(
-				'02 Block Static – hello from the editor!',
+				'02 Static Block – hello from the editor!',
 				'02-block-static'
 			) }
 		</p>

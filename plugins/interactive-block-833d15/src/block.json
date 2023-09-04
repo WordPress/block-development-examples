@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "gutenberg-examples/interactive-block-833d15",
 	"version": "0.1.0",
-	"title": "⭐️ Block Interactive",
+	"title": "⭐️ Interactivity API Block",
 	"category": "widgets",
 	"icon": "media-interactive",
 	"description": "An interactive block with the Interactivity API",

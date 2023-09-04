@@ -18,7 +18,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p { ...useBlockProps.save() }>
-			{ '02 Block Static – hello from the saved content!' }
+			{ '02 Static Block – hello from the saved content!' }
 		</p>
 	);
 }

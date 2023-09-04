@@ -3,7 +3,7 @@
 	"apiVersion": 3,
 	"name": "gutenberg-examples/static-block-b16608",
 	"version": "0.1.0",
-	"title": "⭐️ Block Static",
+	"title": "⭐️ Static Block",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
