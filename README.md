@@ -29,7 +29,7 @@ At this point you are now ready to begin developing and testing.
 To see the examples in action you can:
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
 - Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
-  - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin inside  `<plugin-folder>/@gutenberg-examples`.
+  - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at  `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
 - Directly copy the the plugins folders for the examples you're insterested under the `plugins` folder of your own WordPress installation.
 - Use `wp-env` as explained in [Development](#development)
 
