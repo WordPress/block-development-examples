@@ -38,7 +38,7 @@ To see the examples in action you can:
 
 This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
 
-> **Note**
+> **Warning**
 > Please, be mindful that the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites) include having  [Docker](https://docs.docker.com/get-docker/) installed.
 
 To start the local WordPress instance with one of two commands:
@@ -46,7 +46,8 @@ To start the local WordPress instance with one of two commands:
 1. `npm run env:start` - Starts the instance normally.
 2. `npm run env:start:debug` - Starts the instance with debugging enabled.
 
-> See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/)
+> **Note**
+> See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
 
 The WordPress instance will be available at http://localhost:8888/. You can login with the username and password "admin" and the password "password" at http://localhost:8888/wp-login.php. The plugins at `.wp-env.json` should be automatically activated.
 
