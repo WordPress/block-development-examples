@@ -53,10 +53,8 @@ The WordPress instance will be available at http://localhost:8888/. You can logi
 
 <details>
   <summary>The plugins at `.wp-env.json` should be automatically activated.</summary>
-You can edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in. To apply these changes after having started your instance, run:
-```
-npm run env:update
-```
+
+You can edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in. To apply these changes after having started your instance, run `npm run env:update` from the root folder
 </details>
 
 To stop this local WordPress instance later run:
