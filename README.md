@@ -39,7 +39,7 @@ To see the examples in action you can:
 This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
 
 > **Warning**
-> Please, be mindful that the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites) include having  [Docker](https://docs.docker.com/get-docker/) installed.
+> Having  [Docker](https://docs.docker.com/get-docker/) installed is one of the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites).
 
 To start the local WordPress instance with one of two commands:
 
