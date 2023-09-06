@@ -49,22 +49,21 @@ To start the local WordPress instance with one of two commands:
 > **Note**
 > See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
 
-The WordPress instance will be available at http://localhost:8888/. You can login with the username and password "admin" and the password "password" at http://localhost:8888/wp-login.php. The plugins at `.wp-env.json` should be automatically activated.
+The WordPress instance will be available at http://localhost:8888/. You can login with the username and password `admin` and the password `password` at http://localhost:8888/wp-login.php. 
+
+<details>
+  <summary>The plugins at `.wp-env.json` should be automatically activated.</summary>
+You can edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in. To apply these changes after having started your instance, run:
+```
+npm run env:update
+```
+</details>
 
 To stop this local WordPress instance later run:
 
 ```
 npm run env:stop
 ```
-
-To install the node packages
-
-```
-npm install
-```
-
-This repository does not version the built files for any of the examples. You can build all of the examples by running `npm run build:all` in the project root.
-
 
 **Troubleshooting** 
 If you get some errors you can try the following:
