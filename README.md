@@ -52,7 +52,7 @@ To start the local WordPress instance with one of two commands:
 The WordPress instance will be available at http://localhost:8888/. You can login with the username and password `admin` and the password `password` at http://localhost:8888/wp-login.php. 
 
 <details>
-  <summary>The plugins at `.wp-env.json` should be automatically activated.</summary>
+  <summary>The plugins at <code>.wp-env.json</code> should be automatically activated.</summary>
 <br>  
 You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder
 </details>
@@ -63,17 +63,21 @@ To stop this local WordPress instance later run:
 npm run env:stop
 ```
 
-**Troubleshooting** 
-If you get some errors you can try the following:
-- Run `npm run env:restart`
-- Go to Docker, remove all containers and then run again `npm run env:start`
+<details>
+  <summary>If you get some errors you can try running <code>npm run env:restart</code></summary>
+<br>  
+If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code>
+</details>
 
 ## List of Examples
 
 The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples).
 
+The following table provides an overview of all the examples of this repo:
+- Each example **ID** in the following table links to the related folder. 
+- Each one the **tags** that help categorize and explain each each example, links to their description (in the [Tags](#tags) section below). 
 
-| &nbsp; | ID | title  | tags |
+| &nbsp; | ID | Short description  | tags |
 |--------|------|-------|-------------|
 | ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Dynamic Block | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
 | ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Example: Basic (ESNext)   |<small> [`ESNEXT`](#esnext)  </small> |
