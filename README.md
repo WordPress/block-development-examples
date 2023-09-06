@@ -13,7 +13,7 @@ This `gutenberg-examples-2023` repo is a monorepo multipackage because it contai
 
 ### Quick Start Guide
 
-Before checking the examples of this repo, do the following from the root of the project:
+After [cloning this repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and entering into this projects's folder (`cd gutenberg-examples-2023`), do the following from the root of the project:
 
 ```bash
 # Set your Node version to the right one for this project (as defined on .nvmrc)
@@ -24,7 +24,7 @@ pnpm install
 pnpm run build
 ```
 
-At this point you are now ready to begin developing and testing. 
+At this point you are now ready to begin developing and testing the examples.  
 
 To see the examples in action you can:
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
@@ -36,22 +36,34 @@ To see the examples in action you can:
 
 ## Development
 
-With `wp-env` you'll be able to set up a local WordPress environment with all the examples defined at `.wp-env.json` (property `"plugins"`) installed and activated 
+This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
+
+> **Note**
+> Please, be mindful that the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites) include having  [Docker](https://docs.docker.com/get-docker/) installed.
+
+To start the local WordPress instance with one of two commands:
+
+1. `npm run env:start` - Starts the instance normally.
+2. `npm run env:start:debug` - Starts the instance with debugging enabled.
 
 > See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/)
 
-You can edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in.
+The WordPress instance will be available at http://localhost:8888/. You can login with the username and password "admin" and the password "password" at http://localhost:8888/wp-login.php. The plugins at `.wp-env.json` should be automatically activated.
 
-To launch your local WordPress installation with `wp-env` go to to the root folder of the project and run:
+To stop this local WordPress instance later run:
 
 ```
-npm run env:start
+npm run env:stop
 ```
 
-Some other scripts related to `wp-env` that are available in this project are:
+To install the node packages
 
-- `env:start:debug` 
-- `env:update` 
+```
+npm install
+```
+
+This repository does not version the built files for any of the examples. You can build all of the examples by running `npm run build:all` in the project root.
+
 
 **Troubleshooting** 
 If you get some errors you can try the following:
