@@ -44,6 +44,9 @@ npm run env:stop
 
 ## Build process
 
+<p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
+
+
 > ESNext is a dynamic name that refers to whatever the next version is at the time of writing. ESNext features are more correctly called proposals, because, by definition, the specification has not been finalized yet.
 
 > https://legacy.reactjs.org/docs/faq-build.html

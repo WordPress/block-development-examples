@@ -46,19 +46,13 @@ The following table provides an overview of all the examples of this repo:
 - Each one the **tags** assigned to each example, links to their description in the [Tags](#tags) section below. 
 
 <details>
-  <summary><em>Most of the examples in this repo are blocks for the Block Editor and their code use <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/">ESNext</a> + <a href="https://legacy.reactjs.org/docs/introducing-jsx.html">JSX</a> Syntax (as it's a general recommendation)</summary>
+  <summary>Most of the examples in this repo are blocks for the Block Editor and their code use <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/">ESNext</a> + <a href="https://legacy.reactjs.org/docs/introducing-jsx.html">JSX</a> Syntax (as it's a general recommendation)</summary>
 <br>  
 <p><em>Most of the examples in this repo showcase a specific type of block that can be used in the Block Editor. Those examples that doesn't specifically register a block for the Block Editor are labelled with the tag <code>NO-BLOCK</code>.</em></p>
 
-<p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
-
-<p><em>There are some examples in this repo that doesn't use any special Syntax so they don't need to run any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
+<p><em>There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
 </details>
 <br>  
-
-
-
-
 
 | &nbsp; | ID | Short description  | tags |
 |--------|------|-------|-------------|
