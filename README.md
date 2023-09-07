@@ -30,8 +30,8 @@ To see the examples in action you can:
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
 - Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
   - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at  `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
-- Directly copy the the plugins folders for the examples you're insterested under the `plugins` folder of your own WordPress installation.
-- Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md)
+- Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation. 
+- Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
 
 
 > **Important**
@@ -41,8 +41,8 @@ To see the examples in action you can:
 
 The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). Each example has a unique ID that can be used to filter or find them.
 
-The following table provides an overview of all the examples of this repo:
-- Each example **ID** links to the related folder. 
+The examples in this repo are listed in the following table:
+- Each example **ID** links to its related folder. 
 - Each one the **tags** assigned to each example, links to their description in the [Tags](#tags) section below. 
 
 <details>
