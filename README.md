@@ -35,7 +35,7 @@ To see the examples in action you can:
 
 
 > **Important**
-> Check out the [Development Guide](./DEVELOPMENT.md) if you would like a more comprehensive look at working in this repository.
+> Check out the [**Development Guide**](./DEVELOPMENT.md) for a more comprehensive look at working in this repository.
 
 ## List of Examples
 
