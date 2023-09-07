@@ -31,11 +31,11 @@ To see the examples in action you can:
 - Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
   - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at  `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
 - Directly copy the the plugins folders for the examples you're insterested under the `plugins` folder of your own WordPress installation.
-- Use `wp-env` as explained in [Development > WordPress Local Development Environment](./DEVELOPMENT.md)
+- Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md)
 
 
 > **Important**
-> Check out the [**Development Guide**](./DEVELOPMENT.md) for a more comprehensive look at working in this repository.
+> Check out the [**Development Guide**](DEVELOPMENT.md) for a more comprehensive look at working in this repository.
 
 ## List of Examples
 
