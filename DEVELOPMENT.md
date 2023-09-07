@@ -6,6 +6,47 @@ This document aims to provide as much context as possible to aid in the developm
 
 Please refer to [the Getting Started section of the `README.md`](README.md#getting-started) for a general-purpose guide on getting started. The rest of this document will assume that you've installed all of the prequisites and setup described there.
 
+## WordPress Local Development Environment
+
+This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
+
+> **Warning**
+> Having  [Docker](https://docs.docker.com/get-docker/) installed is one of the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites).
+
+To start the local WordPress instance with one of two commands:
+
+1. `npm run env:start` - Starts the instance normally.
+2. `npm run env:start:debug` - Starts the instance with debugging enabled.
+
+> **Note**
+> See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
+
+The WordPress instance will be available at http://localhost:8888/. You can login with the username and password `admin` and the password `password` at http://localhost:8888/wp-login.php. 
+
+<details>
+  <summary>The plugins at <code>.wp-env.json</code> should be automatically activated.</summary>
+<br>  
+<em>You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder</em>
+</details>
+<br>  
+To stop this local WordPress instance later run:
+
+```
+npm run env:stop
+```
+
+<details>
+  <summary>If you get some errors you can try running <code>npm run env:restart</code></summary>
+<br>  
+<em>If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code></em>
+</details>
+
+
+## Build process
+
+> ESNext is a dynamic name that refers to whatever the next version is at the time of writing. ESNext features are more correctly called proposals, because, by definition, the specification has not been finalized yet.
+
+
 ## Turborepo Commands
 
 Our repository uses [Turborepo](https://turborepo.org) for `build` and `test` commands. This tool ensures that all dependencies of a plugin, package, or tool are prepared before running a command. This is done transparently when running these commands. When using `pnpm run {command}` without any options, it will execute that command against every project in the repository. You can view a list of the commands Turborepo supports in [our turbo.json file](turbo.json).
