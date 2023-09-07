@@ -35,7 +35,7 @@ To see the examples in action you can:
 
 
 > **Important**
-> Check out the [**Development Guide**](DEVELOPMENT.md) for a more comprehensive look at working in this repository.
+> Check out the [**Development Guide**](DEVELOPMENT.md) for a more comprehensive look at working in this [Development > WordPress Local Development Environment](DEVELOPMENT.md) repository.
 
 ## List of Examples
 
