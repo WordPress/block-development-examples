@@ -35,7 +35,7 @@ To see the examples in action you can:
 
 
 > **Important**
-> Check out the [**Development Guide**](DEVELOPMENT.md) for a more comprehensive look at working in this [Development > WordPress Local Development Environment](DEVELOPMENT.md) repository.
+> Check out the [**Development Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md) for a more comprehensive look at working in this repository.
 
 ## List of Examples
 
