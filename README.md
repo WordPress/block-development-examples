@@ -8,7 +8,7 @@ This `gutenberg-examples-2023` repo is a monorepo multipackage because it contai
 
 ### Prerequisites
 
-- [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)- While you can always install Node through other means, we recommend using NVM to ensure you're aligned with the version used by our development teams. Our repository contains [an `.nvmrc` file](.nvmrc) which helps ensure you are using the correct version of Node.
+- [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) - While you can always install Node through other means, we recommend using NVM to ensure you're aligned with the version used by our development teams. Our repository contains [an `.nvmrc` file](.nvmrc) which helps ensure you are using the correct version of Node.
 - [PNPM](https://pnpm.io/installation) - This monorepo utilizes PNPM to manage project dependencies and run various scripts involved in building and testing projects. You can easily install it with `npm i -g pnpm`.
 
 ### Quick Start Guide
@@ -39,13 +39,26 @@ To see the examples in action you can:
 
 ## List of Examples
 
-The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). 
-
-Most of the examples in this repo use [ESNext Syntax](https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/) and/or [JSX Syntax](https://legacy.reactjs.org/docs/introducing-jsx.html) so they require a [build process](https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/). 
+The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). Each example has a unique ID that can be used to filter or find them.
 
 The following table provides an overview of all the examples of this repo:
-- Each example **ID** in the following table links to the related folder. 
-- Each one the **tags** that help categorize and explain each each example, links to their description (in the [Tags](#tags) section below). 
+- Each example **ID** links to the related folder. 
+- Each one the **tags** assigned to each example, links to their description in the [Tags](#tags) section below. 
+
+<details>
+  <summary><em>Most of the examples in this repo are blocks for the Block Editor and their code use <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/">ESNext</a> + <a href="https://legacy.reactjs.org/docs/introducing-jsx.html">JSX</a> Syntax (as it's a general recommendation)</summary>
+<br>  
+<p><em>Most of the examples in this repo showcase a specific type of block that can be used in the Block Editor. Those examples that doesn't specifically register a block for the Block Editor are labelled with the tag <code>NO-BLOCK</code>.</em></p>
+
+<p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
+
+<p><em>There are some examples in this repo that doesn't use any special Syntax so they don't need to run any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
+</details>
+<br>  
+
+
+
+
 
 | &nbsp; | ID | Short description  | tags |
 |--------|------|-------|-------------|

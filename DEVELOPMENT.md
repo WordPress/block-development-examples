@@ -46,6 +46,10 @@ npm run env:stop
 
 > ESNext is a dynamic name that refers to whatever the next version is at the time of writing. ESNext features are more correctly called proposals, because, by definition, the specification has not been finalized yet.
 
+> https://legacy.reactjs.org/docs/faq-build.html
+> https://legacy.reactjs.org/docs/react-without-es6.html
+> https://legacy.reactjs.org/docs/react-without-jsx.html
+> https://react.dev/reference/react/createElement#creating-an-element-without-jsx
 
 ## Turborepo Commands
 
