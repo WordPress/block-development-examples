@@ -54,9 +54,9 @@ The WordPress instance will be available at http://localhost:8888/. You can logi
 <details>
   <summary>The plugins at <code>.wp-env.json</code> should be automatically activated.</summary>
 <br>  
-You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder
+<em>You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder</em>
 </details>
-
+<br>  
 To stop this local WordPress instance later run:
 
 ```
@@ -66,12 +66,14 @@ npm run env:stop
 <details>
   <summary>If you get some errors you can try running <code>npm run env:restart</code></summary>
 <br>  
-If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code>
+<em>If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code></em>
 </details>
 
 ## List of Examples
 
-The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples).
+The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). 
+
+Most of the examples in this repo use [ESNext Syntax](https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/) so they require a [build process](https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/).
 
 The following table provides an overview of all the examples of this repo:
 - Each example **ID** in the following table links to the related folder. 
@@ -79,8 +81,8 @@ The following table provides an overview of all the examples of this repo:
 
 | &nbsp; | ID | Short description  | tags |
 |--------|------|-------|-------------|
-| ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Dynamic Block | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
-| ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Example: Basic (ESNext)   |<small> [`ESNEXT`](#esnext)  </small> |
+| ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Basic Dynamic Block | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
+| ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Basic Static Block  |<small> [`ESNEXT`](#esnext)  </small> |
 | ![]( https://placehold.co/15x15/833d15/833d15 ) | [833d15](./plugins/interactive-block-833d15) | Interactivity API Block |   <small> [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) </small>|
 | ![]( https://placehold.co/15x15/b16608/b16608 ) | [b16608](./plugins/static-block-b16608) | Static Block |        |
 | ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | [1b8c51](./plugins/esnext-editable-1b8c51) | Block Editable |       |
