@@ -6,6 +6,7 @@
   "scripts": {
     "start": "pnpm -r run start",
     "build": "pnpm -r run build",
+    "preinstall": "npx only-allow pnpm",
     "plugin-zip": "pnpm -r run plugin-zip",
     "code:get": "node ./bin/randomHexCode.js",
     "env:start": "pnpm wp-env start",
