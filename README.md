@@ -26,7 +26,7 @@ pnpm run build
 
 At this point you are now ready to begin developing and testing the examples.  
 
-To see the examples in action you can:
+To see the examples in action you have several options:
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
 - Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
   - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at  `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
@@ -56,24 +56,24 @@ The examples in this repo are listed in the following table:
 
 | &nbsp; | ID | Short description  | tags |
 |--------|------|-------|-------------|
-| ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Basic Dynamic Block | <small> [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block) </small> |
-| ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Basic Static Block  |<small> [`ESNEXT`](#esnext)  </small> |
-| ![]( https://placehold.co/15x15/833d15/833d15 ) | [833d15](./plugins/interactive-block-833d15) | Interactivity API Block |   <small> [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) </small>|
+| ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Basic Dynamic Block |  [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block)  |
+| ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Basic Static Block  | [`ESNEXT`](#esnext)   |
+| ![]( https://placehold.co/15x15/833d15/833d15 ) | [833d15](./plugins/interactive-block-833d15) | Interactivity API Block |    [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) |
 | ![]( https://placehold.co/15x15/b16608/b16608 ) | [b16608](./plugins/static-block-b16608) | Static Block |        |
 | ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | [1b8c51](./plugins/esnext-editable-1b8c51) | Block Editable |       |
-| ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3) | Non-block wp data with React | <small> [`NON BLOCK`](#create-block-template) [`WP DATA`](#wp-data) </small>   |
+| ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3) | Non-block wp data with React |  [`NON BLOCK`](#create-block-template) [`WP DATA`](#wp-data)    |
 
 ### Tags 
 
-###### `INTERACTIVITY API`
+##### `INTERACTIVITY API`
 
 These examples show the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) in Blocks via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)  
 
-###### `INTERACTIVE`
+##### `INTERACTIVE`
 
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
 
-###### `CREATE BLOCK TEMPLATE`
+##### `CREATE BLOCK TEMPLATE`
 
 <!--
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
