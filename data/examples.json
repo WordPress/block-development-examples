@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "dynamic-block-64756b",
+    "description": "Basic Dynamic Block",
+    "tags": [
+      "dynamic",
+      "create-block"
+    ]
+  },
+  {
+    "slug": "esnext-basic-3df23d",
+    "description": "Basic Static Block",
+    "tags": [
+      "static"
+    ]
+  },
+  {
+    "slug": "interactive-block-833d15",
+    "description": "Interactivity API Block",
+    "tags": [
+      "create-block-template",
+      "interactive-block",
+      "interactivity-api"
+    ]
+  },
+  {
+    "slug": "static-block-b16608",
+    "description": "Static Block",
+    "tags": [
+      "static"
+    ]
+  },
+  {
+    "slug": "esnext-editable-1b8c51",
+    "description": "Block Editable",
+    "tags": []
+  },
+  {
+    "slug": "non-block-react-wp-data-56d6f3",
+    "description": "Non-block wp data with React",
+    "tags": [
+      "no-block",
+      "wp-data"
+    ]
+  }
+]

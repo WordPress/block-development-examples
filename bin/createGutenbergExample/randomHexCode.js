@@ -8,4 +8,5 @@ function getRandomHexCode() {
   }
   
   const randomHexCode = getRandomHexCode();
-  console.log(randomHexCode);
+  
+module.exports = getRandomHexCode;

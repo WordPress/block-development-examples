@@ -1,4 +1,4 @@
-Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bunch of block and non-block examples for Gutenberg that you can use to learn about Block Development and other related Gutenberg topics. 
+Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bunch of block and non-block examples for Gutenberg that you can use to learn about Block Development and other related Gutenberg topics.
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
 
@@ -24,15 +24,15 @@ pnpm install
 pnpm run build
 ```
 
-At this point you are now ready to begin developing and testing the examples.  
+At this point you are now ready to begin developing and testing the examples.
 
 To see the examples in action you have several options:
-- Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
-- Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in. 
-  - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at  `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
-- Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation. 
-- Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
 
+- Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
+- Use your own WordPress installation to install the plugin (as `.zip`) with the example you're interested in.
+  - Run `pnpm run plugin-zip` from the root of the project to get the zip version of each plugin at `<plugin-folder>/@gutenberg-examples/<plugin-folder>.zip`.
+- Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation.
+- Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
 
 > **Important**
 > Check out the [**Development Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md) for a more comprehensive look at working in this repository.
@@ -42,8 +42,9 @@ To see the examples in action you have several options:
 The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). Each example has a unique ID that can be used to filter or find them.
 
 The examples in this repo are listed in the following table:
-- Each example **ID** links to its related folder. 
-- Each one the **tags** assigned to each example, links to their description in the [Tags](#tags) section below. 
+
+- Each example **ID** links to its related folder.
+- Each one the **tags** assigned to each example, links to their description in the [Tags](#tags) section below.
 
 <details>
   <summary>Most of the examples in this repo are blocks for the Block Editor and their code use <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/esnext-js/">ESNext</a> + <a href="https://legacy.reactjs.org/docs/introducing-jsx.html">JSX</a> Syntax (as it's a general recommendation)</summary>
@@ -52,24 +53,27 @@ The examples in this repo are listed in the following table:
 
 <p><em>There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
 </details>
-<br>  
+<br>
 
-| &nbsp; | ID | Short description  | tags |
-|--------|------|-------|-------------|
-| ![]( https://placehold.co/15x15/64756b/64756b ) |  [64756b](./plugins/dynamic-block-64756b) | Basic Dynamic Block |  [`DYNAMIC`](#dynamic) [`CREATE BLOCK`](#create-block)  |
-| ![]( https://placehold.co/15x15/3df23d/3df23d ) | [3df23d](./plugins/esnext-basic-3df23d) | Basic Static Block  | [`ESNEXT`](#esnext)   |
-| ![]( https://placehold.co/15x15/833d15/833d15 ) | [833d15](./plugins/interactive-block-833d15) | Interactivity API Block |    [`CREATE BLOCK TEMPLATE`](#create-block-template) [`INTERACTIVE`](#interactive) [`INTERACTIVITY API`](#interactivity-api) |
-| ![]( https://placehold.co/15x15/b16608/b16608 ) | [b16608](./plugins/static-block-b16608) | Static Block |        |
-| ![]( https://placehold.co/15x15/1b8c51/1b8c51 ) | [1b8c51](./plugins/esnext-editable-1b8c51) | Block Editable |       |
-| ![]( https://placehold.co/15x15/56d6f3/56d6f3 ) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3) | Non-block wp data with React |  [`NON BLOCK`](#create-block-template) [`WP DATA`](#wp-data)    |
+<!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
+<!-- @TABLE EXAMPLES BEGIN -->
+| &nbsp                                         | ID                                                 | Short description            | tags                                                                                                                                    |
+| --------------------------------------------- | -------------------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](https://placehold.co/15x15/64756b/64756b) | [64756b](./plugins/dynamic-block-64756b)           | Basic Dynamic Block          | [`DYNAMIC`](#dynamic), [`CREATE BLOCK`](#create-block)                                                                                  |
+| ![](https://placehold.co/15x15/3df23d/3df23d) | [3df23d](./plugins/esnext-basic-3df23d)            | Basic Static Block           | [`STATIC`](#static)                                                                                                                     |
+| ![](https://placehold.co/15x15/833d15/833d15) | [833d15](./plugins/interactive-block-833d15)       | Interactivity API Block      | [`CREATE BLOCK TEMPLATE`](#create-block-template), [`INTERACTIVE BLOCK`](#interactive-block), [`INTERACTIVITY API`](#interactivity-api) |
+| ![](https://placehold.co/15x15/b16608/b16608) | [b16608](./plugins/static-block-b16608)            | Static Block                 | [`STATIC`](#static)                                                                                                                     |
+| ![](https://placehold.co/15x15/1b8c51/1b8c51) | [1b8c51](./plugins/esnext-editable-1b8c51)         | Block Editable               |                                                                                                                                         |
+| ![](https://placehold.co/15x15/56d6f3/56d6f3) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3) | Non-block wp data with React | [`NO BLOCK`](#no-block), [`WP DATA`](#wp-data)                                                                                          |
+<!-- @TABLE EXAMPLES END -->
 
-### Tags 
+### Tags
 
 ##### `INTERACTIVITY API`
 
-These examples show the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) in Blocks via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)  
+These examples show the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) in Blocks via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
 
-##### `INTERACTIVE`
+##### `INTERACTIVE BLOCK`
 
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
 
@@ -79,7 +83,26 @@ These examples show how to add behaviour for the frontend in your blocks. This b
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
 -->
 
-###### `ESNEXT`
+###### `NO BUILD`
+
 <!--
-These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)  
+These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
+-->
+
+###### `NO BLOCK`
+
+<!--
+These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
+-->
+
+###### `DYNAMIC BLOCK`
+
+<!--
+These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
+-->
+
+###### `STATIC BLOCK`
+
+<!--
+These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
 -->

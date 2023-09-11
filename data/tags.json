@@ -1,0 +1,47 @@
+[
+    {
+        "slug": "interactivity-api",
+        "name": "INTERACTIVITY API"
+    },
+    {
+        "slug": "interactive-block",
+        "name": "INTERACTIVE BLOCK"
+    },
+    {
+        "slug": "create-block-template",
+        "name": "CREATE BLOCK TEMPLATE"
+    },
+    {
+        "slug": "no-build",
+        "name": "NO BUILD"
+    },
+    {
+        "slug": "no-block",
+        "name": "NO BLOCK"
+    },
+    {
+        "slug": "dynamic-block",
+        "name": "DYNAMIC BLOCK"
+    },
+    {
+        "slug": "static-block",
+        "name": "STATIC BLOCK"
+    },
+    {
+        "slug": "wp-data",
+        "name": "WP DATA"
+    },
+    {
+        "slug": "dynamic",
+        "name": "DYNAMIC"
+    },
+    {
+        "slug": "static",
+        "name": "STATIC"
+    },
+    {
+        "slug": "create-block",
+        "name": "CREATE BLOCK"
+    }
+
+]

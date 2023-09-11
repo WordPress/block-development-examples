@@ -16,7 +16,10 @@
     "env:stop": "pnpm wp-env stop",
     "env:down": "pnpm wp-env stop",
     "env:destroy": "pnpm wp-env destroy",
-    "env:logs": "pnpm wp-env logs all"
+    "env:logs": "pnpm wp-env logs all",
+    "create-example": "node ./bin/createGutenbergExample/index.js",
+    "create-example:block": "cd ./plugins && npx @wordpress/create-block --template ../templates/bdc --variant dynamic",
+    "create-example:plugin": "cd ./plugins && npx @wordpress/create-block --template ../templates/bdc --variant plugin"
   },
   "keywords": [],
   "author": "",
@@ -24,5 +27,12 @@
   "devDependencies": {
     "@wordpress/env": "^8.7.0",
     "@wordpress/scripts": "^26.12.0"
+  },
+  "dependencies": {
+    "chalk": "4.1.1",
+    "commander": "9.2.0",
+    "execa": "4.0.2",
+    "markdown-table": "2",
+    "rimraf": "^5.0.1"
   }
 }
