@@ -32,14 +32,6 @@
         "name": "WP DATA"
     },
     {
-        "slug": "dynamic",
-        "name": "DYNAMIC"
-    },
-    {
-        "slug": "static",
-        "name": "STATIC"
-    },
-    {
         "slug": "create-block",
         "name": "CREATE BLOCK"
     }

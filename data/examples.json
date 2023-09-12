@@ -3,7 +3,7 @@
     "slug": "dynamic-block-64756b",
     "description": "Basic Dynamic Block",
     "tags": [
-      "dynamic",
+      "dynamic-block",
       "create-block"
     ]
   },
@@ -11,7 +11,7 @@
     "slug": "esnext-basic-3df23d",
     "description": "Basic Static Block",
     "tags": [
-      "static"
+      "static-block"
     ]
   },
   {
@@ -27,7 +27,7 @@
     "slug": "static-block-b16608",
     "description": "Static Block",
     "tags": [
-      "static"
+      "static-block"
     ]
   },
   {

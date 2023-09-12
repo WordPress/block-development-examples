@@ -6,7 +6,7 @@ const customizePackageJson = require( './customizePackageJson' );
 const addExamplesJson = require( './addExamplesJson' );
 const generateExamplesTableMarkdown = require('./generateExamplesTableMarkdown')
 
-module.exports = async ( { slug, keywords, description } ) => {
+module.exports = async ( { slug, keywords, description, variant } ) => {
 	const rootPath = process.cwd();
 	const pluginsFolderPath = join( rootPath, 'plugins' );
 	const exampleFolderPath = join( pluginsFolderPath, `${slug}` );
@@ -19,11 +19,24 @@ module.exports = async ( { slug, keywords, description } ) => {
 
 	info( '' );
 	info(`Scaffolding ${slug} example. It might take a couple of minutes...`);
-	await command( `npx @wordpress/create-block@latest ${slug} --namespace gutenberg-examples --wp-scripts --template ../templates/create-gutenberg-example --variant basic`, 
-		{ cwd: pluginsFolderPath },
-		{ stdio }
-	);
-	
+
+	if (variant) {
+		if (variant === 'plugin') {
+			await command( `npx @wordpress/create-block@latest ${slug} --namespace gutenberg-examples --wp-scripts --template --variant ${variant}`, 
+			{ cwd: pluginsFolderPath },
+			{ stdio }
+		);
+		}
+		else {
+			await command( `npx @wordpress/create-block@latest ${slug} --namespace gutenberg-examples --wp-scripts --template --variant ${variant}`, 
+				{ cwd: pluginsFolderPath },
+				{ stdio }
+			);
+		}
+	}
+
+	// no-wp-scripts && devDependencies add package
+
 	info(`Installing dependencies...`);
 	await command( `rimraf package-lock.json && rimraf node_modules`, 
 		{ cwd: exampleFolderPath },
