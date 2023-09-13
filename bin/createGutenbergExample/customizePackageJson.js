@@ -1,19 +1,19 @@
 const fs = require('fs');
 const { info, error } = require( './log' );
 
-module.exports = async ( { packageJsonPath } ) => {
+module.exports = ( { packageJsonPath, slug, description } ) => {
 
     const packageJsonDisplay = packageJsonPath.split('/gutenberg-examples-2023/')[1]
-    info(`Customizing ${packageJsonDisplay} ...`);
     const packageJsonObject = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-
+    
     const processedPackageJson = {
         ...packageJsonObject,
-        files: ['*'],
-        name: `@gutenberg-examples/${packageJsonObject.name}`
+        name: `@gutenberg-examples/${slug}`,
+        description
     }
-
+    
     try {
+        info(`Customizing ${packageJsonDisplay} ...`);
         fs.writeFileSync(packageJsonPath, JSON.stringify(processedPackageJson, null, 2), 'utf8');
         //info(`${packageJsonDisplay} was customized`);
     }

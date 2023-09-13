@@ -5,7 +5,7 @@ const { info, error } = require("./log");
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-module.exports = async ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
+module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
 
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, 'utf8')); 
@@ -52,7 +52,7 @@ module.exports = async ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) =>
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    info(`${readmePathDisplay} was updated!`);
+    //info(`${readmePathDisplay} was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);
