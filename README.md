@@ -85,19 +85,19 @@ These examples shows the result of using the [`create-block`](https://developer.
 
 These examples shows the result of using a template with the [`create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) tool with any of his variants or options.
 
-###### `NO BUILD`
+##### `NO BUILD`
 
 These examples shows block development that doesn't require a build process, mostly because they don't use ESNext or JSX syntax.
 
-###### `NO BLOCK`
+##### `NO BLOCK`
 
 These examples shows the development of a feature or behaviour for WordPress using gutenberg packages and React without the creation of a block.
 
-###### `DYNAMIC BLOCK`
+##### `DYNAMIC BLOCK`
 
 These examples shows [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#dynamic-block).
 
-###### `STATIC BLOCK`
+##### `STATIC BLOCK`
 
 These examples shows [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#static-block).
 
