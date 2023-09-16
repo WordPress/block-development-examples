@@ -65,13 +65,6 @@ The examples in this repo are listed in the following table:
 | ![](https://placehold.co/15x15/b16608/b16608) | [b16608](./plugins/static-block-b16608)               | Static Block                 | [`STATIC BLOCK`](#static-block)                                                                                                         |
 | ![](https://placehold.co/15x15/1b8c51/1b8c51) | [1b8c51](./plugins/esnext-editable-1b8c51)            | Block Editable               |                                                                                                                                         |
 | ![](https://placehold.co/15x15/56d6f3/56d6f3) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3)    | Non-block wp data with React | [`NO BLOCK`](#no-block), [`WP DATA`](#wp-data)                                                                                          |
-| ![](https://placehold.co/15x15/ca90aa/ca90aa) | [ca90aa](./plugins/df-sdfdsf-ca90aa)                  | dfsd df d                    | [`INTERACTIVITY API`](#interactivity-api), [`CREATE BLOCK TEMPLATE`](#create-block-template)                                            |
-| ![](https://placehold.co/15x15/e9c6f4/e9c6f4) | [e9c6f4](./plugins/dssfd-e9c6f4)                      | sdfdsfdf                     | [`INTERACTIVITY API`](#interactivity-api)                                                                                               |
-| ![](https://placehold.co/15x15/574d70/574d70) | [574d70](./plugins/fsdfsdf-574d70)                    | sfdsdf dsf sd                | [`INTERACTIVITY API`](#interactivity-api)                                                                                               |
-| ![](https://placehold.co/15x15/7860cb/7860cb) | [7860cb](./plugins/dfsdf-7860cb)                      | sdfdfsd                      | [`INTERACTIVITY API`](#interactivity-api)                                                                                               |
-| ![](https://placehold.co/15x15/2679e1/2679e1) | [2679e1](./plugins/df-sf-dsfds-2679e1)                | dfdsf fds df sdf             | [`INTERACTIVITY API`](#interactivity-api), [`CREATE BLOCK TEMPLATE`](#create-block-template)                                            |
-| ![](https://placehold.co/15x15/43928f/43928f) | [43928f](./plugins/my-new-interactive-example-43928f) | this is a super cool block   | [`INTERACTIVITY API`](#interactivity-api), [`NO BUILD`](#no-build), [`DYNAMIC BLOCK`](#dynamic-block)                                   |
-| ![](https://placehold.co/15x15/97f1a9/97f1a9) | [97f1a9](./plugins/ffff-97f1a9)                       | ffff                         | [`INTERACTIVITY API`](#interactivity-api)                                                                                               |
 <!-- @TABLE EXAMPLES END -->
 
 ### Tags
@@ -84,32 +77,27 @@ These examples show the use of the experimental [Interactivity API](https://make
 
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
 
+##### `CREATE BLOCK`
+
+These examples shows the result of using the [`create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) tool with any of his variants or options.
+
 ##### `CREATE BLOCK TEMPLATE`
 
-<!--
-These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is executed only when the block is loaded in the frontend.
--->
+These examples shows the result of using a template with the [`create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) tool with any of his variants or options.
 
 ###### `NO BUILD`
 
-<!--
-These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
--->
+These examples shows block development that doesn't require a build process, mostly because they don't use ESNext or JSX syntax.
 
 ###### `NO BLOCK`
 
-<!--
-These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
--->
+These examples shows the development of a feature or behaviour for WordPress using gutenberg packages and React without the creation of a block.
 
 ###### `DYNAMIC BLOCK`
 
-<!--
-These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
--->
+These examples shows [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#dynamic-block).
 
 ###### `STATIC BLOCK`
 
-<!--
-These examples shows the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
--->
+These examples shows [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#static-block).
+
