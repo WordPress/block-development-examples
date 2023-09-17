@@ -2,10 +2,10 @@
     "phpVersion": "7.4",
     "plugins": [
         "./plugins/dynamic-block-64756b",
-        "./plugins/esnext-basic-3df23d",
+        "./plugins/basic-block-3df23d",
         "./plugins/interactive-block-833d15",
         "./plugins/static-block-b16608",
-        "./plugins/esnext-editable-1b8c51",
+        "./plugins/editable-block-1b8c51",
         "./plugins/non-block-react-wp-data-56d6f3",
         "https://downloads.wordpress.org/plugin/gutenberg.16.5.1.zip"
     ],

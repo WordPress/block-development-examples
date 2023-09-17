@@ -10,7 +10,7 @@ import {
 /**
  * Internal dependencies
  */
-import json from '../block.json';
+import json from '../src/block.json';
 const { title, name } = json;
 
 it( `${ title } block should be available`, async () => {
@@ -21,8 +21,8 @@ it( `${ title } block should be available`, async () => {
 	expect( await page.$( `[data-type="${ name }"]` ) ).not.toBeNull();
 
 	expect( await getEditedPostContent() ).toMatchInlineSnapshot( `
-		"<!-- wp:gutenberg-examples/example-03-editable-esnext -->
-		<p class=\\"wp-block-gutenberg-examples-example-03-editable-esnext\\"></p>
-		<!-- /wp:gutenberg-examples/example-03-editable-esnext -->"
+		"<!-- wp:gutenberg-examples/editable-block-1b8c51 -->
+		<p class=\\"wp-block-gutenberg-examples-editable-block-1b8c51\\"></p>
+		<!-- /wp:gutenberg-examples/editable-block-1b8c51 -->"
 	` );
 } );

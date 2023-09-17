@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 2,
-	"name": "gutenberg-examples/esnext-editable-1b8c51",
-	"title": "⭐️ Example: Editable (ESNext)",
+	"name": "gutenberg-examples/editable-block-1b8c51",
+	"title": "⭐️ Example: Editable Block",
 	"textdomain": "gutenberg-examples",
 	"icon": "universal-access-alt",
 	"category": "widgets",

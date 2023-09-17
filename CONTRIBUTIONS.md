@@ -44,10 +44,10 @@
     - [ ] **`keywords`** should include the `<unique-code>`, the `Gutenberg Examples` text and the tags associated to the example
         - Ex: `"keywords": [ "64756b", "Gutenberg Examples", "Dynamic", "Create Block" ]`    
 - [ ] Block CSS class should follow the convention `.wp-block-gutenberg-examples-<plugin-slug>-<unique-code>`
-    - Ex: `.wp-block-gutenberg-examples-esnext-editable-1b8c51`    
+    - Ex: `.wp-block-gutenberg-examples-editable-block-1b8c51`    
 - On **`<root-folder>/.wp-env.json`**
     - [ ] The local path of the plugin/example (starting from root) should be included in the array `"plugins"` 
-        - Ex: `"./plugins/esnext-basic-3df23d"`
+        - Ex: `"./plugins/basic-block-3df23d"`
 - On **`<root-folder>/README.md`**
     - [ ] Add a new row with the plugin/example info
         - Ex: `| ![]( https://placehold.co/15x15/833d15/833d15 ) | 833d15 | Block Interactive | [interactive-block-833d15](./plugins/interactive-block-833d15)  |        |`

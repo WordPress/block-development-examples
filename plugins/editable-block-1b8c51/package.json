@@ -1,5 +1,5 @@
 {
-	"name": "@gutenberg-examples/esnext-editable-1b8c51",
+	"name": "@gutenberg-examples/editable-block-1b8c51",
 	"version": "0.1.0",
 	"description": "Very basic editable block",
 	"author": "The WordPress Contributors",
@@ -23,5 +23,11 @@
 	"devDependencies": {
 		"@wordpress/scripts": "^26.12.0"
 	},
-	"files": [ "*" ]
+	"files": [
+		"*"
+	],
+	"dependencies": {
+		"@wordpress/e2e-test-utils": "^10.12.0",
+		"@wordpress/env": "^8.7.0"
+	}
 }

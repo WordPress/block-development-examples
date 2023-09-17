@@ -8,7 +8,7 @@
     ]
   },
   {
-    "slug": "esnext-basic-3df23d",
+    "slug": "basic-block-3df23d",
     "description": "Basic Static Block",
     "tags": [
       "static-block"
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "slug": "esnext-editable-1b8c51",
+    "slug": "editable-block-1b8c51",
     "description": "Block Editable",
     "tags": []
   },

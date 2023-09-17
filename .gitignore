@@ -35,7 +35,7 @@ npm-debug.log
 # Build files
 *.sql
 *.swp
-*.zip
+# *.zip
 
 # Built packages
 build/
