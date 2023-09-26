@@ -6,14 +6,12 @@ const {
   PLAYGROUND_URL_WITH_PLUGIN,
   PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
   SLUG_EXAMPLE_MARKER,
+  URL_EXAMPLE_ZIP
 } = require("./constants");
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-console.log({PLAYGROUND_URL_WITH_PLUGIN,
-  PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
-  SLUG_EXAMPLE_MARKER})
 module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
   console.log({readmePath, examplesJsonPath, tagsJsonPath, slug})
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
@@ -41,7 +39,7 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
     const id = slug.split("-").pop();
     let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     if (tags.includes('gutenberg-plugin')) playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug);
-    console.log({slug, playgroundUrl})
+    const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     return [
       `![](https://placehold.co/15x15/${id}/${id})`,
       `[${id}](./plugins/${slug})`,
@@ -49,11 +47,12 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
         .join(", "),
-      `<a href="${playgroundUrl}" target="_blank">🖥️</a>`
+      `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://www.iconarchive.com/download/i90675/icons8/windows-8/Files-Zip.512.png"></a>`,
+      `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://skillicons.dev/icons?i=wordpress"></a>`
     ];
   });
   const markdownTable = toMarkdownTable([
-    ["&nbsp", "ID", "Short description", "tags", "See online"],
+    ["&nbsp", "ID", "Short description", "Tags", "Download .zip", "Live Demo"],
     ...markdownTableRows,
   ]);
 
