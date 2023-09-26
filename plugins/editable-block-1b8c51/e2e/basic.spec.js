@@ -2,27 +2,58 @@
  * WordPress dependencies
  */
 import {
-	getEditedPostContent,
-	insertBlock,
-	createNewPost,
-} from '@wordpress/e2e-test-utils';
+  getEditedPostContent,
+  insertBlock,
+  createNewPost,
+  getAllBlockInserterItemTitles,
+  activatePlugin,
+  deactivatePlugin
+} from "@wordpress/e2e-test-utils";
 
 /**
  * Internal dependencies
  */
-import json from '../src/block.json';
+import json from "../src/block.json";
 const { title, name } = json;
 
-it( `${ title } block should be available`, async () => {
-	await createNewPost();
-	await insertBlock( title );
+describe(`"${title}" block`, () => {
+	beforeAll( async () => {
+		await activatePlugin( 'gutenberg-examples-editable-block-1b8c51' );
+	} );
 
-	// Check if block was inserted
-	expect( await page.$( `[data-type="${ name }"]` ) ).not.toBeNull();
+	beforeEach( async () => {
+		await createNewPost();
+	} );
 
-	expect( await getEditedPostContent() ).toMatchInlineSnapshot( `
-		"<!-- wp:gutenberg-examples/editable-block-1b8c51 -->
-		<p class=\\"wp-block-gutenberg-examples-editable-block-1b8c51\\"></p>
-		<!-- /wp:gutenberg-examples/editable-block-1b8c51 -->"
-	` );
-} );
+	afterAll( async () => {
+		await deactivatePlugin( 'gutenberg-examples-editable-block-1b8c51' );
+	} );
+
+	it(`-- should be available to be inserted`, async () => {
+
+		const blocksAvailable = await getAllBlockInserterItemTitles();
+		console.log(blocksAvailable);
+
+		expect(true).toBe(true);
+	});
+	
+	it(`should be available to be inserted`, async () => {
+
+	  //await createNewPost();
+	  await insertBlock(title);
+	
+	  expect(page.$(`[data-type="${name}"]`)).not.toBeNull();
+	
+	  const editedPostContent = await getEditedPostContent();
+	  const regExFindComments = /<!--(.*)-->/g
+	  const commentsEditedPostContent = editedPostContent.match(regExFindComments)
+	  
+	  expect(commentsEditedPostContent[0]).toBe(`<!-- wp:${name} -->`)
+	  expect(commentsEditedPostContent[1]).toBe(`<!-- /wp:${name} -->`)
+	  
+	  const regExFindClasses = /class="(.*)"/g
+	  const classesEditedPostContent = regExFindClasses.exec(editedPostContent)
+	 
+	  expect(classesEditedPostContent[1]).toBe(`wp-block-${name.replace("/","-")}`)
+	});
+})

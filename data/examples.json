@@ -20,7 +20,8 @@
     "tags": [
       "create-block-template",
       "interactive-block",
-      "interactivity-api"
+      "interactivity-api",
+      "gutenberg-plugin"
     ]
   },
   {
