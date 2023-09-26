@@ -11,7 +11,9 @@ const {
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-console.log({SLUG_EXAMPLE_MARKER, endMarker})
+console.log({PLAYGROUND_URL_WITH_PLUGIN,
+  PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
+  SLUG_EXAMPLE_MARKER})
 module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
   console.log({readmePath, examplesJsonPath, tagsJsonPath, slug})
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
@@ -37,6 +39,9 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
 
   const markdownTableRows = examplesJson.map(({ slug, description, tags }) => {
     const id = slug.split("-").pop();
+    let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+    if (tags.includes('gutenberg-plugin')) playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+    console.log({slug, playgroundUrl})
     return [
       `![](https://placehold.co/15x15/${id}/${id})`,
       `[${id}](./plugins/${slug})`,
@@ -44,7 +49,7 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
         .join(", "),
-      `<a href="${!tags.includes('gutenberg-plugin') ? PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug) : PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug)}" target="_blank">🖥️</a>`
+      `<a href="${playgroundUrl}" target="_blank">🖥️</a>`
     ];
   });
   const markdownTable = toMarkdownTable([
