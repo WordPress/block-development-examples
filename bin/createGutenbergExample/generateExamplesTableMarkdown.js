@@ -47,7 +47,7 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
         .join(", "),
-      `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://www.iconarchive.com/download/i90675/icons8/windows-8/Files-Zip.512.png"></a>`,
+      `<a href="${urlZip}" target="_blank"><img width="20" src="https://icons.getbootstrap.com/assets/icons/file-earmark-zip.svg"></a>`,
       `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://skillicons.dev/icons?i=wordpress"></a>`
     ];
   });
