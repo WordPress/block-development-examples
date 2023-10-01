@@ -1,24 +1,40 @@
-on: [push]
+on:
+  push:
+    branches:
+      - trunk
 
 jobs:
+  sync-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge development -> staging
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: trunk
+          target_branch: deploy
+          github_token: ${{ secrets.gh_action_gutenberg_examples }}
   deploy_job:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
-          uses: actions/checkout@v2
         - name: Set up Node.js
           uses: actions/setup-node@v2
           with:
             node-version: '18'
+        - name: Checkout
+          uses: actions/checkout@v2
+          with:
+            ref: deploy
         - name: Run tests
           run: npm run zips
-        - name: Deploy file
-          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        - name: Commit files
+          run: |
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git commit -a -m "Add changes"
+        - name: Push changes
+          uses: ad-m/github-push-action@master
           with:
-              username: ${{ secrets.FTP_USERNAME }} # 2b926573ae68110e1664ce355467cb
-              server: ${{ secrets.FTP_SERVER }} # winter-snowflake-30036.sftptogo.com
-              port: ${{ secrets.FTP_PORT }} # 22
-              local_path: './static/*' 
-              remote_path: '/var/www/app'
-              sftp_only: true
-              password: ${{ secrets.FTP_PASSWORD }} # no39ln9qxrrhemrimnmnifc6jk0zbpypbk5v5yw8
+            branch: deploy
