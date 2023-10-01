@@ -4,21 +4,17 @@ jobs:
   deploy_job:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
-          uses: actions/checkout@v2
         - name: Set up Node.js
           uses: actions/setup-node@v2
           with:
             node-version: '18'
+        - name: Checkout
+          uses: actions/checkout@v2
+          with:
+            ref: deploy
+        - name: Merge from trunk
+          run: git merge origin/trunk
         - name: Run tests
           run: npm run zips
-        - name: Deploy file
-          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-          with:
-              username: ${{ secrets.FTP_USERNAME }} # 2b926573ae68110e1664ce355467cb
-              server: ${{ secrets.FTP_SERVER }} # winter-snowflake-30036.sftptogo.com
-              port: ${{ secrets.FTP_PORT }} # 22
-              local_path: './static/*' 
-              remote_path: '/var/www/app'
-              sftp_only: true
-              password: ${{ secrets.FTP_PASSWORD }} # no39ln9qxrrhemrimnmnifc6jk0zbpypbk5v5yw8
+        - name: Update deploy branch
+          run: git add -A && git commit -m "update deploy branch" && git push origin deploy
