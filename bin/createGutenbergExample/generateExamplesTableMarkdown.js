@@ -7,7 +7,7 @@ const {
   PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
   SLUG_EXAMPLE_MARKER,
   URL_EXAMPLE_ZIP
-} = require("./constants");
+} = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
@@ -21,6 +21,7 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
   info(`Updating ${readmePathDisplay} with example ${slug}...`);
 
   const markdownContent = fs.readFileSync(readmePath, "utf8");
+    
   const regex = new RegExp(
     `${startMarker}\(\[\.\\n\\s\\S\]\*\)${endMarker}`,
     "gm"
@@ -52,7 +53,7 @@ module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
         .join(", "),
-      `<a href="${urlZip}" target="_blank"><img width="20" src="https://icons.getbootstrap.com/assets/icons/file-earmark-zip.svg"></a>`,
+      `<a href="${urlZip}" target="_blank">📦</a>`,
       `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://skillicons.dev/icons?i=wordpress"></a>`
     ];
   });
