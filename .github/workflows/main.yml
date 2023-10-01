@@ -4,11 +4,17 @@ on:
       - trunk
 
 jobs:
-  sync-branch:
+  deploy_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: deploy
       - name: Merge development -> staging
         uses: devmasx/merge-branch@master
         with:
@@ -16,25 +22,14 @@ jobs:
           from_branch: trunk
           target_branch: deploy
           github_token: ${{ secrets.gh_action_gutenberg_examples }}
-  deploy_job:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Set up Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: '18'
-        - name: Checkout
-          uses: actions/checkout@v2
-          with:
-            ref: deploy
-        - name: Run tests
-          run: npm run zips
-        - name: Commit files
-          run: |
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            git commit -a -m "Add changes"
-        - name: Push changes
-          uses: ad-m/github-push-action@master
-          with:
-            branch: deploy
+      - name: Run tests
+        run: npm run zips
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -a -m "Add changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: deploy
