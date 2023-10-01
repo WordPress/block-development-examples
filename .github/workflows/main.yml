@@ -28,7 +28,7 @@ jobs:
       - name: Show current branch
         run: git branch --show-current
       - name: Show last commit
-        run: git log --oneline -n 1
+        run: git log --oneline --graph
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
       - name: Run deploy
