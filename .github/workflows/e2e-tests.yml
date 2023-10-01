@@ -34,7 +34,7 @@ jobs:
               run: npm run build
             - name: Install WordPress
               run: |
-                  npm run wp-env start
+                  npm run env:start
             - name: Running the tests
               run: |
                   npx wp-scripts test-e2e --config=./packages/e2e-tests/jest.config.js --listTests > ~/.jest-e2e-tests
@@ -89,7 +89,7 @@ jobs:
 
             - name: Install WordPress and start the server
               run: |
-                  npm run wp-env start
+                  npm run env:start
 
             - name: Run the tests
               run: |
