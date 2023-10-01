@@ -13,7 +13,7 @@ jobs:
           with:
             ref: deploy
         - name: Merge from trunk
-          run: git merge origin/trunk
+          run: git merge trunk
         - name: Run tests
           run: npm run zips
         - name: Update deploy branch
