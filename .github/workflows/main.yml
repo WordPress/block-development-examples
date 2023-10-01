@@ -25,6 +25,8 @@ jobs:
           from_branch: trunk
           target_branch: deploy
           github_token: ${{ secrets.gh_action_gutenberg_examples }}
+      - name: Install dependencies
+        run: pnpm install
       - name: Run deploy
         run: npm run deploy
       - name: Commit files
