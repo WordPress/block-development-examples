@@ -18,13 +18,17 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: deploy
-      - name: Merge development -> staging
+      - name: Merge trunk -> deploy
         uses: devmasx/merge-branch@master
         with:
           type: now
           from_branch: trunk
           target_branch: deploy
           github_token: ${{ secrets.gh_action_gutenberg_examples }}
+      - name: Show current branch
+        run: git branch --show-current
+      - name: Show last commit
+        run: git log --oneline -n 1
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
       - name: Run deploy
