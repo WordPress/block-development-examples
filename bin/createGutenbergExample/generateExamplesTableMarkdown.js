@@ -18,13 +18,15 @@ const {
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-module.exports = ({ slug }) => {
+module.exports = ({ slug: slugLastAdded }) => {
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
   const tagsJson = JSON.parse(fs.readFileSync(tagsJsonPath, "utf8"));
 
   const readmePathDisplay = readmePath.split("/gutenberg-examples-2023/")[1];
-  info(`Updating ${readmePathDisplay} with example ${slug}...`);
+  let messageUpdate = `Updating ${readmePathDisplay}`
+  if (slugLastAdded) messageUpdate += ` with example ${slugLastAdded}`
+  info(messageUpdate)
 
   const markdownContent = fs.readFileSync(readmePath, "utf8");
     
@@ -32,10 +34,10 @@ module.exports = ({ slug }) => {
     `${startMarker}\(\[\.\\n\\s\\S\]\*\)${endMarker}`,
     "gm"
   );
-  const markdownContentTable = markdownContent
-    .match(regex)[0]
-    .replace(startMarker, "")
-    .replace(endMarker, "");
+  // const markdownContentTable = markdownContent
+  //   .match(regex)[0]
+  //   .replace(startMarker, "")
+  //   .replace(endMarker, "");
 
   const processedTags = tagsJson.reduce(
     (acc, { slug, name }) => ({ ...acc, [slug]: name }),
@@ -71,7 +73,7 @@ module.exports = ({ slug }) => {
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    //info(`${readmePathDisplay} was updated!`);
+    info(`${readmePathDisplay} was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);

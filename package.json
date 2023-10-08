@@ -20,7 +20,7 @@
     "test:e2e": "wp-scripts test-e2e",
     "create-example": "node ./bin/createGutenbergExample/index.js",
     "get:hexcode": "node ./bin/randomHexCode.js",
-    "table:add": "node ./bin/addExampleTableMarkdown.js",
+    "table:add": "node ./bin/updateTableMarkdown.js",
     "zips:remove": "rimraf --verbose ./plugins/*/@gutenberg-examples",
     "zips:move": "copyfiles --verbose --flat './plugins/**/*.zip' zips",
     "deploy": "npm run build && npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove"
