@@ -26,12 +26,14 @@ pnpm run build
 
 At this point you are now ready to begin developing and testing the examples.
 
+### See the examples in action
+
 > **Important**
 > To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) from the [List of examples](#list-of-examples) table below) for the example you're interested in.
 
 To see the examples in action you can can also:
 
-- Use your own WordPress installation to install the plugin (as a `.zip` that can be downloaded from the 📦 icon of the example you're interested in the [List of examples](#list-of-examples) table below).
+- Use your own WordPress installation to install the plugin (that can be downloaded as a `.zip` from the 📦 icon of the example you're interested in the [List of examples](#list-of-examples) table below).
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
 - Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation.
 - Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
