@@ -1,8 +1,7 @@
-const { join } = require( 'path' );
 const { input, checkbox, select } = require("@inquirer/prompts");
-const { info, highlightTextPrimary, highlightTextSecondary } = require("./log");
+const { info, highlightTextPrimary, highlightTextSecondary } = require("../log");
 const initCreateExample = require("./initCreateExample");
-const randomHexCode = require("./randomHexCode");
+const randomHexCode = require("../randomHexCode");
 const examples = require("../../data/examples.json");
 const tags = require("../../data/tags.json");
 
@@ -16,7 +15,6 @@ const highlightText = text => `${initHighlightColor}${text}${backtoBlack}`
 async function promptUser() {
 
   let preChosenKeywords = [];
-  let variant = "";
 
   const extraInfoExamples = `\x1b[0mhttps://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/tree/trunk#list-of-examples\x1b[0m\n\n`
   info(`GUTENBERG EXAMPLES CREATION ASSISTANT\n`)

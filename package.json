@@ -19,8 +19,8 @@
     "env:logs": "npx wp-env logs all",
     "test:e2e": "wp-scripts test-e2e",
     "create-example": "node ./bin/createGutenbergExample/index.js",
-    "create-example:block": "cd ./plugins && npx @wordpress/create-block --template ../templates/bdc --variant dynamic",
-    "create-example:plugin": "cd ./plugins && npx @wordpress/create-block --template ../templates/bdc --variant plugin",
+    "get:hexcode": "node ./bin/randomHexCode.js",
+    "table:add": "node ./bin/addExampleTableMarkdown.js",
     "zips:remove": "rimraf ./plugins/*/@gutenberg-examples",
     "zips:move": "copyfiles --flat './plugins/**/*.zip' zips",
     "deploy": "npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove"
