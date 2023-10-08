@@ -58,7 +58,7 @@ module.exports = ({ slug: slugLastAdded }) => {
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
         .join(", "),
       `<a href="${urlZip}" target="_blank">📦</a>`,
-      `<a href="${playgroundUrl}" target="_blank"><img width="20" src="https://skillicons.dev/icons?i=wordpress"></a>`
+      `<a href="${playgroundUrl}" target="_blank"><img src="./assets/icon-wp.svg"></a>`
     ];
   });
   const markdownTable = toMarkdownTable([
