@@ -34,6 +34,15 @@
     {
         "slug": "create-block",
         "name": "CREATE BLOCK"
+    },
+    {
+        "slug": "gutenberg-plugin",
+        "name": "GUTENBERG PLUGIN"
+    },
+    {
+        "slug": "minimal",
+        "name": "MINIMAL"
     }
+    
 
 ]

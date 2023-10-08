@@ -1,6 +1,12 @@
+const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
-const { info, error } = require("./log");
+const { info, error } = require("../log");
+
+const rootPath = process.cwd();
+const readmePath = join(rootPath, "README.md");
+const examplesJsonPath = join(rootPath, "data/examples.json");
+const tagsJsonPath = join(rootPath, "data/tags.json");
 
 const {
   PLAYGROUND_URL_WITH_PLUGIN,
@@ -12,7 +18,7 @@ const {
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-module.exports = ({ readmePath, examplesJsonPath, tagsJsonPath, slug }) => {
+module.exports = ({ slug }) => {
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
   const tagsJson = JSON.parse(fs.readFileSync(tagsJsonPath, "utf8"));

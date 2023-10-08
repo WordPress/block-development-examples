@@ -43,5 +43,19 @@
       "no-block",
       "wp-data"
     ]
+  },
+  {
+    "slug": "minimal-gutenberg-block-ca6eda",
+    "description": "Minimal Gutenberg Block",
+    "tags": [
+      "minimal"
+    ]
+  },
+  {
+    "slug": "minimal-block-no-build-e621a6",
+    "description": "Minimal Gutenberg Block (No Build)",
+    "tags": [
+      "minimal"
+    ]
   }
 ]

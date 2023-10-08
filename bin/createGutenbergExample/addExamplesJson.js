@@ -1,7 +1,11 @@
+const { join } = require("path");
 const fs = require('fs');
-const { info, error } = require( './log' );
+const { info, error } = require( '../log' );
 
-module.exports = async ( { examplesJsonPath, exampleObject } ) => {
+const rootPath = process.cwd();
+const examplesJsonPath = join(rootPath, "data/examples.json");
+
+module.exports = async ( { exampleObject } ) => {
     const examplesJsonPathDisplay = examplesJsonPath.split('/gutenberg-examples-2023/')[1]
     const examplesJsonArray = JSON.parse(fs.readFileSync(examplesJsonPath, 'utf8'));
     
