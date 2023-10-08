@@ -27,7 +27,7 @@ pnpm run build
 At this point you are now ready to begin developing and testing the examples.
 
 > **Important**
-> To see the examples in action you can just click on the Live Demo icon (<img width="20" src="https://skillicons.dev/icons?i=wordpress">) from the [List of examples](#list-of-examples) table below) for the example you're interested in.
+> To see the examples in action you can just click on the Live Demo icon ![](https://skillicons.dev/icons?i=wordpress) from the [List of examples](#list-of-examples) table below) for the example you're interested in.
 
 To see the examples in action you can can also:
 
