@@ -1,16 +1,12 @@
-(function (blocks, element, blockEditor) {
+(function (blocks, element) {
   var el = element.createElement;
-  var useBlockProps = blockEditor.useBlockProps;
 
-  blocks.registerBlockType("gutenberg-examples/minimal-block-e621a6", {
-    title: 'minimal-block-e621a6',
-    icon: 'smiley', // Icon used for the block from Dashicons
-    category: 'common', // The category this block will be listed under
+  blocks.registerBlockType("gutenberg-examples/minimal-block-no-build-e621a6", {
     edit: function () {
-      return el("p", useBlockProps() , "Hello World - Block Editor");
+      return el("p", {} , "Hello World - Block Editor");
     },
     save: function () {
-      return el("p", useBlockProps() , "Hello World - Frontend");
+      return el("p", {} , "Hello World - Frontend");
     },
   });
-})(window.wp.blocks, window.wp.element, window.wp.blockEditor);
+})(window.wp.blocks, window.wp.element);
