@@ -37,9 +37,23 @@
 - On **`<root-folder>/.wp-env.json`**
     - [ ] The local path of the plugin/example (starting from root) should be included in the array `"plugins"` 
         - Ex: `"./plugins/basic-block-3df23d"`
+- On **`data/example.json`**
+    - [ ] Add a new object to the array representing your example with the following info: `slug`, `description` & `tags`. The `tags` property should contain an array of tags "slugs" existing in  `data/tags.json`
+        - Ex:
+
+```
+{
+    "slug": "minimal-block-no-build-e621a6",
+    "description": "Minimal Gutenberg Block (No Build)",
+    "tags": [
+      "minimal",
+      "no-build"
+    ]
+  }
+```
 - On **`<root-folder>/README.md`**
-    - [ ] Add a new row with the plugin/example info. You can do so by running `npm run table:add -- <slug>`
-        - Ex: `npm run table:add -- minimal-gutenberg-block-ca6eda`
+    - [ ] Add a new row with the plugin/example info. You can do so by running `npm run table:update`
+        - Ex: `npm run table:update`
 
 After ensuring these changes a new install of dependencies and build should be run from the root of the project
 

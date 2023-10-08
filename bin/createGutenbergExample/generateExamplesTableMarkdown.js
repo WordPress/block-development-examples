@@ -62,7 +62,7 @@ module.exports = ({ slug: slugLastAdded }) => {
     ];
   });
   const markdownTable = toMarkdownTable([
-    ["&nbsp", "ID", "Short description", "Tags", "Download .zip", "Live Demo"],
+    ["", "ID", "Short description", "Tags", "Download .zip", "Live Demo"],
     ...markdownTableRows,
   ]);
 
