@@ -2,6 +2,8 @@
 
 ## Conventions used for each example in this repo 
 
+> See [diagram](https://excalidraw.com/#json=LgGQyBclSqpidwEseYgyK,O-mTI_VaTfSd-OlEPkj9_w) 
+
 > [!IMPORTANT]
 > The example `slug` should follow the convention `<plugin-slug>-<unique-code>`
 
@@ -24,12 +26,13 @@
         }
 ```
     
-- On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<slug>`
+- On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<example-name-including-unique-code>`
      - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**
+    - [ ] **`title`** should include the `<unique-code>` 
+        - Ex: `"title": "Minimal Gutenberg Block ca6eda",`
     - [ ] **`name`** should follow the convention `gutenberg-examples/<slug>` 
         - Ex: `"name": "gutenberg-examples/static-block-b16608"`
-    "title": "Block Dynamic",
     - [ ] **`keywords`** should include, at least, the `<unique-code>`
         - Ex: `"keywords": [ "64756b"]`    
 - [ ] Block CSS class should follow the convention `.wp-block-gutenberg-examples-<slug>`
@@ -61,3 +64,5 @@ After ensuring these changes a new install of dependencies and build should be r
 pnpm i
 npm run build
 ```
+
+![entions used for each example in this repo ](./assets/conventions-gutenberg-examples-2023.png)
