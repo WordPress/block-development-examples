@@ -1,6 +1,6 @@
 import { registerBlockType } from '@wordpress/blocks';
 
-registerBlockType( 'minimal-gutenberg-block/my-block', {
+registerBlockType( 'gutenberg-examples/minimal-block-ca6eda', {
     edit: function () {
         return <p>Hello World - Block Editor</p>;
     },
