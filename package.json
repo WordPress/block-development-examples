@@ -21,8 +21,8 @@
     "create-example": "node ./bin/createGutenbergExample/index.js",
     "get:hexcode": "node ./bin/randomHexCode.js",
     "table:add": "node ./bin/addExampleTableMarkdown.js",
-    "zips:remove": "rimraf ./plugins/*/@gutenberg-examples",
-    "zips:move": "copyfiles --flat './plugins/**/*.zip' zips",
+    "zips:remove": "rimraf --verbose ./plugins/*/@gutenberg-examples",
+    "zips:move": "copyfiles --verbose --flat './plugins/**/*.zip' zips",
     "deploy": "npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove"
   },
   "keywords": [],
