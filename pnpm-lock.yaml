@@ -87,6 +87,12 @@ importers:
         specifier: ^26.14.0
         version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/minimal-block-no-build-e621a6:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.14.0
+        version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/non-block-react-wp-data-56d6f3:
     dependencies:
       '@wordpress/compose':
