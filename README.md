@@ -29,7 +29,7 @@ At this point you are now ready to begin developing and testing the examples.
 ### See the examples in action
 
 > **Important**
-> To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) from the [List of examples](#list-of-examples) table below) for the example you're interested in.
+> To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
 
 To see the examples in action you can can also:
 
@@ -38,10 +38,11 @@ To see the examples in action you can can also:
 - Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation.
 - Use `wp-env` as explained in [Development > WordPress Local Development Environment](DEVELOPMENT.md##wordpress-local-development-environment)
 
-> **Important**
-> Check out the [**Development Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md) for a more comprehensive look at working in this repository.
 
 ## List of Examples
+
+> **Important**
+> Check out the [**Development Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md) for a more comprehensive look at working in this repository.
 
 The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). Each example has a unique ID that can be used to filter or find them.
 
