@@ -2,7 +2,7 @@
 
 ## Conventions used for each example in this repo 
 
-> See [diagram](https://excalidraw.com/#json=LgGQyBclSqpidwEseYgyK,O-mTI_VaTfSd-OlEPkj9_w) 
+> Check thi [diagram](https://excalidraw.com/#json=LgGQyBclSqpidwEseYgyK,O-mTI_VaTfSd-OlEPkj9_w) for a visual guide of the conventions used in this repo for the examples
 
 > [!IMPORTANT]
 > The example `slug` should follow the convention `<plugin-slug>-<unique-code>`
@@ -64,5 +64,3 @@ After ensuring these changes a new install of dependencies and build should be r
 pnpm i
 npm run build
 ```
-
-![entions used for each example in this repo ](./assets/conventions-gutenberg-examples-2023.png)
