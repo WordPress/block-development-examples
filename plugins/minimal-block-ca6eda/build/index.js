@@ -1,0 +1,1 @@
+!function(){"use strict";var e=window.React;(0,window.wp.blocks.registerBlockType)("gutenberg-examples/minimal-block-ca6eda",{edit:function(){return(0,e.createElement)("p",null,"Hello World - Block Editor")},save:function(){return(0,e.createElement)("p",null,"Hello World - Frontend")}})}();
