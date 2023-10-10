@@ -2,131 +2,26 @@
 
 This document aims to provide as much context as possible to aid in the development of examples in in this monorepo.
 
-## Getting Started
-
 Please refer to [the Getting Started section of the `README.md`](README.md#getting-started) for a general-purpose guide on getting started. The rest of this document will assume that you've installed all of the prequisites and setup described there.
+
+
+## Table of Contents
+
+- [WordPress Local Development Environment](#wordpress-local-development-environment)
+- [Build process](#build-process)
+- [Repo Commands](#repo-commands)
+  - [Dependencies](#dependencies)
+  - [Scripts](#scripts)
+  - [Tool Filtering](#tool-filtering)
+
 
 ## WordPress Local Development Environment
 
-This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
-
-> **Warning**
-> Having  [Docker](https://docs.docker.com/get-docker/) installed is one of the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites).
-
-To start the local WordPress instance with one of two commands:
-
-1. `npm run env:start` - Starts the instance normally.
-2. `npm run env:start:debug` - Starts the instance with debugging enabled.
-
-> **Note**
-> See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
-
-The WordPress instance will be available at http://localhost:8888/. You can login with the username and password `admin` and the password `password` at http://localhost:8888/wp-login.php. 
-
-<details>
-  <summary>The plugins at <code>.wp-env.json</code> should be automatically activated.</summary>
-<br>  
-<em>You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder</em>
-</details>
-<br>  
-To stop this local WordPress instance later run:
-
-```
-npm run env:stop
-```
-
-<details>
-  <summary>If you get some errors you can try running <code>npm run env:restart</code></summary>
-<br>  
-<em>If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code></em>
-</details>
-
-
-## Build process
-
-<p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
-
-
-> ESNext is a dynamic name that refers to whatever the next version is at the time of writing. ESNext features are more correctly called proposals, because, by definition, the specification has not been finalized yet.
-
-> https://legacy.reactjs.org/docs/faq-build.html
-> https://legacy.reactjs.org/docs/react-without-es6.html
-> https://legacy.reactjs.org/docs/react-without-jsx.html
-> https://react.dev/reference/react/createElement#creating-an-element-without-jsx
-
-## Turborepo Commands
-
-Our repository uses [Turborepo](https://turborepo.org) for `build` and `test` commands. This tool ensures that all dependencies of a plugin, package, or tool are prepared before running a command. This is done transparently when running these commands. When using `pnpm run {command}` without any options, it will execute that command against every project in the repository. You can view a list of the commands Turborepo supports in [our turbo.json file](turbo.json).
-
-### Plugin, Package, and Tool Filtering
-
-If you are interested in running a `turbo` command against a single plugin, package, or tool, you can do so with the `--filter` flag. This flag supports the `"name"` option in `package.json` files, paths, and globs.
-
-If you would like to read more about the syntax, please check out [the Turborepo filtering documentation](https://turborepo.org/docs/core-concepts/filtering).
-
-### Examples
-
-Here are some examples of the ways you can use Turborepo / pnpm commands:
-
-```bash
-# Lint and build all plugins, packages, and tools. Note the use of `-r` for lint,
-# turbo does not run the lint at this time.
-pnpm run -r lint && pnpm run build
-
-# Build WooCommerce Core and all of its dependencies
-pnpm run --filter='woocommerce' build
-
-# Lint the @woocommerce/components package - note the different argument order, turbo scripts
-# are not running lints at this point in time.
-pnpm run -r --filter='@woocommerce/components' lint
-
-# Test all of the @woocommerce scoped packages
-pnpm run --filter='@woocommerce/*' test
-
-# Build all of the JavaScript packages
-pnpm run --filter='./packages/js/*' build
-
-# Build everything except WooCommerce Core
-pnpm run --filter='!woocommerce' build
-
-# Build everything that has changed since the last commit
-pnpm run --filter='[HEAD^1]' build
-```
-
-### Cache busting Turbo
-
-In the event that you need to force turbo not to cache a command you can set the env variable `TURBO_FORCE=true`.
-
-e.g.
-
-```bash
-# Force an uncached build of WooCommerce Core and all of its dependencies
-TURBO_FORCE=true pnpm run --filter='woocommerce' build
-```
-
-## Other Commands
-
-Outside of the commands in [our turbo.json file](turbo.json), each plugin, package, and tool may have unique scripts in their `package.json` files. In these cases, you can execute those commands using `pnpm {script}` and the same `--filter` syntax as Turborepo.
-
-### Examples
-
-Here are some examples of the commands you will make use of.
-
-```bash
-# Add a changelog entry for WooCommerce Core
-pnpm --filter=woocommerce run changelog add
-
-# Create the woocommerce.zip file
-pnpm --filter=woocommerce run build:zip
-```
-
-## Plugin Development Environments
-
-The plugins in our repository make use of [the `@wordpress/env` package](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/). This supplies convenient commands for creating, destroying, cleaning, and testing WordPress environments.
+This project recommends the use of [`wp-env`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/) to get a local development environment. 
 
 ```bash
 # Make sure you are in the working directory of the plugin you are interested in setting up the environment for
-cd plugins/woocommerce
+cd plugins/minimal-block-ca6eda
 # Start will create the environment if necessary or start an existing one
 pnpm -- wp-env start
 # Stop will, well, stop the environment
@@ -135,28 +30,126 @@ pnpm -- wp-env stop
 pnpm -- wp-env destroy
 ```
 
-Each of the [plugins in our repository](plugins) support using this tool to spin up a development environment. Note that rather than having a single top-level environment, each plugin has its own. This is done in order to prevent conflicts between them.
+> **Note**
+> See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
 
-Please check out [the official documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) if you would like to learn more about this tool.
+You can also do `npm run env:start` from the root to run a WordPress environment with the plugins at `.wp-env.json`. 
 
-## Troubleshooting
+Edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in. To apply these changes after having started your instance, run `npm run env:update` from the root folder
 
-### Installing PHP in Unix (e.g. Ubuntu)
+## Build process
 
-Many unix systems such as Ubuntu will have PHP already installed. Sometimes without the extra packages you need to run WordPress and this will cause you to run into troubles.
+`ESNext` and `JSX` are the recommended syntaxes to code blocks but they're not directly supported by the majority of browsers. Because of this, most of the example of this repo needs to run a [Build process](https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/) to get the final version ready to use.
 
-Use your package manager to add the extra PHP packages you'll need.
-e.g. in Ubuntu you can run:
+There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag `NO-BUILD`
+
+You can run the build process from each plugin folder or from the root do:
 
 ```
-sudo apt update
-sudo apt install php-bcmath \
-                 php-curl \
-                 php-imagick \
-                 php-intl \
-                 php-json \
-                 php-mbstring \
-                 php-mysql \
-                 php-xml \
-                 php-zip
+npm run build
+```
+
+## Repo Commands
+
+Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectivelly. 
+
+When using `pnpm run {command}` without any options, it will execute that command against every project in the repository. 
+
+Here are some examples of the ways you can use pnpm commands to run scripts on all the packages of the repo:
+
+```bash
+# Build of all examples
+pnpm run build
+
+# Start all the examples (build and watch changes in any plugin)
+pnpm run start
+
+# Run tests of packages with tests
+pnpm run test:e2e
+```
+
+### Dependencies
+
+This tool optimizes the dependencies installation for all the examples, so any installation o dependencies in this repo should be done by `pnpm`
+
+Any time you want to install (o reinstall dependencies) for the examples you should from the root of the project:
+
+```
+pnpm install
+```
+
+### Scripts
+
+There is a set of predefined scripts you can run from the root with `npm run {script}` to manage the examples in this repo
+
+<details>
+  <summary>You can check the scripts available by doing <code>npm run</code> from the root</summary>
+
+```bash
+Lifecycle scripts included in monorepo@1.0.0:
+  start
+    pnpm -r run start
+  preinstall
+    npx only-allow pnpm
+
+available via `npm run-script`:
+  build
+    pnpm -r run build
+  plugin-zip
+    pnpm -r run plugin-zip
+  code:get
+    node ./bin/randomHexCode.js
+  env:start
+    npx wp-env start
+  env:start:debug
+    npx wp-env start --xdebug
+  env:update
+    npx wp-env start --update
+  env:restart
+    npx wp-env destroy && npx wp-env start --update
+  env:stop
+    npx wp-env stop
+  env:down
+    npx wp-env stop
+  env:destroy
+    npx wp-env destroy
+  env:logs
+    npx wp-env logs all
+  test:e2e
+    wp-scripts test-e2e
+  create-example
+    node ./bin/createGutenbergExample/index.js
+  get:hexcode
+    node ./bin/randomHexCode.js
+  table:update
+    node ./bin/updateTableMarkdown.js
+  zips:remove
+    rimraf --verbose ./plugins/*/@gutenberg-examples
+  zips:move
+    copyfiles --verbose --flat './plugins/**/*.zip' zips
+  deploy
+    npm run build && npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove
+```
+</details>
+
+### Tool Filtering
+
+If you are interested in running a specific command against a single plugin, package, or tool, you can do so with the `--filter` flag. This flag supports the `"name"` option in `package.json` files, paths, and globs.
+
+***Examples***
+
+Here are some examples of the ways you can use pnpm commands:
+
+```bash
+# Build minimal-block-ca6eda 
+pnpm run --filter='*ca6eda' build
+
+# Run tests of editable-block-1b8c51 package
+pnpm run --filter='*1b8c51' test:e2e
+
+# Run tests of all editable-block-1b8c51
+pnpm run --filter='*1b8c51' test:e2e
+
+# Build everything that has changed since the last commit
+pnpm run --filter='[HEAD^1]' build
 ```

@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 3,
+	"name": "gutenberg-examples/basic-block-translations-3df23d",
+	"title": "Example: Basic block",
+	"textdomain": "gutenberg-examples",
+	"icon": "smiley",
+	"category": "widgets",
+	"example": {},
+	"editorScript": "file:./index.js",
+	"keywords": [ "3df23d" ]
+}

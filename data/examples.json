@@ -1,17 +1,17 @@
 [
   {
-    "slug": "dynamic-block-64756b",
-    "description": "Basic Dynamic Block",
+    "slug": "block-dynamic-rendering-64756b",
+    "description": "Basic Block with Dynamic Rendering",
     "tags": [
-      "dynamic-block",
+      "block-dynamic-rendering",
       "create-block"
     ]
   },
   {
-    "slug": "basic-block-3df23d",
-    "description": "Basic Static Block",
+    "slug": "basic-block-translations-3df23d",
+    "description": "Basic Block with Translations",
     "tags": [
-      "static-block"
+      "block-static-rendering"
     ]
   },
   {
@@ -25,10 +25,11 @@
     ]
   },
   {
-    "slug": "static-block-b16608",
-    "description": "Static Block",
+    "slug": "block-static-rendering-b16608",
+    "description": "Block with Static Rendering",
     "tags": [
-      "static-block"
+      "block-static-rendering",
+      "create-block"
     ]
   },
   {
@@ -42,6 +43,21 @@
     "tags": [
       "no-block",
       "wp-data"
+    ]
+  },
+  {
+    "slug": "minimal-block-ca6eda",
+    "description": "Minimal Block",
+    "tags": [
+      "minimal"
+    ]
+  },
+  {
+    "slug": "minimal-block-no-build-e621a6",
+    "description": "Minimal Gutenberg Block (No Build)",
+    "tags": [
+      "minimal",
+      "no-build"
     ]
   }
 ]

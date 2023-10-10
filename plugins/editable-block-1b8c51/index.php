@@ -14,10 +14,10 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Load all translations for our plugin from the MO file.
  */
-function gutenberg_examples_editable_block__load_textdomain() {
+function editable_block_1b8c51__load_textdomain() {
 	load_plugin_textdomain( 'gutenberg-examples', false, basename( __DIR__ ) . '/languages' );
 }
-add_action( 'init', 'gutenberg_examples_editable_block__load_textdomain' );
+add_action( 'init', 'editable_block_1b8c51__load_textdomain' );
 
 /**
  * Registers all block assets so that they can be enqueued through Gutenberg in
@@ -25,7 +25,7 @@ add_action( 'init', 'gutenberg_examples_editable_block__load_textdomain' );
  *
  * Passes translations to JavaScript.
  */
-function gutenberg_examples_editable_block__register_block() {
+function editable_block_1b8c51__register_block() {
 
 	// Register the block by passing the location of block.json to register_block_type.
 	register_block_type( __DIR__ . '/build' );
@@ -39,4 +39,4 @@ function gutenberg_examples_editable_block__register_block() {
 		wp_set_script_translations( 'gutenberg-examples-editable-block', 'gutenberg-examples' );
 	}
 }
-add_action( 'init', 'gutenberg_examples_editable_block__register_block' );
+add_action( 'init', 'editable_block_1b8c51__register_block' );

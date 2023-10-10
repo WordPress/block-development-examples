@@ -3,7 +3,7 @@ const execa = require("execa");
 const replace = require("replace-in-file");
 const { join } = require("path");
 const rimraf = require("rimraf");
-const { info, error, success, highlightTextPrimary } = require("./log");
+const { info, error, success, highlightTextPrimary } = require("../log");
 const customizeBlockJson = require("./customizeBlockJson");
 const customizePackageJson = require("./customizePackageJson");
 const addExamplesJson = require("./addExamplesJson");
@@ -19,10 +19,6 @@ module.exports = async (promptObject) => {
   const packageLockJsonPath = join(sourceFolderPath, "package-lock.json");
   const nodeModulesFolderPath = join(sourceFolderPath, "node_modules");
   const blockJsonPath = join(exampleFolderPath, "src/block.json");
-  const readmePath = join(rootPath, "README.md");
-  const examplesJsonPath = join(rootPath, "data/examples.json");
-  const tagsJsonPath = join(rootPath, "data/tags.json");
-  const stdio = "inherit";
 
   info("\n" + "-".repeat(process.stdout.columns) + "\n");
   info(
@@ -111,23 +107,18 @@ module.exports = async (promptObject) => {
   // .forEach((element) => info(element));
 
   const exampleObject = { slug, tags: keywords.slice(1), description };
-  addExamplesJson({ examplesJsonPath, exampleObject });
-  generateExamplesTableMarkdown({
-    readmePath,
-    examplesJsonPath,
-    tagsJsonPath,
-    slug,
-  });
+  addExamplesJson({ exampleObject });
+  generateExamplesTableMarkdown({ slug,});
 
   info(`Installing dependencies...`);
   execa.sync("pnpm i", { shell: true, all: true, cwd: rootPath });
 
-  info("Formatting JavaScript files...");
-  execa.sync("npm run format", {
-    shell: true,
-    all: false,
-    cwd: exampleFolderPath,
-  });
+  // info("Formatting JavaScript files...");
+  // execa.sync("npm run format", {
+  //   shell: true,
+  //   all: false,
+  //   cwd: exampleFolderPath,
+  // });
 
   info("Compiling block...");
   execa.sync("npm run build", {

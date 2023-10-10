@@ -1,4 +1,4 @@
-# Interactive Block
+# Interactive Block 833d15
 
 > **Warning**
 > **This block requires Gutenberg 16.2 or superior to work**. The Interactivity API is, at the moment, not part of WordPress Core as it is still very experimental, and very likely to change. 
@@ -12,3 +12,11 @@ Check the following resources for more info about the Interactivity API:
 - [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
 - [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/)
 - [“Interactivity API” category](https://github.com/WordPress/gutenberg/discussions/categories/interactivity-api) in Gutenberg repo discussions
+
+## Usage
+
+Check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo to see this example in action.
+
+## Install
+
+Check the [Repo Commands > Dependencies](../../DEVELOPMENT.md#dependencies) instructions for this repo

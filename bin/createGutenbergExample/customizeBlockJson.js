@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { info, error } = require( './log' );
+const { info, error } = require( '../log' );
 
 module.exports = ( { blockJsonPath, keywords, slug, name, description } ) => {
 

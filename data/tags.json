@@ -20,11 +20,11 @@
         "name": "NO BLOCK"
     },
     {
-        "slug": "dynamic-block",
-        "name": "DYNAMIC BLOCK"
+        "slug": "dynamic-rendering",
+        "name": "DYNAMIC RENDERING"
     },
     {
-        "slug": "static-block",
+        "slug": "block-static-rendering",
         "name": "STATIC BLOCK"
     },
     {
@@ -34,6 +34,15 @@
     {
         "slug": "create-block",
         "name": "CREATE BLOCK"
+    },
+    {
+        "slug": "gutenberg-plugin",
+        "name": "GUTENBERG PLUGIN"
+    },
+    {
+        "slug": "minimal",
+        "name": "MINIMAL"
     }
+    
 
 ]

@@ -75,7 +75,7 @@ nbproject/private/
 
 # E2E and API Test Results
 test-results
-
+artifacts
 
 # PHP lint
 phpcs-report.xml

@@ -1,0 +1,14 @@
+{
+    "name": "@gutenberg-examples/minimal-block-ca6eda",
+    "description": "",
+    "version": "0.1.0",
+    "scripts": {
+        "build": "wp-scripts build",
+        "plugin-zip": "wp-scripts plugin-zip",
+        "start": "wp-scripts start"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^26.14.0"
+    },
+    "files": [ "*" ]
+}

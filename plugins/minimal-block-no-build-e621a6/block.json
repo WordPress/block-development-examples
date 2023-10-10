@@ -1,0 +1,8 @@
+{
+	"apiVersion": 3,
+	"title": "Minimal Block No Build e621a6",
+	"name": "gutenberg-examples/minimal-block-no-build-e621a6",
+	"category": "media",
+	"icon": "smiley",
+	"editorScript": "file:./block.js"
+}

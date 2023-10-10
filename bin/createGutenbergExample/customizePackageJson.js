@@ -1,5 +1,6 @@
+const { join } = require("path");
 const fs = require('fs');
-const { info, error } = require( './log' );
+const { info, error } = require( '../log' );
 
 module.exports = ( { packageJsonPath, slug, description } ) => {
 
