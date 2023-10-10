@@ -2,9 +2,11 @@
 
 This document aims to provide as much context as possible to aid in the development of examples in in this monorepo.
 
+Please refer to [the Getting Started section of the `README.md`](README.md#getting-started) for a general-purpose guide on getting started. The rest of this document will assume that you've installed all of the prequisites and setup described there.
+
+
 ## Table of Contents
 
-- [Getting Started](#getting-started)
 - [WordPress Local Development Environment](#wordpress-local-development-environment)
 - [Build process](#build-process)
 - [Repo Commands](#repo-commands)
@@ -12,10 +14,6 @@ This document aims to provide as much context as possible to aid in the developm
   - [Scripts](#scripts)
   - [Tool Filtering](#tool-filtering)
 
-
-## Getting Started
-
-Please refer to [the Getting Started section of the `README.md`](README.md#getting-started) for a general-purpose guide on getting started. The rest of this document will assume that you've installed all of the prequisites and setup described there.
 
 ## WordPress Local Development Environment
 
