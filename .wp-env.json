@@ -8,7 +8,7 @@
 		"./plugins/non-block-react-wp-data-56d6f3",
 		"./plugins/minimal-block-ca6eda",
 		"./plugins/minimal-block-no-build-e621a6",
-		"https://downloads.wordpress.org/plugin/gutenberg.16.5.1.zip"
+		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {
 		"JETPACK_AUTOLOAD_DEV": true,
