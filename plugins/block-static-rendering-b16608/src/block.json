@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "gutenberg-examples/static-block-b16608",
+	"name": "gutenberg-examples/block-static-rendering-b16608",
 	"version": "0.1.0",
-	"title": "⭐️ Static Block",
+	"title": "⭐️ Block with Static Rendering",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",

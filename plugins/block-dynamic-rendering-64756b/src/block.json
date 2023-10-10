@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "gutenberg-examples/dynamic-block-64756b",
+	"name": "gutenberg-examples/block-dynamic-rendering-64756b",
 	"version": "0.1.0",
-	"title": "⭐️ Dynamic Block",
+	"title": "Block Dynamic Rendering",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",

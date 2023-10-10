@@ -20,11 +20,11 @@
         "name": "NO BLOCK"
     },
     {
-        "slug": "dynamic-block",
-        "name": "DYNAMIC BLOCK"
+        "slug": "dynamic-rendering",
+        "name": "DYNAMIC RENDERING"
     },
     {
-        "slug": "static-block",
+        "slug": "block-static-rendering",
         "name": "STATIC BLOCK"
     },
     {

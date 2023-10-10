@@ -42,10 +42,10 @@ If you have another repo containing a plugin with an example you'd like to add a
 - [ ] Each plugin has its own `<unique-code>` 
     - Get it by running `npm run get:hexcode` from the root of the project
 - [ ] Plugin **folder name** should be the `<slug>`
-    - Ex: `dynamic-block-64756b`
+    - Ex: `block-dynamic-rendering-64756b`
 - On **`<plugin-folder>/package.json`**
     - [ ] **`name`** should follow the convention `@gutenberg-examples/<slug>` 
-        - Ex: `"name": "@gutenberg-examples/static-block-b16608"`
+        - Ex: `"name": "@gutenberg-examples/block-static-rendering-b16608"`
     - [ ] **`files`** property should be set to `*`
         - Ex: `"files": [ "*" ]`
     - [ ] **`scripts`** 
@@ -62,7 +62,7 @@ If you have another repo containing a plugin with an example you'd like to add a
      - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**
     - [ ] **`name`** should follow the convention `gutenberg-examples/<slug>` 
-        - Ex: `"name": "gutenberg-examples/static-block-b16608"`
+        - Ex: `"name": "gutenberg-examples/block-static-rendering-b16608"`
     - [ ] **`keywords`** should include, at least, the `<unique-code>`
         - Ex: `"keywords": [ "64756b"]`    
 - [ ] Block CSS class should follow the convention `.wp-block-gutenberg-examples-<slug>`

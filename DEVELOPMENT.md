@@ -75,7 +75,7 @@ pnpm install
 
 ### Scripts
 
-There is a set of predefined scripts you can use to manage the examples in this repo
+There is a set of predefined scripts you can run from the root with `npm run {script}` to manage the examples in this repo
 
 <details>
   <summary>You can check the scripts available by doing <code>npm run</code> from the root</summary>

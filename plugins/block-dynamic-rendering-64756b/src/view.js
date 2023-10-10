@@ -17,5 +17,5 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from create-block-01-block-dynamic block)' );
+console.log( 'Hello World! (from create-block-block-dynamic-rendering)' );
 /* eslint-enable no-console */
