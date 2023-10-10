@@ -1,6 +1,13 @@
 # Contributions
 
-## Adding a new example of this repo
+## Table of Contents
+
+- [Adding a new example to this repo](#adding-a-new-example-to-this-repo)
+    - [Using `npn run create-example` to use another example as template](#using-npn-run-create-example-to-use-another-example-as-template)
+    - [Cloning an example from another repo](#cloning-an-example-from-another-repo)
+  - [Conventions used for the examples in this repo ](#conventions-used-for-the-examples-in-this-repo)
+
+## Adding a new example to this repo
 
 ### Using `npn run create-example` to use another example as template
 
