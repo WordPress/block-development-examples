@@ -49,7 +49,7 @@ npm run build
 
 ## Repo Commands
 
-Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectivelly.
+Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectively.
 
 When using `pnpm run {command}` without any options, it will execute that command against every project in the repository.
 
@@ -70,7 +70,7 @@ pnpm run test:e2e
 
 This tool optimizes the dependencies installation for all the examples, so any installation o dependencies in this repo should be done by `pnpm`
 
-Any time you want to install (or reinstall dependencies) for the examples you should from the root of the project:
+Any time you want to install (o reinstall dependencies) for the examples you should from the root of the project:
 
 ```
 pnpm install
