@@ -6,9 +6,9 @@
 * Author: Gutenberg Examples
 */
 
-function register_block() {
+function minimal_block_no_build_e621a6___register_block() {
     register_block_type( __DIR__ );
 }
 
-add_action( 'init', 'register_block' );
+add_action( 'init', 'minimal_block_no_build_e621a6___register_block' );
 

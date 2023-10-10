@@ -9,15 +9,15 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import { blockStyle } from './index';
 
-const Edit = () => {
-	const blockProps = useBlockProps( { style: blockStyle } );
+const Save = () => {
+	const blockProps = useBlockProps.save( { style: blockStyle } );
 	return (
 		<div { ...blockProps }>
 			{ __(
-				'Hello World, step 1 (from the editor).',
+				'Hello World!! (from the frontend).',
 				'gutenberg-examples'
 			) }
 		</div>
 	);
 };
-export default Edit;
+export default Save;

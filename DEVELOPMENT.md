@@ -43,6 +43,12 @@ Edit the property `"plugins"` at `.wp-env.json` to include just the examples you
 
 There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag `NO-BUILD`
 
+You can run the build process from each plugin folder or from the root do:
+
+```
+npm run build
+```
+
 ## Repo Commands
 
 Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectivelly. 

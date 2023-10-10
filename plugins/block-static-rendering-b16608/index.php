@@ -20,7 +20,7 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_02_block_static_block_init() {
+function block_static_rendering_b16608___register_block() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_02_block_static_block_init' );
+add_action( 'init', 'block_static_rendering_b16608___register_block' );

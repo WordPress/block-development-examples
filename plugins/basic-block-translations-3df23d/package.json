@@ -1,5 +1,5 @@
 {
-	"name": "@gutenberg-examples/basic-block-3df23d",
+	"name": "@gutenberg-examples/basic-block-translations-3df23d",
 	"version": "0.1.0",
 	"description": "Example block scaffolded with Create Block tool.",
 	"author": "The WordPress Contributors",
@@ -18,7 +18,9 @@
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
 		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
+		"test:unit": "wp-scripts test-unit-js",
+		"make-pot": "wp i18n make-pot . languages/awp.pot --slug=awp --domain=awp --exclude=node_modules,src",
+		"make-json": "wp i18n make-json languages/ --no-purge"
 	},
 	"devDependencies": {
 		"@wordpress/scripts": "^26.12.0"
