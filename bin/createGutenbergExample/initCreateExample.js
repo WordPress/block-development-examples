@@ -113,12 +113,12 @@ module.exports = async (promptObject) => {
   info(`Installing dependencies...`);
   execa.sync("pnpm i", { shell: true, all: true, cwd: rootPath });
 
-  info("Formatting JavaScript files...");
-  execa.sync("npm run format", {
-    shell: true,
-    all: false,
-    cwd: exampleFolderPath,
-  });
+  // info("Formatting JavaScript files...");
+  // execa.sync("npm run format", {
+  //   shell: true,
+  //   all: false,
+  //   cwd: exampleFolderPath,
+  // });
 
   info("Compiling block...");
   execa.sync("npm run build", {
