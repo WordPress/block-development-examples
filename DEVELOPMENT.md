@@ -8,20 +8,26 @@ Please refer to [the Getting Started section of the `README.md`](README.md#getti
 
 ## WordPress Local Development Environment
 
-This project recommends the use the [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) package to get a local development environment. 
+This project recommends the use of [`wp-env`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/) to get a local development environment. 
 
-> **Warning**
-> Having  [Docker](https://docs.docker.com/get-docker/) installed is one of the [prerequisites of `wp-env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/#prerequisites).
+```bash
+# Make sure you are in the working directory of the plugin you are interested in setting up the environment for
+cd plugins/woocommerce
+# Start will create the environment if necessary or start an existing one
+pnpm -- wp-env start
+# Stop will, well, stop the environment
+pnpm -- wp-env stop
+# Destroy will remove all of the environment's files.
+pnpm -- wp-env destroy
+```
 
-To start the local WordPress instance with one of two commands:
+Each of the [plugins in our repository](plugins) support using this tool to spin up a development environment. Note that rather than having a single top-level environment, each plugin has its own. This is done in order to prevent conflicts between them.
 
-1. `npm run env:start` - Starts the instance normally.
-2. `npm run env:start:debug` - Starts the instance with debugging enabled.
+Please check out [the official documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) if you would like to learn more about this tool.
+
 
 > **Note**
 > See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
-
-The WordPress instance will be available at http://localhost:8888/. You can login with the username and password `admin` and the password `password` at http://localhost:8888/wp-login.php. 
 
 <details>
   <summary>The plugins at <code>.wp-env.json</code> should be automatically activated.</summary>
@@ -29,30 +35,12 @@ The WordPress instance will be available at http://localhost:8888/. You can logi
 <em>You can edit the property <code>"plugins"</code> at <code>.wp-env.json</code> to include just the examples you're interested in. To apply these changes after having started your instance, run <code>npm run env:update</code> from the root folder</em>
 </details>
 <br>  
-To stop this local WordPress instance later run:
 
-```
-npm run env:stop
-```
-
-<details>
-  <summary>If you get some errors you can try running <code>npm run env:restart</code></summary>
-<br>  
-<em>If you continue having errors go to Docker, remove all containers and then run <code>npm run env:start</code></em>
-</details>
-
+## 
 
 ## Build process
 
 <p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
-
-
-> ESNext is a dynamic name that refers to whatever the next version is at the time of writing. ESNext features are more correctly called proposals, because, by definition, the specification has not been finalized yet.
-
-> https://legacy.reactjs.org/docs/faq-build.html
-> https://legacy.reactjs.org/docs/react-without-es6.html
-> https://legacy.reactjs.org/docs/react-without-jsx.html
-> https://react.dev/reference/react/createElement#creating-an-element-without-jsx
 
 ## Turborepo Commands
 
@@ -124,20 +112,6 @@ pnpm --filter=woocommerce run build:zip
 
 The plugins in our repository make use of [the `@wordpress/env` package](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/). This supplies convenient commands for creating, destroying, cleaning, and testing WordPress environments.
 
-```bash
-# Make sure you are in the working directory of the plugin you are interested in setting up the environment for
-cd plugins/woocommerce
-# Start will create the environment if necessary or start an existing one
-pnpm -- wp-env start
-# Stop will, well, stop the environment
-pnpm -- wp-env stop
-# Destroy will remove all of the environment's files.
-pnpm -- wp-env destroy
-```
-
-Each of the [plugins in our repository](plugins) support using this tool to spin up a development environment. Note that rather than having a single top-level environment, each plugin has its own. This is done in order to prevent conflicts between them.
-
-Please check out [the official documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) if you would like to learn more about this tool.
 
 ## Troubleshooting
 

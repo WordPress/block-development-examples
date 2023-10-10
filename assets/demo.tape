@@ -61,7 +61,7 @@ Output assets/cli/create-example.gif
 Require echo
 
 Set Height 1500
-Set Width 1500
+Set Width 1000
 Set PlaybackSpeed 0.2
 Set Shell "bash"
 

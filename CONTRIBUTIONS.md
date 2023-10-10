@@ -8,7 +8,7 @@ This repo offers you a script to create a new exxample using any of already exis
 
 1. Run `npm run create-example`
 1. Choose the example you want to use as a template for your new example
-1. Choose a example name
+1. Add a meaningful name for your example
 1. Add a description for your example
 1. Add tags for your example
 
