@@ -38,10 +38,10 @@ To see the examples in action you can can also:
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
 - Copy the plugins folders for the examples you're interested in under the `plugins` folder of your own WordPress installation.
 
-## List of Examples
-
-> **Important**
+> **Note**
 > Check out the [**Development Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md) for a more comprehensive look at working in this repository.
+
+## List of Examples
 
 The folder [**`plugins`**](plugins) contains all the plugins that register each one of the gutenberg examples (block and non-block examples). Each example has a unique ID that can be used to filter or find them.
 
