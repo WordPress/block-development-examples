@@ -4,7 +4,6 @@ This document aims to provide as much context as possible to aid in the developm
 
 Please refer to [the Getting Started section of the `README.md`](README.md#getting-started) for a general-purpose guide on getting started. The rest of this document will assume that you've installed all of the prequisites and setup described there.
 
-
 ## Table of Contents
 
 - [WordPress Local Development Environment](#wordpress-local-development-environment)
@@ -14,10 +13,9 @@ Please refer to [the Getting Started section of the `README.md`](README.md#getti
   - [Scripts](#scripts)
   - [Tool Filtering](#tool-filtering)
 
-
 ## WordPress Local Development Environment
 
-This project recommends the use of [`wp-env`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/) to get a local development environment. 
+This project recommends the use of [`wp-env`](https://developer.wordpress.org/block-editor/getting-started/devenv/get-started-with-wp-env/) to get a local development environment.
 
 ```bash
 # Make sure you are in the working directory of the plugin you are interested in setting up the environment for
@@ -33,7 +31,7 @@ pnpm -- wp-env destroy
 > **Note**
 > See ["Quick and easy local WordPress development with wp-env"](https://developer.wordpress.org/news/2023/03/quick-and-easy-local-wordpress-development-with-wp-env/) and [`wp-env` package reference](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/) to learn more about `wp-env`
 
-You can also do `npm run env:start` from the root to run a WordPress environment with the plugins at `.wp-env.json`. 
+You can also do `npm run env:start` from the root to run a WordPress environment with the plugins at `.wp-env.json`.
 
 Edit the property `"plugins"` at `.wp-env.json` to include just the examples you're interested in. To apply these changes after having started your instance, run `npm run env:update` from the root folder
 
@@ -51,9 +49,9 @@ npm run build
 
 ## Repo Commands
 
-Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectivelly. 
+Our repository uses [`pnpm`](https://pnpm.io/) to manage dependencies of examples and run commands on them collectively.
 
-When using `pnpm run {command}` without any options, it will execute that command against every project in the repository. 
+When using `pnpm run {command}` without any options, it will execute that command against every project in the repository.
 
 Here are some examples of the ways you can use pnpm commands to run scripts on all the packages of the repo:
 
@@ -130,18 +128,19 @@ available via `npm run-script`:
   deploy
     npm run build && npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove
 ```
+
 </details>
 
 ### Tool Filtering
 
 If you are interested in running a specific command against a single plugin, package, or tool, you can do so with the `--filter` flag. This flag supports the `"name"` option in `package.json` files, paths, and globs.
 
-***Examples***
+**_Examples_**
 
 Here are some examples of the ways you can use pnpm commands:
 
 ```bash
-# Build minimal-block-ca6eda 
+# Build minimal-block-ca6eda
 pnpm run --filter='*ca6eda' build
 
 # Run tests of editable-block-1b8c51 package
