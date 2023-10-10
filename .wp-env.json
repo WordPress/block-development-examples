@@ -1,21 +1,20 @@
 {
-    "phpVersion": "7.4",
-    "plugins": [
-        "./plugins/block-dynamic-rendering-64756b",
-        "./plugins/basic-block-3df23d",
-        "./plugins/interactive-block-833d15",
-        "./plugins/block-static-rendering-b16608",
-        "./plugins/editable-block-1b8c51",
-        "./plugins/non-block-react-wp-data-56d6f3",
-        "./plugins/minimal-gutenberg-block-ca6eda",
-        "./plugins/minimal-block-no-build-e621a6",
-        "https://downloads.wordpress.org/plugin/gutenberg.16.5.1.zip"
-    ],
-    "config": {
-        "JETPACK_AUTOLOAD_DEV": true,
-        "WP_DEBUG": true,
-        "WP_DEBUG_LOG": true,
-        "WP_DEBUG_DISPLAY": true,
-        "SCRIPT_DEBUG": true
-    }
+	"phpVersion": "7.4",
+	"plugins": [
+		"./plugins/block-dynamic-rendering-64756b",
+		"./plugins/interactive-block-833d15",
+		"./plugins/block-static-rendering-b16608",
+		"./plugins/editable-block-1b8c51",
+		"./plugins/non-block-react-wp-data-56d6f3",
+		"./plugins/minimal-gutenberg-block-ca6eda",
+		"./plugins/minimal-block-no-build-e621a6",
+		"https://downloads.wordpress.org/plugin/gutenberg.16.5.1.zip"
+	],
+	"config": {
+		"JETPACK_AUTOLOAD_DEV": true,
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"WP_DEBUG_DISPLAY": true,
+		"SCRIPT_DEBUG": true
+	}
 }
