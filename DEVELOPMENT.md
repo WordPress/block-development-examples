@@ -39,10 +39,9 @@ Edit the property `"plugins"` at `.wp-env.json` to include just the examples you
 
 ## Build process
 
-... need further explanation
+`ESNext` and `JSX` are the recommended syntaxes to code blocks but they're not directly supported by the majority of browsers. Because of this, most of the example of this repo needs to run a [Build process](https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/) to get the final version ready to use.
 
-
-<p><em>ESNext and JSX Syntax are not directly supported by browsers. The examples that make use of this (recommended) syntax require a <a href="https://developer.wordpress.org/block-editor/how-to-guides/javascript/js-build-setup/">build process</a> to get a regular JavaScript version that browsers can understand.</em></p>
+There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag `NO-BUILD`
 
 ## Repo Commands
 

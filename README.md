@@ -55,7 +55,10 @@ The examples in this repo are listed in the following table:
 <br>  
 <p><em>Most of the examples in this repo showcase a specific type of block that can be used in the Block Editor. Those examples that doesn't specifically register a block for the Block Editor are labelled with the tag <code>NO-BLOCK</code>.</em></p>
 
-<p><em>There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
+<p><em>The examples using <code>ESNext</code> or <code>JSX</code> needs to run a <a href="https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/DEVELOPMENT.md#build-process">Build process</a> to get the final version of the block ready to use.</em></p>
+
+
+<p><em>There are some examples in this repo that doesn't use ESNext or JSX Syntax so they don't need to run   any build process. These examples are labelled with the tag <code>NO-BUILD</code>.</em></p>
 </details>
 <br>
 
