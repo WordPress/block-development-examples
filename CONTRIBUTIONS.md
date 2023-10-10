@@ -27,7 +27,7 @@ If you have another repo containing a plugin with an example you'd like to add a
 
 ## Conventions used for the examples in this repo 
 
-> Check this [diagram](https://excalidraw.com/#json=LgGQyBclSqpidwEseYgyK,O-mTI_VaTfSd-OlEPkj9_w) for a visual guide of the conventions used in this repo for the examples
+> Check this [diagram](https://excalidraw.com/#json=apQs7adCZz7h45IayXAA5,k_i_h_XO_sixg7m1ev-2EA) for a visual guide of the conventions used in this repo for the examples
 
 > [!IMPORTANT]
 > The example `slug` should follow the convention `<plugin-slug>-<unique-code>`
@@ -54,8 +54,6 @@ If you have another repo containing a plugin with an example you'd like to add a
 - On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<example-name-including-unique-code>`
      - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**
-    - [ ] **`title`** should include the `<unique-code>` 
-        - Ex: `"title": "Minimal Gutenberg Block ca6eda",`
     - [ ] **`name`** should follow the convention `gutenberg-examples/<slug>` 
         - Ex: `"name": "gutenberg-examples/static-block-b16608"`
     - [ ] **`keywords`** should include, at least, the `<unique-code>`
@@ -66,7 +64,7 @@ If you have another repo containing a plugin with an example you'd like to add a
     - [ ] The local path of the plugin/example (starting from root) should be included in the array `"plugins"` 
         - Ex: `"./plugins/basic-block-3df23d"`
 - On **`data/example.json`**
-    - [ ] Add a new object to the array representing your example with the following info: `slug`, `description` & `tags`. The `tags` property should contain an array of tags "slugs" existing in  `data/tags.json`
+    - [ ] Should have an object (in the array) representing your example with the following info: `slug`, `description` & `tags`. The `tags` property should contain an array of tags "slugs" existing in  `data/tags.json`
         - Ex:
 
 ```
