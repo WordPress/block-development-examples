@@ -99,6 +99,19 @@ importers:
         specifier: ^26.14.0
         version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/my-new-example-18d5b4:
+    dependencies:
+      '@wordpress/e2e-test-utils':
+        specifier: ^10.12.0
+        version: 10.12.0(jest@29.6.4)(puppeteer-core@20.9.0)
+      '@wordpress/env':
+        specifier: ^8.7.0
+        version: 8.7.0
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.12.0
+        version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/non-block-react-wp-data-56d6f3:
     dependencies:
       '@wordpress/compose':
