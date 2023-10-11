@@ -29,6 +29,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-class-static-block": "^7.22.11",
     "@wordpress/env": "^8.7.0",
     "@wordpress/scripts": "^26.12.0"
   },
