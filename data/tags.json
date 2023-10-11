@@ -20,12 +20,12 @@
         "name": "NO BLOCK"
     },
     {
-        "slug": "dynamic-rendering",
+        "slug": "block-dynamic-rendering",
         "name": "DYNAMIC RENDERING"
     },
     {
         "slug": "block-static-rendering",
-        "name": "STATIC BLOCK"
+        "name": "STATIC RENDERING"
     },
     {
         "slug": "wp-data",
@@ -42,6 +42,10 @@
     {
         "slug": "minimal",
         "name": "MINIMAL"
+    },
+    {
+        "slug": "experimental",
+        "name": "EXPERIMENTAL"
     }
     
 

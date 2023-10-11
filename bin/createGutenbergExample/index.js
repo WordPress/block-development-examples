@@ -52,7 +52,9 @@ async function promptUser() {
   
   const keywords = await checkbox({
     message: `[4/4] Select some ${highlightText("tags for your gutenberg example")}: ` + `\n${extraInfoTags}`,
-    choices: tags.map(({ slug, name }) => {
+    choices: tags
+      .sort(({slug: slugA}, {slug: slugB}) => (slugA < slugB) ? -1 : (slugA > slugB) ? 1 : 0 )
+      .map(({ slug, name }) => {
       let choiceObject = { value: slug, name }
       if (preChosenKeywords.some(keyword => keyword === slug)) {
         choiceObject = {
