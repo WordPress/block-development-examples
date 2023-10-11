@@ -2,35 +2,11 @@
 
 ## Table of Contents
 
+- [Conventions used for the examples in this repo ](#conventions-used-for-the-examples-in-this-repo)
+
 - [Adding a new example to this repo](#adding-a-new-example-to-this-repo)
   - [Using `npn run create-example` to use another example as template](#using-npn-run-create-example-to-use-another-example-as-template)
   - [Cloning an example from another repo](#cloning-an-example-from-another-repo)
-  - [Conventions used for the examples in this repo ](#conventions-used-for-the-examples-in-this-repo)
-
-## Adding a new example to this repo
-
-### Using `npm run create-example` to use another example as template
-
-This repo offers you a script to create a new example using any of already existing examples as a template.
-
-1. Run `npm run create-example`
-1. Choose the example you want to use as a template for your new example
-1. Add a meaningful name for your example
-1. Add a description for your example
-1. Add tags for your example
-
-The script will take care of most of the modifications needed so your new example follow the conventions of this repo.
-
-<img src="./assets/cli/create-example.gif">
-
-### Cloning an example from another repo
-
-If you have another repo containing a plugin with an example you'd like to add as new example of this repo:
-
-1. Go to the `plugins` folder and clone your repo with your example there
-1. Go inside your project's folder
-1. Delete the `.git` folder
-1. Do the proper changes to adapt your plugin to follow the conventions for this repo
 
 ## Conventions used for the examples in this repo
 
@@ -96,3 +72,28 @@ After ensuring these changes a new install of dependencies and build should be r
 pnpm i
 npm run build
 ```
+
+## Adding a new example to this repo
+
+### Using `npm run create-example` to use another example as template
+
+This repo offers you a script to create a new example using any of already existing examples as a template.
+
+1. Run `npm run create-example`
+1. Choose the example you want to use as a template for your new example
+1. Add a meaningful name for your example
+1. Add a description for your example
+1. Add tags for your example
+
+The script will take care of most of the modifications needed so your new example follow the conventions of this repo.
+
+<img src="./assets/cli/create-example.gif">
+
+### Cloning an example from another repo
+
+If you have another repo containing a plugin with an example you'd like to add as new example of this repo:
+
+1. Go to the `plugins` folder and clone your repo with your example there
+1. Go inside your project's folder
+1. Delete the `.git` folder
+1. Do the proper changes to adapt your plugin to follow the conventions for this repo
