@@ -60,5 +60,12 @@
       "minimal",
       "no-build"
     ]
+  },
+  {
+    "slug": "interactive-blocks-demos-99def1",
+    "description": "Interactive Blocks",
+    "tags": [
+      "interactive-block"
+    ]
   }
 ]
