@@ -80,7 +80,7 @@ importers:
         specifier: ^26.12.0
         version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
-  plugins/interactive-block-833d15:
+  plugins/interactivity-api-block-833d15:
     dependencies:
       '@wordpress/interactivity':
         specifier: ^2.2.0

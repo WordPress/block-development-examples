@@ -2,7 +2,7 @@
 	"phpVersion": "7.4",
 	"plugins": [
 		"./plugins/block-dynamic-rendering-64756b",
-		"./plugins/interactive-block-833d15",
+		"./plugins/interactivity-api-block-833d15",
 		"./plugins/block-static-rendering-b16608",
 		"./plugins/editable-block-1b8c51",
 		"./plugins/non-block-react-wp-data-56d6f3",
