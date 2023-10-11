@@ -21,7 +21,8 @@
       "create-block-template",
       "interactive-block",
       "interactivity-api",
-      "gutenberg-plugin"
+      "gutenberg-plugin",
+      "experimental"
     ]
   },
   {
