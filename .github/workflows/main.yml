@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
       - uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8.7.1
       - name: Merge trunk -> deploy
         uses: devmasx/merge-branch@master
         with:
