@@ -1,0 +1,21 @@
+.wp-block-gutenberg-examples-counter-js {
+	color: red;
+}
+
+.wp-block-gutenberg-examples-counter-js button {
+	cursor: pointer;
+}
+
+.wp-block-gutenberg-examples-counter-js * {
+	font-size: 20px;
+}
+
+.wp-block-gutenberg-examples-counter-js input,
+.wp-block-gutenberg-examples-counter-js button {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.wp-block-gutenberg-examples-counter-js input {
+	width: 100px;
+}
