@@ -1,0 +1,38 @@
+{
+	"name": "interactive-wordpress/gutenberg-examples",
+	"type": "wordpress-plugin",
+	"description": "An exploratory plugin to display several approaches of creating interactive blocks in Gutenberg",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Juanma Garrido",
+			"email": "juanma.garrido@automattic.com",
+			"role": "Developer Relations"
+		}
+	],
+	"require": {
+		"php": ">=5.6.20",
+		"ext-json": "*"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.0",
+		"roave/security-advisories": "dev-latest",
+		"wp-coding-standards/wpcs": "^2.1",
+		"yoast/phpunit-polyfills": "^1.0.0"
+	},
+	"config": {
+		"platform": {
+			"php": "5.6.20"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"format": "vendor/bin/phpcbf --report-summary --report-source .",
+		"lint": "vendor/bin/phpcs --report-summary --report-source .",
+		"test": "vendor/bin/phpunit",
+		"test:multisite": "vendor/bin/phpunit -c phpunit-multisite.xml.dist"
+	}
+}
