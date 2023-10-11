@@ -39,6 +39,9 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
     devDependencies:
+      '@babel/plugin-transform-class-static-block':
+        specifier: ^7.22.11
+        version: 7.22.11(@babel/core@7.22.11)
       '@wordpress/env':
         specifier: ^8.7.0
         version: 8.7.0
