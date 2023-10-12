@@ -36,10 +36,6 @@
 	},
 	"scripts": {
 		"build": "wp-scripts build",
-		"build:blocks": "wp-scripts build",
-		"build:self-hosting": "wp-scripts build src/self-hosting/interactive-accordion.js src/self-hosting/interactive-base-carousel.js src/self-hosting/interactive-date-countdown.js src/self-hosting/interactive-fit-text.js src/self-hosting/interactive-lightbox-gallery.js src/self-hosting/interactive-social-share.js --output-path=tmp1",
-		"build:lightbox-gallery": "npx wp-scripts build src/lightbox-gallery/lightbox-gallery.js --output-path=tmp2",
-		"build:copy-tmp-files": "mkdir -p build/self-hosting && cp tmp1/interactive-* build/self-hosting/ && rm -rf tmp1 && mkdir -p build/lightbox-gallery && cp tmp2/lightbox-* build/lightbox-gallery/ && rm -rf tmp2",
 		"format": "wp-scripts format",
 		"format:php": "composer format",
 		"lint:css": "wp-scripts lint-style",
