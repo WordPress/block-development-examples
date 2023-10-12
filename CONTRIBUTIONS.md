@@ -38,7 +38,12 @@
   - Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
 - On **`<plugin-folder>/src/block.json`**
   - [ ] **`name`** should follow the convention `gutenberg-examples/<slug>`
-    - Ex: `"name": "gutenberg-examples/block-static-rendering-b16608"`
+    - Make sure the block registered at `index.js` is the same
+      - Ex `block.json`: `"name": "gutenberg-examples/block-static-rendering-b16608"`
+      - Ex `index.js`: `registerBlockType( 'gutenberg-examples/block-static-rendering-b16608',...`
+    "textdomain": "gutenberg-examples",
+  - [ ] **`textdomain`** should be `gutenberg-examples`
+    - Ex: `"textdomain": "gutenberg-examples"`
   - [ ] **`keywords`** should include, at least, the `<unique-code>`
     - Ex: `"keywords": [ "64756b"]`
 - [ ] Block CSS class should follow the convention `.wp-block-gutenberg-examples-<slug>`
