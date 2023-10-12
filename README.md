@@ -111,13 +111,13 @@ These examples shows block development that doesn't require a build process, mos
 
 These examples shows the development of a feature or behaviour for WordPress using gutenberg packages and React without the creation of a block.
 
-##### `DYNAMIC BLOCK`
+##### `BLOCK DYNAMIC RENDERING`
 
-These examples shows [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-dynamic-rendering).
+These examples shows the so called [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-dynamic-rendering).
 
-##### `STATIC BLOCK`
+##### `BLOCK STATIC RENDERING`
 
-These examples shows [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-static-rendering).
+These examples shows the so called [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-static-rendering).
 
 ##### `GUTENBERG PLUGIN`
 
