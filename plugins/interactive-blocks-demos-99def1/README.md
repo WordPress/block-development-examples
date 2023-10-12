@@ -1,4 +1,4 @@
-# Creating interactive blocks: old, new, and good ways
+# Interactive Blocks Demos 99def1
 
 An exploratory plugin for using different ways of creating interactive blocks in [Gutenberg](https://github.com/WordPress/gutenberg).
 
