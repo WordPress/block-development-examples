@@ -1,3 +1,5 @@
+# Gutenberg Examples
+
 Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bunch of block and non-block examples for Gutenberg that you can use to learn about Block Development and other related Gutenberg topics.
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
