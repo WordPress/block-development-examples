@@ -13,17 +13,9 @@ Check the following resources for more info about the Interactivity API:
 - [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/)
 - [“Interactivity API” category](https://github.com/WordPress/gutenberg/discussions/categories/interactivity-api) in Gutenberg repo discussions
 
-## Start Guide
-
-#### 1. Install dependencies
-
-Check the [Repo Commands > Dependencies](../../DEVELOPMENT.md#dependencies) instructions for this repo
-
-#### 2. Generate the build 
-
-Once the depencies are installed (a `node_modules` folder should have been created), we should [launch the build process](../../DEVELOPMENT.md#build-process) to get the final version of the block that can be used from WordPress. 
-
 #### 3. Use it in a WordPress
+
+Check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo.
 
 <details>
   <summary><em>If you have a local WordPress installation already running, you can clone the repo inside the <code>plugins</code> folder of that installation and check the example there</em></summary>
@@ -37,8 +29,7 @@ Once the depencies are installed (a `node_modules` folder should have been creat
 <ul>
 </details>
 <br>  
-If not, check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo.
 
-At this point you should be able to insert the "Minimal Gutenberg Block" block into any post (after activating the plugin "Minimal Gutenberg Block Plugin") of your WordPress installation, and see how it behaves in the frontend when published.
+At this point you should be able to insert the custom blocks into any post (after activating the plugin) of your WordPress installation, and see how it behaves in the frontend when published.
 
 

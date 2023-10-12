@@ -27,6 +27,8 @@ Once the depencies are installed (a `node_modules` folder should have been creat
 
 #### 3. Use it in a WordPress
 
+Check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo.
+
 <details>
   <summary><em>If you have a local WordPress installation already running, you can clone the repo inside the <code>plugins</code> folder of that installation and check the example there</em></summary>
 <br>  
@@ -39,8 +41,6 @@ Once the depencies are installed (a `node_modules` folder should have been creat
 <ul>
 </details>
 <br>  
-
-If not, check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo.
 
 At this point you should be able to insert the custom blocks into any post (after activating the plugin) of your WordPress installation, and see how it behaves in the frontend when published.
 
