@@ -2,34 +2,43 @@
 
 An exploratory plugin for using different ways of creating interactive blocks in [Gutenberg](https://github.com/WordPress/gutenberg).
 
-This demos are part of the lightning talk **Creating interactive blocks: old, new, and good ways** of the [WordCamp Europe 2022](https://europe.wordcamp.org/2022/) 
+This example shows how to add interactivity to a block using:
+- Alpine
+- jQuery
+- React
+- Plain JS
+- Web Components
 
-## Background
-
-The block revolution is here. Full site editing has been unleashed to the world, and even though it is still in its infancy, it already takes WordPress configurability and extensibility to a whole new level. But in this new world, one question still remains: How do we add client interactivity to our custom blocks? Should we use the same old techniques we used for classic themes and plugins? Or should we take this opportunity to adopt some techniques from other modern web development ecosystems to improve our interactive blocks' performance and developer experience? 
-
-In this repository you'll find several approaches to create interactive blocks and a brief description of pros & cons of each approach
-
-## About this Plugin
-
-TBD
-
-## Getting Started
-
-1. Clone repository into `wp-content/plugins/gutenberg-examples` of your WordPress site.
-2. Run `npm install`
-3. Run `composer install`
-4. Run `npm run build`
-5. Go to your WordPress site and activate this plugin.
-
-To set up WordPress locally, you can use something like [Local](https://localwp.com/) or with Docker you can also do `npx wp-env start`
+> **Note**
+> This example has been adapted from [the original one](https://github.com/wordpress-juanmaguitar/interactive-blocks-demos) that was used in the lightning talk **[Creating interactive blocks: old, new, and good ways](https://europe.wordcamp.org/2022/session/lightning-talks/)** at the [WordCamp Europe 2022](https://europe.wordcamp.org/2022/) (see [video](https://www.youtube.com/watch?v=91anxAgQGJw&t=15939s) and [slides](./asssets/interactive-blocks-talk-slides.pdf) of this talk)
 
 
-## TO-DO
+## Start Guide
 
-- [ ] Add a more complex (interesting) block to the demo
-	- Quiz with several questions
-	- State in each question
-	- State in the overall quiz
-	- Each quesiton allow different types of blocks (images, text...)
+#### 1. Install dependencies
+
+Check the [Repo Commands > Dependencies](../../DEVELOPMENT.md#dependencies) instructions for this repo
+
+#### 2. Generate the build 
+
+Once the depencies are installed (a `node_modules` folder should have been created), we should [launch the build process](./../DEVELOPMENT.md#build-process) to get the final version of the block that can be used from WordPress. 
+
+#### 3. Use it in a WordPress
+
+<details>
+  <summary><em>If you have a local WordPress installation already running, you can clone the repo inside the <code>plugins</code> folder of that installation and check the example there</em></summary>
+<br>  
+<p>If you do that, you'll need to do the following</p>
+<ul>
+<li>Remove any <code>node_modules</code> folder inside this folder</li>
+<li>Run <code>npm install</code> to install the dependencies</li>
+<li>Run <code>npm build</code> to generate the "build" version of the blocks</li>
+<li>Activate the plugin in your own WordPress installation</li>
+<ul>
+</details>
+<br>  
+If not, check the [WordPress Local Development Environment](../../DEVELOPMENT.md#wordpress-local-development-environment) instructions for this repo.
+
+At this point you should be able to insert the "Minimal Gutenberg Block" block into any post (after activating the plugin "Minimal Gutenberg Block Plugin") of your WordPress installation, and see how it behaves in the frontend when published.
+
 
