@@ -67,8 +67,7 @@ The examples in this repo are listed in the following table:
 <br>
 
 > **Note**
-> Want to add an example to this repo? Check out the [**Contributions Guide**](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/blob/trunk/CONTRIBUTIONS.md).
-
+> Which example would you like to see in this repository? Use the [**"Examples Ideas"** discussions category](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/discussions/categories/examples-ideas) to share your requests or ideas.
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
