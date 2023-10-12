@@ -4,7 +4,7 @@ Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bun
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
 
-> **Important**
+> **Note**
 > To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
 
 
@@ -66,7 +66,7 @@ The examples in this repo are listed in the following table:
 </details>
 <br>
 
-> **Note**
+> **Important**
 > Which example would you like to see in this repository? Use the [**"Examples Ideas"** discussions category](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/discussions/new?category=examples-ideas) to share your requests or ideas.
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
