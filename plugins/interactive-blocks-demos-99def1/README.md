@@ -10,7 +10,7 @@ This example shows how to add interactivity to a block using:
 - Web Components
 
 > **Note**
-> This example has been adapted from [the original one](https://github.com/wordpress-juanmaguitar/interactive-blocks-demos) that was used in the lightning talk **[Creating interactive blocks: old, new, and good ways](https://europe.wordcamp.org/2022/session/lightning-talks/)** at the [WordCamp Europe 2022](https://europe.wordcamp.org/2022/) (see [video](https://www.youtube.com/watch?v=91anxAgQGJw&t=15939s) and [slides](raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/plugins/interactive-blocks-demos-99def1/asssets/interactive-blocks-talk-slides.pdf) of this talk)
+> This example has been adapted from [the original one](https://github.com/wordpress-juanmaguitar/interactive-blocks-demos) that was used in the lightning talk **[Creating interactive blocks: old, new, and good ways](https://europe.wordcamp.org/2022/session/lightning-talks/)** at the [WordCamp Europe 2022](https://europe.wordcamp.org/2022/) (see [video](https://www.youtube.com/watch?v=91anxAgQGJw&t=15939s) and [slides](https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/plugins/interactive-blocks-demos-99def1/asssets/interactive-blocks-talk-slides.pdf) of this talk)
 
 
 
