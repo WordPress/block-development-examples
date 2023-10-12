@@ -10,7 +10,7 @@ Check the [Repo Commands > Dependencies](../../DEVELOPMENT.md#dependencies) inst
 
 #### 2. Generate the build 
 
-Once the depencies are installed (a `node_modules` folder should have been created), we should [launch the build process](./../DEVELOPMENT.md#build-process) to get the final version of the block that can be used from WordPress. 
+Once the depencies are installed (a `node_modules` folder should have been created), we should [launch the build process](../../DEVELOPMENT.md#build-process) to get the final version of the block that can be used from WordPress. 
 
 #### 3. Use it in a WordPress
 
