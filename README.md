@@ -4,6 +4,10 @@ Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bun
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
 
+> **Important**
+> To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
+
+
 ## Getting Started
 
 This `gutenberg-examples-2023` repo is a monorepo multipackage because it contains several packages (plugins) and is prepared to manage them collectively. To get up and running with it, you will need to make sure that you have installed the prerequisites.
@@ -30,11 +34,9 @@ At this point you are now ready to begin developing and testing the examples.
 
 ### See the examples in action
 
-> **Important**
-> To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
+To see the examples in action you can:
 
-To see the examples in action you can can also:
-
+- Click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
 - Use your own WordPress installation to install the plugin (that can be downloaded as a `.zip` from the 📦 icon of the example you're interested in the [List of examples](#list-of-examples) table below).
 - Run `pnpm -- wp-env start` from any plugin folder to use [`wp-env`](DEVELOPMENT.md##wordpress-local-development-environment) to get a local development environment with that example
 - Run `npx @wp-now/wp-now start` from any plugin folder to use [`wp-now`](https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now) to quickly launch a WordPress installation with that specific plugin installed.
