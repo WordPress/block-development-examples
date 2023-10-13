@@ -4,7 +4,6 @@ const Save = ( { attributes } ) => {
 	return (
 		<div
 			{ ...useBlockProps.save() }
-			data-gutenberg-attributes={ JSON.stringify( attributes ) }
 		>
 			<p>React Counter</p>
 			<details>
@@ -14,7 +13,7 @@ const Save = ( { attributes } ) => {
 				</pre>
 			</details>
 			<br />
-			<div className="counter-container">
+			<div className='counter-contaner' data-gutenberg-attributes={ JSON.stringify( attributes ) }>
 				<button>-</button>
 				<input
 					width="5"
@@ -23,6 +22,7 @@ const Save = ( { attributes } ) => {
 					value={ attributes.initial }
 				/>
 				<button>+</button>
+			
 			</div>
 			
 		</div>
