@@ -14,7 +14,7 @@
 		},
 		"increment": {
 			"type": "number",
-			"default": 1
+			"default": 4
 		}
 	},
 	"supports": {
