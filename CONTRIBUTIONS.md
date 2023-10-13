@@ -41,8 +41,7 @@
     - Make sure the block registered at `index.js` is the same
       - Ex `block.json`: `"name": "gutenberg-examples/block-static-rendering-b16608"`
       - Ex `index.js`: `registerBlockType( 'gutenberg-examples/block-static-rendering-b16608',...`
-    "textdomain": "gutenberg-examples",
-  - [ ] **`textdomain`** should be `gutenberg-examples`
+  - [ ] (optional) If **`textdomain`**, it should be `gutenberg-examples`
     - Ex: `"textdomain": "gutenberg-examples"`
   - [ ] **`keywords`** should include, at least, the `<unique-code>`
     - Ex: `"keywords": [ "64756b"]`

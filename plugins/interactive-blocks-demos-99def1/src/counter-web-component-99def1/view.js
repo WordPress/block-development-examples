@@ -1,7 +1,7 @@
 const template = ( initial ) => `
-	<button class="increment">+</button>
-	<input value="${ initial }" />
 	<button class="decrement">-</button>
+	<input value="${ initial }" />
+	<button class="increment">+</button>
 `;
 
 class GutenbergCounter extends HTMLElement {

@@ -4,9 +4,13 @@ const Save = ( { attributes } ) => {
 	return (
 		<div { ...useBlockProps.save() }>
 			<p>jQuery Counter</p>
-			<pre>
-				{ JSON.stringify(attributes, null, 2)}
-			</pre>
+			<details>
+				<summary>Attributes</summary>
+				<pre>
+					<small>{ JSON.stringify( attributes, null, 2 ) }</small>
+				</pre>
+			</details>
+			<br />
 			<button className="wp-block-gutenberg-examples-counter-jquery-99def1__decrement">
 				-
 			</button>

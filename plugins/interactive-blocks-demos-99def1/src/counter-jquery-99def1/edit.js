@@ -4,8 +4,8 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 const Edit = ( { attributes, setAttributes } ) => (
 	<>
-		<p>jQuery Counter</p>
 		<div { ...useBlockProps() }>
+			<p>jQuery Counter</p>
 			<span>Initial value</span>
 			<NumberControl
 				placeholder="Enter the initial value"

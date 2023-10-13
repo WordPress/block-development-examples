@@ -6,9 +6,16 @@ const Save = ( { attributes } ) => (
 		x-data={ `{ count: ${ attributes.initial } }` }
 	>
 		<p>Alpine Counter</p>
-		<button x-on:click={ `count += ${ attributes.increment }` }>+</button>
-		<input width="5" type="number" x-bind:value="count" />
+		<details>
+				<summary>Attributes</summary>
+				<pre>
+					<small>{ JSON.stringify( attributes, null, 2 ) }</small>
+				</pre>
+			</details>
+		<br />
 		<button x-on:click={ `count -= ${ attributes.increment }` }>-</button>
+		<input width="5" type="number" x-bind:value="count" />
+		<button x-on:click={ `count += ${ attributes.increment }` }>+</button>
 	</div>
 );
 
