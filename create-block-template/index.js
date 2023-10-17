@@ -1,30 +1,30 @@
-const { join } = require("path");
+const { join } = require( 'path' );
 
 module.exports = {
 	defaultValues: {
-		namespace: "gutenberg-examples",
+		namespace: 'gutenberg-examples',
 		example: {},
 		wpScripts: false,
 		customPackageJSON: {
 			scripts: {
-				build: "wp-scripts build",
-				format: "wp-scripts format",
-				"lint:css": "wp-scripts lint-style",
-				"lint:js": "wp-scripts lint-js",
-				"packages-update": "wp-scripts packages-update",
-				"plugin-zip": "wp-scripts plugin-zip",
-				start: "wp-scripts start",
+				build: 'wp-scripts build',
+				format: 'wp-scripts format',
+				'lint:css': 'wp-scripts lint-style',
+				'lint:js': 'wp-scripts lint-js',
+				'packages-update': 'wp-scripts packages-update',
+				'plugin-zip': 'wp-scripts plugin-zip',
+				start: 'wp-scripts start',
 			},
 			devDependencies: {
-				"@wordpress/scripts": "^26.12.0",
+				'@wordpress/scripts': '^26.12.0',
 			},
-			files: ["*"],
+			files: [ '*' ],
 		},
 		customBlockJSON: {
-			keywords: ["HEXCODE"],
+			keywords: [ 'HEXCODE' ],
 		},
 	},
 	variants: {},
-	pluginTemplatesPath: join(__dirname, "templates/plugin"),
-	blockTemplatesPath: join(__dirname, "templates/block"),
+	pluginTemplatesPath: join( __dirname, 'templates/plugin' ),
+	blockTemplatesPath: join( __dirname, 'templates/block' ),
 };
