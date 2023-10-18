@@ -46,6 +46,10 @@
     {
         "slug": "experimental",
         "name": "EXPERIMENTAL"
+    },
+    {
+        "slug": "multi-block",
+        "name": "MULTI BLOCK"
     }
     
 
