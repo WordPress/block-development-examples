@@ -1,14 +1,23 @@
 const { join } = require( 'path' );
+const getRandomHexCode = require( '../bin/randomHexCode' );
 
 module.exports = {
 	defaultValues: {
+		transformer: ( view ) => {
+			const hex = getRandomHexCode();
+			return {
+				...view,
+				slug: `${ view.slug }-${ hex }`,
+				customBlockJSON: {
+					...view.customBlockJSON,
+					keywords: [ hex ],
+				},
+			};
+		},
 		namespace: 'gutenberg-examples',
 		example: {},
 		customPackageJSON: {
 			files: [ '*' ],
-		},
-		customBlockJSON: {
-			keywords: [ 'HEXCODE' ],
 		},
 	},
 	variants: {
