@@ -4,8 +4,8 @@ Welcome to the `gutenberg-examples-2023` repo on GitHub. Here you can find a bun
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
 
-> **Important**
-> To see the examples in action you can just click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
+> **Note**
+> Check the [List of examples](#list-of-examples) below. To see a [playground](https://developer.wordpress.org/playground/)-powered live demo of each example click on their Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg).
 
 
 ## Getting Started
@@ -66,8 +66,9 @@ The examples in this repo are listed in the following table:
 </details>
 <br>
 
-> **Note**
-> Which example would you like to see in this repository? Use the [**"Examples Ideas"** discussions category](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/discussions/new?category=examples-ideas) to share your requests or ideas.
+> **Important**
+> _Which example would you like to see in this repository?_
+> Use the [**"Examples Ideas"** discussions category](https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/discussions/new?category=examples-ideas) to share your requests or ideas.
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
@@ -81,7 +82,7 @@ The examples in this repo are listed in the following table:
 | ![](https://placehold.co/15x15/56d6f3/56d6f3) | [56d6f3](./plugins/non-block-react-wp-data-56d6f3)  | Non-block wp data with React       | [`NO BLOCK`](#no-block), [`WP DATA`](#wp-data)                                                                                                                                                                    | <a href="https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/non-block-react-wp-data-56d6f3.zip" target="_blank">📦</a>  | <a href="https://playground.wordpress.net/#%7B%22landingPage%22:%22/wp-admin/plugins.php%22,%22steps%22:%5B%7B%22step%22:%22login%22,%22username%22:%22admin%22,%22password%22:%22password%22%7D,%7B%22step%22:%22mkdir%22,%22path%22:%22/downloads%22%7D,%7B%22step%22:%22writeFile%22,%22path%22:%22/downloads/plugin.zip%22,%22data%22:%7B%22resource%22:%22url%22,%22url%22:%22https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/non-block-react-wp-data-56d6f3.zip%22,%22caption%22:%22Downloading%20plugin...%22%7D%7D,%7B%22step%22:%22installPlugin%22,%22pluginZipFile%22:%7B%22resource%22:%22vfs%22,%22path%22:%22/downloads/plugin.zip%22%7D%7D%5D%7D" target="_blank"><img src="./assets/icon-wp.svg"></a>  |
 | ![](https://placehold.co/15x15/ca6eda/ca6eda) | [ca6eda](./plugins/minimal-block-ca6eda)            | Minimal Block                      | [`MINIMAL`](#minimal)                                                                                                                                                                                             | <a href="https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/minimal-block-ca6eda.zip" target="_blank">📦</a>            | <a href="https://playground.wordpress.net/#%7B%22landingPage%22:%22/wp-admin/plugins.php%22,%22steps%22:%5B%7B%22step%22:%22login%22,%22username%22:%22admin%22,%22password%22:%22password%22%7D,%7B%22step%22:%22mkdir%22,%22path%22:%22/downloads%22%7D,%7B%22step%22:%22writeFile%22,%22path%22:%22/downloads/plugin.zip%22,%22data%22:%7B%22resource%22:%22url%22,%22url%22:%22https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/minimal-block-ca6eda.zip%22,%22caption%22:%22Downloading%20plugin...%22%7D%7D,%7B%22step%22:%22installPlugin%22,%22pluginZipFile%22:%7B%22resource%22:%22vfs%22,%22path%22:%22/downloads/plugin.zip%22%7D%7D%5D%7D" target="_blank"><img src="./assets/icon-wp.svg"></a>            |
 | ![](https://placehold.co/15x15/e621a6/e621a6) | [e621a6](./plugins/minimal-block-no-build-e621a6)   | Minimal Gutenberg Block (No Build) | [`MINIMAL`](#minimal), [`NO BUILD`](#no-build)                                                                                                                                                                    | <a href="https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/minimal-block-no-build-e621a6.zip" target="_blank">📦</a>   | <a href="https://playground.wordpress.net/#%7B%22landingPage%22:%22/wp-admin/plugins.php%22,%22steps%22:%5B%7B%22step%22:%22login%22,%22username%22:%22admin%22,%22password%22:%22password%22%7D,%7B%22step%22:%22mkdir%22,%22path%22:%22/downloads%22%7D,%7B%22step%22:%22writeFile%22,%22path%22:%22/downloads/plugin.zip%22,%22data%22:%7B%22resource%22:%22url%22,%22url%22:%22https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/minimal-block-no-build-e621a6.zip%22,%22caption%22:%22Downloading%20plugin...%22%7D%7D,%7B%22step%22:%22installPlugin%22,%22pluginZipFile%22:%7B%22resource%22:%22vfs%22,%22path%22:%22/downloads/plugin.zip%22%7D%7D%5D%7D" target="_blank"><img src="./assets/icon-wp.svg"></a>   |
-| ![](https://placehold.co/15x15/99def1/99def1) | [99def1](./plugins/interactive-blocks-demos-99def1) | Interactive Blocks                 | [`INTERACTIVE BLOCK`](#interactive-block)                                                                                                                                                                         | <a href="https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/interactive-blocks-demos-99def1.zip" target="_blank">📦</a> | <a href="https://playground.wordpress.net/#%7B%22landingPage%22:%22/wp-admin/plugins.php%22,%22steps%22:%5B%7B%22step%22:%22login%22,%22username%22:%22admin%22,%22password%22:%22password%22%7D,%7B%22step%22:%22mkdir%22,%22path%22:%22/downloads%22%7D,%7B%22step%22:%22writeFile%22,%22path%22:%22/downloads/plugin.zip%22,%22data%22:%7B%22resource%22:%22url%22,%22url%22:%22https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/interactive-blocks-demos-99def1.zip%22,%22caption%22:%22Downloading%20plugin...%22%7D%7D,%7B%22step%22:%22installPlugin%22,%22pluginZipFile%22:%7B%22resource%22:%22vfs%22,%22path%22:%22/downloads/plugin.zip%22%7D%7D%5D%7D" target="_blank"><img src="./assets/icon-wp.svg"></a> |
+| ![](https://placehold.co/15x15/99def1/99def1) | [99def1](./plugins/interactive-blocks-demos-99def1) | Interactive Blocks                 | [`INTERACTIVE BLOCK`](#interactive-block), [`MULTI BLOCK`](#multi-block)                                                                                                                                          | <a href="https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/interactive-blocks-demos-99def1.zip" target="_blank">📦</a> | <a href="https://playground.wordpress.net/#%7B%22landingPage%22:%22/wp-admin/plugins.php%22,%22steps%22:%5B%7B%22step%22:%22login%22,%22username%22:%22admin%22,%22password%22:%22password%22%7D,%7B%22step%22:%22mkdir%22,%22path%22:%22/downloads%22%7D,%7B%22step%22:%22writeFile%22,%22path%22:%22/downloads/plugin.zip%22,%22data%22:%7B%22resource%22:%22url%22,%22url%22:%22https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/deploy/zips/interactive-blocks-demos-99def1.zip%22,%22caption%22:%22Downloading%20plugin...%22%7D%7D,%7B%22step%22:%22installPlugin%22,%22pluginZipFile%22:%7B%22resource%22:%22vfs%22,%22path%22:%22/downloads/plugin.zip%22%7D%7D%5D%7D" target="_blank"><img src="./assets/icon-wp.svg"></a> |
 <!-- @TABLE EXAMPLES END -->
 
 ### Tags
@@ -110,13 +111,13 @@ These examples shows block development that doesn't require a build process, mos
 
 These examples shows the development of a feature or behaviour for WordPress using gutenberg packages and React without the creation of a block.
 
-##### `DYNAMIC BLOCK`
+##### `BLOCK DYNAMIC RENDERING`
 
-These examples shows [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-dynamic-rendering).
+These examples shows the so called [dynamic blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-dynamic-rendering).
 
-##### `STATIC BLOCK`
+##### `BLOCK STATIC RENDERING`
 
-These examples shows [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-static-rendering).
+These examples shows the so called [static blocks](https://developer.wordpress.org/block-editor/getting-started/glossary/#block-static-rendering).
 
 ##### `GUTENBERG PLUGIN`
 
@@ -129,3 +130,7 @@ These examples shows the most simple version of specific types of blocks
 ##### `EXPERIMENTAL`
 
 These examples shows features that are experimental and not yet included in Core.
+
+##### `MULTI BLOCK`
+
+These examples are plugins registering several blocks.

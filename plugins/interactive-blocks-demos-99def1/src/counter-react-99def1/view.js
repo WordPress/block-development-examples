@@ -1,4 +1,4 @@
-import { hydrate } from 'react-dom';
+import { hydrateRoot } from 'react-dom/client';
 import { useState } from '@wordpress/element';
 
 const Counter = ( { attributes } ) => {
@@ -7,18 +7,18 @@ const Counter = ( { attributes } ) => {
 	const decrement = () => setCounter( counter - attributes.increment );
 	return (
 		<>
-			<button onClick={ increment }>+</button>
-			<input width="5" type="number" readOnly value={ counter } />
 			<button onClick={ decrement }>-</button>
+			<input width="5" type="number" readOnly value={ counter } />
+			<button onClick={ increment }>+</button>
 		</>
 	);
 };
 
 window.addEventListener( 'load', () => {
 	document
-		.querySelectorAll( '.wp-block-gutenberg-examples-counter-react-99def1' )
+		.querySelectorAll( '.wp-block-gutenberg-examples-counter-react-99def1 .counter-contaner' )
 		.forEach( ( block ) => {
 			const attributes = JSON.parse( block.dataset.gutenbergAttributes );
-			hydrate( <Counter attributes={ attributes } />, block );
+			hydrateRoot( block, <Counter attributes={ attributes } />);
 		} );
 } );

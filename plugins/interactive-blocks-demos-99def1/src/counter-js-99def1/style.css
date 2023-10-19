@@ -1,5 +1,8 @@
 .wp-block-gutenberg-examples-counter-js-99def1 {
-	color: red;
+	border-style: solid;
+	border-width: 3px;
+	border-color: orange;
+	padding: 1em;
 }
 
 .wp-block-gutenberg-examples-counter-js-99def1 button {
