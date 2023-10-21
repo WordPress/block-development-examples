@@ -68,5 +68,12 @@
       "interactive-block",
       "multi-block"
     ]
+  },
+  {
+    "slug": "my-new-example-e76c4c",
+    "tags": [
+      "experimental"
+    ],
+    "description": "this is a great example"
   }
 ]

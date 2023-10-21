@@ -114,7 +114,7 @@ The script will take care of most of the modifications needed so your new exampl
 
 <details>
   <summary><em>See an example of running <code>npm run create-example:copy</code></em></summary>
-  <img src="./assets/cli/create-example.gif">
+  <img src="./assets/cli/create-example-copy.gif">
 </details>
 
 ### Cloning an example from another repo

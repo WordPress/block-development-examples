@@ -1,7 +1,7 @@
 # VHS documentation
 # https://github.com/charmbracelet/vhs
 #
-# From the root: vhs assets/demo.tape
+# From the root: vhs assets/demo-create-example-new.tape
 #
 #
 # Output:
@@ -56,7 +56,7 @@
 #   Hide                            Hide the subsequent commands from the output
 #   Show                            Show the subsequent commands in the output
 
-Output assets/cli/create-example.gif
+Output assets/cli/create-example-new.gif
 
 Require echo
 
@@ -65,26 +65,15 @@ Set Width 1000
 Set PlaybackSpeed 0.2
 Set Shell "bash"
 
-Type@.5 "npm run create-example:copy" Sleep 6s  Enter
+Type@.5 "npm run create-example:new -- my-great-example --variant dynamic" Sleep 6s  Enter
+
+Sleep 4s
+
+Type@.5 "y" Enter
 
 Sleep 3s
 Down@4s 4
 Sleep 3s
-Enter
-
-Sleep 4s
-
-Type@.5 "my new example" Sleep 4s  Enter
-Type@.5 "this is a great example" Sleep 4s  Enter
-
-Sleep 3s
-
-Down@2s 4
-Sleep 1s
-Space
-
-Sleep 4s
-
 Enter
 
 Sleep 60s
