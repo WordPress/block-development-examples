@@ -8,6 +8,9 @@ function getRandomHexCode() {
 }
 
 const randomHexCode = getRandomHexCode();
-console.log(`Random HexCode is: ${randomHexCode}`);
+
+if (require.main === module) {  
+  console.log(`Random HexCode is: ${randomHexCode}`);
+} 
 
 module.exports = getRandomHexCode;
