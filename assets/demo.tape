@@ -65,7 +65,7 @@ Set Width 1000
 Set PlaybackSpeed 0.2
 Set Shell "bash"
 
-Type@.5 "npm run create-example" Sleep 6s  Enter
+Type@.5 "npm run create-example:copy" Sleep 6s  Enter
 
 Sleep 3s
 Down@4s 4
