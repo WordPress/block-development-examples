@@ -4,8 +4,9 @@
 
 -   [Conventions used for the examples in this repo ](#conventions-used-for-the-examples-in-this-repo)
 -   [Adding a new example to this repo](#adding-a-new-example-to-this-repo)
-    -   [Using `npn run create-example` to use another example as template](#using-npm-run-create-example-to-use-another-example-as-template)
-    -   [Cloning an example from another repo](#cloning-an-example-from-another-repo)
+    - [Using `npm run create-example:new` to scaffold a new blank example](#using-npm-run-create-examplenew-to-scaffold-a-new-blank-example)
+    - [Using `npm run create-example:copy` to use another example as template](#using-npm-run-create-examplecopy-to-use-another-example-as-template)
+    - [Cloning an example from another repo](#cloning-an-example-from-another-repo)
 
 ## Conventions used for the examples in this repo
 
@@ -99,7 +100,7 @@ This example will create a plugin called `my-great-example-{generated-hex-code}`
 npm run create-example:new -- my-great-example --variant dynamic
 ```
 
-### Using `create-example:copy` to use another example as template
+### Using `npm run create-example:copy` to use another example as template
 
 This repo offers you a script to create a new example using any of already existing examples as a template.
 
@@ -111,13 +112,16 @@ This repo offers you a script to create a new example using any of already exist
 
 The script will take care of most of the modifications needed so your new example follow the conventions of this repo.
 
-<img src="./assets/cli/create-example.gif">
+<details>
+  <summary><em>See an example of running <code>npm run create-example:copy</code></em></summary>
+  <img src="./assets/cli/create-example.gif">
+</details>
 
 ### Cloning an example from another repo
 
 If you have another repo containing a plugin with an example you'd like to add as new example of this repo:
 
-1. Go to the `plugins` folder and clone your repo with your example there
+1. Go to the `plugins` folder and `git clone` your repo with your example there
 1. Go inside your project's folder
 1. Delete the `.git` folder
 1. Do the proper changes to adapt your plugin to follow the conventions for this repo
