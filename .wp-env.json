@@ -10,6 +10,7 @@
 		"./plugins/minimal-block-no-build-e621a6",
 		"./plugins/interactive-blocks-demos-99def1",
 		"./plugins/basic-block-translations-3df23d",
+		"./plugins/copyright-date-block-91c8d0",
 		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {

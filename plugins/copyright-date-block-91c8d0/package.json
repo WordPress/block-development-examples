@@ -1,0 +1,28 @@
+{
+	"name": "@gutenberg-examples/copyright-date-block-91c8d0",
+	"version": "0.1.0",
+	"description": "Display the copyright date for your website.",
+	"author": "Nick Diego",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js:src": "wp-scripts lint-js ./src",
+		"lint:js:src:fix": "wp-scripts lint-js ./src --fix",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.12.0"
+	},
+	"dependencies": {
+		"@wordpress/components": "^25.7.0",
+		"@wordpress/i18n": "^4.41.0",
+		"@wordpress/icons": "^9.32.0"
+	},
+	"files": [ "*" ]
+}

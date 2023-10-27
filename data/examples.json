@@ -68,5 +68,13 @@
       "interactive-block",
       "multi-block"
     ]
+  },
+  {
+    "slug": "copyright-date-block-91c8d0",
+    "description": "Copyright Date Block",
+    "tags": [
+      "static-rendering",
+      "dynamic-rendering"
+    ]
   }
 ]
