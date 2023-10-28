@@ -49,7 +49,8 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     if (tags.includes('gutenberg-plugin')) playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
-    
+    const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
+    const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
     return [
       `![](https://placehold.co/15x15/${id}/${id})`,
       `[${id}](${urlRepo}/plugins/${slug})`,
@@ -57,8 +58,8 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](${urlRepo}#${tagSlug})`)
         .join(", "),
-      `<a href="${urlZip}" target="_blank">📦</a>`,
-      `<a href="${playgroundUrl}" target="_blank"><img src="${urlAssetIconWp}"></a>`
+      `[📦](${urlZip} "${!tags.includes('no-block') ? descLinkZip : '' }")`,
+      `[![](${urlAssetIconWp})](${playgroundUrl} "${!tags.includes('no-block') ? descLinkPlayground : ''}")`,
     ];
   });
   const markdownTable = toMarkdownTable([
