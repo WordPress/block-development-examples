@@ -4,7 +4,7 @@ const toMarkdownTable = require("markdown-table");
 const { info, error } = require("../log");
 
 const rootPath = process.cwd();
-const readmePath = join(rootPath, "README.md");
+const readmePathRoot = join(rootPath, "README.md");
 const examplesJsonPath = join(rootPath, "data/examples.json");
 const tagsJsonPath = join(rootPath, "data/tags.json");
 
@@ -18,16 +18,10 @@ const {
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-module.exports = ({ slug: slugLastAdded }) => {
+module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
   const tagsJson = JSON.parse(fs.readFileSync(tagsJsonPath, "utf8"));
-
-  const readmePathDisplay = readmePath.split("/gutenberg-examples-2023/")[1];
-  let messageUpdate = `Updating ${readmePathDisplay}`
-  if (slugLastAdded) messageUpdate += ` with example ${slugLastAdded}`
-  info(messageUpdate)
-
   const markdownContent = fs.readFileSync(readmePath, "utf8");
     
   const regex = new RegExp(
@@ -43,8 +37,14 @@ module.exports = ({ slug: slugLastAdded }) => {
     (acc, { slug, name }) => ({ ...acc, [slug]: name }),
     {}
   );
+  let processedExamplesJson = examplesJson;
+  if (slugReadme) {
+    processedExamplesJson = examplesJson.filter(({ slug }) => slug === slugReadme);
+  } 
 
-  const markdownTableRows = examplesJson.map(({ slug, description, tags }) => {
+  const urlAssetIconWp = `https://raw.githubusercontent.com/wordpress-juanmaguitar/gutenberg-examples-2023/trunk/assets/icon-wp.svg`;
+  const urlRepo = `https://github.com/wordpress-juanmaguitar/gutenberg-examples-2023/tree/trunk`
+  const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
     const id = slug.split("-").pop();
     let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     if (tags.includes('gutenberg-plugin')) playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug);
@@ -52,13 +52,13 @@ module.exports = ({ slug: slugLastAdded }) => {
     
     return [
       `![](https://placehold.co/15x15/${id}/${id})`,
-      `[${id}](./plugins/${slug})`,
+      `[${id}](${urlRepo}/plugins/${slug})`,
       description,
       tags
-        .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](#${tagSlug})`)
+        .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](${urlRepo}#${tagSlug})`)
         .join(", "),
       `<a href="${urlZip}" target="_blank">📦</a>`,
-      `<a href="${playgroundUrl}" target="_blank"><img src="./assets/icon-wp.svg"></a>`
+      `<a href="${playgroundUrl}" target="_blank"><img src="${urlAssetIconWp}"></a>`
     ];
   });
   const markdownTable = toMarkdownTable([
@@ -73,7 +73,7 @@ module.exports = ({ slug: slugLastAdded }) => {
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    info(`${readmePathDisplay} was updated!`);
+    info(`README.md was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);

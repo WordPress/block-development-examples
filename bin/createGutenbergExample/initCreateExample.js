@@ -12,6 +12,7 @@ const generateExamplesTableMarkdown = require("./generateExamplesTableMarkdown")
 module.exports = async (promptObject) => {
   const { name, id, slug, keywords, description, source } = promptObject;
   const rootPath = process.cwd();
+  const readmePath = join(rootPath, "README.md");
   const pluginsFolderPath = join(rootPath, "plugins");
   const sourceFolderPath = join(pluginsFolderPath, source);
   const exampleFolderPath = join(pluginsFolderPath, slug);
@@ -108,7 +109,9 @@ module.exports = async (promptObject) => {
 
   const exampleObject = { slug, tags: keywords.slice(1), description };
   addExamplesJson({ exampleObject });
-  generateExamplesTableMarkdown({ slug,});
+  const readmePathDisplay = readmePath.split("/gutenberg-examples-2023/")[1];
+  info(`Updating ${readmePathDisplay}  with example ${slug}`);
+  generateExamplesTableMarkdown();
 
   info(`Installing dependencies...`);
   execa.sync("pnpm i", { shell: true, all: true, cwd: rootPath });
