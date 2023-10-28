@@ -34,7 +34,7 @@ At this point you are now ready to begin developing and testing the examples.
 
 ### See the examples in action
 
-To see the examples in action you can:
+To see the examples in action you have the following options:
 
 - Click on the Live Demo icon ![](/wordpress-juanmaguitar/gutenberg-examples-2023/raw/trunk/assets/icon-wp.svg) (from the [List of examples](#list-of-examples) table below) to see a [playground](https://developer.wordpress.org/playground/)-powered live demo of the example.
 - Use your own WordPress installation to install the plugin (that can be downloaded as a `.zip` from the 📦 icon of the example you're interested in the [List of examples](#list-of-examples) table below).
