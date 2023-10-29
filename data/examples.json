@@ -3,7 +3,7 @@
     "slug": "block-dynamic-rendering-64756b",
     "description": "Basic Block with Dynamic Rendering",
     "tags": [
-      "block-dynamic-rendering",
+      "dynamic-rendering",
       "create-block"
     ]
   },
@@ -11,7 +11,7 @@
     "slug": "basic-block-translations-3df23d",
     "description": "Basic Block with Translations",
     "tags": [
-      "block-static-rendering"
+      "static-rendering"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "slug": "block-static-rendering-b16608",
     "description": "Block with Static Rendering",
     "tags": [
-      "block-static-rendering",
+      "static-rendering",
       "create-block"
     ]
   },
