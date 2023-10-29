@@ -91,13 +91,9 @@ The examples in this repo are listed in the following table:
 
 These examples show the use of the experimental [Interactivity API](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/) in Blocks via the [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
 
-Examples: <!-- @LIST interactivity-api BEGIN --><!-- @LIST interactivity-api END -->
-
 ##### `INTERACTIVE BLOCK`
 
 These examples show how to add behaviour for the frontend in your blocks. This behaviour is usually applied on an extra file (defined with the [property `viewScript` of your `block.json`](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script)) that is loades only when the block is displayed in the frontend.
-
-Examples: <!-- @LIST interactive-block BEGIN --><!-- @LIST interactive-block END -->
 
 ##### `CREATE BLOCK`
 
