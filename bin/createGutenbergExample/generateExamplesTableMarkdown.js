@@ -53,7 +53,8 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
     return [
       `![](https://placehold.co/15x15/${id}/${id})`,
-      `[${id}](${urlRepo}/plugins/${slug})`,
+      "`" + id + "`",
+      `[${slug}](${urlRepo}/plugins/${slug})`,
       description,
       tags
         .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](${urlRepo}#${tagSlug})`)
@@ -63,7 +64,7 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     ];
   });
   const markdownTable = toMarkdownTable([
-    ["", "ID", "Short description", "Tags", "Download .zip", "Live Demo"],
+    ["", "ID", "Example slug", "Short description", "Tags", "Download .zip", "Live Demo"],
     ...markdownTableRows,
   ]);
 
