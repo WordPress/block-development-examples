@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Gutenberg Examples - Block Dynamic Rendering 64756b
+ * Plugin Name:       WP Block Development Examples - Block Dynamic Rendering 64756b
  * Description:       Example block scaffolded with Create Block tool.
  * Requires at least: 6.1
  * Requires PHP:      7.0

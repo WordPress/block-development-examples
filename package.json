@@ -22,7 +22,7 @@
 		"create-example:new": "cd plugins && npx @wordpress/create-block@latest --template ../templates/create-block-template",
 		"get:hexcode": "node ./bin/randomHexCode.js",
 		"table:update": "node ./bin/updateTableMarkdown.js",
-		"zips:remove": "rimraf --verbose ./plugins/*/@gutenberg-examples",
+		"zips:remove": "rimraf --verbose ./plugins/*/@wp-block-development-examples",
 		"zips:move": "copyfiles --verbose --flat './plugins/**/*.zip' zips",
 		"deploy": "npm run build && npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove"
 	},

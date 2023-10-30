@@ -16,7 +16,7 @@ const Counter = ( { attributes } ) => {
 
 window.addEventListener( 'load', () => {
 	document
-		.querySelectorAll( '.wp-block-gutenberg-examples-counter-react-99def1 .counter-contaner' )
+		.querySelectorAll( '.wp-block-wp-block-development-examples-counter-react-99def1 .counter-contaner' )
 		.forEach( ( block ) => {
 			const attributes = JSON.parse( block.dataset.gutenbergAttributes );
 			hydrateRoot( block, <Counter attributes={ attributes } />);

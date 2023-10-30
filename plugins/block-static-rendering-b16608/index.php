@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Gutenberg Examples - Block with Static Rendering b16608 
+ * Plugin Name:       WP Block Development Examples - Block with Static Rendering b16608 
  * Description:       Example block scaffolded with Create Block tool.
  * Requires at least: 6.1
  * Requires PHP:      7.0

@@ -11,11 +11,11 @@ const Save = ( { attributes } ) => {
 				</pre>
 			</details>
 			<br />
-			<button className="wp-block-gutenberg-examples-counter-jquery-99def1__decrement">
+			<button className="wp-block-wp-block-development-examples-counter-jquery-99def1__decrement">
 				-
 			</button>
-			<input width="5" step={ attributes.increment } type="number" className="wp-block-gutenberg-examples-counter-jquery-99def1__value" value={ attributes.initial } />
-			<button className="wp-block-gutenberg-examples-counter-jquery-99def1__increment">
+			<input width="5" step={ attributes.increment } type="number" className="wp-block-wp-block-development-examples-counter-jquery-99def1__value" value={ attributes.initial } />
+			<button className="wp-block-wp-block-development-examples-counter-jquery-99def1__increment">
 				+
 			</button>
 			

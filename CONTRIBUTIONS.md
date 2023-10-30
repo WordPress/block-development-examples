@@ -20,8 +20,8 @@
 -   [ ] Plugin **folder name** should be the `<slug>`
     -   Ex: `block-dynamic-rendering-64756b`
 -   On **`<plugin-folder>/package.json`**
-    -   [ ] **`name`** should follow the convention `@gutenberg-examples/<slug>`
-        -   Ex: `"name": "@gutenberg-examples/block-static-rendering-b16608"`
+    -   [ ] **`name`** should follow the convention `@wp-block-development-examples/<slug>`
+        -   Ex: `"name": "@wp-block-development-examples/block-static-rendering-b16608"`
     -   [ ] **`files`** property should be set to `*`
         -   Ex: `"files": [ "*" ]`
     -   [ ] **`scripts`**
@@ -35,19 +35,19 @@
         }
 ```
 
--   On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `Gutenberg Examples` - `<example-name-including-unique-code>`
-    -   Ex `Plugin Name:  Gutenberg Examples - Non Block React WP Data 56d6f3`
+-   On **`<plugin-folder>/index.php`** the `Plugin Name` should follow the convention: `WP Block Development Examples` - `<example-name-including-unique-code>`
+    -   Ex `Plugin Name:  WP Block Development Examples - Non Block React WP Data 56d6f3`
 -   On **`<plugin-folder>/src/block.json`**
-    -   [ ] **`name`** should follow the convention `gutenberg-examples/<slug>`
+    -   [ ] **`name`** should follow the convention `wp-block-development-examples/<slug>`
         -   Make sure the block registered at `index.js` is the same
-            -   Ex `block.json`: `"name": "gutenberg-examples/block-static-rendering-b16608"`
-            -   Ex `index.js`: `registerBlockType( 'gutenberg-examples/block-static-rendering-b16608',...`
-    -   [ ] (optional) If **`textdomain`**, it should be `gutenberg-examples`
-        -   Ex: `"textdomain": "gutenberg-examples"`
+            -   Ex `block.json`: `"name": "wp-block-development-examples/block-static-rendering-b16608"`
+            -   Ex `index.js`: `registerBlockType( 'wp-block-development-examples/block-static-rendering-b16608',...`
+    -   [ ] (optional) If **`textdomain`**, it should be `wp-block-development-examples`
+        -   Ex: `"textdomain": "wp-block-development-examples"`
     -   [ ] **`keywords`** should include, at least, the `<unique-code>`
         -   Ex: `"keywords": [ "64756b"]`
--   [ ] Block CSS class should follow the convention `.wp-block-gutenberg-examples-<slug>`
-    -   Ex: `.wp-block-gutenberg-examples-editable-block-1b8c51`
+-   [ ] Block CSS class should follow the convention `.wp-block-wp-block-development-examples-<slug>`
+    -   Ex: `.wp-block-wp-block-development-examples-editable-block-1b8c51`
 -   On **`<root-folder>/.wp-env.json`**
     -   [ ] The local path of the plugin/example (starting from root) should be included in the array `"plugins"`
         -   Ex: `"./plugins/basic-block-3df23d"`

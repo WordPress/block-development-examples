@@ -1,9 +1,9 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 3,
-	"name": "gutenberg-examples/basic-block-translations-3df23d",
+	"name": "wp-block-development-examples/basic-block-translations-3df23d",
 	"title": "Example: Basic block",
-	"textdomain": "gutenberg-examples",
+	"textdomain": "wp-block-development-examples",
 	"icon": "smiley",
 	"category": "widgets",
 	"example": {},

@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "gutenberg-examples/block-static-rendering-b16608",
+	"name": "wp-block-development-examples/block-static-rendering-b16608",
 	"version": "0.1.0",
 	"title": "⭐️ Block with Static Rendering",
 	"category": "widgets",

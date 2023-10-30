@@ -1,8 +1,8 @@
 # Copyright (C) 2023 the Gutenberg Team
-# This file is distributed under the same license as the Gutenberg Examples - Basic Block 3df23d plugin.
+# This file is distributed under the same license as the WP Block Development Examples - Basic Block 3df23d plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gutenberg Examples - Basic Block 3df23d 1.1.0\n"
+"Project-Id-Version: WP Block Development Examples - Basic Block 3df23d 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gutenberg-"
 "examples\n"
 "POT-Creation-Date: 2023-10-10T10:02:51+00:00\n"
@@ -14,14 +14,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4\n"
-"X-Domain: gutenberg-examples\n"
+"X-Domain: wp-block-development-examples\n"
 
 #. Plugin Name of the plugin
-msgid "Gutenberg Examples - Basic Block 3df23d"
+msgid "WP Block Development Examples - Basic Block 3df23d"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://github.com/WordPress/gutenberg-examples"
+msgid "https://github.com/WordPress/wp-block-development-examples"
 msgstr ""
 
 #. Description of the plugin

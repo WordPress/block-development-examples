@@ -2,7 +2,7 @@
 	"extends": [ "plugin:@wordpress/eslint-plugin/recommended" ],
 	"rules": {
 		"@wordpress/i18n-text-domain": ["error", {
-			"allowedTextDomain": "gutenberg-examples"
+			"allowedTextDomain": "wp-block-development-examples"
 		}]
 	}
 }

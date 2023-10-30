@@ -1,6 +1,6 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
-const blockClassPrefix = 'wp-block-gutenberg-examples-counter-js-99def1';
+const blockClassPrefix = 'wp-block-wp-block-development-examples-counter-js-99def1';
 const Save = ( { attributes } ) => {
 	return (
 		<div { ...useBlockProps.save() }>
