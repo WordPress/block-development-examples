@@ -18,7 +18,7 @@ const { title, name } = json;
 
 describe(`"${title}" block`, () => {
 	beforeAll( async () => {
-		await activatePlugin( 'gutenberg-examples-editable-block-1b8c51' );
+		await activatePlugin( 'wp-block-development-examples-editable-block-1b8c51' );
 	} );
 
 	beforeEach( async () => {
@@ -26,7 +26,7 @@ describe(`"${title}" block`, () => {
 	} );
 
 	afterAll( async () => {
-		await deactivatePlugin( 'gutenberg-examples-editable-block-1b8c51' );
+		await deactivatePlugin( 'wp-block-development-examples-editable-block-1b8c51' );
 	} );
 
 	it(`-- should be available to be inserted`, async () => {

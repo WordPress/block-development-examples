@@ -41,7 +41,7 @@ import { registerBlockType } from '@wordpress/blocks';
 import Edit from './edit';
 import Save from './save';
 
-registerBlockType( 'gutenberg-examples/counter-js', {
+registerBlockType( 'wp-block-development-examples/counter-js', {
 	edit: Edit,
 	save: Save,
 } );
@@ -56,10 +56,10 @@ The React component that is used to display the block in the Block Editor
 The React component that is used to generate the static HTML that is stored in the DB and returned to the cliente as the HTML of this block
 
 ```html
-<div class="wp-block-gutenberg-examples-counter-js-99def1">
-    <button class="wp-block-gutenberg-examples-counter-js-99def1__increment">+</button>
+<div class="wp-block-wp-block-development-examples-counter-js-99def1">
+    <button class="wp-block-wp-block-development-examples-counter-js-99def1__increment">+</button>
     <input/>
-    <button class="wp-block-gutenberg-examples-counter-js-99def1__decrement">-</button>
+    <button class="wp-block-wp-block-development-examples-counter-js-99def1__decrement">-</button>
     </div>
 ```
 

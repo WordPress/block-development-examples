@@ -120,7 +120,7 @@ available via `npm run-script`:
   table:update
     node ./bin/updateTableMarkdown.js
   zips:remove
-    rimraf --verbose ./plugins/*/@gutenberg-examples
+    rimraf --verbose ./plugins/*/@wp-block-development-examples
   zips:move
     copyfiles --verbose --flat './plugins/**/*.zip' zips
   deploy

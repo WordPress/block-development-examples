@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "gutenberg-examples/interactivity-api-block-833d15",
+	"name": "wp-block-development-examples/interactivity-api-block-833d15",
 	"version": "0.1.0",
 	"title": "⭐️ Interactivity API Block",
 	"category": "widgets",

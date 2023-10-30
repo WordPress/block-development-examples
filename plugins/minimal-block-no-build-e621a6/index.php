@@ -1,9 +1,9 @@
 <?php
 /*
-* Plugin Name: Gutenberg Examples - Minimal Block No Build e621a6
+* Plugin Name: WP Block Development Examples - Minimal Block No Build e621a6
 * Description: This is a plugin demonstrating how to register a minimal block for the Gutenberg editor.
 * Version: 1.0
-* Author: Gutenberg Examples
+* Author: WP Block Development Examples
 */
 
 function minimal_block_no_build_e621a6___register_block() {

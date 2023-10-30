@@ -1,9 +1,9 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 2,
-	"name": "gutenberg-examples/editable-block-1b8c51",
+	"name": "wp-block-development-examples/editable-block-1b8c51",
 	"title": "⭐️ Example: Editable Block",
-	"textdomain": "gutenberg-examples",
+	"textdomain": "wp-block-development-examples",
 	"icon": "universal-access-alt",
 	"category": "widgets",
 	"keywords": [ "1b8c51" ],

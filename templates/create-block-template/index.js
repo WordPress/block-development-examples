@@ -14,7 +14,7 @@ module.exports = {
 				},
 			};
 		},
-		namespace: 'gutenberg-examples',
+		namespace: 'wp-block-development-examples',
 		example: {},
 		customPackageJSON: {
 			files: [ '*' ],

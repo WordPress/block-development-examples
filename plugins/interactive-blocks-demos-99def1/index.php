@@ -6,14 +6,14 @@
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  * @link      https://github.com/wordpress-juanmaguitar/interactive-blocks-demos/
  *
- * Plugin Name: Gutenberg Examples - Interactive Blocks 99def1
+ * Plugin Name: WP Block Development Examples - Interactive Blocks 99def1
  * Plugin URI:  https://github.com/wordpress-juanmaguitar/interactive-blocks-demos/
  * Description: A plugin to show different approaches of creating interactive blocks with Gutenberg.
  * Version:     0.0.1
  * Author:      Juanma Garrido
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: gutenberg-examples
+ * Text Domain: wp-block-development-examples
  * Requires at least: 5.8
  * Requires PHP: 5.6
  */
@@ -40,12 +40,12 @@ function interactive_block_demos_register() {
 }
 
 add_action( 'init', 'interactive_block_demos_register');
-add_filter( 'render_block_gutenberg-examples/counter-jquery-99def1', function( $content ) {
+add_filter( 'render_block_wp-block-development-examples/counter-jquery-99def1', function( $content ) {
 	wp_enqueue_script( 'jquery' );
     return $content;
 });
 
-add_filter( 'render_block_gutenberg-examples/counter-alpine-99def1', function( $content ) {
+add_filter( 'render_block_wp-block-development-examples/counter-alpine-99def1', function( $content ) {
 	wp_enqueue_script( 'AlpineJS' );
     return $content;
 });

@@ -15,7 +15,7 @@ const Edit = () => {
 		<div { ...blockProps }>
 			{ __(
 				'Hello World!! (from the editor).',
-				'gutenberg-examples'
+				'wp-block-development-examples'
 			) }
 		</div>
 	);
