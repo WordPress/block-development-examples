@@ -1,6 +1,6 @@
 # WP Block Development Examples
 
-Welcome to the `wp-block-development-examples` repo on GitHub. Here you can find a bunch of block-related examples for Gutenberg that you can use to learn about Block Development.
+Welcome to the `wp-block-development-examples` repo on GitHub. Here you can find a bunch of block-related examples for WordPress that you can use to learn about Block Development.
 
 Every example is contained in a plugin so to see an example in action the related plugin needs to be installed and activated in a WordPress installation.
 
