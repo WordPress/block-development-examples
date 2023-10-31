@@ -16,7 +16,7 @@
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  */
-function gutenberg_examples__copyright_date_block__init() {
+function wp_block_development_examples__copyright_date_block__init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'gutenberg_examples__copyright_date_block__init' );
+add_action( 'init', 'wp_block_development_examples__copyright_date_block__init' );
