@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wp-block-development-examples/copyright-date-block-91c8d0",
+	"version": "0.1.0",
+	"title": "Copyright Date 91c8d0",
+	"category": "widgets",
+	"description": "Display the copyright date for your website.",
+	"example": {},
+	"keywords": [ "91c8d0"],
+	"attributes": {
+		"showStartingYear": {
+			"type": "boolean"
+		}, 
+		"startingYear": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": false,
+			"text": true
+		},
+		"html": false,
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "wp-block-development-examples",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
