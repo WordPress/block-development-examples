@@ -9,11 +9,11 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       format-api
  *
- * @package gutenberg-examples
+ * @package format-api-f14b86
  */
 add_action(
 	'enqueue_block_editor_assets',
-	function() {
+	function () {
 		$format_api_file = plugin_dir_path( __FILE__ ) . 'build/format-api-f14b86.asset.php';
 
 		if ( file_exists( $format_api_file ) ) {

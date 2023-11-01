@@ -23,7 +23,7 @@ const MyCustomButton = ( { isActive, onChange, value } ) => {
 };
 
 registerFormatType( 'my-custom-format/sample-output', {
-	title: __( 'Sample output aother' ),
+	title: __( 'Sample output' ),
 	tagName: 'samp',
 	className: null,
 	edit: MyCustomButton,
