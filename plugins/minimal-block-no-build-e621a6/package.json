@@ -3,10 +3,11 @@
 	"description": "",
 	"version": "0.1.0",
 	"scripts": {
-		"plugin-zip": "wp-scripts plugin-zip"
+		"plugin-zip": "wp-scripts plugin-zip",
+		"packages-update": "wp-scripts packages-update"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.14.0"
+		"@wordpress/scripts": "^26.15.0"
 	},
 	"files": [
 		"*"

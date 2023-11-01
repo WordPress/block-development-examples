@@ -6,6 +6,7 @@
 	"scripts": {
 		"start": "pnpm -r run start",
 		"build": "pnpm -r run build",
+		"packages-update": "pnpm -r packages-update",
 		"preinstall": "npx only-allow pnpm",
 		"plugin-zip": "pnpm -r run plugin-zip",
 		"code:get": "node ./bin/randomHexCode.js",

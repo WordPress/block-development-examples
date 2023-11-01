@@ -1,14 +1,17 @@
 {
-    "name": "@wp-block-development-examples/minimal-block-ca6eda",
-    "description": "",
-    "version": "0.1.0",
-    "scripts": {
-        "build": "wp-scripts build",
-        "plugin-zip": "wp-scripts plugin-zip",
-        "start": "wp-scripts start"
-    },
-    "devDependencies": {
-        "@wordpress/scripts": "^26.14.0"
-    },
-    "files": [ "*" ]
+	"name": "@wp-block-development-examples/minimal-block-ca6eda",
+	"description": "",
+	"version": "0.1.0",
+	"scripts": {
+		"build": "wp-scripts build",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.15.0"
+	},
+	"files": [
+		"*"
+	]
 }

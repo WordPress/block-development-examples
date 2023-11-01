@@ -21,10 +21,12 @@
 		"test:unit": "wp-scripts test-unit-js"
 	},
 	"dependencies": {
-		"@wordpress/interactivity": "^2.2.0"
+		"@wordpress/interactivity": "^2.5.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.12.0"
+		"@wordpress/scripts": "^26.15.0"
 	},
-	"files": [ "*" ]
+	"files": [
+		"*"
+	]
 }
