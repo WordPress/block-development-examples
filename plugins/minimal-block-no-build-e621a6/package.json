@@ -1,12 +1,14 @@
 {
-    "name": "@wp-block-development-examples/minimal-block-no-build-e621a6",
-    "description": "",
-    "version": "0.1.0",
-    "scripts": {
-        "plugin-zip": "wp-scripts plugin-zip"
-    },
-    "devDependencies": {
-        "@wordpress/scripts": "^26.14.0"
-    },
-    "files": [ "*" ]
+	"name": "@wp-block-development-examples/minimal-block-no-build-e621a6",
+	"description": "",
+	"version": "0.1.0",
+	"scripts": {
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.14.0"
+	},
+	"files": [
+		"*"
+	]
 }
