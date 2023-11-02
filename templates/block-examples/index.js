@@ -8,6 +8,8 @@ module.exports = {
 			return {
 				...view,
 				slug: `${ view.slug }-${ hex }`,
+				title: `${ view.title } ${ hex }`,
+				textdomain: 'wp-block-development-examples',
 				customBlockJSON: {
 					...view.customBlockJSON,
 					keywords: [ hex ],
@@ -18,10 +20,6 @@ module.exports = {
 					scripts: {
 						build: 'wp-scripts build',
 						start: 'wp-scripts start',
-						format: 'wp-scripts format',
-						'lint:css': 'wp-scripts lint-style',
-						'lint:js': 'wp-scripts lint-js',
-						'packages-update': 'wp-scripts packages-update',
 						'plugin-zip': 'wp-scripts plugin-zip',
 					},
 					devDependencies: {
