@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-block-development-examples/editable-80cd51",
+  "version": "0.1.0",
+  "title": "Editable 80cd51",
+  "category": "widgets",
+  "example": {},
+  "textdomain": "wp-block-development-examples",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "80cd51"
+  ]
+}
