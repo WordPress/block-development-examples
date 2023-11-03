@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       {{title}}
+ * Plugin Name:       WP Block Development Examples - {{title}}
 {{#pluginURI}}
  * Plugin URI:        {{{pluginURI}}}
 {{/pluginURI}}
@@ -37,19 +37,19 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function {{namespaceSnakeCase}}_{{slugSnakeCase}}_block_init() {
+function {{slugSnakeCase}}__register_block() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', '{{namespaceSnakeCase}}_{{slugSnakeCase}}_block_init' );
+add_action( 'init', '{{slugSnakeCase}}__register_block' );
 {{/isNon-blockVariant}}
 {{#isNon-blockVariant}}
 add_action(
 	'enqueue_block_editor_assets',
 	function() {
-		$citation_file = plugin_dir_path( __FILE__ ) . '/build/{{slug}}.asset.php';
+		${{slugSnakeCase}}_file = plugin_dir_path( __FILE__ ) . '/build/{{slug}}.asset.php';
 
-		if ( file_exists( $citation_file ) ) {
-			$assets = include $citation_file;
+		if ( file_exists( ${{slugSnakeCase}}_file ) ) {
+			$assets = include ${{slugSnakeCase}}_file;
 			wp_enqueue_script(
 				'{{slug}}',
 				plugin_dir_url( __FILE__ ) . '/build/{{slug}}.js',
@@ -60,6 +60,4 @@ add_action(
 		}
 	}
 );
-
-
 {{/isNon-blockVariant}}
