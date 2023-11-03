@@ -54,5 +54,10 @@
 		"slug": "format-api-f14b86",
 		"description": "Format API",
 		"tags": [ "no-block" ]
+	},
+	{
+		"slug": "stylesheets-79a4c3",
+		"description": "Stylesheets",
+		"tags": [ ]
 	}
 ]
