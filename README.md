@@ -3,7 +3,7 @@
 Welcome to the `wp-block-development-examples` repo on GitHub. Here you can find a bunch of block-related examples for WordPress that you can use to learn about Block Development.
 
 > **Note**
-> Check the code 📁, download 📦 or see a [playground](https://developer.wordpress.org/playground/)-powered live demo <img src="https://github.com/wptrainingteam/wp-block-development-examples/blob/trunk/assets/icon-wp.svg"> of each example.
+> Check the code 📁, download 📦 or see a [playground](https://developer.wordpress.org/playground/)-powered live demo ![](https://raw.githubusercontent.com/wordpress-juanmaguitar/wp-block-development-examples/trunk/assets/icon-wp.svg) of each example.
 
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
