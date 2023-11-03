@@ -1,0 +1,26 @@
+{
+	"apiVersion": 3,
+	"name": "wp-block-development-examples/counter-alpine-99def1",
+	"title": "Counter (Alpine)",
+	"category": "media",
+	"icon": "smiley",
+	"description": "This is the final counter, implemented with Alpine",
+	"keywords": [ "99def1"],
+	"textdomain": "wp-block-development-examples",
+	"attributes": {
+		"initial": {
+			"type": "number",
+			"default": 0
+		},
+		"increment": {
+			"type": "number",
+			"default": 2
+		}
+	},
+	"supports": {
+		"align": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
