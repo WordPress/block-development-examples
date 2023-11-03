@@ -1,3 +1,8 @@
+const URL_WIKI = "https://github.com/wptrainingteam/wp-block-development-examples/wiki"
+const URL_ASSETS = `https://raw.githubusercontent.com/wordpress-juanmaguitar/wp-block-development-examples/trunk/assets/`
+const URL_REPO = `https://github.com/wordpress-juanmaguitar/wp-block-development-examples/tree/trunk`
+const WIKI_PAGE_WHY_ID = "04-Why-an-ID-for-every-example%3F"
+const WIKI_PAGE_TAGS = "03-Tags"
 const REPO_ORIGIN = "wptrainingteam/wp-block-development-examples";
 const SLUG_EXAMPLE_MARKER = "<%SLUG_EXAMPLE_MARKER%>";
 const URL_EXAMPLE_ZIP = `https://raw.githubusercontent.com/${REPO_ORIGIN}/deploy/zips/${SLUG_EXAMPLE_MARKER}.zip`;
@@ -10,5 +15,10 @@ module.exports = {
     PLAYGROUND_URL_WITH_PLUGIN,
     PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
     SLUG_EXAMPLE_MARKER,
-    URL_EXAMPLE_ZIP
+    URL_EXAMPLE_ZIP,
+    URL_WIKI,
+    WIKI_PAGE_WHY_ID,
+    WIKI_PAGE_TAGS,
+    URL_ASSETS,
+    URL_REPO
 }
