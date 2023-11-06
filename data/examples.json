@@ -64,5 +64,10 @@
 		"slug": "basic-esnext-a2ab62",
 		"description": "Basic ESNext",
 		"tags": [ "minimal" ]
+	},
+	{
+		"slug": "block-supports-6aa4dd",
+		"description": "Block Supports",
+		"tags": [ "" ]
 	}
 ]
