@@ -26,7 +26,7 @@ jobs:
           type: now
           from_branch: trunk
           target_branch: deploy
-          github_token: ${{ secrets.gh_action_gutenberg_examples }}
+          github_token: ${{ secrets.GH_ACTION_BLOCK_EXAMPLES }}
       - name: Show current branch
         run: git branch --show-current
       - name: Show last commit
