@@ -69,5 +69,10 @@
 		"slug": "block-supports-6aa4dd",
 		"description": "Block Supports",
 		"tags": [ "" ]
+	},
+	{
+		"slug": "meta-block-bb1e55",
+		"description": "Meta Block",
+		"tags": [ "" ]
 	}
 ]
