@@ -1,0 +1,17 @@
+{
+	"name": "@block-development-examples/inner-blocks-dcd824",
+	"version": "0.1.0",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"files": [
+		"*"
+	],
+	"devDependencies": {
+		"@wordpress/scripts": "^26.15.0"
+	}
+}
