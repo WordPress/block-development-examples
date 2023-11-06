@@ -12,7 +12,11 @@ const {
   PLAYGROUND_URL_WITH_PLUGIN,
   PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
   SLUG_EXAMPLE_MARKER,
-  URL_EXAMPLE_ZIP
+  URL_EXAMPLE_ZIP,
+  URL_WIKI,
+  WIKI_PAGE_WHY_ID,
+  WIKI_PAGE_TAGS,
+  URL_ASSETS
 } = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
@@ -52,19 +56,18 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
     return [
-      `![](https://placehold.co/15x15/${id}/${id})`,
-      "`" + id + "`",
-      `[${slug}](${urlRepo}/plugins/${slug})`,
+      `[📁](${urlRepo}/plugins/${slug})`,
       description,
       tags
-        .map((tagSlug) => `[\`${processedTags[tagSlug]}\`](${urlRepo}#${tagSlug})`)
+        .map((tagSlug) => `<small><code><a href="${URL_WIKI}/${WIKI_PAGE_TAGS}#${tagSlug}">${processedTags[tagSlug]}</a></code></small>`)
         .join(", "),
+      "`" + id + "`",
       `[📦](${urlZip} "${!tags.includes('no-block') ? descLinkZip : '' }")`,
       `[![](${urlAssetIconWp})](${playgroundUrl} "${!tags.includes('no-block') ? descLinkPlayground : ''}")`,
     ];
   });
   const markdownTable = toMarkdownTable([
-    ["", "ID", "Example slug", "Short description", "Tags", "Download .zip", "Live Demo"],
+    ["Folder", `<span style="display: inline-block; width:250px">Short description</span>`, "Tags", `ID ([❓](${URL_WIKI}/${WIKI_PAGE_WHY_ID} "Why an ID for every example?"))`, "Download .zip", "Live Demo"],
     ...markdownTableRows,
   ]);
 

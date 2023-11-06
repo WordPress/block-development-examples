@@ -4,6 +4,7 @@ const initCreateExample = require("./initCreateExample");
 const randomHexCode = require("../randomHexCode");
 const examples = require("../../data/examples.json");
 const tags = require("../../data/tags.json");
+const {REPO_ORIGIN} = require("./constants");
 
 const DESC_MAX_LENTH = 50;
 process.stdout.write('\033c');
@@ -16,7 +17,7 @@ async function promptUser() {
 
   let preChosenKeywords = [];
 
-  const extraInfoExamples = `\x1b[0mhttps://github.com/wordpress-juanmaguitar/wp-block-development-examples/tree/trunk#list-of-examples\x1b[0m\n\n`
+  const extraInfoExamples = `\x1b[0mhttps://github.com/${REPO_ORIGIN}/tree/trunk#list-of-examples\x1b[0m\n\n`
   info(`WP Block Development Examples CREATION ASSISTANT\n`)
   info(`Answer the following 4 questions to generate a new gutenberg example based on an existing one\n`)
   
@@ -48,7 +49,7 @@ async function promptUser() {
   });
   // info({description})
 
-  const extraInfoTags = `\x1b[0msee full explanation of each tag at https://github.com/wordpress-juanmaguitar/wp-block-development-examples/tree/trunk#tags\x1b[0m\n\n`
+  const extraInfoTags = `\x1b[0msee full explanation of each tag at https://github.com/${REPO_ORIGIN}/tree/trunk#tags\x1b[0m\n\n`
   
   const keywords = await checkbox({
     message: `[4/4] Select some ${highlightText("tags for your gutenberg example")}: ` + `\n${extraInfoTags}`,
