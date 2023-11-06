@@ -69,5 +69,10 @@
 		"slug": "block-supports-6aa4dd",
 		"description": "Block Supports",
 		"tags": [ "" ]
+	},
+	{
+		"slug": "dynamic-block-b0bce7",
+		"description": "Dynamic Block",
+		"tags": [ "dynamic-rendering" ]
 	}
 ]
