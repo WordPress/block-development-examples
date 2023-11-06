@@ -37,7 +37,6 @@ npm-debug.log
 *.swp
 
 # Built packages
-build/
 build-module/
 build-style/
 build-style.js
