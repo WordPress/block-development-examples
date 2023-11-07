@@ -98,6 +98,12 @@ importers:
         specifier: ^26.15.0
         version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/inner-blocks-dcd824:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/interactive-blocks-demos-99def1:
     dependencies:
       '@wordpress/blob':
