@@ -4,12 +4,12 @@ const { info, error } = require( '../log' );
 
 module.exports = ( { packageJsonPath, slug, description } ) => {
 
-    const packageJsonDisplay = packageJsonPath.split('/wp-block-development-examples/')[1]
+    const packageJsonDisplay = packageJsonPath.split('/block-development-examples/')[1]
     const packageJsonObject = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
     
     const processedPackageJson = {
         ...packageJsonObject,
-        name: `@wp-block-development-examples/${slug}`,
+        name: `@block-development-examples/${slug}`,
         description
     }
     
