@@ -58,7 +58,7 @@
 	{
 		"slug": "stylesheets-79a4c3",
 		"description": "Stylesheets",
-		"tags": ["styles"]
+		"tags": [ "styles" ]
 	},
 	{
 		"slug": "basic-esnext-a2ab62",
@@ -68,11 +68,21 @@
 	{
 		"slug": "block-supports-6aa4dd",
 		"description": "Block Supports",
-		"tags": ["supports"]
+		"tags": [ "supports" ]
 	},
 	{
 		"slug": "dynamic-block-b0bce7",
 		"description": "Dynamic Block",
 		"tags": [ "dynamic-rendering" ]
+	},
+	{
+		"slug": "meta-block-bb1e55",
+		"description": "Meta Block",
+		"tags": [ "meta" ]
+	},
+	{
+		"slug": "inner-blocks-dcd824",
+		"description": "Inner Blocks",
+		"tags": [ "" ]
 	}
 ]
