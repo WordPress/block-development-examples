@@ -13,8 +13,19 @@ import { __ } from '@wordpress/i18n';
  * @return {WPElement} Element to render.
  */
 export default function save() {
+	
+	const customStyleUnderline = {
+		textDecoration:'red underline',
+		textDecorationThickness: '3px'
+	};
+
+	const blockProps = useBlockProps.save( {
+		style: customStyleUnderline,
+		className: 'hasPerspective'
+	  } );
+	  
 	return (
-		<p { ...useBlockProps.save() }>
+		<p { ...blockProps }>
 			{ __(
 				'Hello World, step 2 (from the frontend, in red).',
 				'block-development-examples'
