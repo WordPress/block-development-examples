@@ -1,12 +1,12 @@
 {
 	"apiVersion": 2,
-	"name": "wp-block-development-examples/counter-web-component-99def1",
+	"name": "block-development-examples/counter-web-component-99def1",
 	"title": "Counter (Web Components)",
 	"category": "media",
 	"icon": "smiley",
 	"description": "This is the final counter, implemented in Web Components",
 	"keywords": [ "99def1"],
-	"textdomain": "wp-block-development-examples",
+	"textdomain": "block-development-examples",
 	"attributes": {
 		"initial": {
 			"type": "number",

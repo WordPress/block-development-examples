@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       WP Block Development Examples - Format API f14b86
+ * Plugin Name:       Block Development Examples - Format API f14b86
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0

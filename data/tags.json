@@ -50,6 +50,14 @@
     {
         "slug": "multi-block",
         "name": "MULTI BLOCK"
+    },
+    {
+        "slug": "styles",
+        "name": "STYLES"
+    },
+    {
+        "slug": "supports",
+        "name": "SUPPORTS"
     }
     
 

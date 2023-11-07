@@ -5,9 +5,16 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-wp-block-development-examples-stylesheets-79a4c3 {
+.wp-block-block-development-examples-stylesheets-79a4c3 {
 	color: #8b0000;
 	background: #fcc;
 	border: 2px solid #c99;
 	padding: 20px;
+
+	&.hasPerspective {
+		transform: perspective(400px) rotate3d(1, -1, 0, 8deg);
+	}
+	&.hasPerspective:hover {
+		transform: perspective(400px) rotate3d(1, -1, 0, -8deg);
+	}
 }
