@@ -1,7 +1,7 @@
 const { join } = require("path");
 const fs = require('fs');
 
-const generateExamplesTableMarkdown = require("./createGutenbergExample/generateExamplesTableMarkdown.js");
+const generateExamplesTableMarkdown = require("./copyGutenbergExample/generateExamplesTableMarkdown.js");
 const slug = process.argv[2];
 const rootPath = process.cwd();
 let readmePath;

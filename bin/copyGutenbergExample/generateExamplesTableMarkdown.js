@@ -22,7 +22,7 @@ const {
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
 
-module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
+module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) => {
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
   const tagsJson = JSON.parse(fs.readFileSync(tagsJsonPath, "utf8"));

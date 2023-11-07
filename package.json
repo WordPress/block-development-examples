@@ -1,7 +1,7 @@
 {
-	"name": "monorepo",
+	"name": "block-development-examples",
 	"version": "1.0.0",
-	"description": "",
+	"description": "WordPress Block Development Examples",
 	"main": "index.js",
 	"scripts": {
 		"start": "pnpm -r run start",
@@ -18,7 +18,7 @@
 		"env:destroy": "wp-env destroy",
 		"env:logs": "wp-env logs all",
 		"test:e2e": "wp-scripts test-e2e",
-		"create-example:copy": "node ./bin/createGutenbergExample/index.js",
+		"create-example:copy": "node ./bin/copyGutenbergExample/index.js",
 		"create-example:new": "cd plugins && npx @wordpress/create-block@latest --template ../templates/block-examples",
 		"postcreate-example:new": "pnpm i",
 		"get:hexcode": "node ./bin/randomHexCode.js",
