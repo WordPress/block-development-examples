@@ -1,6 +1,6 @@
 <?php
 /*
-* Plugin Name: WP Block Development Examples - Minimal Block ca6eda
+* Plugin Name: Block Development Examples - Minimal Block ca6eda
 */
 
 function minimal_block_ca6eda___register_block() {

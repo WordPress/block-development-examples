@@ -9,14 +9,14 @@ module.exports = {
 				...view,
 				slug: `${ view.slug }-${ hex }`,
 				title: `${ view.title } ${ hex }`,
-				textdomain: 'wp-block-development-examples',
+				textdomain: 'block-development-examples',
 				customBlockJSON: {
 					...view.customBlockJSON,
 					keywords: [ hex ],
 				},
 				customPackageJSON: {
 					...view.customPackageJSON,
-					name: `@wp-block-development-examples/${ view.slug }-${ hex }`,
+					name: `@block-development-examples/${ view.slug }-${ hex }`,
 					scripts: {
 						build: 'wp-scripts build',
 						start: 'wp-scripts start',
@@ -29,7 +29,7 @@ module.exports = {
 			};
 		},
 		wpScripts: false,
-		namespace: 'wp-block-development-examples',
+		namespace: 'block-development-examples',
 		example: {},
 		customPackageJSON: {
 			files: [ '*' ],

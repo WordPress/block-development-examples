@@ -3,6 +3,7 @@
 /**
  * WordPress Dependencies
  */
+import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -17,7 +18,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p { ...useBlockProps.save() }>
-			{ '{{title}} – hello from the saved content!' }
+			{ __( '{{title}} – hello from the saved content!', '{{textdomain}}' ) }
 		</p>
 	);
 }

@@ -1,9 +1,9 @@
 # Copyright (C) 2023 the Gutenberg Team
-# This file is distributed under the same license as the WP Block Development Examples - Basic Block 3df23d plugin.
+# This file is distributed under the same license as the Block Development Examples - Basic Block 3df23d plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Block Development Examples - Basic Block 3df23d 1.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-block-development-examples\n"
+"Project-Id-Version: Block Development Examples - Basic Block 3df23d 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/block-development-examples\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,14 +12,14 @@ msgstr ""
 "POT-Creation-Date: 2023-10-10T10:02:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
-"X-Domain: wp-block-development-examples\n"
+"X-Domain: block-development-examples\n"
 
 #. Plugin Name of the plugin
-msgid "WP Block Development Examples - Basic Block 3df23d"
+msgid "Block Development Examples - Basic Block 3df23d"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://github.com/WordPress/wp-block-development-examples"
+msgid "https://github.com/WordPress/block-development-examples"
 msgstr ""
 
 #. Description of the plugin

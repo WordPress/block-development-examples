@@ -6,7 +6,7 @@ const rootPath = process.cwd();
 const examplesJsonPath = join(rootPath, "data/examples.json");
 
 module.exports = async ( { exampleObject } ) => {
-    const examplesJsonPathDisplay = examplesJsonPath.split('/wp-block-development-examples/')[1]
+    const examplesJsonPathDisplay = examplesJsonPath.split('/block-development-examples/')[1]
     const examplesJsonArray = JSON.parse(fs.readFileSync(examplesJsonPath, 'utf8'));
     
     const processedExamplesJson = [
