@@ -1,7 +1,7 @@
 (function (blocks, element) {
   var el = element.createElement;
 
-  blocks.registerBlockType("wp-block-development-examples/minimal-block-no-build-e621a6", {
+  blocks.registerBlockType("block-development-examples/minimal-block-no-build-e621a6", {
     edit: function () {
       return el("p", {} , "Hello World - Block Editor");
     },

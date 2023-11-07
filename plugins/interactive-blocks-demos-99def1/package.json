@@ -1,17 +1,17 @@
 {
-	"name": "@wp-block-development-examples/interactive-blocks-demos-99def1",
+	"name": "@block-development-examples/interactive-blocks-demos-99def1",
 	"private": true,
 	"description": "An exploratory plugin to display several approaches of creating interactive blocks in Gutenberg",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/wordpress-juanmaguitar/interactive-blocks-demos.git"
+		"url": "git+https://github.com/wptrainingteam/interactive-blocks-demos.git"
 	},
 	"author": "Juanma Garrido",
 	"license": "GPL-2.0-or-later",
 	"bugs": {
-		"url": "https://github.com/wordpress-juanmaguitar/interactive-blocks-demos/issues"
+		"url": "https://github.com/wptrainingteam/interactive-blocks-demos/issues"
 	},
-	"homepage": "https://github.com/wordpress-juanmaguitar/interactive-blocks-demos#readme",
+	"homepage": "https://github.com/wptrainingteam/interactive-blocks-demos#readme",
 	"dependencies": {
 		"@wordpress/blob": "^3.6.0",
 		"@wordpress/block-editor": "^8.6.0",
