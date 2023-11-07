@@ -2,6 +2,8 @@
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
+| Folder | <span style="display: inline-block; width:250px">Short description</span> | Tags | ID ([❓](https://github.com/wptrainingteam/block-development-examples/wiki/04-Why-an-ID-for-every-example%3F "Why an ID for every example?")) | Download .zip | Live Demo |
+| ------ | ------------------------------------------------------------------------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | --------- |
 <!-- @TABLE EXAMPLES END -->
 
 ## Start Guide

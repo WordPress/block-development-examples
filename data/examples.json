@@ -83,11 +83,16 @@
 	{
 		"slug": "inner-blocks-dcd824",
 		"description": "Inner Blocks",
-		"tags": [ ]
+		"tags": []
 	},
 	{
 		"slug": "slotfill-2fb190",
 		"description": "SlotFill",
 		"tags": [ "no-block" ]
+	},
+	{
+		"slug": "recipe-card-744e8a",
+		"description": "Recipe",
+		"tags": []
 	}
 ]

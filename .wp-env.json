@@ -18,6 +18,7 @@
 		"./plugins/slotfill-2fb190",
 		"./plugins/dynamic-block-b0bce7",
 		"./plugins/meta-block-bb1e55",
+		"./plugins/recipe-card-744e8a",
 		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {
