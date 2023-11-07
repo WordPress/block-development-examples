@@ -1,5 +1,5 @@
 window.addEventListener( 'load', () => {
-	const blockClassPrefix = '.wp-block-wp-block-development-examples-counter-js-99def1'
+	const blockClassPrefix = '.wp-block-block-development-examples-counter-js-99def1'
 	const incrementButton = document.querySelector(blockClassPrefix + '__increment');
 	const decrementButton = document.querySelector(blockClassPrefix + '__decrement');
 	const valueBox = document.querySelector(blockClassPrefix + '__value');

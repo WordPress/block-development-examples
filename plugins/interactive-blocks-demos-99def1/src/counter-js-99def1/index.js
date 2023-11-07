@@ -4,7 +4,7 @@ import { registerBlockType } from '@wordpress/blocks';
 import Edit from './edit';
 import Save from './save';
 
-registerBlockType( 'wp-block-development-examples/counter-js-99def1', {
+registerBlockType( 'block-development-examples/counter-js-99def1', {
 	edit: Edit,
 	save: Save,
 } );

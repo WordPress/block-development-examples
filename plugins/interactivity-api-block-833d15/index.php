@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       WP Block Development Examples - Interactive Block 833d15
+ * Plugin Name:       Block Development Examples - Interactive Block 833d15
  * Description:       An interactive block with the Interactivity API
  * Version:           0.1.0
  * Requires at least: 6.1

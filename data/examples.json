@@ -58,7 +58,7 @@
 	{
 		"slug": "stylesheets-79a4c3",
 		"description": "Stylesheets",
-		"tags": []
+		"tags": ["styles"]
 	},
 	{
 		"slug": "basic-esnext-a2ab62",
@@ -68,11 +68,11 @@
 	{
 		"slug": "block-supports-6aa4dd",
 		"description": "Block Supports",
-		"tags": [ "" ]
+		"tags": [ "supports" ]
 	},
 	{
 		"slug": "meta-block-bb1e55",
 		"description": "Meta Block",
-		"tags": [ "" ]
+		"tags": [ "meta" ]
 	}
 ]

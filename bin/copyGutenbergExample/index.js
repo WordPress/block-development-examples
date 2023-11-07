@@ -18,7 +18,7 @@ async function promptUser() {
   let preChosenKeywords = [];
 
   const extraInfoExamples = `\x1b[0mhttps://github.com/${REPO_ORIGIN}/tree/trunk#list-of-examples\x1b[0m\n\n`
-  info(`WP Block Development Examples CREATION ASSISTANT\n`)
+  info(`Block Development Examples CREATION ASSISTANT\n`)
   info(`Answer the following 4 questions to generate a new gutenberg example based on an existing one\n`)
   
   const source = await select({

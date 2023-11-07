@@ -18,11 +18,17 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit() {
+	const customStyleUnderline = {
+		textDecoration:'green wavy underline'
+	};
+
+	const blockProps = useBlockProps( { style: customStyleUnderline, className: 'hasPerspective', } );
+
 	return (
-		<p { ...useBlockProps() }>
+		<p { ...blockProps }>
 			{ __(
 				'Hello World, step 2 (from the editor, in green).',
-				'wp-block-development-examples'
+				'block-development-examples'
 			) }
 		</p>
 	);
