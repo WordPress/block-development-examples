@@ -1,7 +1,7 @@
 <?php
 
  /**
- * Plugin Name:       WP Block Development Examples - Non Block React WP Data 56d6f3
+ * Plugin Name:       Block Development Examples - Non Block React WP Data 56d6f3
  * Description:       A non-block example with wp-data
  * Version:           0.1.0
  * Requires at least: 6.1

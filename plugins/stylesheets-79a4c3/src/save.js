@@ -17,7 +17,7 @@ export default function save() {
 		<p { ...useBlockProps.save() }>
 			{ __(
 				'Hello World, step 2 (from the frontend, in red).',
-				'wp-block-development-examples'
+				'block-development-examples'
 			) }
 		</p>
 	);

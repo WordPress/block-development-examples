@@ -3,13 +3,13 @@ const { info, error } = require( '../log' );
 
 module.exports = ( { blockJsonPath, keywords, slug, name, description } ) => {
 
-    const blockJsonPathDisplay = blockJsonPath.split('/wp-block-development-examples/')[1]
+    const blockJsonPathDisplay = blockJsonPath.split('/block-development-examples/')[1]
     const blockJsonObject = JSON.parse(fs.readFileSync(blockJsonPath, 'utf8'));
     
     const processedBlockJson = {
         ...blockJsonObject,
         keywords,
-        name: `wp-block-development-examples/${slug}`,
+        name: `block-development-examples/${slug}`,
 	    title: `⭐️ ${name}`,
         description
     }

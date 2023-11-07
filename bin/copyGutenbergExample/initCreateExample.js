@@ -82,7 +82,7 @@ module.exports = async (promptObject) => {
   info(resultsReplacement);
 
   const regexPluginName = new RegExp(`^.*Plugin Name.*$`, "gm");
-  const pluginName = ` * Plugin Name:       WP Block Development Examples - ${name} ${id}`;
+  const pluginName = ` * Plugin Name:       Block Development Examples - ${name} ${id}`;
 
   replace.sync({
     files: `${exampleFolderPath}/*.php`,
@@ -109,7 +109,7 @@ module.exports = async (promptObject) => {
 
   const exampleObject = { slug, tags: keywords.slice(1), description };
   addExamplesJson({ exampleObject });
-  const readmePathDisplay = readmePath.split("/wp-block-development-examples/")[1];
+  const readmePathDisplay = readmePath.split("/block-development-examples/")[1];
   info(`Updating ${readmePathDisplay}  with example ${slug}`);
   generateExamplesTableMarkdown();
 

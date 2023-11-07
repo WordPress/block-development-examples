@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:       WP Block Development Examples - Basic Esnext a2ab62
+ * Plugin Name:       Block Development Examples - Basic Esnext a2ab62
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       wp-block-development-examples
+ * Text Domain:       block-development-examples
  *
- * @package           wp-block-development-examples
+ * @package           block-development-examples
  */
 /**
  * Registers the block using the metadata loaded from the `block.json` file.

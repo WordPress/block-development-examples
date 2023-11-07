@@ -22,7 +22,7 @@ export default function Edit() {
 		<p { ...useBlockProps() }>
 			{ __(
 				'Hello World, step 2 (from the editor, in green).',
-				'wp-block-development-examples'
+				'block-development-examples'
 			) }
 		</p>
 	);

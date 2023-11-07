@@ -15,7 +15,7 @@ const Save = () => {
 		<div { ...blockProps }>
 			{ __(
 				'Hello World, step 1 (from the frontend).',
-				'wp-block-development-examples'
+				'block-development-examples'
 			) }
 		</div>
 	);

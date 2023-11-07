@@ -46,8 +46,8 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     processedExamplesJson = examplesJson.filter(({ slug }) => slug === slugReadme);
   } 
 
-  const urlAssetIconWp = `https://raw.githubusercontent.com/wordpress-juanmaguitar/wp-block-development-examples/trunk/assets/icon-wp.svg`;
-  const urlRepo = `https://github.com/wordpress-juanmaguitar/wp-block-development-examples/tree/trunk`
+  const urlAssetIconWp = `https://raw.githubusercontent.com/wptrainingteam/block-development-examples/trunk/assets/icon-wp.svg`;
+  const urlRepo = `https://github.com/wptrainingteam/block-development-examples/tree/trunk`
   const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
     const id = slug.split("-").pop();
     let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);

@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: WP Block Development Examples - Editable Block 1b8c51
- * Plugin URI: https://github.com/WordPress/wp-block-development-examples
+ * Plugin Name: Block Development Examples - Editable Block 1b8c51
+ * Plugin URI: https://github.com/WordPress/block-development-examples
  * Description: This is a plugin demonstrating how to register new blocks for the Gutenberg editor.
  * Version: 1.1.0
  * Author: the Gutenberg Team
  *
- * @package wp-block-development-examples
+ * @package block-development-examples
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
  * Load all translations for our plugin from the MO file.
  */
 function editable_block_1b8c51__load_textdomain() {
-	load_plugin_textdomain( 'wp-block-development-examples', false, basename( __DIR__ ) . '/languages' );
+	load_plugin_textdomain( 'block-development-examples', false, basename( __DIR__ ) . '/languages' );
 }
 add_action( 'init', 'editable_block_1b8c51__load_textdomain' );
 
@@ -36,7 +36,7 @@ function editable_block_1b8c51__register_block() {
 		 * plugin_dir_path( MY_PLUGIN ) . 'languages' ) ). For details see
 		 * https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/
 		 */
-		wp_set_script_translations( 'wp-block-development-examples-editable-block', 'wp-block-development-examples' );
+		wp_set_script_translations( 'block-development-examples-editable-block', 'block-development-examples' );
 	}
 }
 add_action( 'init', 'editable_block_1b8c51__register_block' );
