@@ -1,11 +1,8 @@
-{{^isNon-blockVariant}}
-{{#isStaticVariant}}
 /**
  * WordPress Dependencies
  */
-import { __ } from '@wordpress/i18n';
 import { useBlockProps } from '@wordpress/block-editor';
-
+import { __ } from '@wordpress/i18n';
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
@@ -18,9 +15,10 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save() {
 	return (
 		<p { ...useBlockProps.save() }>
-			{ __( '{{title}} – hello from the saved content!', '{{textdomain}}' ) }
+			{ __(
+				'Hello World, step 2 (from the frontend, in red).',
+				'wp-block-development-examples'
+			) }
 		</p>
 	);
 }
-{{/isStaticVariant}}
-{{/isNon-blockVariant}}

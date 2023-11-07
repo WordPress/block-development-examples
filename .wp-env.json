@@ -11,6 +11,9 @@
 		"./plugins/interactive-blocks-demos-99def1",
 		"./plugins/basic-block-translations-3df23d",
 		"./plugins/format-api-f14b86",
+		"./plugins/stylesheets-79a4c3",
+		"./plugins/basic-esnext-a2ab62",
+		"./plugins/block-supports-6aa4dd",
 		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {

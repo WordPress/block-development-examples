@@ -54,5 +54,20 @@
 		"slug": "format-api-f14b86",
 		"description": "Format API",
 		"tags": [ "no-block" ]
+	},
+	{
+		"slug": "stylesheets-79a4c3",
+		"description": "Stylesheets",
+		"tags": []
+	},
+	{
+		"slug": "basic-esnext-a2ab62",
+		"description": "Basic ESNext",
+		"tags": [ "minimal" ]
+	},
+	{
+		"slug": "block-supports-6aa4dd",
+		"description": "Block Supports",
+		"tags": [ "" ]
 	}
 ]
