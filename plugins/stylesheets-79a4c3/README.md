@@ -1,9 +1,9 @@
 ### Block Development Examples - Stylesheets 79a4c3
 
 This example shows how to apply styles to blocks using different sources:
-- inline styles 
+- inline styles (through `useBlockProps`)
 - default classes (`wp-block-block-development-examples-stylesheets-79a4c3`)
-- custom classes (`hasPerspective`)
+- custom classes (`hasPerspective` through `useBlockProps`)
 - styles only for the editor (`editor.scss`)
 - styles shared by the editor and the frontend (`style.scss`)
 
