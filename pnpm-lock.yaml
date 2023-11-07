@@ -79,6 +79,12 @@ importers:
         specifier: ^26.15.0
         version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/dynamic-block-b0bce7:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/editable-block-1b8c51:
     dependencies:
       '@wordpress/e2e-test-utils':
@@ -93,6 +99,12 @@ importers:
         version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
   plugins/format-api-f14b86:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
+  plugins/inner-blocks-dcd824:
     devDependencies:
       '@wordpress/scripts':
         specifier: ^26.15.0
@@ -165,6 +177,12 @@ importers:
       '@wordpress/scripts':
         specifier: ^26.12.0
         version: 26.14.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
+  plugins/meta-block-bb1e55:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
   plugins/minimal-block-ca6eda:
     devDependencies:
