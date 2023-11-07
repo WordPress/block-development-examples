@@ -66,6 +66,16 @@
 		"tags": [ "minimal" ]
 	},
 	{
+		"slug": "block-supports-6aa4dd",
+		"description": "Block Supports",
+		"tags": [ "supports" ]
+	},
+	{
+		"slug": "meta-block-bb1e55",
+		"description": "Meta Block",
+		"tags": [ "meta" ]
+	},
+	{
 		"slug": "inner-blocks-dcd824",
 		"description": "Inner Blocks",
 		"tags": [ "" ]

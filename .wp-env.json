@@ -15,6 +15,7 @@
 		"./plugins/basic-esnext-a2ab62",
 		"./plugins/inner-blocks-dcd824",
 		"./plugins/block-supports-6aa4dd",
+		"./plugins/meta-block-bb1e55",
 		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {
