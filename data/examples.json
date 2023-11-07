@@ -84,5 +84,10 @@
 		"slug": "inner-blocks-dcd824",
 		"description": "Inner Blocks",
 		"tags": [ "" ]
+	},
+	{
+		"slug": "slotfill-2fb190",
+		"description": "SlotFill",
+		"tags": [ "no-block" ]
 	}
 ]
