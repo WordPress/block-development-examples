@@ -71,6 +71,11 @@
 		"tags": [ "supports" ]
 	},
 	{
+		"slug": "dynamic-block-b0bce7",
+		"description": "Dynamic Block",
+		"tags": [ "dynamic-rendering" ]
+	},
+	{
 		"slug": "meta-block-bb1e55",
 		"description": "Meta Block",
 		"tags": [ "meta" ]
