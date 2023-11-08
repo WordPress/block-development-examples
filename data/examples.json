@@ -83,11 +83,16 @@
 	{
 		"slug": "inner-blocks-dcd824",
 		"description": "Inner Blocks",
-		"tags": [ ]
+		"tags": []
 	},
 	{
 		"slug": "slotfill-2fb190",
 		"description": "SlotFill",
 		"tags": [ "no-block" ]
+	},
+	{
+		"slug": "plugin-sidebar-9ee4a6",
+		"description": "Plugin Sidebar",
+		"tags": [ "slotfill", "meta", "no-block" ]
 	}
 ]
