@@ -20,7 +20,7 @@
 		"test:e2e": "wp-scripts test-e2e",
 		"create-example:copy": "node ./bin/copyGutenbergExample/index.js",
 		"create-example:new": "cd plugins && npx @wordpress/create-block@latest --template ../templates/block-examples",
-		"postcreate-example:new": "pnpm i",
+		"postcreate-example:new": "pnpm i && npm run table:update",
 		"get:hexcode": "node ./bin/randomHexCode.js",
 		"table:update": "node ./bin/updateTableMarkdown.js",
 		"table:update:all": "node ./bin/updateTableMarkdown.js -- all",

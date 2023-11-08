@@ -1,0 +1,16 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.8.1_webpack@5.88.2/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../../node_modules/.pnpm/postcss-loader@6.2.1_postcss@8.4.31_webpack@5.88.2/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/.pnpm/sass-loader@12.6.0_sass@1.69.2_webpack@5.88.2/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-block-development-examples-meta-block-bb1e55 {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
