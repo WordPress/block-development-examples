@@ -9,7 +9,7 @@ The examples in this repo require these three steps to see them in action:
 
 1. Install dependencies
 2. Generate the build
-3. Use it in a WordPress
+3. Use it in a WordPress installation
 
 The way to manage the first two steps will be different depending on the context you're using this example.
 
