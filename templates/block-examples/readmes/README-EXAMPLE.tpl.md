@@ -29,7 +29,7 @@ Check the [WordPress Local Development Environment](https://github.com/wptrainin
 
 ### As an isolated example on your own WordPress installation
 
-If you have a local WordPress installation already running, you can also put the plugin folders of the examples you're interested in (by copyin and paste, from the zips...) inside the `plugins` folder of that installation and check the examples there.
+If you have a local WordPress installation already running, you can also put the plugin folders of the examples you're interested in (by copying and pasting, from the zips...) inside the `plugins` folder of that installation and check the examples there.
 
 If you do that, you'll need to do the following
 
