@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-block-development-examples-controls-a9cfe0 {
+	color: #8b0000;
+	background: #fcc;
+	border: 2px solid #c99;
+	padding: 20px;
+	font-family: sans-serif;
+
+	&.controls-a9cfe0-align-left {
+		text-align: left;
+	}
+
+	&.controls-a9cfe0-align-center {
+		text-align: center;
+	}
+
+	&.controls-a9cfe0-align-right {
+		text-align: right;
+	}
+}
