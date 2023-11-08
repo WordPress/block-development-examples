@@ -91,6 +91,11 @@
 		"tags": [ "no-block" ]
 	},
 	{
+		"slug": "recipe-card-744e8a",
+		"description": "Recipe",
+		"tags": []
+	},
+	{
 		"slug": "plugin-sidebar-9ee4a6",
 		"description": "Plugin Sidebar",
 		"tags": [ "slotfill", "meta", "no-block" ]

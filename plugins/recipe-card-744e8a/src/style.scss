@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-block-development-examples-recipe-card-744e8a {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-block-development-examples-recipe-card-744e8a .recipe-image {
+	background: #f1f1f1;
+	float: right;
+	width: 50%;
+	min-height: 100px;
+	text-align: center;
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a .recipe-image button {
+	margin-top: 30px;
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a .recipe-image button.image-button {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a .recipe-image img {
+	display: block;
+	z-index: 1;
+	position: relative;
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a h2 {
+	font-size: 1.5em;
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a ul {
+	padding-left: 2.5em !important;
+	/* Needs fix in Gutenberg. */
+}
+
+.wp-block-block-development-examples-recipe-card-744e8a::after {
+	content: "";
+	clear: both;
+	display: table;
+}
