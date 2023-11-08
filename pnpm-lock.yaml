@@ -221,6 +221,12 @@ importers:
         specifier: ^26.15.0
         version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/recipe-card-744e8a:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.16.0(@playwright/test@1.38.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/slotfill-2fb190:
     devDependencies:
       '@wordpress/scripts':
