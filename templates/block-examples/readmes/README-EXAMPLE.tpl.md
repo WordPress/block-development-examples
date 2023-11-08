@@ -19,7 +19,7 @@ The way to manage the first two steps will be different depending on the context
 
 ### As an example inside this monorepo
 
-The quickest way to have access to all the examples is clone this repository and check the examples locally.
+The quickest way to have access to all the examples is clone this repository and check out the examples locally.
 
 Check the [05 Development > Repo Commands > Dependencies](https://github.com/wptrainingteam/block-development-examples/wiki/05-Development#dependencies) instructions for this repo to install the dependencies of this example.
 
