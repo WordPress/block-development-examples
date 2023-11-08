@@ -23,7 +23,7 @@ The quickest way to have access to all the examples is clone this repository and
 
 Check the [05 Development > Repo Commands > Dependencies](https://github.com/wptrainingteam/block-development-examples/wiki/05-Development#dependencies) instructions for this repo to install the dependencies of this example.
 
-Once the depencies are installed (a `node_modules` folder should have been created), [launch the build process](https://github.com/wptrainingteam/block-development-examples/wiki/05-Development#build-process) to get the final version of the block that can be used from WordPress. 
+Once the depencies are installed (a `node_modules` folder should have been created), [launch the build process](https://github.com/wptrainingteam/block-development-examples/wiki/05-Development#build-process) to get the final version of the block that can be used in WordPress. 
 
 Check the [WordPress Local Development Environment](https://github.com/wptrainingteam/block-development-examples/wiki/05-Development#wordpress-local-development-environment) to learn how to quickly get your local WordPress installation to see this example.
 
