@@ -6,8 +6,7 @@ const examplesJson = require("../data/examples.json");
 const slug = process.argv[2];
 const rootPath = process.cwd();
 let readmePath;
-
-slug
+console.log({slug});
 if (slug == 'all') {
     const pluginsFolderNames = examplesJson.map(({slug}) => slug)
     pluginsFolderNames.forEach(plugin => {
