@@ -62,6 +62,10 @@
     {
         "slug": "meta",
         "name": "META"
+    },
+    {
+        "slug": "slotfill",
+        "name": "SLOTFILL"
     }
     
 
