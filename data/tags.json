@@ -66,6 +66,10 @@
     {
         "slug": "slotfill",
         "name": "SLOTFILL"
+    },
+    {
+        "slug": "featured",
+        "name": "FEATURED"
     }
     
 
