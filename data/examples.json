@@ -10,17 +10,6 @@
 		"tags": [ "static-rendering" ]
 	},
 	{
-		"slug": "interactivity-api-block-833d15",
-		"description": "Interactivity API Block",
-		"tags": [
-			"create-block-template",
-			"interactive-block",
-			"interactivity-api",
-			"gutenberg-plugin",
-			"experimental"
-		]
-	},
-	{
 		"slug": "block-static-rendering-b16608",
 		"description": "Block with Static Rendering",
 		"tags": [ "static-rendering", "create-block" ]
@@ -38,7 +27,7 @@
 	{
 		"slug": "minimal-block-ca6eda",
 		"description": "Minimal Block",
-		"tags": [ "minimal" ]
+		"tags": [ "minimal", "featured" ]
 	},
 	{
 		"slug": "minimal-block-no-build-e621a6",
@@ -74,6 +63,18 @@
 		"slug": "dynamic-block-b0bce7",
 		"description": "Dynamic Block",
 		"tags": [ "dynamic-rendering" ]
+	},
+	{
+		"slug": "interactivity-api-block-833d15",
+		"description": "Interactivity API Block",
+		"tags": [
+			"create-block-template",
+			"interactive-block",
+			"interactivity-api",
+			"gutenberg-plugin",
+			"experimental",
+			"featured"
+		]
 	},
 	{
 		"slug": "meta-block-bb1e55",

@@ -16,7 +16,8 @@ const {
   URL_WIKI,
   WIKI_PAGE_WHY_ID,
   WIKI_PAGE_TAGS,
-  URL_ASSETS
+  URL_ASSETS,
+  URL_REPO
 } = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
@@ -37,17 +38,35 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
   //   .replace(startMarker, "")
   //   .replace(endMarker, "");
 
+  const sortFeaturedFirst = ({ tags: tagsExampleA }, { tags: tagsExampleB } ) => {
+    
+    if (!tagsExampleA.includes("featured") && !tagsExampleB.includes("featured")) {
+      return 0; // Preserve original order if the IDs are not in the "firstElementIds"
+    } else if (!tagsExampleA.includes("featured")) {
+      return 1; // If "a" has an ID not in "firstElementIds", it should come after "b"
+    } else if (!tagsExampleB.includes("featured")) {
+      return -1; // If "b" has an ID not in "firstElementIds", it should come after "a"
+    }
+      // } else {
+    //   return aIndex - bIndex; // Sort based on the index of "firstElementIds"
+    // }
+  }
+
   const processedTags = tagsJson.reduce(
     (acc, { slug, name }) => ({ ...acc, [slug]: name }),
     {}
   );
-  let processedExamplesJson = examplesJson;
+  let processedExamplesJson;
   if (slugReadme) {
     processedExamplesJson = examplesJson.filter(({ slug }) => slug === slugReadme);
   } 
+  else {
+    processedExamplesJson = examplesJson.sort(sortFeaturedFirst);
+  }
 
-  const urlAssetIconWp = `https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/assets/icon-wp.svg`;
-  const urlRepo = `https://github.com/WordPress/block-development-examples/tree/trunk`
+  
+
+  const urlAssetIconWp = `${URL_ASSETS}/icon-wp.svg`;
   const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
     const id = slug.split("-").pop();
     let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
@@ -56,7 +75,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
     return [
-      `[📁](${urlRepo}/plugins/${slug})`,
+      `[📁](${URL_REPO}/plugins/${slug})`,
       description,
       tags
         .map((tagSlug) => `<small><code><a href="${URL_WIKI}/${WIKI_PAGE_TAGS}#${tagSlug}">${processedTags[tagSlug]}</a></code></small>`)
