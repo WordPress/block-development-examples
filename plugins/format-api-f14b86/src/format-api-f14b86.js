@@ -9,7 +9,7 @@ const MyCustomButton = ( { isActive, onChange, value } ) => {
 	return (
 		<RichTextToolbarButton
 			icon="editor-code"
-			title={ __( 'Sample output' ) }
+			title={ __( 'Sample output', 'block-development-examples' ) }
 			onClick={ () => {
 				onChange(
 					toggleFormat( value, {
@@ -23,7 +23,7 @@ const MyCustomButton = ( { isActive, onChange, value } ) => {
 };
 
 registerFormatType( 'my-custom-format/sample-output', {
-	title: __( 'Sample output' ),
+	title: __( 'Sample output', 'block-development-examples' ),
 	tagName: 'samp',
 	className: null,
 	edit: MyCustomButton,

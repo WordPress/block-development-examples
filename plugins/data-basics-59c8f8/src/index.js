@@ -1,6 +1,5 @@
 import { SearchControl } from '@wordpress/components';
-import { useState } from 'react';
-import { createRoot } from 'react-dom';
+import { useState, createRoot } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
 import { store as coreDataStore } from '@wordpress/core-data';
 

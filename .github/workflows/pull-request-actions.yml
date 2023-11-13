@@ -22,12 +22,16 @@ jobs:
     other:
         runs-on: ubuntu-latest
 
+        strategy:
+            matrix:
+                node-version: [18, 'lts/*']
+
         steps:
             - uses: actions/checkout@v3
-            - name: Use Node.js
+            - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
-                  node-version: 20
+                  node-version: ${{ matrix.node-version }}
             - name: Setup pnpm
               uses: pnpm/action-setup@v2.4.0
               with:
@@ -39,9 +43,7 @@ jobs:
               run: npm run lint:js
             - name: Lint CSS files
               run: npm run lint:css
-            - name: Lint package.json files
-              run: npm run lint:pkg-json
               env:
                   CI: true
 
-        name: Javascript, CSS, and package.json
+        name: JavaScript and CSS

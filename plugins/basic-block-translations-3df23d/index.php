@@ -11,8 +11,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
-// For PHP translations → wp i18n make-pot . languages/block-development-examples.pot --slug=block-development-examples --domain=block-development-examples --exclude=node_modules,src
-// For JS translations → wp i18n make-json languages/ --no-purge
+// For PHP translations → wp i18n make-pot . languages/block-development-examples.pot --slug=block-development-examples --domain=block-development-examples --exclude=node_modules,src.
+// For JS translations → wp i18n make-json languages/ --no-purge.
 
 /**
  * Load all translations for our plugin from the MO file.
@@ -41,7 +41,6 @@ function basic_block_3df23d___register_block() {
 		 */
 		wp_set_script_translations( 'block-development-examples-basic-block', 'block-development-examples' );
 	}
-
 }
 
 add_action( 'init', 'basic_block_3df23d___register_block' );

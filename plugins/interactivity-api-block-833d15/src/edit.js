@@ -19,20 +19,16 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *
- * @param {Object}   props               Properties passed to the function.
- * @param {Object}   props.attributes    Available block attributes.
- * @param {Function} props.setAttributes Function that updates individual attributes.
- *
  * @return {WPElement} Element to render.
  */
-export default function Edit( { attributes, setAttributes } ) {
+export default function Edit() {
 	const blockProps = useBlockProps();
 
 	return (
 		<p { ...blockProps }>
 			{ __(
 				'03 Interactivity API Block – hello from the editor!',
-				'03-block-interactive'
+				'block-development-examples'
 			) }
 		</p>
 	);
