@@ -10,7 +10,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       03-block-interactive
  *
- * @package           create-block
+ * @package           block-development-examples
  */
 
 /**

@@ -13,17 +13,16 @@ import { __ } from '@wordpress/i18n';
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	
 	const customStyleUnderline = {
-		textDecoration:'red underline',
-		textDecorationThickness: '3px'
+		textDecoration: 'red underline',
+		textDecorationThickness: '3px',
 	};
 
 	const blockProps = useBlockProps.save( {
 		style: customStyleUnderline,
-		className: 'hasPerspective'
-	  } );
-	  
+		className: 'hasPerspective',
+	} );
+
 	return (
 		<p { ...blockProps }>
 			{ __(

@@ -1,7 +1,7 @@
 import { store as noticesStore } from '@wordpress/notices';
 import { store as coreDataStore } from '@wordpress/core-data';
 import { useSelect, useDispatch } from '@wordpress/data';
-import { useEffect } from 'react';
+import { useEffect } from '@wordpress/element';
 import { Button, Spinner } from '@wordpress/components';
 
 const DeletePageButton = ( { pageId } ) => {

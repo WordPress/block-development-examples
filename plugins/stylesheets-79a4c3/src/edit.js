@@ -19,10 +19,13 @@ import './editor.scss';
  */
 export default function Edit() {
 	const customStyleUnderline = {
-		textDecoration:'green wavy underline'
+		textDecoration: 'green wavy underline',
 	};
 
-	const blockProps = useBlockProps( { style: customStyleUnderline, className: 'hasPerspective', } );
+	const blockProps = useBlockProps( {
+		style: customStyleUnderline,
+		className: 'hasPerspective',
+	} );
 
 	return (
 		<p { ...blockProps }>

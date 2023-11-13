@@ -14,6 +14,7 @@
 	&.hasPerspective {
 		transform: perspective(400px) rotate3d(1, -1, 0, 8deg);
 	}
+
 	&.hasPerspective:hover {
 		transform: perspective(400px) rotate3d(1, -1, 0, -8deg);
 	}

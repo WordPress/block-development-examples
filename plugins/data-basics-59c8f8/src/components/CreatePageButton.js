@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from '@wordpress/element';
 import { Button, Modal } from '@wordpress/components';
 import CreatePageForm from './CreatePageForm';
 

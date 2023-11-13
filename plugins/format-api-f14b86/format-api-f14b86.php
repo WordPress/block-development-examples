@@ -11,6 +11,7 @@
  *
  * @package format-api-f14b86
  */
+
 add_action(
 	'enqueue_block_editor_assets',
 	function () {
