@@ -29,8 +29,6 @@
 		"deploy": "npm run build && npm run plugin-zip && make-dir zips && npm run zips:move && npm run zips:remove",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
-		"lint:md:docs": "wp-scripts lint-md-docs",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"lint:php": "composer run lint",
 		"prepare": "husky install"
 	},
