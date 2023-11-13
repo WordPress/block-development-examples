@@ -8,13 +8,14 @@
  *     $block (WP_Block): The block instance.
  *
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
+ * @package create-block
  */
 
 $unique_id = uniqid( 'p-' );
 ?>
 
 <div
-	<?php echo get_block_wrapper_attributes(); ?>
+	<?php echo get_block_wrapper_attributes(); // phpcs:ignore ?>
 	data-wp-interactive
 	data-wp-context='{ "create-block": { "isOpen": false } }'
 	data-wp-effect="effects.create-block.logIsOpen"
