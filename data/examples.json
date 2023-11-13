@@ -62,7 +62,7 @@
 	{
 		"slug": "dynamic-block-b0bce7",
 		"description": "Dynamic Block",
-		"tags": [ "dynamic-rendering" ]
+		"tags": [ "dynamic-rendering", "attributes" ]
 	},
 	{
 		"slug": "interactivity-api-block-833d15",
@@ -105,5 +105,10 @@
 		"slug": "plugin-sidebar-9ee4a6",
 		"description": "Plugin Sidebar",
 		"tags": [ "slotfill", "meta", "no-block" ]
+	},
+	{
+		"slug": "data-basics-59c8f8",
+		"description": "Data Basics - @wordpress/data",
+		"tags": [ "no-block", "wp-data" ]
 	}
 ]
