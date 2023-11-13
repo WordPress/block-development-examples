@@ -9,6 +9,6 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		...getWebpackEntryPoints(),
-		'plugin-sidebar-9ee4a6': './src/plugin-sidebar-9ee4a6.js'
+		'plugin-sidebar-9ee4a6': './src/plugin-sidebar-9ee4a6.js',
 	},
 };

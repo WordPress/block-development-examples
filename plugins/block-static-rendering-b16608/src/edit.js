@@ -34,7 +34,7 @@ export default function Edit() {
 		<p { ...useBlockProps() }>
 			{ __(
 				'02 Block with Static Rendering – hello from the editor!',
-				'02-block-static'
+				'block-development-examples'
 			) }
 		</p>
 	);

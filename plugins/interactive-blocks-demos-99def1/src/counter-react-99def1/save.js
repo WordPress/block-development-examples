@@ -2,9 +2,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 const Save = ( { attributes } ) => {
 	return (
-		<div
-			{ ...useBlockProps.save() }
-		>
+		<div { ...useBlockProps.save() }>
 			<p>React Counter</p>
 			<details>
 				<summary>Attributes</summary>
@@ -13,7 +11,10 @@ const Save = ( { attributes } ) => {
 				</pre>
 			</details>
 			<br />
-			<div className='counter-contaner' data-gutenberg-attributes={ JSON.stringify( attributes ) }>
+			<div
+				className="counter-contaner"
+				data-gutenberg-attributes={ JSON.stringify( attributes ) }
+			>
 				<button>-</button>
 				<input
 					width="5"
@@ -22,9 +23,7 @@ const Save = ( { attributes } ) => {
 					value={ attributes.initial }
 				/>
 				<button>+</button>
-			
 			</div>
-			
 		</div>
 	);
 };

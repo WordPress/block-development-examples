@@ -34,7 +34,7 @@ export default function Edit() {
 		<p { ...useBlockProps() }>
 			{ __(
 				'Block with Dynamic Rendering – hello from the editor!',
-				'01-block-dynamic'
+				'block-development-examples'
 			) }
 		</p>
 	);

@@ -17,13 +17,16 @@ const Counter = ( { attributes } ) => {
 window.addEventListener(
 	'load',
 	function () {
-
 		document
-			.querySelectorAll( '.wp-block-block-development-examples-counter-react-99def1 .counter-contaner' )
+			.querySelectorAll(
+				'.wp-block-block-development-examples-counter-react-99def1 .counter-contaner'
+			)
 			.forEach( ( blockDomElement ) => {
-				const attributes = JSON.parse( blockDomElement.dataset.gutenbergAttributes );
+				const attributes = JSON.parse(
+					blockDomElement.dataset.gutenbergAttributes
+				);
 				const root = createRoot( blockDomElement );
-				root.render(  <Counter attributes={ attributes } /> );
+				root.render( <Counter attributes={ attributes } /> );
 			} );
 	},
 	false

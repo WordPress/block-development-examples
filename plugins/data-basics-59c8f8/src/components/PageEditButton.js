@@ -1,5 +1,5 @@
 import { Button, Modal } from '@wordpress/components';
-import { useState } from 'react';
+import { useState } from '@wordpress/element';
 import EditPageForm from './EditPageForm';
 
 export default function PageEditButton( { pageId } ) {

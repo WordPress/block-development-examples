@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useBlockProps } from '@wordpress/block-editor';
 
 const Save = ( { attributes } ) => (
@@ -7,11 +8,11 @@ const Save = ( { attributes } ) => (
 	>
 		<p>Alpine Counter</p>
 		<details>
-				<summary>Attributes</summary>
-				<pre>
-					<small>{ JSON.stringify( attributes, null, 2 ) }</small>
-				</pre>
-			</details>
+			<summary>Attributes</summary>
+			<pre>
+				<small>{ JSON.stringify( attributes, null, 2 ) }</small>
+			</pre>
+		</details>
 		<br />
 		<button x-on:click={ `count -= ${ attributes.increment }` }>-</button>
 		<input width="5" type="number" x-bind:value="count" />
