@@ -11,60 +11,16 @@ This example contains a plugin that register a minimal block that has been defin
 
 > [See diagram](https://excalidraw.com/#json=p5GXuqsMjZe7pEJ99-6EM,OuVzzTujO91JYnCSNVwEBg) 
 
+The goal of this example is to showcase...
+
+> **Note**
+> Check the [Start Guide for local development with the examples](https://github.com/WordPress/block-development-examples/wiki/02-Examples#start-guide-for-local-development-with-the-examples)
 
 ## Table of Contents
 
-- [Start Guide](#start-guide)
-  - [1. Install dependencies](#1-install-dependencies)
-  - [2. Generate the build ](#2-generate-the-build)
-  - [3. Use it in your WordPress installation ](#3-use-it-in-your-wordpress-installation)
 - [Anatomy of this block](#anatomy-of-this-block)
   - [The plugin](#the-plugin)   
   - [The block](#the-block) 
-
-
-## Start Guide
-
-The examples in this repo require these three steps to see them in action:
-
-1. Install dependencies
-2. Generate the build
-3. Use it in a WordPress installation
-
-The way to manage the first two steps will be different depending on the context you're using this example.
-
-> **Note**
-> At the [WIKI of this repo](https://github.com/WordPress/block-development-examples/wiki) you have the documentation for the examples on this repo
-
-
-### As an example inside this monorepo
-
-The quickest way to have access to all the examples is clone this repository and check out the examples locally.
-
-Check the [05 Development > Repo Commands > Dependencies](https://github.com/WordPress/block-development-examples/wiki/05-Development#dependencies) instructions for this repo to install the dependencies of this example.
-
-Once the depencies are installed (a `node_modules` folder should have been created), [launch the build process](https://github.com/WordPress/block-development-examples/wiki/05-Development#build-process) to get the final version of the block that can be used in WordPress. 
-
-Check the [WordPress Local Development Environment](https://github.com/WordPress/block-development-examples/wiki/05-Development#wordpress-local-development-environment) to learn how to quickly get your local WordPress installation to see this example.
-
-### As an isolated example on your own WordPress installation
-
-If you have a local WordPress installation already running, you can also put the plugin folders of the examples you're interested in (by copying and pasting, from the zips...) inside the `plugins` folder of that installation and check the examples there.
-
-If you do that, you'll need to do the following
-
-- Remove any `node_modules` folder inside this folder
-- Run `npm install` to install the dependencies
-- Run `npm build` to generate the "build" version of the blocks
-- Activate the plugin in your own WordPress installation
-
-At this point you should be able to insert the custom blocks into any post (after activating the plugin) of your WordPress installation, and see how it behaves in the frontend when published.
-
-You can also run `npm start` from this folder to generate a development mode "build" version everytime a change in the code is detected (saved) inside this folder.
-
-
-
-
 
 ## Anatomy of this block
 
