@@ -30,7 +30,20 @@
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"lint:md:docs": "wp-scripts lint-md-docs",
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"lint:php": "composer run lint",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.js": [
+			"wp-scripts lint-js"
+		],
+		"*.php": [
+			"composer run lint"
+		],
+		"*.scss": [
+			"wp-scripts lint-style"
+		]
 	},
 	"keywords": [],
 	"author": "",
@@ -38,7 +51,9 @@
 	"devDependencies": {
 		"@babel/plugin-transform-class-static-block": "^7.22.11",
 		"@wordpress/env": "^8.7.0",
-		"@wordpress/scripts": "^26.12.0"
+		"@wordpress/scripts": "^26.12.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^13.2.0"
 	},
 	"dependencies": {
 		"@inquirer/prompts": "^3.1.1",
