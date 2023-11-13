@@ -22,7 +22,7 @@ jobs:
     other:
         runs-on: ubuntu-latest
 
-         strategy:
+        strategy:
             matrix:
                 node-version: [18, lts]
 
