@@ -2,6 +2,7 @@ const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
 const { info, error } = require("../log");
+const querystring = require('querystring');
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
@@ -62,9 +63,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
   } 
   else {
     processedExamplesJson = examplesJson.sort(sortFeaturedFirst);
-  }
-
-  
+  }  
 
   const urlAssetIconWp = `${URL_ASSETS}/icon-wp.svg`;
   const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
@@ -74,6 +73,14 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
+    const pathBlueprint = `${rootPath}/plugins/${slug}/_playground/blueprint.json`;
+
+    if (fs.existsSync(pathBlueprint)) {
+      const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
+      const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "").replace(/"/g, "%22").replace(/ /g, "%20");
+      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonString}`;
+    }
+
     return [
       `[📁](${URL_REPO}/plugins/${slug})`,
       description,
@@ -97,7 +104,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    info(`README.md was updated!`);
+    info(`${readmePath.split('block-development-examples')[1]} was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);

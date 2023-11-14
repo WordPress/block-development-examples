@@ -28,7 +28,7 @@
         "step": "importFile",
         "file": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/interactivity-api-block-833d15/assets/content-interactivity-api-example.xml"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/interactivity-api-block-833d15/_playground/export.xml"
         }
       }
     ]
