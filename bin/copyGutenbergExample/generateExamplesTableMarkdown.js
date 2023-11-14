@@ -75,15 +75,10 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const pathBlueprint = `${rootPath}/plugins/${slug}/blueprint.json`;
 
-    console.log(`Checking if blueprint exists for ${slug}`);
-    console.log(`pathBlueprint: ${pathBlueprint}`);
     if (fs.existsSync(pathBlueprint)) {
-      console.log(`Blueprint exists for ${slug}`);
       const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
-      const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "");
-      const blueprintJsonStringEncoded = querystring.stringify(blueprintJsonString)
-      console.log(`blueprintJsonStringEncoded`);
-      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonStringEncoded}`;
+      const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "").replace(/"/g, "%22");
+      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonString}`;
     }
 
     return [
@@ -109,7 +104,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    info(`README.md was updated!`);
+    info(`${readmePath.split('block-development-examples')[1]} was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);
