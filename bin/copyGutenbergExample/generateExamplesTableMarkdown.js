@@ -80,7 +80,9 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
       console.log(`Blueprint exists for ${slug}`);
       const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
       const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "");
-      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonString}`;
+      const blueprintJsonStringEncoded = encodeURIComponent(blueprintJsonString);
+      console.log(`blueprintJsonStringEncoded`);
+      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonStringEncoded}`;
     }
 
     return [
