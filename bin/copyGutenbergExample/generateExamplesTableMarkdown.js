@@ -2,6 +2,7 @@ const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
 const { info, error } = require("../log");
+const querystring = require('querystring');
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
@@ -80,7 +81,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
       console.log(`Blueprint exists for ${slug}`);
       const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
       const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "");
-      const blueprintJsonStringEncoded = encodeURIComponent(blueprintJsonString);
+      const blueprintJsonStringEncoded = querystring.stringify(blueprintJsonString)
       console.log(`blueprintJsonStringEncoded`);
       playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonStringEncoded}`;
     }
