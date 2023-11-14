@@ -62,9 +62,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
   } 
   else {
     processedExamplesJson = examplesJson.sort(sortFeaturedFirst);
-  }
-
-  
+  }  
 
   const urlAssetIconWp = `${URL_ASSETS}/icon-wp.svg`;
   const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
@@ -74,6 +72,19 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
+    const pathBlueprint = `${rootPath}/plugins/${slug}/blueprint.json`;
+
+    console.log(`Checking if blueprint exists for ${slug}`);
+    console.log(`pathBlueprint: ${pathBlueprint}`);
+    if (fs.existsSync(pathBlueprint)) {
+      console.log(`Blueprint exists for ${slug}`);
+      const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
+      const blueprintJsonString = JSON.stringify(blueprintJson).replace(/\s/g, '');
+      const blueprintJsonStringEncoded = encodeURIComponent(blueprintJsonString);
+      console.log(`blueprintJsonStringEncoded`);
+      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonStringEncoded}`;
+    }
+
     return [
       `[📁](${URL_REPO}/plugins/${slug})`,
       description,
