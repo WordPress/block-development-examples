@@ -73,7 +73,7 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
     const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
-    const pathBlueprint = `${rootPath}/plugins/${slug}/blueprint.json`;
+    const pathBlueprint = `${rootPath}/plugins/${slug}/_playground/blueprint.json`;
 
     if (fs.existsSync(pathBlueprint)) {
       const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
