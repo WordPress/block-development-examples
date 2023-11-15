@@ -7,8 +7,8 @@ store( {
 	actions: {
 		'create-block': {
 			toggle: ( { context } ) => {
-				context[ 'create-block' ].isOpen =
-					! context[ 'create-block' ].isOpen;
+				context[ 'create-block' ].isOpen = ! context[ 'create-block' ]
+					.isOpen;
 			},
 		},
 	},

@@ -1,0 +1,17 @@
+{
+    "landingPage": "/wp-admin/admin.php?page=my-custom-gutenberg-app",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/data-basics-59c8f8.zip"
+        }
+      },
+      {
+        "step": "login",
+        "username": "admin",
+        "password": "password"
+      }
+    ]
+  }

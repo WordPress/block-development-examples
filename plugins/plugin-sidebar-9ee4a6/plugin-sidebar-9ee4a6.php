@@ -11,9 +11,10 @@
  *
  * @package           block-development-examples
  */
+
 add_action(
 	'enqueue_block_editor_assets',
-	function() {
+	function () {
 		$plugin_sidebar_9ee4a6_file = plugin_dir_path( __FILE__ ) . 'build/plugin-sidebar-9ee4a6.asset.php';
 
 		if ( file_exists( $plugin_sidebar_9ee4a6_file ) ) {
@@ -31,7 +32,7 @@ add_action(
 
 add_action(
 	'init',
-	function() {
+	function () {
 		/**
 		 * Register post meta field.
 		 */

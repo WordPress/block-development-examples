@@ -1,0 +1,18 @@
+{
+	"name": "wordpress/block-development-examples",
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"squizlabs/php_codesniffer": "^3.6",
+		"wp-coding-standards/wpcs": "^3.0"
+	},
+	"scripts": {
+		"lint": "./vendor/bin/phpcs --standard=phpcs.xml"
+	},
+	"config": {
+		"allow-plugins": {
+			"squizlabs/php_codesniffer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"wp-coding-standards/wpcs": true
+		}
+	}
+}

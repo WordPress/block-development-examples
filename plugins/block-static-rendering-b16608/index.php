@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Block Development Examples - Block with Static Rendering b16608 
+ * Plugin Name:       Block Development Examples - Block with Static Rendering b16608
  * Description:       Example block scaffolded with Create Block tool.
  * Requires at least: 6.1
  * Requires PHP:      7.0
@@ -10,7 +10,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       02-block-static
  *
- * @package           create-block
+ * @package           block-development-examples
  */
 
 /**

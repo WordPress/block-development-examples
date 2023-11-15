@@ -109,6 +109,6 @@
 	{
 		"slug": "data-basics-59c8f8",
 		"description": "Data Basics - @wordpress/data",
-		"tags": [ "no-block", "wp-data" ]
+		"tags": [ "no-block", "wp-data", "featured" ]
 	}
 ]

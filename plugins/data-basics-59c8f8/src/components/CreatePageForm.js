@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from '@wordpress/element';
 import { useSelect, useDispatch } from '@wordpress/data';
 import { store as coreDataStore } from '@wordpress/core-data';
 import PageForm from './PageForm';
