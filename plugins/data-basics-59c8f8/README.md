@@ -1,6 +1,6 @@
 ### Block Development Examples - Data Basics 59c8f8
 
-This example shows how to create a React app in a WordPress admin page. 
+This example shows how to create a React app in a WordPress admin page. A detailed description of this project is available in the "How to Guide": [Create your First App with Gutenberg Data](https://developer.wordpress.org/block-editor/how-to-guides/data-basics/) (in the [Block Editor Handbook](https://developer.wordpress.org/block-editor))
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
@@ -11,16 +11,19 @@ This example shows how to create a React app in a WordPress admin page.
 
 ## Understanding the Example Code
 
-The `index.js` defines a root React component containing the app that is "inserted" in the DOM via [`createRoot` of `react-dom`](https://react.dev/reference/react-dom/client/createRoot) 
-- The [`__` function](https://developer.wordpress.org/reference/functions/__/) receives the text and a namespace as parameters
-- At `index.php` we tell WordPress our JavaScript contains translations, using the `wp_set_script_translations()` function.
-- At `languages/` folder there are all the translations files (the source files and the `.mo` ones actually used to apply the translations) 
+The `index.js` defines a root React component containing the app (`MyFirstApp`) that is "inserted" in the DOM via [`createRoot` of `react-dom`](https://react.dev/reference/react-dom/client/createRoot) 
+- [`useSelect`](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-data/#useselect) is used to get info about the entities (pages)
+- [`useDispatch`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-data/#usedispatch) is used to trigger actions over the entities (pages)
+- Several UI components are used from [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/components/)
 
 ## Related resources
 
-- [Internationalization](https://developer.wordpress.org/block-editor/how-to-guides/internationalization/)
-- [`__()`](https://developer.wordpress.org/reference/functions/__/)
-- [`wp_set_script_translations()`](https://developer.wordpress.org/reference/functions/wp_set_script_translations/)
+- [useEntityRecords: an easier way to fetch WordPress data](https://developer.wordpress.org/news/2023/05/useentityrecords-an-easier-way-to-fetch-wordpress-data/)
+- [useSelect](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-data/#useselect)
+- [data module documentation](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-data/)
+- [WordPress API documentation](https://developer.wordpress.org/rest-api/reference/pages/)
+- [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/components/) (also see [Storybook](https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page))
+
 
 ----
 
