@@ -9,13 +9,6 @@
         }
       },
       {
-        "step": "installPlugin",
-        "pluginZipFile": {
-          "resource": "wordpress.org/plugins",
-          "slug": "gutenberg"
-        }
-      },
-      {
         "step": "login",
         "username": "admin",
         "password": "password"
