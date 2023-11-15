@@ -8,11 +8,6 @@
 
 This block has been created with the `create-block-interactive-template` and shows a basic structure of an interactive block that uses the Interactivity API.
 
-Check the following resources for more info about the Interactivity API:
-- [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
-- [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/)
-- [“Interactivity API” category](https://github.com/WordPress/gutenberg/discussions/categories/interactivity-api) in Gutenberg repo discussions
-
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
 | Folder                                                                                                          | <span style="display: inline-block; width:250px">Short description</span> | Tags                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | ID ([❓](https://github.com/WordPress/block-development-examples/wiki/04-Why-an-ID-for-every-example%3F "Why an ID for every example?")) | Download .zip                                                                                                                                                                                                                                                              | Live Demo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -22,11 +17,20 @@ Check the following resources for more info about the Interactivity API:
 
 ## Understanding the Example Code
 
-Overview of the code in bullet point form.
+The block of the example has dynamic render defined at `render.php` and it enables the interactivity API via `block.json`(`"supports": { "interactivity": true }`)
+- The [store](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#the-store) for the block is defined at `view.js` that will be loaded in the frontend when the block is displayed
+- The markup used in `render.php` use directives such as [`data-wp-interactive`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-interactive), [`data-wp-on--click`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-on), [`data-wp-bind--hidden`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-bind), [`data-wp-context`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-context) or [`data-wp-effect`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-effect)
+
 
 ## Related resources
 
-Bulleted list of references
+Check the following resources for more info about the Interactivity API:
+- [Interactivity API docs](https://github.com/WordPress/gutenberg/tree/trunk/packages/interactivity/docs)
+- [`@wordpress/interactivity` package](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/README.md)
+- [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/)
+- [“Interactivity API” category](https://github.com/WordPress/gutenberg/discussions/categories/interactivity-api) in Gutenberg repo discussions
+- [Make WordPress posts with tag `interactivity-api`](https://make.wordpress.org/core/tag/interactivity-api/)
+
 
 ----
 
