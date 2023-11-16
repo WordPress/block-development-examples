@@ -1,7 +1,7 @@
 const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
-const { info, error } = require("./utils/log");
+const { info, error } = require("./log");
 const querystring = require('querystring');
 
 const rootPath = process.cwd();

@@ -1,10 +1,10 @@
 const { input, checkbox, select } = require("@inquirer/prompts");
 const { info, highlightTextPrimary, highlightTextSecondary } = require("../utils/log");
 const initCreateExample = require("./initCreateExample");
-const randomHexCode = require("../randomHexCode");
+const randomHexCode = require("../utils/randomHexCode");
 const examples = require("../../data/examples.json");
 const tags = require("../../data/tags.json");
-const {REPO_ORIGIN} = require("./constants");
+const {REPO_ORIGIN} = require("../constants");
 
 const DESC_MAX_LENTH = 50;
 process.stdout.write('\033c');
