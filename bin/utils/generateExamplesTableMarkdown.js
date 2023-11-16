@@ -1,7 +1,7 @@
 const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
-const { info, error } = require("../log");
+const { info, error } = require("./utils/log");
 const querystring = require('querystring');
 
 const rootPath = process.cwd();
@@ -19,7 +19,7 @@ const {
   WIKI_PAGE_TAGS,
   URL_ASSETS,
   URL_REPO
-} = require("./constants");  
+} = require("../constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";

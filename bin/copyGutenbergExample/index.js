@@ -1,5 +1,5 @@
 const { input, checkbox, select } = require("@inquirer/prompts");
-const { info, highlightTextPrimary, highlightTextSecondary } = require("../log");
+const { info, highlightTextPrimary, highlightTextSecondary } = require("../utils/log");
 const initCreateExample = require("./initCreateExample");
 const randomHexCode = require("../randomHexCode");
 const examples = require("../../data/examples.json");
