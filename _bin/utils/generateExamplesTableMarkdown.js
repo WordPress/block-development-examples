@@ -6,8 +6,8 @@ const querystring = require('querystring');
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
-const examplesJsonPath = join(rootPath, "data/examples.json");
-const tagsJsonPath = join(rootPath, "data/tags.json");
+const examplesJsonPath = join(rootPath, "_data/examples.json");
+const tagsJsonPath = join(rootPath, "_data/tags.json");
 
 const {
   PLAYGROUND_URL_WITH_PLUGIN,

@@ -1,5 +1,5 @@
 const { join } = require( 'path' );
-const getRandomHexCode = require( '../../bin/utils/randomHexCode' );
+const getRandomHexCode = require( '../../_bin/utils/randomHexCode' );
 
 module.exports = {
 	defaultValues: {

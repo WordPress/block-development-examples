@@ -2,7 +2,7 @@ const { join } = require("path");
 const fs = require('fs');
 
 const generateExamplesTableMarkdown = require("./utils/generateExamplesTableMarkdown.js");
-const examplesJson = require("../data/examples.json");
+const examplesJson = require("../_data/examples.json");
 const slug = process.argv[2];
 const rootPath = process.cwd();
 let readmePath;

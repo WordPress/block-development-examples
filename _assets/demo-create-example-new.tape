@@ -1,7 +1,7 @@
 # VHS documentation
 # https://github.com/charmbracelet/vhs
 #
-# From the root: vhs assets/demo-create-example-new.tape
+# From the root: vhs _assets/demo-create-example-new.tape
 #
 #
 # Output:
@@ -56,7 +56,7 @@
 #   Hide                            Hide the subsequent commands from the output
 #   Show                            Show the subsequent commands in the output
 
-Output assets/cli/create-example-new.gif
+Output _assets/cli/create-example-new.gif
 
 Require echo
 
