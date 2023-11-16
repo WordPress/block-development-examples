@@ -50,7 +50,7 @@ The `package.json` fle include dependencies needed for "build" time. In this min
 
 #### The plugin 
 
-![index.php](./assets/index-php.png)
+![index.php](./_assets/index-php.png)
 
 The most recommended way to register a block is via a plugin. Every plugin starts with a `.php` file defining some hooks that will be executed at different moments of the WordPress loading sequence.
 
@@ -73,7 +73,7 @@ This plugin use the [`register_block_type`](https://developer.wordpress.org/refe
 
 #### The block 
 
-![block.json and js files](./assets/block-json-and-js.png)
+![block.json and js files](./_assets/block-json-and-js.png)
 
 Any block's definition starts with a [`block.json` which contains the metadata for the block](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-meta_data/). This file contains, among other things, the paths of the js files that will conform the behaviour and appearance of our block.
 

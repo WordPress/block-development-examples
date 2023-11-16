@@ -16,12 +16,24 @@ This example shows how to apply styles to blocks using different sources:
 
 ## Understanding the Example Code
 
-Overview of the code in bullet point form.
+### CSS output on the frontend
+
+If you look at the source code of the frontend of the post where this block is
+
+![](./_assets/frontend-view.png)
+
+The inline styles and classes (added via `useBlockProps`) for the block wrapper are added to the `<div>` container of the block
+
+![](./_assets/source-code-html-output.png)
+
+The styles shared by the editor and the frontend (`style.scss`) have been inserted in a `style` tag
+
+![](./_assets/source-code-style-html.png)
 
 ## Related resources
 
-Bulleted list of references
-
+- [Edit and Save](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/) | Block Editor Handbook
+- [`useBlockProps`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops)
 ----
 
 > **Note**
