@@ -3,7 +3,7 @@ const fs = require('fs');
 const { info, error } = require( '../utils/log' );
 
 const rootPath = process.cwd();
-const examplesJsonPath = join(rootPath, "data/examples.json");
+const examplesJsonPath = join(rootPath, "_data/examples.json");
 
 module.exports = async ( { exampleObject } ) => {
     const examplesJsonPathDisplay = examplesJsonPath.split('/block-development-examples/')[1]
