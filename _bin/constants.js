@@ -1,5 +1,5 @@
 const URL_WIKI = "https://github.com/WordPress/block-development-examples/wiki"
-const URL_ASSETS = `https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/assets`
+const URL_ASSETS = `https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/_assets`
 const URL_REPO = `https://github.com/WordPress/block-development-examples/tree/trunk`
 const WIKI_PAGE_WHY_ID = "04-Why-an-ID-for-every-example%3F"
 const WIKI_PAGE_TAGS = "03-Tags"
