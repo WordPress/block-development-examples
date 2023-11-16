@@ -18,10 +18,11 @@ The `index.js` defines a root React component containing the app (`MyFirstApp`) 
 
 ## Related resources
 
-- [useEntityRecords: an easier way to fetch WordPress data](https://developer.wordpress.org/news/2023/05/useentityrecords-an-easier-way-to-fetch-wordpress-_data/)
-- [useSelect](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-_data/#useselect)
-- [data module documentation](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-_data/)
-- [WordPress API documentation](https://developer.wordpress.org/rest-api/reference/pages/)
+- [useEntityRecords: an easier way to fetch WordPress data](https://developer.wordpress.org/news/2023/05/useentityrecords-an-easier-way-to-fetch-wordpress-_data/) | Developer Blog
+- [Application state managed withDispatch, withSelect and compose 101](https://developer.wordpress.org/news/2022/12/application-state-managed-withdispatch-withselect-and-compose-101/) | Developer Blog
+- [useSelect](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-_data/#useselect) | Block Editor Handbook
+- [data module documentation](https://developer.wordpress.org/block-editor/reference-guide/packages/packages-_data/) | Block Editor Handbook
+- [WordPress API documentation](https://developer.wordpress.org/rest-api/reference/pages/)  | Block Editor Handbook
 - [`@wordpress/components`](https://developer.wordpress.org/block-editor/reference-guides/components/) (also see [Storybook](https://wordpress.github.io/gutenberg/?path=/docs/docs-introduction--page))
 
 
