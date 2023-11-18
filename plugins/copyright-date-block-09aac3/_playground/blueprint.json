@@ -5,7 +5,7 @@
         "step": "installPlugin",
         "pluginZipFile": {
           "resource": "url",
-          "url": "https://github.com/WordPress/block-development-examples/raw/new-example/copyright-date-block-09aac3/plugins/copyright-date-block-09aac3/@wp-block-development-examples/copyright-date-block-09aac3.zip"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/new-example/copyright-date-block-09aac3/plugins/copyright-date-block-09aac3/@wp-block-development-examples/copyright-date-block-09aac3.zip"
         }
       },
       {

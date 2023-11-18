@@ -3,7 +3,7 @@ This "Copyright Date" block utilizes static and dynamic rendering, block support
 This example is directly adapted from the resulting code got when following the quick steps explained at [Block Editor Handbook / Getting Started / Quick Start Guide](https://developer.wordpress.org/block-editor/getting-started/quick-start-guide/)
 
 ```
-npx @wordpress/create-block copyright-date-block --template create-block-tutorial-template
+npx @wordpress/create-block copyright-date-block --template @wordpress/create-block-tutorial-template
 ```
 
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at _data/examples.json and _data/tags.json -->
