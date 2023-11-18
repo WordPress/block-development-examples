@@ -5,31 +5,13 @@
         "step": "installPlugin",
         "pluginZipFile": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/interactivity-api-block-833d15.zip"
-        }
-      },
-      {
-        "step": "installPlugin",
-        "pluginZipFile": {
-          "resource": "wordpress.org/plugins",
-          "slug": "gutenberg"
+          "url": "https://github.com/WordPress/block-development-examples/raw/new-example/copyright-date-block-09aac3/plugins/copyright-date-block-09aac3/@wp-block-development-examples/copyright-date-block-09aac3.zip"
         }
       },
       {
         "step": "login",
         "username": "admin",
         "password": "password"
-      },
-      {
-        "step": "runPHP",
-        "code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
-      },
-      {
-        "step": "importFile",
-        "file": {
-          "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/interactivity-api-block-833d15/_playground/export.xml"
-        }
       }
     ]
   }
