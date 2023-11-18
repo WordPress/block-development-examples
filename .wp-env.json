@@ -21,6 +21,7 @@
 		"./plugins/controls-a9cfe0",
 		"./plugins/recipe-card-744e8a",
 		"./plugins/plugin-sidebar-9ee4a6",
+		"./plugins/copyright-date-block-09aac3",
 		"https://downloads.wordpress.org/plugin/gutenberg.zip"
 	],
 	"config": {

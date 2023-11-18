@@ -154,5 +154,14 @@
       "wp-data",
       "featured"
     ]
+  },
+  {
+    "slug": "copyright-date-block-09aac3",
+    "description": "Block with Dynamic and Static rendering",
+    "tags": [
+      "dynamic-rendering",
+      "dynamic-rendering",
+      "create-block"
+    ]
   }
 ]
