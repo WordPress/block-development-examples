@@ -5,7 +5,7 @@
         "step": "installPlugin",
         "pluginZipFile": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/new-example/copyright-date-block-09aac3/plugins/copyright-date-block-09aac3/@wp-block-development-examples/copyright-date-block-09aac3.zip"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/copyright-date-block-09aac3.zip"
         }
       },
       {
@@ -21,7 +21,7 @@
         "step": "importFile",
         "file": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/new-example/copyright-date-block-09aac3/plugins/copyright-date-block-09aac3/_playground/export.xml"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/copyright-date-block-09aac3/_playground/export.xml"
         }
       }
     ]
