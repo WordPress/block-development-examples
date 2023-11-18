@@ -157,10 +157,10 @@
   },
   {
     "slug": "copyright-date-block-09aac3",
-    "description": "Block with Dynamic and Static rendering",
+    "description": "Copyright Date Block",
     "tags": [
       "dynamic-rendering",
-      "dynamic-rendering",
+      "static-rendering",
       "create-block"
     ]
   }
