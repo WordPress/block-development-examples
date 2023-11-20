@@ -1,13 +1,13 @@
 const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
-const { info, error } = require("../log");
+const { info, error } = require("./log");
 const querystring = require('querystring');
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
-const examplesJsonPath = join(rootPath, "data/examples.json");
-const tagsJsonPath = join(rootPath, "data/tags.json");
+const examplesJsonPath = join(rootPath, "_data/examples.json");
+const tagsJsonPath = join(rootPath, "_data/tags.json");
 
 const {
   PLAYGROUND_URL_WITH_PLUGIN,
@@ -18,8 +18,9 @@ const {
   WIKI_PAGE_WHY_ID,
   WIKI_PAGE_TAGS,
   URL_ASSETS,
-  URL_REPO
-} = require("./constants");  
+  URL_REPO,
+  URL_PLAYGROUND_BLUEPRINT
+} = require("../constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
 const endMarker = "<!-- @TABLE EXAMPLES END -->";
@@ -34,23 +35,16 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     `${startMarker}\(\[\.\\n\\s\\S\]\*\)${endMarker}`,
     "gm"
   );
-  // const markdownContentTable = markdownContent
-  //   .match(regex)[0]
-  //   .replace(startMarker, "")
-  //   .replace(endMarker, "");
 
   const sortFeaturedFirst = ({ tags: tagsExampleA }, { tags: tagsExampleB } ) => {
     
     if (!tagsExampleA.includes("featured") && !tagsExampleB.includes("featured")) {
-      return 0; // Preserve original order if the IDs are not in the "firstElementIds"
+      return 0;
     } else if (!tagsExampleA.includes("featured")) {
-      return 1; // If "a" has an ID not in "firstElementIds", it should come after "b"
+      return 1;
     } else if (!tagsExampleB.includes("featured")) {
-      return -1; // If "b" has an ID not in "firstElementIds", it should come after "a"
+      return -1;
     }
-      // } else {
-    //   return aIndex - bIndex; // Sort based on the index of "firstElementIds"
-    // }
   }
 
   const processedTags = tagsJson.reduce(
@@ -76,9 +70,8 @@ module.exports = ({ slug: slugReadme = '', readmePath = readmePathRoot } = {}) =
     const pathBlueprint = `${rootPath}/plugins/${slug}/_playground/blueprint.json`;
 
     if (fs.existsSync(pathBlueprint)) {
-      const blueprintJson = JSON.parse(fs.readFileSync(pathBlueprint, "utf8"));
-      const blueprintJsonString = JSON.stringify(blueprintJson, null, 0).replace(/\n/g, "").replace(/"/g, "%22").replace(/ /g, "%20");
-      playgroundUrl = `https://playground.wordpress.net/#${blueprintJsonString}`;
+      let playgroundUrlBlueprint = URL_PLAYGROUND_BLUEPRINT.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+      playgroundUrl = `https://playground.wordpress.net/?blueprint-url=${playgroundUrlBlueprint}`;
     }
 
     return [

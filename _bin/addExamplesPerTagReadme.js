@@ -2,8 +2,8 @@ const { join } = require("path");
 const fs = require("fs");
 
 const rootPath = process.cwd();
-const examplesJsonPath = join(rootPath, "data/examples.json");
-const tagsJsonPath = join(rootPath, "data/tags.json");
+const examplesJsonPath = join(rootPath, "_data/examples.json");
+const tagsJsonPath = join(rootPath, "_data/tags.json");
 const readmePath = join(rootPath, "README.md");
 
 const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));

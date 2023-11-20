@@ -3,11 +3,11 @@ const execa = require("execa");
 const replace = require("replace-in-file");
 const { join } = require("path");
 const rimraf = require("rimraf");
-const { info, error, success, highlightTextPrimary } = require("../log");
+const { info, error, success, highlightTextPrimary } = require("../utils/log");
 const customizeBlockJson = require("./customizeBlockJson");
 const customizePackageJson = require("./customizePackageJson");
 const addExamplesJson = require("./addExamplesJson");
-const generateExamplesTableMarkdown = require("./generateExamplesTableMarkdown");
+const generateExamplesTableMarkdown = require("../utils/generateExamplesTableMarkdown");
 
 module.exports = async (promptObject) => {
   const { name, id, slug, keywords, description, source } = promptObject;
