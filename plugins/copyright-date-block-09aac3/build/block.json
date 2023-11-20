@@ -1,12 +1,15 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/copyright-date-block",
+  "name": "block-development-examples/copyright-date-block-09aac3",
   "version": "0.1.0",
-  "title": "Copyright Date Block",
+  "title": "Copyright Date Block 09aac3",
   "category": "widgets",
   "description": "Display your site's copyright date.",
   "example": {},
+  "keywords": [
+    "09aac3"
+  ],
   "attributes": {
     "fallbackCurrentYear": {
       "type": "string"
@@ -28,7 +31,7 @@
       "fontSize": true
     }
   },
-  "textdomain": "copyright-date-block",
+  "textdomain": "block-development-examples",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
