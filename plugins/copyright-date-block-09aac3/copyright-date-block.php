@@ -8,7 +8,7 @@
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       copyright-date-block
+ * Text Domain:       block-development-examples
  *
  * @package           create-block
  */
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function copyright_date_block_copyright_date_block_init() {
+function block_development_examples__copyright_date_block__init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'copyright_date_block_copyright_date_block_init' );
+add_action( 'init', 'block_development_examples__copyright_date_block__init' );
