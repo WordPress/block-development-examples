@@ -8,10 +8,11 @@
  *     $block (WP_Block): The block instance.
  *
  * @see https://github.com/WordPress/gutenberg/blob/trunk/docs/reference-guides/block-api/block-metadata.md#render
+ * @package block-developer-examples
  */
 
 // Get the current year.
-$current_year = date( "Y" );
+$current_year = gmdate( 'Y' );
 
 // Determine which content to display.
 if ( isset( $attributes['fallbackCurrentYear'] ) && $attributes['fallbackCurrentYear'] === $current_year ) {
