@@ -90,8 +90,10 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/?p=8</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:block-development-examples/copyright-date-block-09aac3 {"fallbackCurrentYear":"2023"} -->
-<p class="wp-block-block-development-examples-copyright-date-block-09aac3">© 2023</p>
+		
+
+		<content:encoded><![CDATA[<!-- wp:block-development-examples/copyright-date-block-09aac3 {"fallbackCurrentYear":"2023","showStartingYear":true,"startingYear":"2020"} -->
+<p class="wp-block-block-development-examples-copyright-date-block-09aac3">© 2020–2023</p>
 <!-- /wp:block-development-examples/copyright-date-block-09aac3 -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>8</wp:post_id>
