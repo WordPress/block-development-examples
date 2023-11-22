@@ -11,11 +11,13 @@ The goal of this example is to showcase the implementation of a block with `supp
 
 ## Understanding the Example Code
 
-Overview of the code in bullet point form.
+- The block has a [`supports` definition](https://github.com/WordPress/block-development-examples/blob/e804d8416775de94fccae27be6f26ae0ae75b3d9/plugins/block-supports-6aa4dd/src/block.json#L25) in its `block.json`
+- The generated properties for `support` are properly added to the wrapping element of the block in both the `Edit` and `Save` components via the `useBlockProps` hook.
 
 ## Related resources
 
-Bulleted list of references
+- [Block API: Supports](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/)
+- [`useBlockProps` hook](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops) 
 
 ----
 
