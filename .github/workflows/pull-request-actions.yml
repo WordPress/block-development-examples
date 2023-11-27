@@ -18,7 +18,7 @@ jobs:
             - name: Install dependencies
               uses: php-actions/composer@v6
             - name: Test
-              run: echo "Hello deploy" && echo github.ref
+              run: echo "Hello deploy" && echo ${{ github.ref }}
             - name: Lint PHP files
               run: composer run lint
 
