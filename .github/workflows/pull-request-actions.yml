@@ -17,6 +17,9 @@ jobs:
             - uses: actions/checkout@v3
             - name: Install dependencies
               uses: php-actions/composer@v6
+            - name: step 1
+              if: github.ref == 'refs/heads/deploy' || github.event.pull_request.base.ref == 'deploy'
+              run: echo "Hello deploy" && echo github.ref
             - name: Lint PHP files
               run: composer run lint
 
