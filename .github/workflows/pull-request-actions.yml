@@ -5,6 +5,7 @@ on:
     push:
         branches:
             - trunk
+            - '!deploy'
 
 jobs:
     php:
