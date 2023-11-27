@@ -2,6 +2,8 @@ name: Static Linting
 
 on:
     pull_request:
+        branches-ignore:
+            - deploy
     push:
         branches:
             - trunk
