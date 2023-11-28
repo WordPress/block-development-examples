@@ -36,9 +36,6 @@
 		"*.js": [
 			"wp-scripts lint-js"
 		],
-		"*.php": [
-			"composer run lint"
-		],
 		"*.scss": [
 			"wp-scripts lint-style"
 		]
