@@ -1,11 +1,12 @@
 import { registerBlockType } from '@wordpress/blocks';
+import { useBlockProps } from '@wordpress/block-editor';
 import metadata from './block.json';
 
 registerBlockType( metadata.name, {
-	edit() {
-		return <p>Hello World - Block Editor</p>;
+	Edit() {
+		return <p { ...useBlockProps() }>Hello World - Block Editor</p>;
 	},
-	save() {
-		return <p>Hello World - Frontend</p>;
+	Save() {
+		return <p { ...useBlockProps.save() }>Hello World - Frontend</p>;
 	},
 } );

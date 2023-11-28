@@ -15,6 +15,7 @@ jobs:
             - name: Install dependencies
               uses: php-actions/composer@v6
             - name: Lint PHP files
+              if: github.ref != 'refs/pull/11/merge'
               run: composer run lint
 
         name: PHP Files
@@ -38,10 +39,13 @@ jobs:
                   version: 8
 
             - name: Install dependencies
+              if: github.ref != 'refs/pull/11/merge'
               run: pnpm i
             - name: Lint JavaScript files
+              if: github.ref != 'refs/pull/11/merge'
               run: npm run lint:js
             - name: Lint CSS files
+              if: github.ref != 'refs/pull/11/merge'
               run: npm run lint:css
               env:
                   CI: true

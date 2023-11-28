@@ -1,11 +1,11 @@
 {
-    "landingPage": "/wp-admin/post.php?post=8&action=edit",
+    "landingPage": "/wp-admin/post.php?post=5&action=edit",
     "steps": [
       {
         "step": "installPlugin",
         "pluginZipFile": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/copyright-date-block-09aac3.zip"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/block-supports-6aa4dd.zip"
         }
       },
       {
@@ -21,7 +21,7 @@
         "step": "importFile",
         "file": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/copyright-date-block-09aac3/_playground/export.xml"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/block-supports-6aa4dd/_playground/export.xml"
         }
       }
     ]
