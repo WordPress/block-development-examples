@@ -5,9 +5,11 @@
     "scripts": {
         "build": "wp-scripts build",
         "plugin-zip": "wp-scripts plugin-zip",
-        "start": "wp-scripts start"
+        "start": "wp-scripts start",
+        "env": "wp-env start"
     },
     "devDependencies": {
+        "@wordpress/env": "^8.12.0",
         "@wordpress/scripts": "^26.14.0"
     },
     "files": [ "*" ]
