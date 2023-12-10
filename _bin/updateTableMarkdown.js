@@ -13,7 +13,6 @@ if (slug == 'all') {
         const pluginPath = join(rootPath, "plugins", plugin);
         if (!fs.existsSync(pluginPath)) throw `plugin path doesn't exist: ${pluginPath}`;
         readmePath = join(pluginPath, "README.md");
-        if (!fs.existsSync(readmePath)) throw `readme path doesn't exist: ${readmePath}`;
         generateExamplesTableMarkdown({slug: plugin, readmePath});
     });
     generateExamplesTableMarkdown({readmePath: join(rootPath, "README.md")});
@@ -23,7 +22,6 @@ else if (slug && slug !== 'all') {
     const pluginPath = join(rootPath, "plugins", slug);
     if (!fs.existsSync(pluginPath)) throw `plugin path doesn't exist: ${pluginPath}`;
     readmePath = join(pluginPath, "README.md");
-    if (!fs.existsSync(readmePath)) throw `readme path doesn't exist: ${readmePath}`;
     generateExamplesTableMarkdown({slug, readmePath});
     return;
 }
