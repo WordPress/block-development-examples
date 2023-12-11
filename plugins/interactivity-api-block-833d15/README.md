@@ -1,7 +1,7 @@
 # Interactive Block 833d15
 
 > **Warning**
-> **This block requires Gutenberg 16.2 or superior to work**. The Interactivity API is, at the moment, not part of WordPress Core as it is still very experimental, and very likely to change. 
+> **This block requires Gutenberg 17.2 or superior to work**. The Interactivity API is, at the moment, not part of WordPress Core as it is still very experimental, and very likely to change. 
 
 > **Note**
 > This block uses the API shared at [Proposal: The Interactivity API – A better developer experience in building interactive blocks](https://make.wordpress.org/core/2023/03/30/proposal-the-interactivity-api-a-better-developer-experience-in-building-interactive-blocks/). 
