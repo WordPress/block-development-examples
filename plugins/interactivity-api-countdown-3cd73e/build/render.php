@@ -27,7 +27,7 @@ $context = array(
 
 <div 
 	<?php echo get_block_wrapper_attributes(); // phpcs:ignore ?> 
-	data-wp-interactive='{"namespace": "interactivityAPIExamples"}' 
+	data-wp-interactive='{"namespace": "interactivity-api-countdown-3cd73e__store"}' 
 	data-wp-context='<?php echo wp_json_encode( $context ); ?>' 
 	data-wp-init="callbacks.startCountdown"
 >
