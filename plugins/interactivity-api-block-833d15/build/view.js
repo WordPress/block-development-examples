@@ -1,1 +1,0 @@
-!function(){"use strict";(0,window.wp.interactivity.store)({actions:{"create-block":{toggle:({context:e})=>{e["create-block"].isOpen=!e["create-block"].isOpen}}},effects:{"create-block":{logIsOpen:({context:e})=>{console.log(`Is open: ${e["create-block"].isOpen}`)}}}})}();

@@ -27,7 +27,7 @@ export default function Edit() {
 	return (
 		<p { ...blockProps }>
 			{ __(
-				'03 Interactivity API Block – hello from the editor!',
+				'Example Interactivity API Block – hello from the editor!',
 				'block-development-examples'
 			) }
 		</p>

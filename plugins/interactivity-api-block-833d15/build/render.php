@@ -11,29 +11,35 @@
  * @package create-block
  */
 
-$unique_id = uniqid( 'p-' );
+// Generate unique id for aria-controls.
+$unique_id = wp_unique_id( 'p-' );
+
+// Enqueue the view file.
+if ( function_exists( 'gutenberg_enqueue_module' ) ) {
+	gutenberg_enqueue_module( 'interactivity_api_block_833d15__view' );
+}
 ?>
 
 <div
 	<?php echo get_block_wrapper_attributes(); // phpcs:ignore ?>
-	data-wp-interactive
-	data-wp-context='{ "create-block": { "isOpen": false } }'
-	data-wp-effect="effects.create-block.logIsOpen"
+	data-wp-interactive='{ "namespace": "interactivity-api-block-833d15__store" }'
+	data-wp-context='{ "isOpen": false }'
+	data-wp-watch="callbacks.logIsOpen"
 >
 	<button
-		data-wp-on--click="actions.create-block.toggle"
-		data-wp-bind--aria-expanded="context.create-block.isOpen"
-		aria-controls="p-<?php echo esc_attr( $unique_id ); ?>"
+		data-wp-on--click="actions.toggle"
+		data-wp-bind--aria-expanded="context.isOpen"
+		aria-controls="<?php echo esc_attr( $unique_id ); ?>"
 	>
-		<?php esc_html_e( 'Toggle', '03-block-interactive' ); ?>
+		<?php esc_html_e( 'Toggle', 'block-development-examples' ); ?>
 	</button>
 
 	<p
-		id="p-<?php echo esc_attr( $unique_id ); ?>"
-		data-wp-bind--hidden="!context.create-block.isOpen"
+		id="<?php echo esc_attr( $unique_id ); ?>"
+		data-wp-bind--hidden="!context.isOpen"
 	>
 		<?php
-			esc_html_e( '03 Interactivity API Block - hello from an interactive block!', '03-block-interactive' );
+			esc_html_e( 'Example Interactivity API Block – hello from an interactive block!', 'block-development-examples' );
 		?>
 	</p>
 </div>

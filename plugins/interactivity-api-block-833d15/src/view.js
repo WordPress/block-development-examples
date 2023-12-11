@@ -1,23 +1,20 @@
 /**
  * WordPress dependencies
  */
-import { store } from '@wordpress/interactivity';
+import { store, getContext } from '@wordpress/interactivity';
 
-store( {
+store( 'interactivity-api-block-833d15__store', {
 	actions: {
-		'create-block': {
-			toggle: ( { context } ) => {
-				context[ 'create-block' ].isOpen = ! context[ 'create-block' ]
-					.isOpen;
-			},
+		toggle: () => {
+			const context = getContext();
+			context.isOpen = ! context.isOpen;
 		},
 	},
-	effects: {
-		'create-block': {
-			logIsOpen: ( { context } ) => {
-				// Log the value of `isOpen` each time it changes.
-				console.log( `Is open: ${ context[ 'create-block' ].isOpen }` );
-			},
+	callbacks: {
+		logIsOpen: () => {
+			const { isOpen } = getContext();
+			// Log the value of `isOpen` each time it changes.
+			console.log( `Is open: ${ isOpen }` );
 		},
 	},
 } );
