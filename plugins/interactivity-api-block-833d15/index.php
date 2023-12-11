@@ -20,7 +20,16 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_03_block_interactive_block_init() {
+function interactivity_api_block_833d15__init() {
 	register_block_type( __DIR__ . '/build' );
+
+	if ( function_exists( 'gutenberg_register_module' ) ) {
+		gutenberg_register_module(
+			'interactivity_api_block_833d15__view',
+			plugin_dir_url( __FILE__ ) . 'src/view.js',
+			array( '@wordpress/interactivity' ),
+			'0.1.0'
+		);
+	}
 }
-add_action( 'init', 'create_block_03_block_interactive_block_init' );
+add_action( 'init', 'interactivity_api_block_833d15__init' );
