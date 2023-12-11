@@ -11,7 +11,9 @@
  * @package create-block
  */
 
-gutenberg_enqueue_module( 'interactivity_api_countdown_3cd73e__view' );
+if ( function_exists( 'gutenberg_enqueue_module' ) ) {
+	gutenberg_enqueue_module( 'interactivity_api_countdown_3cd73e__view' );
+}
 
 $current_date_time = new DateTime();
 $target_date_time  = new DateTime( $attributes['date'] );
