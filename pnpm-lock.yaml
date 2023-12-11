@@ -209,6 +209,19 @@ importers:
         specifier: ^26.12.0
         version: 26.14.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/interactivity-api-countdown-3cd73e:
+    dependencies:
+      '@wordpress/i18n':
+        specifier: ^4.24.0
+        version: 4.46.0
+      '@wordpress/icons':
+        specifier: ^9.20.0
+        version: 9.34.0
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.17.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/meta-block-bb1e55:
     devDependencies:
       '@wordpress/scripts':
@@ -4016,7 +4029,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.1
       '@wordpress/dom-ready': 3.43.0
-      '@wordpress/i18n': 4.43.0
+      '@wordpress/i18n': 4.46.0
     dev: false
 
   /@wordpress/api-fetch@6.40.0:
@@ -4024,7 +4037,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-      '@wordpress/i18n': 4.43.0
+      '@wordpress/i18n': 4.46.0
       '@wordpress/url': 3.44.0
 
   /@wordpress/api-fetch@6.42.0:
@@ -4032,7 +4045,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-      '@wordpress/i18n': 4.45.0
+      '@wordpress/i18n': 4.46.0
       '@wordpress/url': 3.46.0
     dev: true
 
@@ -4985,20 +4998,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-
-  /@wordpress/hooks@3.45.0:
-    resolution: {integrity: sha512-cqd5Dv4lp4S5UAip2/bMm2TZiFxs7/sKNq9/73BlKFSmc9hgqgkmcctfER+nVxiYafUNGATyQmDRpJU6R3NaDw==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@babel/runtime': 7.23.1
-    dev: true
+    dev: false
 
   /@wordpress/hooks@3.46.0:
     resolution: {integrity: sha512-TTYNZwMZeATpkWmvAoShP43UONd/WPNTtsy1czMSyiqPzFhzGJbKD75CdJtPp5DqIAiuWQEuDmcxRAPcZ/1Qgw==}
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-    dev: true
 
   /@wordpress/html-entities@3.43.0:
     resolution: {integrity: sha512-e7OJU2DRa2Z6TxLq5y2/jKVjlqdVJDwwR0yNp4ajyrtGIMNJw+7PXvdgSoroD5M6UjWRuLT57crcgVT4M53nRA==}
@@ -5018,19 +5024,7 @@ packages:
       memize: 2.1.0
       sprintf-js: 1.1.3
       tannin: 1.2.0
-
-  /@wordpress/i18n@4.45.0:
-    resolution: {integrity: sha512-1UbUpX7uoKin/u7ouFPLgOjsF/o7q0jWorOCYaFsIUjQ0uQSkflmr2u3CC2efyKsLBFv9bZWFm4z62KGZE7Yuw==}
-    engines: {node: '>=12'}
-    hasBin: true
-    dependencies:
-      '@babel/runtime': 7.23.1
-      '@wordpress/hooks': 3.45.0
-      gettext-parser: 1.4.0
-      memize: 2.1.0
-      sprintf-js: 1.1.3
-      tannin: 1.2.0
-    dev: true
+    dev: false
 
   /@wordpress/i18n@4.46.0:
     resolution: {integrity: sha512-5/61hd50KkqGgoQpf66DDft6sMTKfeGVdmZOt42GWymylxFSmbZLLnR8YafECQrmia/TdwIco5I4n0hIikYbNQ==}
@@ -5043,7 +5037,6 @@ packages:
       memize: 2.1.0
       sprintf-js: 1.1.3
       tannin: 1.2.0
-    dev: true
 
   /@wordpress/icons@8.4.0:
     resolution: {integrity: sha512-N/bzt5z534JyAWdTyDdsu9G+6NQ5FvykmNbKZrZuUHTuEI8KbxYaN/5lT6W6Lkwq32D/B6ibpt1LpSQJ37IZWw==}
@@ -5212,7 +5205,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-      '@wordpress/i18n': 4.43.0
+      '@wordpress/i18n': 4.46.0
       change-case: 4.1.2
 
   /@wordpress/keycodes@3.45.0:
@@ -5220,7 +5213,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/runtime': 7.23.1
-      '@wordpress/i18n': 4.45.0
+      '@wordpress/i18n': 4.46.0
       change-case: 4.1.2
     dev: true
 
@@ -5410,7 +5403,7 @@ packages:
       '@wordpress/deprecated': 3.43.0
       '@wordpress/element': 4.20.0
       '@wordpress/escape-html': 2.43.0
-      '@wordpress/i18n': 4.43.0
+      '@wordpress/i18n': 4.46.0
       '@wordpress/keycodes': 3.43.0
       memize: 1.1.0
       react: 18.2.0
@@ -8026,6 +8019,7 @@ packages:
   /domexception@2.0.1:
     resolution: {integrity: sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==}
     engines: {node: '>=8'}
+    deprecated: Use your platform's native DOMException instead
     dependencies:
       webidl-conversions: 5.0.0
     dev: true
