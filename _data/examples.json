@@ -164,5 +164,16 @@
       "create-block",
       "featured"
     ]
+  },
+  {
+    "slug": "interactivity-api-countdown-3cd73e",
+    "description": "Interactivity API Countdown",
+    "tags": [
+      "dynamic-rendering",
+      "interactive-block",
+      "interactivity-api",
+      "gutenberg-plugin",
+      "experimental"
+    ]
   }
 ]
