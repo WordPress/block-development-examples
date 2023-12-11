@@ -1,6 +1,6 @@
 import { store, getContext } from '@wordpress/interactivity';
 
-store( 'interactivityAPIExamples', {
+store( 'interactivity-api-countdown-3cd73e__store', {
 	callbacks: {
 		startCountdown: () => {
 			const context = getContext();
