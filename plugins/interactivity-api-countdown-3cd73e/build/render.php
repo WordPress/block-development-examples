@@ -1,8 +1,4 @@
 <?php
-gutenberg_enqueue_module( 'interactivity_api_countdown_3cd73e__view' );
-?>
-
-<?php
 /**
  * PHP file to use when rendering the block type on the server to show on the front end.
  *
@@ -15,7 +11,9 @@ gutenberg_enqueue_module( 'interactivity_api_countdown_3cd73e__view' );
  * @package create-block
  */
 
-
+if ( function_exists( 'gutenberg_enqueue_module' ) ) {
+	gutenberg_enqueue_module( 'interactivity_api_countdown_3cd73e__view' );
+}
 
 $current_date_time = new DateTime();
 $target_date_time  = new DateTime( $attributes['date'] );
