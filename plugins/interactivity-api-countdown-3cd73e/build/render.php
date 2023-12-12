@@ -17,11 +17,11 @@ if ( function_exists( 'gutenberg_enqueue_module' ) ) {
 
 $current_date_time = new DateTime();
 $target_date_time  = new DateTime();
-if ( isset(  $attributes['date'] ) ) {
-	$target_date_time  = new DateTime( $attributes['date'] );
+if ( isset( $attributes['date'] ) ) {
+	$target_date_time = new DateTime( $attributes['date'] );
 }
 
-$time_difference   = $current_date_time->diff( $target_date_time );
+$time_difference = $current_date_time->diff( $target_date_time );
 // Extract the days, hours, minutes, and seconds.
 $context = array(
 	'days'    => $time_difference->d,
