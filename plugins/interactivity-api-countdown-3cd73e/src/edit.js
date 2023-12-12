@@ -6,7 +6,7 @@ import {
 	ToolbarButton,
 	Dropdown,
 } from '@wordpress/components';
-import { edit } from '@wordpress/icons';
+import { backup } from '@wordpress/icons';
 
 const DOWN = 40;
 
@@ -43,7 +43,7 @@ export default function Edit( { attributes, setAttributes } ) {
 							return (
 								<ToolbarButton
 									aria-expanded={ isOpen }
-									icon={ edit }
+									icon={ backup }
 									title={ __(
 										'Change Date',
 										'block-development-examples'
