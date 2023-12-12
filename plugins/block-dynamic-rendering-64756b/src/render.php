@@ -8,6 +8,6 @@
  */
 
 ?>
-<p <?php echo get_block_wrapper_attributes(); // phpcs:ignore ?>>
+<p <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 	<?php esc_html_e( 'Block with Dynamic Rendering – hello!!!', 'block-development-examples' ); ?>
 </p>
