@@ -19,7 +19,13 @@ This block has been created with the `create-block-interactive-template` and sho
 
 The block of the example has dynamic render defined at `render.php` and it enables the interactivity API via `block.json`(`"supports": { "interactivity": true }`)
 - The [store](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#the-store) for the block is defined at `view.js` that will be loaded in the frontend when the block is displayed
-- The markup used in `render.php` use directives such as [`data-wp-interactive`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-interactive) and [`data-wp-context`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-context)
+- The markup used in `render.php` use directives such as [`data-wp-interactive`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-interactive) and [`data-wp-init`](https://github.com/WordPress/gutenberg/blob/trunk/packages/interactivity/docs/2-api-reference.md#wp-init)
+- It's interesting in the in the [`render.php`](https://github.com/WordPress/block-development-examples/blob/trunk/plugins/interactivity-api-countdown-3cd73e/src/render.php):
+  - the initial data ([calculated from the attributes data](https://github.com/WordPress/block-development-examples/blob/4ea6d4a8fff9f44b44f617c3a5ddc6467c222366/plugins/interactivity-api-countdown-3cd73e/src/render.php#L22)) is set in the local context via [`data-wp-context`](https://github.com/WordPress/block-development-examples/blob/4ea6d4a8fff9f44b44f617c3a5ddc6467c222366/plugins/interactivity-api-countdown-3cd73e/src/render.php#L33) 
+  - The html `<span><span data-wp-text="state.days"></span>D</span>` points to the _getters_ in the state (defined in the `view.js` file), which will be updated when these values change
+- It's interesting in the in the [`view.js`](https://github.com/WordPress/block-development-examples/blob/trunk/plugins/interactivity-api-countdown-3cd73e/src/view.js)
+  - the state defines some getters (`seconds`, `minutes`, `hours`, `days` ) which values will change every time `context.remaining` change
+  - `startCountdown` initializes `context.remaining` with the values got from the context and sets a `setInterval` to update this value (minus 1) every second
 
 
 ## Related resources
