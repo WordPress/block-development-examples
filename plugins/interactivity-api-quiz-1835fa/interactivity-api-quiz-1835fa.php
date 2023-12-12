@@ -12,6 +12,7 @@
  *
  * @package           block-development-examples
  */
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -32,4 +33,3 @@ function interactivity_api_quiz_1835fa__register_block() {
 	}
 }
 add_action( 'init', 'interactivity_api_quiz_1835fa__register_block' );
-
