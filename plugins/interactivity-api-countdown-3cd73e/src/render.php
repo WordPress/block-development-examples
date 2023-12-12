@@ -33,8 +33,8 @@ $context = array(
 	data-wp-context='<?php echo wp_json_encode( $context ); ?>' 
 	data-wp-init="callbacks.startCountdown"
 >
-	<span><span data-wp-text="context.days"></span>D</span>
-	<span><span data-wp-text="context.hours"></span>H</span>
-	<span><span data-wp-text="context.minutes"></span>M</span>
-	<span><span data-wp-text="context.seconds"></span>S</span>
+	<span><span data-wp-text="state.days"></span>D</span>
+	<span><span data-wp-text="state.hours"></span>H</span>
+	<span><span data-wp-text="state.minutes"></span>M</span>
+	<span><span data-wp-text="state.seconds"></span>S</span>
 </div>
