@@ -222,6 +222,12 @@ importers:
         specifier: ^26.15.0
         version: 26.17.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/interactivity-api-quiz-1835fa:
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.17.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/meta-block-bb1e55:
     devDependencies:
       '@wordpress/scripts':
