@@ -6,7 +6,8 @@
 		"wp-coding-standards/wpcs": "^3.0"
 	},
 	"scripts": {
-		"lint": "./vendor/bin/phpcs --standard=phpcs.xml"
+		"lint": "./vendor/bin/phpcs --standard=phpcs.xml",
+		"fix": "./vendor/bin/phpcbf --standard=phpcs.xml"
 	},
 	"config": {
 		"allow-plugins": {

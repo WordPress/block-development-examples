@@ -30,6 +30,7 @@
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"lint:php": "composer run lint",
+		"format:php": "composer run fix",
 		"prepare": "husky install"
 	},
 	"lint-staged": {
