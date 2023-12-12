@@ -30,7 +30,6 @@ store( 'interactivity-api-countdown-3cd73e__store', {
 			const n = setInterval( () => {
 				context.remaining -= 1;
 				if ( context.remaining === 0 ) clearInterval( n );
-				console.log( context.remaining ); // eslint-disable-line no-console
 			}, 1000 );
 		},
 	},
