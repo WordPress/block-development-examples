@@ -12,9 +12,19 @@ const DOWN = 40;
 
 export default function Edit( { attributes, setAttributes } ) {
 	const { date } = attributes;
+
+	// Set default attributes.date to tomorrow if no date is set
 	if ( ! date ) {
+		const todayDate = new Date();
+		const dateOneDayFromToday = todayDate.setDate(
+			todayDate.getDate() + 1
+		);
 		setAttributes( {
-			date: new Date().toISOString().slice( 0, 19 ).replace( 'T', ' ' ),
+			// date = dateOneDayFromToday PHP friendly format
+			date: new Date( dateOneDayFromToday )
+				.toISOString()
+				.slice( 0, 19 )
+				.replace( 'T', ' ' ),
 		} );
 	}
 

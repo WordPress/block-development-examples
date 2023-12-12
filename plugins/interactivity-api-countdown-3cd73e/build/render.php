@@ -16,12 +16,9 @@ if ( function_exists( 'gutenberg_enqueue_module' ) ) {
 }
 
 $current_date_time = new DateTime();
-$target_date_time  = new DateTime();
-if ( isset(  $attributes['date'] ) ) {
-	$target_date_time  = new DateTime( $attributes['date'] );
-}
+$target_date_time = new DateTime( $attributes['date'] );
+$time_difference = $current_date_time->diff( $target_date_time );
 
-$time_difference   = $current_date_time->diff( $target_date_time );
 // Extract the days, hours, minutes, and seconds.
 $context = array(
 	'days'    => $time_difference->d,
@@ -36,6 +33,11 @@ $context = array(
 	data-wp-interactive='{"namespace": "interactivity-api-countdown-3cd73e__store"}' 
 	data-wp-context='<?php echo wp_json_encode( $context ); ?>' 
 	data-wp-init="callbacks.startCountdown"
+	data-current-date-time="<?php echo $current_date_time->format('Y-m-d H:i:s'); ?>"
+	data-target-date-time="<?php echo $target_date_time->format('Y-m-d H:i:s'); ?>"
+	data-stoplight="<?php echo $stoplight; ?>"
+	data-attributes-date="<?php echo $attributes['date'] ?>"
+	
 >
 	<span><span data-wp-text="state.days"></span>D</span>
 	<span><span data-wp-text="state.hours"></span>H</span>
