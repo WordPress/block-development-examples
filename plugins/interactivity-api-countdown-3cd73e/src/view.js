@@ -1,34 +1,35 @@
 import { store, getContext } from '@wordpress/interactivity';
 
 store( 'interactivity-api-countdown-3cd73e__store', {
+	state: {
+		get seconds() {
+			const { remaining } = getContext();
+			return remaining % 60;
+		},
+		get minutes() {
+			const { remaining } = getContext();
+			return Math.floor( remaining / 60 ) % 60;
+		},
+		get hours() {
+			const { remaining } = getContext();
+			return Math.floor( remaining / 3600 ) % 24;
+		},
+		get days() {
+			const { remaining } = getContext();
+			return Math.floor( remaining / 86400 );
+		},
+	},
 	callbacks: {
 		startCountdown: () => {
+			console.log( 'startCountdown...' ); // eslint-disable-line no-console
 			const context = getContext();
-			setInterval( () => {
-				// Calculate seconds.
-				if ( context.seconds - 1 < 0 ) {
-					context.seconds = context.minutes > 0 ? 59 : 0;
-					// Calculate minutes.
-					if ( context.minutes - 1 < 0 ) {
-						context.minutes = context.hours > 0 ? 59 : 0;
-						// Calculate hours.
-						if ( context.hours - 1 < 0 ) {
-							context.hours = context.days > 0 ? 23 : 0;
-							// Calculate days.
-							if ( context.days - 1 < 0 ) {
-								context.days = 0;
-							} else {
-								context.days--;
-							}
-						} else {
-							context.hours--;
-						}
-					} else {
-						context.minutes--;
-					}
-				} else {
-					context.seconds--;
-				}
+			const { days, hours, minutes, seconds } = context;
+			context.remaining =
+				days * 86400 + hours * 3600 + minutes * 60 + seconds;
+			// Update remaining time (in seconds).
+			const n = setInterval( () => {
+				context.remaining -= 1;
+				if ( context.remaining === 0 ) clearInterval( n );
 			}, 1000 );
 		},
 	},
