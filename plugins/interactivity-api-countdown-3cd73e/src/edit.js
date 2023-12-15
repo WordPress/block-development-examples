@@ -13,18 +13,20 @@ const DOWN = 40;
 export default function Edit( { attributes, setAttributes } ) {
 	const { date } = attributes;
 
-	// Set default attributes.date to a randome number between 1 and 20 if no date is set
+	// Set default attributes.date to current date + random minutes between 1 and 50, if no date is set
 	if ( ! date ) {
 		const todayDate = new Date();
-		const randomNUmberBetweenOneAndTwenty = Math.floor(
-			Math.random() * 20
+		const minuteInMillis = 60 * 1000;
+		const randomMinutesBetweenOneAndFifty = Math.floor(
+			Math.random() * 50
 		);
-		const dateOneDayFromToday = todayDate.setDate(
-			todayDate.getDate() + randomNUmberBetweenOneAndTwenty
+		const defaultDate = todayDate.setTime(
+			todayDate.getTime() +
+				randomMinutesBetweenOneAndFifty * minuteInMillis
 		);
 		setAttributes( {
 			// date = dateOneDayFromToday PHP friendly format
-			date: new Date( dateOneDayFromToday )
+			date: new Date( defaultDate )
 				.toISOString()
 				.slice( 0, 19 )
 				.replace( 'T', ' ' ),
