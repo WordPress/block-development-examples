@@ -91,8 +91,8 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.]]><
 		<guid isPermaLink="false">https://playground.wordpress.net/scope:0.0915776397991863/?p=4</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Publish the post to see the counter in action - You can set a future time for the countdown by clicking the "clock" icon in the Block Toolbar when the block is selected!</p>
-<!-- /wp:paragraph --><!-- wp:block-development-examples/interactivity-api-countdown-3cd73e /-->]]></content:encoded>
+<p>Publish the post to see the counter in action - You can set the set a future time for the countdown by clicking tyhe "clock" icon in the Block Toolbar when the block is selected!</p>
+<!-- /wp:paragraph --><!-- wp:block-development-examples/interactivity-api-countdown-3cd73e /--><!-- wp:block-development-examples/interactivity-api-countdown-3cd73e /--><!-- wp:block-development-examples/interactivity-api-countdown-3cd73e /-->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>4</wp:post_id>
 		<wp:post_date><![CDATA[2023-11-13 16:17:57]]></wp:post_date>
