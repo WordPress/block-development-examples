@@ -16,13 +16,13 @@ export default function Edit( { attributes, setAttributes } ) {
 	// Set default attributes.date to current date + random minutes between 1 and 50, if no date is set
 	if ( ! date ) {
 		const todayDate = new Date();
-		const minuteInMillis = 60 * 1000;
-		const randomMinutesBetweenOneAndFifty = Math.floor(
-			Math.random() * 50
+		const secondsInMillis = ( s ) => s * 1000;
+		const randomSecondsBetween1And10000 = Math.floor(
+			Math.random() * 10000
 		);
 		const defaultDate = todayDate.setTime(
 			todayDate.getTime() +
-				randomMinutesBetweenOneAndFifty * minuteInMillis
+				secondsInMillis( randomSecondsBetween1And10000 )
 		);
 		setAttributes( {
 			// date = dateOneDayFromToday PHP friendly format
