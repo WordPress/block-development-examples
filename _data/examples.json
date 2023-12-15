@@ -173,7 +173,8 @@
       "interactive-block",
       "interactivity-api",
       "gutenberg-plugin",
-      "experimental"
+      "experimental",
+      "block-toolbar"
     ]
   }
 ]

@@ -70,6 +70,10 @@
     {
         "slug": "featured",
         "name": "FEATURED"
+    },
+    {
+        "slug": "block-toolbar",
+        "name": "BLOCK TOOLBAR"
     }
     
 
