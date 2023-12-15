@@ -13,11 +13,14 @@ const DOWN = 40;
 export default function Edit( { attributes, setAttributes } ) {
 	const { date } = attributes;
 
-	// Set default attributes.date to tomorrow if no date is set
+	// Set default attributes.date to a randome number between 1 and 20 if no date is set
 	if ( ! date ) {
 		const todayDate = new Date();
+		const randomNUmberBetweenOneAndTwenty = Math.floor(
+			Math.random() * 20
+		);
 		const dateOneDayFromToday = todayDate.setDate(
-			todayDate.getDate() + 1
+			todayDate.getDate() + randomNUmberBetweenOneAndTwenty
 		);
 		setAttributes( {
 			// date = dateOneDayFromToday PHP friendly format
