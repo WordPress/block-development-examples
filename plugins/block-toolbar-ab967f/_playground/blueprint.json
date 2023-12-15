@@ -1,0 +1,21 @@
+{
+	"landingPage": "/wp-admin/post.php?post=4&action=edit",
+	"steps": [
+		{
+			"step": "login",
+			"username": "admin",
+			"password": "password"
+		},
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/interactivity-api-block-833d15.zip"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Block Toolbar','post_content'  => '<!-- wp:paragraph --><p>PublSelect ish the post to see the counter in action - You can set the set a future time for the countdown by clicking tyhe "clock" icon in the Block Toolbar when the block is selected!</p><!-- /wp:paragraph --><!-- wp:block-development-examples/block-toolbar-ab967f -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
+		}
+	]
+}
