@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-block-development-examples-block-toolbar-ab967f {
+	color: #8b0000;
+	background: #fcc;
+	border: 2px solid #c99;
+	padding: 20px;
+	font-family: sans-serif;
+
+	&.block-toolbar-ab967f-align-left {
+		text-align: left;
+	}
+
+	&.block-toolbar-ab967f-align-center {
+		text-align: center;
+	}
+
+	&.block-toolbar-ab967f-align-right {
+		text-align: right;
+	}
+}

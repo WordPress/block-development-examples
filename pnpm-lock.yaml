@@ -85,6 +85,16 @@ importers:
         specifier: ^26.15.0
         version: 26.16.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
 
+  plugins/block-toolbar-ab967f:
+    dependencies:
+      '@wordpress/icons':
+        specifier: ^9.20.0
+        version: 9.34.0
+    devDependencies:
+      '@wordpress/scripts':
+        specifier: ^26.15.0
+        version: 26.17.0(@playwright/test@1.40.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+
   plugins/controls-a9cfe0:
     devDependencies:
       '@wordpress/scripts':

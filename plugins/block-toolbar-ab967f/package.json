@@ -1,5 +1,5 @@
 {
-	"name": "@block-development-examples/controls-a9cfe0",
+	"name": "@block-development-examples/block-toolbar-ab967f",
 	"version": "0.1.0",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
@@ -13,5 +13,8 @@
 	],
 	"devDependencies": {
 		"@wordpress/scripts": "^26.15.0"
+	},
+	"dependencies": {
+		"@wordpress/icons": "^9.20.0"
 	}
 }

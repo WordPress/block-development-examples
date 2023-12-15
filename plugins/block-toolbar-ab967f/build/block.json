@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "block-development-examples/controls-a9cfe0",
+  "name": "block-development-examples/block-toolbar-ab967f",
   "version": "0.1.0",
-  "title": "Controls a9cfe0",
+  "title": "Block Toolbar ab967f",
   "category": "widgets",
   "attributes": {
     "content": {
@@ -18,7 +18,7 @@
   },
   "example": {
     "attributes": {
-      "content": "Hello world",
+      "content": "Hello World",
       "alignment": "right"
     }
   },
@@ -27,6 +27,6 @@
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
   "keywords": [
-    "a9cfe0"
+    "ab967f"
   ]
 }
