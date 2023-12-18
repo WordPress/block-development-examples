@@ -15,9 +15,7 @@
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Block Toolbar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Block Toolbar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/block-toolbar-ab967f -->
-			<p class=\"wp-block-block-development-examples-block-toolbar-ab967f block-toolbar-ab967f-align-none\">Select Me!</p>
-			<!-- /wp:block-development-examples/block-toolbar-ab967f -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
+			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Block Toolbar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Block Toolbar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/block-toolbar-ab967f --><p class=\"wp-block-block-development-examples-block-toolbar-ab967f block-toolbar-ab967f-align-none\">Select Me!</p><!-- /wp:block-development-examples/block-toolbar-ab967f -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
 		}
 	]
 }

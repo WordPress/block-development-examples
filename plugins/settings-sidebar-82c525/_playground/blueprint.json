@@ -15,9 +15,7 @@
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Settings Sidebar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Settings Sidebar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/settings-sidebar-82c525 -->
-			<div class=\"wp-block-block-development-examples-settings-sidebar-82c525\" style=\"background-color:#000000;color:#ffffff\">Select Me!</div>
-			<!-- /wp:block-development-examples/settings-sidebar-82c525 -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
+			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Settings Sidebar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Settings Sidebar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/settings-sidebar-82c525 --><div class=\"wp-block-block-development-examples-settings-sidebar-82c525\" style=\"background-color:#000000;color:#ffffff\">Select Me!</div><!-- /wp:block-development-examples/settings-sidebar-82c525 -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
 		}
 	]
 }
