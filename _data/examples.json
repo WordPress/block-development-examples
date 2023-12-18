@@ -176,5 +176,10 @@
       "experimental",
       "block-toolbar"
     ]
+  },
+  {
+    "slug": "settings-sidebar-82c525",
+    "description": "Block Settings Sidebar",
+    "tags": []
   }
 ]
