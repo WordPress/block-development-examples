@@ -1,21 +1,28 @@
 {
-	"landingPage": "/wp-admin/post.php?post=4&action=edit",
-	"steps": [
-		{
-			"step": "login",
-			"username": "admin",
-			"password": "password"
-		},
-		{
-			"step": "installPlugin",
-			"pluginZipFile": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/settings-sidebar-82c525.zip"
-			}
-		},
-		{
-			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Settings Sidebar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Settings Sidebar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/settings-sidebar-82c525 --><div class='wp-block-block-development-examples-settings-sidebar-82c525' style='background-color:#000000;color:#ffffff'>Select Me!</div><!-- /wp:block-development-examples/settings-sidebar-82c525 -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
-		}
-	]
-}
+    "landingPage": "/wp-admin/post.php?post=5&action=edit",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/settings-sidebar-82c525.zip"
+        }
+      },
+      {
+        "step": "login",
+        "username": "admin",
+        "password": "password"
+      },
+      {
+        "step": "runPHP",
+        "code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
+      },
+      {
+        "step": "importFile",
+        "file": {
+          "resource": "url",
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/settings-sidebar-82c525/_playground/export.xml"
+        }
+      }
+    ]
+  }
