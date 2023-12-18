@@ -1,21 +1,28 @@
 {
-	"landingPage": "/wp-admin/post.php?post=4&action=edit",
-	"steps": [
-		{
-			"step": "login",
-			"username": "admin",
-			"password": "password"
-		},
-		{
-			"step": "installPlugin",
-			"pluginZipFile": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/block-toolbar-ab967f.zip"
-			}
-		},
-		{
-			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; wp_insert_post( array('post_title'    => 'Demo Block Toolbar','post_content'  => '<!-- wp:paragraph --><p>Select the block to see the custom Block Toolbar</p><!-- /wp:paragraph --><!-- wp:block-development-examples/block-toolbar-ab967f --><p class='wp-block-block-development-examples-block-toolbar-ab967f block-toolbar-ab967f-align-none'>Select Me!</p><!-- /wp:block-development-examples/block-toolbar-ab967f -->', 'post_status'   => 'publish', 'post_author'   => 1 ) );"
-		}
-	]
-}
+    "landingPage": "/wp-admin/post.php?post=5&action=edit",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/settings-sidebar-82c525.zip"
+        }
+      },
+      {
+        "step": "login",
+        "username": "admin",
+        "password": "password"
+      },
+      {
+        "step": "runPHP",
+        "code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
+      },
+      {
+        "step": "importFile",
+        "file": {
+          "resource": "url",
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/settings-sidebar-82c525/_playground/export.xml"
+        }
+      }
+    ]
+  }
