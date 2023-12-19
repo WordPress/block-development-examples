@@ -5,7 +5,7 @@
         "step": "installPlugin",
         "pluginZipFile": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/settings-sidebar-82c525.zip"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/deploy/zips/block-toolbar-ab967f.zip"
         }
       },
       {
@@ -21,7 +21,7 @@
         "step": "importFile",
         "file": {
           "resource": "url",
-          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/settings-sidebar-82c525/_playground/export.xml"
+          "url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/block-toolbar-ab967f/_playground/export.xml"
         }
       }
     ]
