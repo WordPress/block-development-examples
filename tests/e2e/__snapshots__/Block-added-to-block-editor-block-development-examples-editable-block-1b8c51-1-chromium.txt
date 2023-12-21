@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/editable-block-1b8c51 -->
+<p class="wp-block-block-development-examples-editable-block-1b8c51"></p>
+<!-- /wp:block-development-examples/editable-block-1b8c51 -->

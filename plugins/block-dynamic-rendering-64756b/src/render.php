@@ -6,6 +6,7 @@
  *
  * @package block-development-examples
  */
+
 ?>
 
 <?php

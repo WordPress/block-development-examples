@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/stylesheets-79a4c3 -->
+<p style="text-decoration:red underline;text-decoration-thickness:3px" class="wp-block-block-development-examples-stylesheets-79a4c3 hasPerspective">Hello World, step 2 (from the frontend, in red).</p>
+<!-- /wp:block-development-examples/stylesheets-79a4c3 -->

@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/block-static-rendering-b16608 -->
+<p class="wp-block-block-development-examples-block-static-rendering-b16608">02 Block with Static Rendering – hello from the saved content!</p>
+<!-- /wp:block-development-examples/block-static-rendering-b16608 -->

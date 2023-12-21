@@ -1,0 +1,6 @@
+<!-- wp:block-development-examples/counter-jquery-99def1 -->
+<div class="wp-block-block-development-examples-counter-jquery-99def1"><p>jQuery Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 1
+}</small></pre></details><br/><button class="wp-block-block-development-examples-counter-jquery-99def1__decrement">-</button><input width="5" step="1" type="number" class="wp-block-block-development-examples-counter-jquery-99def1__value" value="0"/><button class="wp-block-block-development-examples-counter-jquery-99def1__increment">+</button></div>
+<!-- /wp:block-development-examples/counter-jquery-99def1 -->
