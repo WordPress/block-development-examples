@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/block-supports-6aa4dd -->
+<p class="wp-block-block-development-examples-block-supports-6aa4dd"></p>
+<!-- /wp:block-development-examples/block-supports-6aa4dd -->
