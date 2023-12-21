@@ -1,0 +1,6 @@
+<!-- wp:block-development-examples/counter-web-component-99def1 -->
+<div class="wp-block-block-development-examples-counter-web-component-99def1"><p>Web Components Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 5
+}</small></pre></details><br/><gutenberg-counter value="0" increment="5"></gutenberg-counter></div>
+<!-- /wp:block-development-examples/counter-web-component-99def1 -->

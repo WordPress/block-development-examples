@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/minimal-block-ca6eda -->
+<p class="wp-block-block-development-examples-minimal-block-ca6eda">Hello World - Frontend</p>
+<!-- /wp:block-development-examples/minimal-block-ca6eda -->

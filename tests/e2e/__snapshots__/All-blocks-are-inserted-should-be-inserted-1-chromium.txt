@@ -1,0 +1,94 @@
+<!-- wp:block-development-examples/counter-alpine-99def1 -->
+<div class="wp-block-block-development-examples-counter-alpine-99def1" x-data="{ count: 0 }"><p>Alpine Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 2
+}</small></pre></details><br/><button x-on:click="count -= 2">-</button><input width="5" type="number" x-bind:value="count"/><button x-on:click="count += 2">+</button></div>
+<!-- /wp:block-development-examples/counter-alpine-99def1 -->
+
+<!-- wp:block-development-examples/counter-jquery-99def1 -->
+<div class="wp-block-block-development-examples-counter-jquery-99def1"><p>jQuery Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 1
+}</small></pre></details><br/><button class="wp-block-block-development-examples-counter-jquery-99def1__decrement">-</button><input width="5" step="1" type="number" class="wp-block-block-development-examples-counter-jquery-99def1__value" value="0"/><button class="wp-block-block-development-examples-counter-jquery-99def1__increment">+</button></div>
+<!-- /wp:block-development-examples/counter-jquery-99def1 -->
+
+<!-- wp:block-development-examples/counter-js-99def1 -->
+<div class="wp-block-block-development-examples-counter-js-99def1"><p>Javascript Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 3
+}</small></pre></details><br/><button class="wp-block-block-development-examples-counter-js-99def1__decrement">-</button><input width="5" step="3" type="number" class="wp-block-block-development-examples-counter-js-99def1__value" value="0"/><button class="wp-block-block-development-examples-counter-js-99def1__increment">+</button></div>
+<!-- /wp:block-development-examples/counter-js-99def1 -->
+
+<!-- wp:block-development-examples/counter-react-99def1 -->
+<div class="wp-block-block-development-examples-counter-react-99def1"><p>React Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 4
+}</small></pre></details><br/><div class="counter-contaner" data-gutenberg-attributes="{&quot;initial&quot;:0,&quot;increment&quot;:4}"><button>-</button><input width="5" type="number" readonly value="0"/><button>+</button></div></div>
+<!-- /wp:block-development-examples/counter-react-99def1 -->
+
+<!-- wp:block-development-examples/counter-web-component-99def1 -->
+<div class="wp-block-block-development-examples-counter-web-component-99def1"><p>Web Components Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 5
+}</small></pre></details><br/><gutenberg-counter value="0" increment="5"></gutenberg-counter></div>
+<!-- /wp:block-development-examples/counter-web-component-99def1 -->
+
+<!-- wp:block-development-examples/block-dynamic-rendering-64756b /-->
+
+<!-- wp:block-development-examples/basic-block-translations-3df23d -->
+<div style="background-color:#900;color:#fff;padding:20px" class="wp-block-block-development-examples-basic-block-translations-3df23d">Hello World!! (from the frontend).</div>
+<!-- /wp:block-development-examples/basic-block-translations-3df23d -->
+
+<!-- wp:block-development-examples/block-static-rendering-b16608 -->
+<p class="wp-block-block-development-examples-block-static-rendering-b16608">02 Block with Static Rendering – hello from the saved content!</p>
+<!-- /wp:block-development-examples/block-static-rendering-b16608 -->
+
+<!-- wp:block-development-examples/editable-block-1b8c51 -->
+<p class="wp-block-block-development-examples-editable-block-1b8c51"></p>
+<!-- /wp:block-development-examples/editable-block-1b8c51 -->
+
+<!-- wp:block-development-examples/minimal-block-ca6eda -->
+<p class="wp-block-block-development-examples-minimal-block-ca6eda">Hello World - Frontend</p>
+<!-- /wp:block-development-examples/minimal-block-ca6eda -->
+
+<!-- wp:block-development-examples/minimal-block-no-build-e621a6 -->
+<p>Hello World - Frontend</p>
+<!-- /wp:block-development-examples/minimal-block-no-build-e621a6 -->
+
+<!-- wp:block-development-examples/stylesheets-79a4c3 -->
+<p style="text-decoration:red underline;text-decoration-thickness:3px" class="wp-block-block-development-examples-stylesheets-79a4c3 hasPerspective">Hello World, step 2 (from the frontend, in red).</p>
+<!-- /wp:block-development-examples/stylesheets-79a4c3 -->
+
+<!-- wp:block-development-examples/basic-esnext-a2ab62 -->
+<div style="background-color:#900;color:#fff;padding:20px" class="wp-block-block-development-examples-basic-esnext-a2ab62">Hello World, step 1 (from the frontend).</div>
+<!-- /wp:block-development-examples/basic-esnext-a2ab62 -->
+
+<!-- wp:block-development-examples/block-supports-6aa4dd -->
+<p class="wp-block-block-development-examples-block-supports-6aa4dd"></p>
+<!-- /wp:block-development-examples/block-supports-6aa4dd -->
+
+<!-- wp:block-development-examples/dynamic-block-b0bce7 /-->
+
+<!-- wp:block-development-examples/interactivity-api-block-833d15 /-->
+
+<!-- wp:block-development-examples/meta-block-bb1e55 /-->
+
+<!-- wp:block-development-examples/inner-blocks-dcd824 -->
+<div class="wp-block-block-development-examples-inner-blocks-dcd824"></div>
+<!-- /wp:block-development-examples/inner-blocks-dcd824 -->
+
+<!-- wp:block-development-examples/block-toolbar-ab967f -->
+<p class="wp-block-block-development-examples-block-toolbar-ab967f block-toolbar-ab967f-align-none"></p>
+<!-- /wp:block-development-examples/block-toolbar-ab967f -->
+
+<!-- wp:block-development-examples/recipe-card-744e8a -->
+<div class="wp-block-block-development-examples-recipe-card-744e8a"><h2></h2><h3>Ingredients</h3><ul class="ingredients"></ul><h3>Instructions</h3><div class="steps"></div></div>
+<!-- /wp:block-development-examples/recipe-card-744e8a -->
+
+<!-- wp:block-development-examples/copyright-date-block-09aac3 {"fallbackCurrentYear":"2023"} -->
+<p class="wp-block-block-development-examples-copyright-date-block-09aac3">© 2023</p>
+<!-- /wp:block-development-examples/copyright-date-block-09aac3 -->
+
+<!-- wp:block-development-examples/settings-sidebar-82c525 -->
+<div class="wp-block-block-development-examples-settings-sidebar-82c525" style="background-color:#000000;color:#ffffff"></div>
+<!-- /wp:block-development-examples/settings-sidebar-82c525 -->

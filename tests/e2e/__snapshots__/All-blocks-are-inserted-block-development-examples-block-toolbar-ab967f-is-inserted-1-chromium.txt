@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/block-toolbar-ab967f -->
+<p class="wp-block-block-development-examples-block-toolbar-ab967f block-toolbar-ab967f-align-none"></p>
+<!-- /wp:block-development-examples/block-toolbar-ab967f -->

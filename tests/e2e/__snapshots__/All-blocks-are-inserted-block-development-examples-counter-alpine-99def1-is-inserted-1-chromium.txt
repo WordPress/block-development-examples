@@ -1,0 +1,6 @@
+<!-- wp:block-development-examples/counter-alpine-99def1 -->
+<div class="wp-block-block-development-examples-counter-alpine-99def1" x-data="{ count: 0 }"><p>Alpine Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 2
+}</small></pre></details><br/><button x-on:click="count -= 2">-</button><input width="5" type="number" x-bind:value="count"/><button x-on:click="count += 2">+</button></div>
+<!-- /wp:block-development-examples/counter-alpine-99def1 -->

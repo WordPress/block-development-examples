@@ -1,0 +1,6 @@
+<!-- wp:block-development-examples/counter-react-99def1 -->
+<div class="wp-block-block-development-examples-counter-react-99def1"><p>React Counter</p><details><summary>Attributes</summary><pre><small>{
+  "initial": 0,
+  "increment": 4
+}</small></pre></details><br/><div class="counter-contaner" data-gutenberg-attributes="{&quot;initial&quot;:0,&quot;increment&quot;:4}"><button>-</button><input width="5" type="number" readonly value="0"/><button>+</button></div></div>
+<!-- /wp:block-development-examples/counter-react-99def1 -->
