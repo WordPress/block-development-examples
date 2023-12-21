@@ -17,7 +17,8 @@
 		"env:down": "wp-env stop",
 		"env:destroy": "wp-env destroy",
 		"env:logs": "wp-env logs all",
-		"test:e2e": "wp-scripts test-e2e",
+		"test:e2e": "wp-scripts test-playwright",
+		"test:e2e:debug": "wp-scripts test-playwright --debug",
 		"create-example:copy": "node ./_bin/copyGutenbergExample/index.js",
 		"create-example:new": "cd plugins && npx @wordpress/create-block@latest --template ../templates/block-examples",
 		"postcreate-example:new": "pnpm i && npm run table:update",
@@ -49,8 +50,8 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/plugin-transform-class-static-block": "^7.22.11",
-		"@wordpress/env": "^8.7.0",
-		"@wordpress/scripts": "^26.12.0",
+		"@wordpress/env": "^8.11.0",
+		"@wordpress/scripts": "^26.16.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.2.0"
 	},

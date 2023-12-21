@@ -1,0 +1,3 @@
+<!-- wp:block-development-examples/recipe-card-744e8a -->
+<div class="wp-block-block-development-examples-recipe-card-744e8a"><h2></h2><h3>Ingredients</h3><ul class="ingredients"></ul><h3>Instructions</h3><div class="steps"></div></div>
+<!-- /wp:block-development-examples/recipe-card-744e8a -->
