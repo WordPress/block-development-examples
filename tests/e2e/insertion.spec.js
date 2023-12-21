@@ -14,10 +14,9 @@ const nestedBlocks = [
 
 const blocksToRemove = [
 	'interactive-blocks-demos-99def1', // this contains nested blocks that are being added above.
-	'interactivity-api-countdown-3cd73e', // This one is dynamically generating text. It will always fail so we need a different test for it.
 ];
 
-test.describe( 'All blocks are inserted', () => {
+test.describe( 'Block added to block editor', () => {
 	test.beforeEach( async ( { admin } ) => {
 		// Create a new post before each test
 		await admin.createNewPost();
@@ -34,11 +33,22 @@ test.describe( 'All blocks are inserted', () => {
 	];
 
 	blocks.forEach( async ( block ) => {
-		test( `${ block } is inserted`, async ( { editor } ) => {
+		test( block, async ( { editor } ) => {
 			// Insert a block
 			await editor.insertBlock( { name: block } );
-			// Test that post content matches snapshot
-			expect( await editor.getEditedPostContent() ).toMatchSnapshot();
+
+			if (
+				block !==
+				'block-development-examples/interactivity-api-countdown-3cd73e'
+			) {
+				// Test that post content matches snapshot
+				expect( await editor.getEditedPostContent() ).toMatchSnapshot();
+			} else {
+				// This block contains dynamic content, so we can't match the snapshot.
+				expect( await editor.getEditedPostContent() ).toContain(
+					`<!-- wp:${ block }`
+				);
+			}
 		} );
 	} );
 } );
