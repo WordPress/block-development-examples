@@ -13,7 +13,7 @@
  * }
  * ```
  *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-meta_data/#view-script
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
 
 /* eslint-disable no-console */

@@ -75,7 +75,7 @@ This plugin use the [`register_block_type`](https://developer.wordpress.org/refe
 
 ![block.json and js files](./_assets/block-json-and-js.png)
 
-Any block's definition starts with a [`block.json` which contains the metadata for the block](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-meta_data/). This file contains, among other things, the paths of the js files that will conform the behaviour and appearance of our block.
+Any block's definition starts with a [`block.json` which contains the metadata for the block](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/). This file contains, among other things, the paths of the js files that will conform the behaviour and appearance of our block.
 
 ```json
 {
@@ -88,7 +88,7 @@ Any block's definition starts with a [`block.json` which contains the metadata f
 }
 ```
 
-In our minimal example, it just contains the path for the javascript file ([`editorScript` property](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-meta_data/#editor-script)) that defines the interface for how our block is going to be rendered within the editor, how it will operate and be manipulated, and how it will be saved.
+In our minimal example, it just contains the path for the javascript file ([`editorScript` property](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#editor-script)) that defines the interface for how our block is going to be rendered within the editor, how it will operate and be manipulated, and how it will be saved.
 
 ```js
 import { registerBlockType } from '@wordpress/blocks';
