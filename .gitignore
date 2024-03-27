@@ -36,7 +36,6 @@ npm-debug.log
 *.sql
 *.swp
 
-
 # Built packages
 build-module/
 build-style/
