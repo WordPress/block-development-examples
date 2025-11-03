@@ -2,11 +2,13 @@
 
 ## Repository Overview
 
-This is a WordPress plugin
+This is a monorepo containing WordPress block development examples for educational and reference purposes.
 
-- **Repository Type:** WordPress Plugin
-- **Primary Language:** PHP, JavaScript (React/JSX)
-- **Frameworks:** WordPress, WordPress Block Editor (Gutenberg), @wordpress/scripts
+- **Repository Type:** WordPress Block Development Examples Monorepo
+- **Purpose:** Educational examples demonstrating various WordPress block development patterns
+- **Primary Languages:** JavaScript (React/JSX), PHP
+- **Frameworks:** WordPress Block Editor (Gutenberg), @wordpress/scripts
+- **Package Manager:** pnpm (workspace-based monorepo)
 - **Target Runtime:** WordPress 6.8+, PHP 8.1+, Node.js 20+
 
 ## Critical Build Instructions
@@ -14,9 +16,10 @@ This is a WordPress plugin
 ### Environment Requirements
 
 - **Node.js:** greater than v20.19.5
-- **npm:** greater than v10.8.2
-- **PHP:** 8.1 or higher (plugin requires PHP 8.1+)
+- **pnpm:** 8.0 or higher (REQUIRED - this is a pnpm workspace)
+- **PHP:** 8.1 or higher (plugins require PHP 8.1+)
 - **Composer:** 2.8.12 or higher
+- **WordPress Environment:** wp-env (included in devDependencies)
 
 ### Dependency Versions
 
@@ -30,14 +33,15 @@ This is a WordPress plugin
 
 **ALWAYS install dependencies in this exact order before any build operations:**
 
-1. **npm dependencies (REQUIRED FIRST):**
+1. **pnpm dependencies (REQUIRED FIRST):**
    ```bash
-   npm install
+   pnpm install
    ```
-   - Takes approximately 60 seconds on first install
+   - Installs all workspace dependencies including individual plugin examples
+   - Takes approximately 30-60 seconds on first install
    - May show deprecation warnings (these are non-critical)
-   - May show 2 moderate severity vulnerabilities (these are from dev dependencies and are non-critical)
-   - Creates `node_modules/` directory (ignored by git)
+   - Creates `node_modules/` directories at root and in each plugin (ignored by git)
+   - Uses pnpm workspace configuration from `pnpm-workspace.yaml`
 
 2. **Composer dependencies (for PHP linting only):**
    ```bash
@@ -51,30 +55,33 @@ This is a WordPress plugin
 
 ### Build Process
 
-**ALWAYS run build after making JavaScript/CSS changes:**
-
+**Build all plugin examples:**
 ```bash
-npm run build
+pnpm run build
 ```
-- Takes approximately 1-2 seconds
-- Uses webpack via @wordpress/scripts
-- Generates files in `build/` directory (ignored by git, but required for plugin to function)
-- Creates `build/blocks-manifest.php` (automatically generated, do NOT edit manually)
-- Creates minified JavaScript, CSS, and asset dependency files in `build/[your-block-name]/`
-- Build output includes RTL CSS variants automatically
+- Recursively builds all plugins in the workspace
+- Takes approximately 10-30 seconds depending on number of plugins
+- Creates `build/` directories in each plugin folder
+- Generates minified JavaScript, CSS, and asset dependency files
 
-**For development with hot reload:**
+**Build a specific plugin:**
 ```bash
-npm run start
+cd plugins/[plugin-name]
+pnpm run build
 ```
-- Watches for file changes and rebuilds automatically
+
+**For development with hot reload (all plugins):**
+```bash
+pnpm run start
+```
+- Watches all plugins for file changes and rebuilds automatically
 - Generates unminified source maps for debugging
 - Use Ctrl+C to stop the watch process
 
-**To clean and rebuild:**
+**To clean and rebuild all:**
 ```bash
-rm -rf build/
-npm run build
+pnpm run admin:clear:build
+pnpm run build
 ```
 
 ### Linting and Code Quality
@@ -118,35 +125,54 @@ npm run format
 
 ### Plugin Distribution
 
-**To create a distributable ZIP file:**
+**To create distributable ZIP files for all plugins:**
 ```bash
-npm run plugin-zip
+pnpm run plugin-zip
 ```
-- Creates `[your-plugin-name].zip` in the repository root (ignored by git)
-- Includes only necessary files: `[your-plugin-file.php]`, `build/` directory contents
-- Excludes: `src/`, `node_modules/`, `vendor/`, development files
-- Takes approximately 1-2 seconds
+- Creates `.zip` files for all plugin examples
+- Each plugin gets its own distributable ZIP
+
+**Deploy all plugins to zips folder:**
+```bash
+pnpm run deploy
+```
+- Builds all plugins
+- Creates ZIP files for each
+- Moves all ZIPs to `zips/` folder for distribution
 
 ## Project Architecture
 
 ### Directory Structure
 
 ```
-[your-plugin-name]/
-├── .editorconfig              # Editor configuration (tabs, not spaces)
-├── .gitignore                 # Excludes build/, node_modules/, vendor/, *.zip
-├── composer.json              # PHP dependencies (WordPress Coding Standards)
-├── package.json               # npm dependencies and scripts
-├── [your-plugin-file.php]     # Main plugin file - registers blocks
-└── src/
-    └── [your-block-name]/     # Block source files
-        ├── block.json         # Block metadata (schema, scripts, styles)
-        ├── index.js           # Block registration entry point
-        ├── edit.js            # Block editor component (React)
-        ├── save.js            # Block save/render component (React)
-        ├── view.js            # Front-end JavaScript
-        ├── editor.scss        # Editor-only styles
-        └── style.scss         # Front-end and editor styles
+block-development-examples/            # Monorepo root
+├── .editorconfig                      # Editor configuration (tabs, not spaces)
+├── .gitignore                         # Excludes build/, node_modules/, vendor/, *.zip
+├── .wp-env.json                       # WordPress local environment config
+├── pnpm-workspace.yaml                # pnpm workspace configuration
+├── package.json                       # Root package scripts and dev dependencies
+├── composer.json                      # PHP dependencies (WordPress Coding Standards)
+├── _app/                              # Documentation site source
+├── _bin/                              # Utility scripts for managing examples
+├── _data/                             # Data files for documentation
+├── templates/                         # Block templates for creating new examples
+│   └── block-examples/                # Template for new block examples
+└── plugins/                           # Individual block example plugins
+    ├── basic-esnext-*/                # Example: Basic ESNext block
+    ├── block-dynamic-rendering-*/     # Example: Dynamic rendering
+    ├── block-supports-*/              # Example: Block supports
+    └── [plugin-name]/                 # Each plugin follows this structure:
+        ├── package.json               # Plugin-specific dependencies
+        ├── [plugin-name].php          # Main plugin file
+        └── src/                       # Block source files
+            └── [block-name]/          # Block components
+                ├── block.json         # Block metadata
+                ├── index.js           # Block registration
+                ├── edit.js            # Editor component
+                ├── save.js            # Save component
+                ├── view.js            # Frontend script
+                ├── editor.scss        # Editor styles
+                └── style.scss         # Frontend styles
 ```
 
 ### Build Output Structure
@@ -188,14 +214,18 @@ build/                         # Generated by npm run build (DO NOT EDIT)
 - Defines saved HTML output
 - Uses `useBlockProps.save()` for proper block wrapper attributes
 
-**`package.json` scripts:**
-- `build`: Production build with minification and manifest generation
-- `start`: Development build with watch mode
-- `format`: Auto-format all code with Prettier
-- `lint:js`: Lint JavaScript with ESLint
-- `lint:css`: Lint CSS/SCSS with stylelint
-- `plugin-zip`: Create distributable ZIP
-- `packages-update`: Update @wordpress/* packages
+**Root `package.json` scripts:**
+- `build`: Build all plugins in workspace
+- `start`: Start development mode for all plugins
+- `env:start`: Start WordPress local environment
+- `env:stop`: Stop WordPress environment
+- `test:e2e`: Run Playwright end-to-end tests
+- `create-example`: Create new block example from template
+- `table:update`: Update documentation tables
+- `deploy`: Build and package all plugins to zips/
+- `lint`: Run all linters
+- `plugin-zip`: Create distributable ZIPs for all plugins
+- `packages-update`: Update @wordpress/* packages in all plugins
 
 ## WordPress Coding Guidelines
 
@@ -217,21 +247,41 @@ function my_function() {
 
 **Before committing any code changes, ALWAYS run in this order:**
 
-1. Format code: `npm run format`
-2. Lint JavaScript: `npm run lint:js`
-3. Lint CSS: `npm run lint:css`
-4. Build: `npm run build`
-5. Verify build output exists in `build/[your-block-name]/`
+1. Install dependencies: `pnpm install`
+2. Format code: `pnpm run format` (if available in specific plugin)
+3. Lint JavaScript: `pnpm run lint:js`
+4. Lint CSS: `pnpm run lint:css`
+5. Build all: `pnpm run build`
+6. Verify build outputs exist in `plugins/*/build/`
 
-**For PHP changes only:**
+**For PHP changes:**
 1. Format and lint as above (if any JS/CSS was touched)
-2. Check PHP: `./vendor/bin/phpcs [your-plugin-file.php]` (warnings acceptable)
-3. Build: `npm run build`
+2. Check PHP: `composer run lint` or `./vendor/bin/phpcs`
+3. Build: `pnpm run build`
+
+## WordPress Environment
+
+**Start local WordPress environment:**
+```bash
+pnpm run env:start
+```
+- Runs WordPress locally using Docker via wp-env
+- Access at http://localhost:8888
+- Admin at http://localhost:8888/wp-admin (admin/password)
+- All plugins in `plugins/` are automatically mounted
+
+**Creating new block examples:**
+```bash
+pnpm run create-example
+```
+- Uses the template in `templates/block-examples/`
+- Prompts for block details
+- Automatically sets up the new plugin structure
 
 ## Common Issues and Solutions
 
-**Issue:** `npm run build` fails with "Cannot find module"
-- **Solution:** Run `npm install` first - dependencies not installed
+**Issue:** `pnpm run build` fails with "Cannot find module"
+- **Solution:** Run `pnpm install` first - dependencies not installed
 
 **Issue:** Lint errors about Prettier formatting
 - **Solution:** Run `npm run format` first, then lint again
@@ -242,26 +292,46 @@ function my_function() {
 **Issue:** Composer hangs asking for GitHub token
 - **Solution:** Use `composer install --no-interaction` or let it clone from cache (slower but works)
 
-**Issue:** Build directory is empty after `npm run build`
-- **Solution:** Check for errors in console; ensure `src/[your-block-name]/` files exist
+**Issue:** Build directories are empty after `pnpm run build`
+- **Solution:** Check for errors in console; ensure plugin `src/` directories exist
 
 **Issue:** Plugin not working in WordPress after changes
-- **Solution:** ALWAYS run `npm run build` after changing any file in `src/`
+- **Solution:** ALWAYS run `pnpm run build` after changing any file in `src/`
+
+**Issue:** "only-allow pnpm" error when using npm
+- **Solution:** Use `pnpm` instead of `npm` - this is a pnpm-only workspace
 
 ## Important Notes
 
-- The `build/` directory is git-ignored but REQUIRED for the plugin to function
+- This is a **monorepo** containing multiple WordPress block examples
+- Each plugin in `plugins/` is a standalone WordPress plugin demonstrating specific block concepts
+- The `build/` directories are git-ignored but REQUIRED for plugins to function
 - Never edit files in `build/` directly - they are auto-generated
-- The plugin uses WordPress 6.8+ block registration API with blocks-manifest.php for improved performance
-- All source files are in `src/[your-block-name]/`, all build outputs go to `build/[your-block-name]/`
+- All plugins use WordPress 6.8+ block registration API
+- Source files are in `plugins/*/src/`, build outputs go to `plugins/*/build/`
 - This project follows WordPress coding standards, which use TABS for indentation
-- Do not generate additional files beyond what is required for the assigned task (e.g., summary or documentation files) unless explicitly requested
+- Use `pnpm` exclusively - do not use `npm` or `yarn`
+- The repository includes a documentation site in `_app/` and utilities in `_bin/`
+- Examples are meant to be educational and demonstrate best practices
+
+## Additional Resources
+
+- **GitHub Wiki:** https://github.com/WordPress/block-development-examples/wiki - Extended documentation and guides
+- **Documentation Site:** Built from `_app/` and deployed via GitHub Pages
+- **Example Categories:** Each plugin demonstrates different aspects of block development:
+  - Basic blocks (static/dynamic rendering)
+  - Block supports and attributes
+  - Interactivity API examples
+  - Data layer interactions
+  - Custom controls and toolbars
+  - Internationalization examples
+  - And more...
 
 ## Trust These Instructions
 
-These instructions have been thoroughly tested and validated. Only perform additional searches or exploration if:
+These instructions have been tailored for the WordPress Block Development Examples monorepo. The repository serves as a comprehensive learning resource for WordPress block development. Only perform additional searches or exploration if:
 - The information here is incomplete for your specific task
 - You encounter an error not documented in "Common Issues"
 - You are adding new functionality not covered by existing patterns
 
-For routine code changes, trust this documentation and avoid unnecessary exploration.
+For routine code changes and example additions, trust this documentation and the existing patterns in the repository.
