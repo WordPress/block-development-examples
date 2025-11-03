@@ -18,12 +18,12 @@ module.exports = {
 					...view.customPackageJSON,
 					name: `@block-development-examples/${ view.slug }-${ hex }`,
 					scripts: {
-						build: 'wp-scripts build',
-						start: 'wp-scripts start',
+						build: 'wp-scripts build --blocks-manifest',
+						start: 'wp-scripts start --blocks-manifest',
 						'plugin-zip': 'wp-scripts plugin-zip',
 					},
 					devDependencies: {
-						'@wordpress/scripts': '^26.15.0',
+						'@wordpress/scripts': '^30.26.0',
 					},
 				},
 			};

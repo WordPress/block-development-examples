@@ -32,10 +32,10 @@
 	"devDependencies": {
 		"@babel/preset-react": "^7.24.1",
 		"@wordpress/env": "^9.9.0",
-		"@wordpress/scripts": "^27.8.0"
+		"@wordpress/scripts": "^30.26.0"
 	},
 	"scripts": {
-		"build": "wp-scripts build",
+		"build": "wp-scripts build --blocks-manifest",
 		"format": "wp-scripts format",
 		"format:php": "composer format",
 		"lint:css": "wp-scripts lint-style",
@@ -43,7 +43,7 @@
 		"lint:md:docs": "wp-scripts lint-md-docs",
 		"lint:md:js": "wp-scripts lint-md-js",
 		"lint:php": "composer lint",
-		"start": "wp-scripts start",
+		"start": "wp-scripts start --blocks-manifest",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:e2e:help": "wp-scripts test-e2e --help",

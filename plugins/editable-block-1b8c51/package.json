@@ -16,13 +16,13 @@
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start",
+		"start": "wp-scripts start --blocks-manifest",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:unit": "wp-scripts test-unit-js",
 		"copy:non-build": "shx cp -r src/blocks/*no-build*/ build/blocks/"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^27.8.0",
+		"@wordpress/scripts": "^30.26.0",
 		"shx": "^0.3.4"
 	},
 	"files": [

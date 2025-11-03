@@ -5,8 +5,8 @@
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build",
-		"start": "wp-scripts start",
+		"build": "wp-scripts build --blocks-manifest",
+		"start": "wp-scripts start --blocks-manifest",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
@@ -17,6 +17,6 @@
 		"*"
 	],
 	"devDependencies": {
-		"@wordpress/scripts": "^27.8.0"
+		"@wordpress/scripts": "^30.26.0"
 	}
 }
