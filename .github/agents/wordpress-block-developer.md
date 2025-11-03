@@ -1,3 +1,8 @@
+---
+name: WordPress Block Developer
+description: Specialized agent for WordPress block development in the Block Development Examples monorepo
+---
+
 # WordPress Block Developer Agent
 
 ## Repository Context
