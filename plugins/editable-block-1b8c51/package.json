@@ -6,7 +6,7 @@
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build && npm run copy:non-build",
+		"build": "wp-scripts build --blocks-manifest && npm run copy:non-build",
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses",
 		"format": "wp-scripts format",
