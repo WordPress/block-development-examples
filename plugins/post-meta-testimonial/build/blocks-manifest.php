@@ -1,0 +1,42 @@
+<?php
+// This file is generated. Do not modify it manually.
+return array(
+	'post-meta-testimonial' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'tutorial/post-meta-testimonial',
+		'version' => '0.1.0',
+		'title' => 'Post Meta Testimonial',
+		'category' => 'text',
+		'icon' => 'format-quote',
+		'description' => 'A block quote style testimonial that saves to post meta.',
+		'example' => array(
+			'attributes' => array(
+				'authorName' => 'WordPress',
+				'authorURL' => 'developer.wordpress.org/news'
+			)
+		),
+		'attributes' => array(
+			'authorName' => array(
+				'type' => 'string'
+			),
+			'authorURL' => array(
+				'type' => 'string'
+			)
+		),
+		'usesContext' => array(
+			'postId',
+			'postType'
+		),
+		'supports' => array(
+			'html' => false,
+			'multiple' => false
+		),
+		'textdomain' => 'post-meta-testimonial',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	)
+);

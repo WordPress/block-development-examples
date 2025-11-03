@@ -5,8 +5,8 @@
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
-		"build": "wp-scripts build --experimental-modules",
-		"start": "wp-scripts start --experimental-modules",
+		"build": "wp-scripts build --experimental-modules --blocks-manifest",
+		"start": "wp-scripts start --experimental-modules --blocks-manifest",
 		"check-engines": "wp-scripts check-engines",
 		"check-licenses": "wp-scripts check-licenses",
 		"format": "wp-scripts format",
