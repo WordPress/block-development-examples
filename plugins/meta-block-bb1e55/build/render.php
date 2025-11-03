@@ -9,7 +9,7 @@
 global $post;
 $meta_data = get_post_meta( $post->ID, 'myguten_meta_block_field', true );
 ?>
+<?php // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 <blockquote <?php echo get_block_wrapper_attributes(); ?>>
 	<p><?php echo esc_html( $meta_data ); ?></p>
 </blockquote>
-
