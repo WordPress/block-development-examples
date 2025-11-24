@@ -2,6 +2,10 @@
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"landingPage": "/wp-admin/post.php?post=10&action=edit",
 	"login": true,
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "6.9-RC2"
+	},
 	"steps": [
 		{
 			"step": "installPlugin",
