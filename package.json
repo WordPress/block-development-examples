@@ -59,7 +59,7 @@
 		"@types/markdown-table": "^2.0.0",
 		"@types/node": "^22.10.2",
 		"@wordpress/env": "^8.11.0",
-		"@wordpress/scripts": "^27.8.0",
+		"@wordpress/scripts": "^30.26.0",
 		"clean-webpack-plugin": "^4.0.0",
 		"gh-pages": "^6.1.1",
 		"husky": "^8.0.0",

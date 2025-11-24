@@ -4,15 +4,15 @@
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
-		"build": "wp-scripts build",
-		"start": "wp-scripts start",
+		"build": "wp-scripts build --blocks-manifest",
+		"start": "wp-scripts start --blocks-manifest",
 		"plugin-zip": "wp-scripts plugin-zip"
 	},
 	"files": [
 		"*"
 	],
 	"devDependencies": {
-		"@wordpress/scripts": "^27.8.0"
+		"@wordpress/scripts": "^30.26.0"
 	},
 	"dependencies": {
 		"@wordpress/icons": "^9.48.0"

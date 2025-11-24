@@ -11,6 +11,7 @@ $testimonial = get_post_meta( $post->ID, 'testimonial', true );
 $author_name = $attributes['authorName'];
 $author_url  = $attributes['authorURL'];
 ?>
+<?php // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 <blockquote <?php echo get_block_wrapper_attributes(); ?>>
 	<p><?php echo esc_html( $testimonial ); ?></p>
 	<cite>

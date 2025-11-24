@@ -6,13 +6,13 @@
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build --experimental-modules",
+		"build": "wp-scripts build --experimental-modules --blocks-manifest",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start --experimental-modules"
+		"start": "wp-scripts start --experimental-modules --blocks-manifest"
 	},
 	"files": [
 		"[^.]*"
@@ -21,6 +21,6 @@
 		"@wordpress/interactivity": "^6.19.0"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.12.0"
+		"@wordpress/scripts": "^30.26.0"
 	}
 }

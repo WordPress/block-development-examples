@@ -3,14 +3,14 @@
     "description": "",
     "version": "0.1.0",
     "scripts": {
-        "build": "wp-scripts build",
+        "build": "wp-scripts build --blocks-manifest",
         "plugin-zip": "wp-scripts plugin-zip",
-        "start": "wp-scripts start",
+        "start": "wp-scripts start --blocks-manifest",
         "env": "wp-env start"
     },
     "devDependencies": {
         "@wordpress/env": "^9.9.0",
-        "@wordpress/scripts": "^27.8.0"
+        "@wordpress/scripts": "^30.26.0"
     },
     "files": [ "*" ]
 }

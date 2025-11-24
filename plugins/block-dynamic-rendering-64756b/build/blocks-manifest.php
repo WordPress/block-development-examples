@@ -1,0 +1,29 @@
+<?php
+// This file is generated. Do not modify it manually.
+return array(
+	'build' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'block-development-examples/block-dynamic-rendering-64756b',
+		'version' => '0.1.0',
+		'title' => 'Block Dynamic Rendering',
+		'category' => 'widgets',
+		'icon' => 'smiley',
+		'description' => 'Example block scaffolded with Create Block tool.',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'keywords' => array(
+			'64756b'
+		),
+		'textdomain' => '01-block-dynamic',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
+	)
+);
