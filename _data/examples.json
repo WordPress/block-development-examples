@@ -423,5 +423,18 @@
 		],
 		"created": "2025-02-27T05:35:24+00:00",
 		"lastModified": "2025-02-27T05:35:24+00:00"
+	},
+	{
+		"slug": "editor-bindings",
+		"description": "Shows how to create a block that uses editor bindings to connect custom fields to the block editor.",
+		"name": "Editor Bindings",
+		"tags": [
+			"block-bindings"
+		],
+		"contributors": [
+			"juanmaguitar"
+		],
+		"created": "2025-11-24T00:00:00+00:00",
+		"lastModified": "2025-11-24T00:00:00+00:00"
 	}
 ]
