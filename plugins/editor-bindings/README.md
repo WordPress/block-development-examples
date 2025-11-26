@@ -24,11 +24,13 @@ Some key ideas for this example:
 -   **Editor Integration**: Uses WordPress Data API (`@wordpress/blocks` and editor store) to fetch and update post data in real-time
 -   **Controlled Editability**: Implements `canUserEditValue()` to make title and excerpt editable while keeping permalink read-only
 -   **Context-Aware**: Uses `postId` context to determine which post's data to fetch and display
+-   **WordPress 6.9+ UI Integration**: Implements `getFieldsList()` to expose binding fields (Title, Excerpt, Permalink) in the editor's Block Bindings dropdown interface, allowing users to easily connect block attributes to custom data sources
 
 ## Related resources
 
 -   [Block Bindings API documentation](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/)
 -   [`registerBlockBindingsSource` documentation](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-blocks/#registerbindingsource)
+-   [Block Bindings improvements in WordPress 6.9](https://make.wordpress.org/core/2025/11/12/block-bindings-improvements-in-wordpress-6-9/)
 
 ---
 
