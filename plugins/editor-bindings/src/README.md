@@ -28,13 +28,13 @@ const editableAttributes = [ 'title', 'excerpt' ];
 
 ```js
 registerBlockBindingsSource({
-  name: 'wpviplearn/post-data',
+  name: 'block-dev-ex/post-data',
   usesContext: [ 'postType' ],
   ...
 });
 ```
 
--   Registers a new source called `wpviplearn/post-data`.
+-   Registers a new source called `block-dev-ex/post-data`.
 -   It declares that it uses the `postType` context (e.g., 'post', 'page').
 -   Learn more about [block bindings sources](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-bindings/).
 

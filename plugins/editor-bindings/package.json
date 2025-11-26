@@ -1,5 +1,5 @@
 {
-	"name": "wpviplearn-editor-bindings",
+	"name": "block-dev-ex-editor-bindings",
 	"scripts": {
 		"start": "wp-scripts start",
 		"build": "wp-scripts build"

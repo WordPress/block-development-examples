@@ -8,7 +8,7 @@
  * Requires PHP:      7.4
  * Author:            Your Name
  * Author URI:        https://developer.wordpres.org/news
- * Text Domain:       wpviplearn
+ * Text Domain:       block-dev-ex
  *
  * @package CreateBlock
  */
@@ -20,9 +20,9 @@ add_action( 'init', 'bde_register_binding_sources' );
  */
 function bde_register_binding_sources() {
 	register_block_bindings_source(
-		'wpviplearn/post-data',
+		'block-dev-ex/post-data',
 		array(
-			'label'              => __( 'Post Data', 'wpviplearn' ),
+			'label'              => __( 'Post Data', 'block-dev-ex' ),
 			'get_value_callback' => 'bde_post_data_callback',
 			'uses_context'       => array( 'postId' ),
 		)
@@ -66,13 +66,13 @@ function bde_editor_assets() {
 		$asset = include "{$dir}/build/index.asset.php";
 
 		wp_enqueue_script(
-			'wpviplearn-editor-bindings',
+			'block-dev-ex-editor-bindings',
 			"{$url}/build/index.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
 		);
 
-		wp_set_script_translations( 'wpviplearn-editor-bindings', 'wpviplearn' );
+		wp_set_script_translations( 'block-dev-ex-editor-bindings', 'block-dev-ex' );
 	}
 }

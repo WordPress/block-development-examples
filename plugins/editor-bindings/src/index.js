@@ -5,7 +5,7 @@ const readOnlyAttributes = [ 'permalink' ];
 const editableAttributes = [ 'title', 'excerpt' ];
 
 registerBlockBindingsSource( {
-	name: 'wpviplearn/post-data',
+	name: 'block-dev-ex/post-data',
 	usesContext: [ 'postType' ],
 	getValues( { select, bindings } ) {
 		const values = {};

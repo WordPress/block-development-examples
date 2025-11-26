@@ -19,7 +19,7 @@ This example is taken from the following WordPress Developer Blog post:
 
 Some key ideas for this example:
 
--   **Custom Binding Source Registration**: The plugin registers a `wpviplearn/post-data` binding source both server-side (`register_block_bindings_source()`) and client-side (`registerBlockBindingsSource()`)
+-   **Custom Binding Source Registration**: The plugin registers a `block-dev-ex/post-data` binding source both server-side (`register_block_bindings_source()`) and client-side (`registerBlockBindingsSource()`)
 -   **Dynamic Data Access**: The binding source provides access to post title, excerpt, and permalink through the Block Bindings API
 -   **Editor Integration**: Uses WordPress Data API (`@wordpress/blocks` and editor store) to fetch and update post data in real-time
 -   **Controlled Editability**: Implements `canUserEditValue()` to make title and excerpt editable while keeping permalink read-only
