@@ -75,22 +75,22 @@
 
 		<item>
 			<title><![CDATA[The Beatles]]></title>
-			<link>https://whats-new-2.wp.local/</link>
+			<link>/</link>
 			<pubDate>Sat, 29 Nov 2025 18:49:56 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
-			<guid isPermaLink="false">https://whats-new-2.wp.local/?page_id=134</guid>
+			<guid isPermaLink="false">/?page_id=134</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:block-development-examples/interactivity-router-2f43f8 -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":138,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://whats-new-2.wp.local/wp-content/uploads/2025/11/image-2.png" alt="" class="wp-image-138"/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/image-2.png" alt="" class="wp-image-138"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p><strong>The Beatles</strong>&nbsp;were an English&nbsp;rock&nbsp;band formed in&nbsp;Liverpool&nbsp;in 1960. The core lineup of the band comprised&nbsp;<a href="https://whats-new-2.wp.local/john-lennon/" data-type="post" data-id="5">John Lennon</a>,&nbsp;<a href="https://whats-new-2.wp.local/paul-mccartney/" data-type="post" data-id="125">Paul McCartney</a>,&nbsp;<a href="https://whats-new-2.wp.local/george-harrison/" data-type="post" data-id="126">George Harrison</a>&nbsp;and&nbsp;<a href="https://whats-new-2.wp.local/ringo-starr/" data-type="post" data-id="122">Ringo Starr</a>. </p>
+<p><strong>The Beatles</strong>&nbsp;were an English&nbsp;rock&nbsp;band formed in&nbsp;Liverpool&nbsp;in 1960. The core lineup of the band comprised&nbsp;<a href="/john-lennon/" data-type="post" data-id="5">John Lennon</a>,&nbsp;<a href="/paul-mccartney/" data-type="post" data-id="125">Paul McCartney</a>,&nbsp;<a href="/george-harrison/" data-type="post" data-id="126">George Harrison</a>&nbsp;and&nbsp;<a href="/ringo-starr/" data-type="post" data-id="122">Ringo Starr</a>. </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -126,7 +126,7 @@ https://youtu.be/rblYSKz_VnI?si=15Dz5qCfl0WQbHPa
 			</wp:postmeta>
 			<wp:postmeta>
 				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-				<wp:meta_value><![CDATA[simple-template]]></wp:meta_value>
+				<wp:meta_value><![CDATA[bde-2f43f8//minimal-homepage]]></wp:meta_value>
 			</wp:postmeta>
 		</item>
 
@@ -216,7 +216,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 			<guid isPermaLink="false">/?p=4</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/john-lennon", "prev":"/"} -->
+<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/john-lennon"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns {"isStackedOnMobile":false} -->
 <div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":30,"sizeSlug":"large","linkDestination":"none"} -->

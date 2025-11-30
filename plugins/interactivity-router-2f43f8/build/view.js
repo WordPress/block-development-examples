@@ -73,7 +73,21 @@ const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('router-2f43f8', {
   state: {
-    urlRegionDisplay: window.location.href
+    urlRegionDisplay: window.location.href,
+    get areNavigationLinksVisible() {
+      return !state.prev && !state.next;
+    },
+    get itemSlug() {
+      const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return ctx.item.split('|')[0];
+    },
+    get itemName() {
+      const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return ctx.item.split('|')[1];
+    },
+    get isCurrentSlug() {
+      return state.currentSlug === state.itemSlug;
+    }
   },
   actions: {
     *navigate(e) {
@@ -83,6 +97,14 @@ const {
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
       state.urlRegionDisplay = e.target.href;
       yield actions.navigate(e.target.href);
+    }
+  },
+  callbacks: {
+    newPage() {
+      const serverState = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getServerState)();
+      state.prev = serverState.prev;
+      state.next = serverState.next;
+      state.currentSlug = serverState.currentSlug;
     }
   }
 });

@@ -9,12 +9,13 @@
 	background: #00ff081a;
 	padding: 1em;
 
-	nav {
-		font-weight: 700;
-
-		a {
-			padding-right: 1em;
-		}
+	.beatles-links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		gap: 1em;
 	}
 
 	.box-content {
@@ -28,5 +29,40 @@
 		code {
 			background-color: rgb( 240, 240, 148 );
 		}
+	}
+
+	.embed-floating {
+		position: fixed !important; /* fixed = pinned to viewport */
+		top: 0;
+		right: 0;
+		z-index: 9999; /* above layout containers */
+		width: 500px; /* optional */
+		max-width: 100%;
+	}
+
+	.navigation-links {
+		margin-top: 1em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1em;
+
+		.navigation-link-prev {
+			order: 0;
+			margin-right: auto;
+			padding-right: 1em;
+		}
+
+		.navigation-link-next {
+			order: 1;
+			margin-left: auto;
+			padding-left: 1em;
+		}
+	}
+
+	.current {
+		font-weight: 700;
+		text-decoration: underline;
+		color: #f00;
 	}
 }
