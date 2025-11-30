@@ -1,1 +1,31 @@
-.wp-block-block-development-examples-interactivity-router-2f43f8{background:rgba(0,255,8,.102);padding:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 nav{font-weight:700}.wp-block-block-development-examples-interactivity-router-2f43f8 nav a{padding-right:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 .box-content{border:2px solid #005700}.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info{font-size:.7em;margin-top:4em}.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info code{background-color:#f0f094}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.97.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../../node_modules/.pnpm/postcss-loader@6.2.1_postcss@8.4.38_webpack@5.97.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/.pnpm/sass-loader@12.6.0_sass@1.77.1_webpack@5.97.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-block-development-examples-interactivity-router-2f43f8 {
+  background: rgba(0, 255, 8, 0.1019607843);
+  padding: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 nav {
+  font-weight: 700;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 nav a {
+  padding-right: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .box-content {
+  border: 2px solid rgb(0, 87, 0);
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info {
+  font-size: 0.7em;
+  margin-top: 4em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info code {
+  background-color: rgb(240, 240, 148);
+}
+
+/*# sourceMappingURL=style-index.css.map*/
