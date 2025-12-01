@@ -73,9 +73,11 @@
 
 		<generator>https://wordpress.org/?v=6.7-beta1-59156</generator>
 
+
+
 		<item>
 			<title><![CDATA[The Beatles]]></title>
-			<link>/</link>
+			<link>https://playground.wordpress.net/scope:0.6562912150309702/</link>
 			<pubDate>Sat, 29 Nov 2025 18:49:56 +0000</pubDate>
 			<dc:creator><![CDATA[admin]]></dc:creator>
 			<guid isPermaLink="false">/?page_id=134</guid>
@@ -84,7 +86,7 @@
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":138,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/image-2.png" alt="" class="wp-image-138"/></figure>
+<figure class="wp-block-image size-full"><img src="https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/interactivity-router-2f43f8/_playground/images/the-beatles.png" alt="" class="wp-image-138"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -105,8 +107,8 @@ https://youtu.be/rblYSKz_VnI?si=15Dz5qCfl0WQbHPa
 			<wp:post_id>134</wp:post_id>
 			<wp:post_date><![CDATA[2025-11-29 18:49:56]]></wp:post_date>
 			<wp:post_date_gmt><![CDATA[2025-11-29 18:49:56]]></wp:post_date_gmt>
-			<wp:post_modified><![CDATA[2025-11-29 19:43:47]]></wp:post_modified>
-			<wp:post_modified_gmt><![CDATA[2025-11-29 19:43:47]]></wp:post_modified_gmt>
+			<wp:post_modified><![CDATA[2025-12-01 08:57:36]]></wp:post_modified>
+			<wp:post_modified_gmt><![CDATA[2025-12-01 08:57:36]]></wp:post_modified_gmt>
 			<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 			<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 			<wp:post_name><![CDATA[the-beatles]]></wp:post_name>
@@ -126,9 +128,13 @@ https://youtu.be/rblYSKz_VnI?si=15Dz5qCfl0WQbHPa
 			</wp:postmeta>
 			<wp:postmeta>
 				<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-				<wp:meta_value><![CDATA[bde-2f43f8//minimal-homepage]]></wp:meta_value>
+				<wp:meta_value><![CDATA[minimal-homepage]]></wp:meta_value>
 			</wp:postmeta>
 		</item>
+
+
+
+
 
 		<item>
 			<title><![CDATA[Ringo Starr]]></title>

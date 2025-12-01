@@ -32,6 +32,13 @@
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/WordPress/block-development-examples/trunk/plugins/interactivity-router-2f43f8/_playground/export.xml"
 			}
-		}
+		},
+		 {
+				"step": "setSiteOptions",
+				"options": {
+					"show_on_front": "page",
+					"page_on_front": 134
+				}
+			}
 	]
 }
