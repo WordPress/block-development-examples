@@ -64,7 +64,11 @@ function bde_2f43f8__render_block_interactivity_router( $block_content ) {
 
 	$p = new WP_HTML_Tag_Processor( $block_content );
 	while ( $p->next_tag( array( 'tag_name' => 'a' ) ) ) {
+		if ( $p->get_attribute( 'class' ) !== 'non-interactive-router-link' ) {
 			$p->set_attribute( 'data-wp-on--click', 'actions.navigate' );
+			$p->set_attribute( 'data-wp-on--mouseenter', 'actions.prefetch' );
+			$p->set_attribute( 'data-wp-watch', 'callbacks.prefetch' );
+		}
 	}
 
 	return $p->get_updated_html();

@@ -34,11 +34,10 @@ wp_interactivity_state(
 	data-wp-watch--newPage="callbacks.newPage"
 >
 	<a href="/">🏠 Start Page</a>
-		<p><small><em>Displaying region "region-example-2f43f8" from <a data-wp-bind--href="state.urlRegionDisplay" data-wp-text="state.urlRegionDisplay"></a></em></small></p>
+		<p><small><em>Displaying region "region-example-2f43f8" from <a class="non-interactive-router-link" data-wp-bind--href="state.urlRegionDisplay" data-wp-text="state.urlRegionDisplay"></a> (non-interactive router link)</em></small></p>
 		<ul class="beatles-links">
 			<template data-wp-each="state.slugs">
 				<li><a 
-				data-wp-on--click="actions.navigate"
 				data-wp-text="state.itemName"
 				data-wp-bind--href="state.itemSlug"
 				data-wp-class--current="state.isCurrentSlug"
@@ -52,13 +51,11 @@ wp_interactivity_state(
 				<a
 					class="navigation-link-prev"
 					data-wp-bind--hidden="!state.prev"
-					data-wp-on--click="actions.navigate"
 					data-wp-bind--href="state.prev"
 				>&lt; Prev</a>
 				<a
 					class="navigation-link-next"
 					data-wp-bind--hidden="!state.next"
-					data-wp-on--click="actions.navigate"
 					data-wp-bind--href="state.next"
 				>Next &gt;</a>
 		</nav>

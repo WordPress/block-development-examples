@@ -1,4 +1,24 @@
-import { store, getServerState, getContext } from '@wordpress/interactivity';
+import {
+	store,
+	getServerState,
+	getContext,
+	getElement,
+} from '@wordpress/interactivity';
+
+const isValidLink = ( ref ) =>
+	ref &&
+	ref instanceof window.HTMLAnchorElement &&
+	ref.href &&
+	( ! ref.target || ref.target === '_self' ) &&
+	ref.origin === window.location.origin;
+
+// Shared prefetch logic
+const prefetchLink = function* ( ref ) {
+	if ( isValidLink( ref ) ) {
+		const { actions } = yield import( '@wordpress/interactivity-router' );
+		yield actions.prefetch( ref.href );
+	}
+};
 
 const { state } = store( 'router-2f43f8', {
 	state: {
@@ -27,6 +47,10 @@ const { state } = store( 'router-2f43f8', {
 			state.urlRegionDisplay = e.target.href;
 			yield actions.navigate( e.target.href );
 		},
+		*prefetch() {
+			const { ref } = getElement();
+			yield* prefetchLink( ref );
+		},
 	},
 	callbacks: {
 		newPage() {
@@ -34,6 +58,10 @@ const { state } = store( 'router-2f43f8', {
 			state.prev = serverState.prev;
 			state.next = serverState.next;
 			state.currentSlug = serverState.currentSlug;
+		},
+		*prefetch() {
+			const { ref } = getElement();
+			yield* prefetchLink( ref );
 		},
 	},
 } );

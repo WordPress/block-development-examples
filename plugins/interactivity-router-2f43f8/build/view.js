@@ -69,6 +69,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
 
+const isValidLink = ref => ref && ref instanceof window.HTMLAnchorElement && ref.href && (!ref.target || ref.target === '_self') && ref.origin === window.location.origin;
+
+// Shared prefetch logic
+const prefetchLink = function* (ref) {
+  if (isValidLink(ref)) {
+    const {
+      actions
+    } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
+    yield actions.prefetch(ref.href);
+  }
+};
 const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('router-2f43f8', {
@@ -97,6 +108,12 @@ const {
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
       state.urlRegionDisplay = e.target.href;
       yield actions.navigate(e.target.href);
+    },
+    *prefetch() {
+      const {
+        ref
+      } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)();
+      yield* prefetchLink(ref);
     }
   },
   callbacks: {
@@ -105,6 +122,12 @@ const {
       state.prev = serverState.prev;
       state.next = serverState.next;
       state.currentSlug = serverState.currentSlug;
+    },
+    *prefetch() {
+      const {
+        ref
+      } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)();
+      yield* prefetchLink(ref);
     }
   }
 });
