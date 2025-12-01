@@ -34,7 +34,7 @@ wp_interactivity_state(
 	data-wp-watch--newPage="callbacks.newPage"
 >
 	<a href="/">🏠 Start Page</a>
-		<p><em>Displaying region "region-example-2f43f8" from <a data-wp-bind--href="state.urlRegionDisplay" data-wp-text="state.urlRegionDisplay"></a></em></p>
+		<p><small><em>Displaying region "region-example-2f43f8" from <a data-wp-bind--href="state.urlRegionDisplay" data-wp-text="state.urlRegionDisplay"></a></em></small></p>
 		<ul class="beatles-links">
 			<template data-wp-each="state.slugs">
 				<li><a 
