@@ -68,11 +68,11 @@ const { state } = store( 'router-2f43f8', {
 	callbacks: {
 		newPage() {
 			const serverState = getServerState();
+			console.log( 'Server state: ', serverState );
+			console.log( 'Client state: ', state );
 			state.prev = serverState.prev;
 			state.next = serverState.next;
 			state.currentSlug = serverState.currentSlug;
-			console.log( 'Server state: ', serverState );
-			console.log( 'Client state: ', state );
 		},
 		*prefetch() {
 			const { ref } = getElement();

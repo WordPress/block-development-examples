@@ -23,8 +23,8 @@ $state    = array(
 	),
 );
 
-error_log( '-------------------------------- ' . $state['currentSlug'] . ' --------------------------------' );
 
+/*
 if ( ! function_exists( 'format_url' ) ) {
 	// Helper function to properly format URLs.
 	$format_url = function ( $base, $path ) {
@@ -45,11 +45,13 @@ if ( ! function_exists( 'format_url' ) ) {
 		return $base_with_slash . $path_clean;
 	};
 }
+*/
+
 if ( $attributes['prev'] ) {
-	$state['prev'] = $format_url( $base_url, $attributes['prev'] );
+	$state['prev'] = $base_url . '/' . $attributes['prev'];
 }
 if ( $attributes['next'] ) {
-	$state['next'] = $format_url( $base_url, $attributes['next'] );
+	$state['next'] = $base_url . '/' . $attributes['next'];
 }
 
 wp_interactivity_state(
@@ -57,10 +59,6 @@ wp_interactivity_state(
 	$state,
 );
 
-error_log( '🔴 State' );
-error_log( print_r( $state, true ) );
-error_log( '🔵 Attributes' );
-error_log( print_r( $attributes, true ) );
 ?>
 
 <div

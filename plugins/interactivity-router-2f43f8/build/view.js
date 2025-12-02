@@ -131,11 +131,11 @@ const {
   callbacks: {
     newPage() {
       const serverState = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getServerState)();
+      console.log('Server state: ', serverState);
+      console.log('Client state: ', state);
       state.prev = serverState.prev;
       state.next = serverState.next;
       state.currentSlug = serverState.currentSlug;
-      console.log('Server state: ', serverState);
-      console.log('Client state: ', state);
     },
     *prefetch() {
       const {
