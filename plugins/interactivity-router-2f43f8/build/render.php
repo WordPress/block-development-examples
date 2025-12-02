@@ -12,22 +12,50 @@
  */
 
 $base_url = get_site_url();
+$state    = array(
+	'base_url'    => $base_url,
+	'currentSlug' => get_post_field( 'post_name', get_post() ),
+	'slugs'       => array(
+		'paul-mccartney|Paul',
+		'john-lennon|John',
+		'george-harrison|George',
+		'ringo-starr|Ringo',
+	),
+);
+
+if ( ! function_exists( 'format_url' ) ) {
+	// Helper function to properly format URLs.
+	$format_url = function ( $base, $path ) {
+		// Ensures base URL ends with / .
+		// Example: "https://example.com" → "https://example.com/" .
+		$base_with_slash = trailingslashit( $base );
+
+		// Removes trailing slashes from path.
+		// Example: "john-lennon/" → "john-lennon" .
+		$path_no_trailing = untrailingslashit( $path );
+
+		// Removes leading slashes from path.
+		// Example: "/john-lennon" → "john-lennon" .
+		$path_clean = ltrim( $path_no_trailing, '/' );
+
+		// Combine base URL with cleaned path.
+		// Result: "https://example.com/" + "john-lennon" = "https://example.com/john-lennon" .
+		return $base_with_slash . $path_clean;
+	};
+}
+if ( $attributes['prev'] ) {
+	$state['prev'] = $format_url( $base_url, $attributes['prev'] );
+}
+if ( $attributes['next'] ) {
+	$state['next'] = $format_url( $base_url, $attributes['next'] );
+}
+
 wp_interactivity_state(
 	'router-2f43f8',
-	array(
-		'prev'        => $attributes['prev'],
-		'next'        => $attributes['next'],
-		'base_url'    => $base_url,
-		'currentSlug' => get_post_field( 'post_name', get_post() ),
-		'slugs'       => array(
-			'paul-mccartney|Paul',
-			'john-lennon|John',
-			'george-harrison|George',
-			'ringo-starr|Ringo',
-		),
-	)
+	$state,
 );
 ?>
+
 <div
 	<?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>
 	data-wp-interactive="router-2f43f8"

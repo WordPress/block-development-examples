@@ -80,6 +80,7 @@ const prefetchLink = function* (ref) {
     yield actions.prefetch(ref.href);
   }
 };
+const removeSlashes = str => str.replace(/^\/+|\/+$/g, '');
 const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('router-2f43f8', {
@@ -90,7 +91,8 @@ const {
     },
     get itemSlug() {
       const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
-      return ctx.item.split('|')[0];
+      const slug = ctx.item.split('|')[0];
+      return new URL(removeSlashes(slug), state.base_url).href;
     },
     get itemName() {
       const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
@@ -124,6 +126,8 @@ const {
       state.prev = serverState.prev;
       state.next = serverState.next;
       state.currentSlug = serverState.currentSlug;
+      console.log('Server state: ', serverState);
+      console.log('Client state: ', state);
     },
     *prefetch() {
       const {

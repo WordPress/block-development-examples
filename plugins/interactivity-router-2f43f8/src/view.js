@@ -20,6 +20,8 @@ const prefetchLink = function* ( ref ) {
 	}
 };
 
+const removeSlashes = ( str ) => str.replace( /^\/+|\/+$/g, '' );
+
 const { state } = store( 'router-2f43f8', {
 	state: {
 		urlRegionDisplay: window.location.href,
@@ -28,7 +30,8 @@ const { state } = store( 'router-2f43f8', {
 		},
 		get itemSlug() {
 			const ctx = getContext();
-			return ctx.item.split( '|' )[ 0 ];
+			const slug = ctx.item.split( '|' )[ 0 ];
+			return new URL( removeSlashes( slug ), state.base_url ).href;
 		},
 		get itemName() {
 			const ctx = getContext();
@@ -60,6 +63,8 @@ const { state } = store( 'router-2f43f8', {
 			state.prev = serverState.prev;
 			state.next = serverState.next;
 			state.currentSlug = serverState.currentSlug;
+			console.log( 'Server state: ', serverState );
+			console.log( 'Client state: ', state );
 		},
 		*prefetch() {
 			const { ref } = getElement();
