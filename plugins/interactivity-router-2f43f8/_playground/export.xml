@@ -144,7 +144,7 @@ https://youtu.be/rblYSKz_VnI?si=15Dz5qCfl0WQbHPa
 			<guid isPermaLink="false">/?p=1</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"prev":"/george-harrison"} -->
+<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"prev":"george-harrison"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":62,"sizeSlug":"full","linkDestination":"none"} -->
@@ -222,7 +222,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 			<guid isPermaLink="false">/?p=4</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/john-lennon"} -->
+<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"john-lennon"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns {"isStackedOnMobile":false} -->
 <div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":30,"sizeSlug":"large","linkDestination":"none"} -->
@@ -283,7 +283,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 			<guid isPermaLink="false">/?p=5</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/george-harrison", "prev":"/paul-mccartney"} -->
+<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"george-harrison", "prev":"paul-mccartney"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":42,"sizeSlug":"large","linkDestination":"none"} -->
@@ -344,7 +344,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 			<guid isPermaLink="false">/?p=6</guid>
 			<description></description>
 			<content:encoded><![CDATA[<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/ringo-starr", "prev":"/john-lennon"} -->
+<div class="wp-block-group"><!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"ringo-starr", "prev":"john-lennon"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":53,"sizeSlug":"full","linkDestination":"none"} -->
@@ -499,7 +499,7 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 <div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"/paul-mccartney"} -->
+<!-- wp:block-development-examples/interactivity-router-2f43f8 {"next":"paul-mccartney"} -->
 <div class="wp-block-block-development-examples-interactivity-router-2f43f8"><!-- wp:paragraph -->
 <p><strong>The Beatles</strong> were an iconic British rock band formed in <strong>Liverpool</strong> in 1960. The group consisted of <strong>John Lennon</strong>, <strong>Paul McCartney</strong>, <strong>George Harrison</strong>, and <strong>Ringo Starr</strong>, and they are widely regarded as one of the most influential and successful bands in the history of music.</p>
 <!-- /wp:paragraph --></div>
