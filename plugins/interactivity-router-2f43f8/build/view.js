@@ -81,6 +81,14 @@ const prefetchLink = function* (ref) {
   }
 };
 const removeSlashes = str => str.replace(/^\/+|\/+$/g, '');
+
+// Helper function to properly build URLs
+const buildUrl = (base, path) => {
+  // Ensure base ends with / and path doesn't start with /
+  const baseWithSlash = base.endsWith('/') ? base : base + '/';
+  const cleanPath = removeSlashes(path);
+  return baseWithSlash + cleanPath;
+};
 const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('router-2f43f8', {
@@ -92,7 +100,7 @@ const {
     get itemSlug() {
       const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
       const slug = ctx.item.split('|')[0];
-      return new URL(removeSlashes(slug), state.base_url).href;
+      return buildUrl(state.base_url, slug);
     },
     get itemName() {
       const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
