@@ -17,6 +17,7 @@ wp_interactivity_state(
 	array(
 		'prev'        => $attributes['prev'],
 		'next'        => $attributes['next'],
+		'base_url'    => $base_url,
 		'currentSlug' => get_post_field( 'post_name', get_post() ),
 		'slugs'       => array(
 			'paul-mccartney|Paul',
