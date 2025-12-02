@@ -23,6 +23,7 @@ $state    = array(
 	),
 );
 
+error_log( '-------------------------------- ' . $state['currentSlug'] . ' --------------------------------' );
 
 if ( ! function_exists( 'format_url' ) ) {
 	// Helper function to properly format URLs.
@@ -56,6 +57,10 @@ wp_interactivity_state(
 	$state,
 );
 
+error_log( '🔴 State' );
+error_log( print_r( $state, true ) );
+error_log( '🔵 Attributes' );
+error_log( print_r( $attributes, true ) );
 ?>
 
 <div
