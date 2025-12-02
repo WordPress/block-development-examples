@@ -23,6 +23,7 @@ $state    = array(
 	),
 );
 
+
 if ( ! function_exists( 'format_url' ) ) {
 	// Helper function to properly format URLs.
 	$format_url = function ( $base, $path ) {
@@ -38,7 +39,7 @@ if ( ! function_exists( 'format_url' ) ) {
 		// Example: "/john-lennon" → "john-lennon" .
 		$path_clean = ltrim( $path_no_trailing, '/' );
 
-		// Combine base URL with cleaned path.
+		// Combine base URL with cleaned path
 		// Result: "https://example.com/" + "john-lennon" = "https://example.com/john-lennon" .
 		return $base_with_slash . $path_clean;
 	};
@@ -54,6 +55,7 @@ wp_interactivity_state(
 	'router-2f43f8',
 	$state,
 );
+
 ?>
 
 <div
