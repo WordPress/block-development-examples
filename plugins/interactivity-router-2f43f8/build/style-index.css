@@ -1,1 +1,63 @@
-.wp-block-block-development-examples-interactivity-router-2f43f8{background:rgba(0,255,8,.102);padding:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 .beatles-links{display:flex;gap:1em;justify-content:space-between;list-style:none;margin:0;padding:0}.wp-block-block-development-examples-interactivity-router-2f43f8 .box-content{border:2px solid #005700}.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info{font-size:.7em;margin-top:4em}.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info code{background-color:#f0f094}.wp-block-block-development-examples-interactivity-router-2f43f8 .embed-floating{max-width:100%;position:fixed!important;right:0;top:0;width:500px;z-index:9999}.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links{display:flex;flex-direction:row;gap:1em;justify-content:space-between;margin-top:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links .navigation-link-prev{margin-right:auto;order:0;padding-right:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links .navigation-link-next{margin-left:auto;order:1;padding-left:1em}.wp-block-block-development-examples-interactivity-router-2f43f8 .current{color:red;font-weight:700;text-decoration:underline}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.97.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!../../node_modules/.pnpm/postcss-loader@6.2.1_postcss@8.4.38_webpack@5.97.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/.pnpm/sass-loader@12.6.0_sass@1.77.1_webpack@5.97.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-block-development-examples-interactivity-router-2f43f8 {
+  background: rgba(0, 255, 8, 0.1019607843);
+  padding: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .beatles-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .box-content {
+  border: 2px solid rgb(0, 87, 0);
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info {
+  font-size: 0.7em;
+  margin-top: 4em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .debug-info code {
+  background-color: rgb(240, 240, 148);
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .embed-floating {
+  position: fixed !important; /* fixed = pinned to viewport */
+  top: 0;
+  right: 0;
+  z-index: 9999; /* above layout containers */
+  width: 500px; /* optional */
+  max-width: 100%;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links .navigation-link-prev {
+  order: 0;
+  margin-right: auto;
+  padding-right: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .navigation-links .navigation-link-next {
+  order: 1;
+  margin-left: auto;
+  padding-left: 1em;
+}
+.wp-block-block-development-examples-interactivity-router-2f43f8 .current {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #f00;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

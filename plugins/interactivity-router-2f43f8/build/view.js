@@ -1,1 +1,138 @@
-import*as e from"@wordpress/interactivity";var t={438:e=>{e.exports=import("@wordpress/interactivity-router")}},r={};function n(e){var o=r[e];if(void 0!==o)return o.exports;var i=r[e]={exports:{}};return t[e](i,i.exports,n),i.exports}n.d=(e,t)=>{for(var r in t)n.o(t,r)&&!n.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t);const o=(s={getContext:()=>e.getContext,getElement:()=>e.getElement,getServerState:()=>e.getServerState,store:()=>e.store},l={},n.d(l,s),l),i=function*(e){if((e=>e&&e instanceof window.HTMLAnchorElement&&e.href&&(!e.target||"_self"===e.target)&&e.origin===window.location.origin)(e)){const{actions:t}=yield Promise.resolve().then(n.bind(n,438));yield t.prefetch(e.href)}},{state:a}=(0,o.store)("router-2f43f8",{state:{urlRegionDisplay:window.location.href,get areNavigationLinksVisible(){return!a.prev&&!a.next},get itemSlug(){return(0,o.getContext)().item.split("|")[0]},get itemName(){return(0,o.getContext)().item.split("|")[1]},get isCurrentSlug(){return a.currentSlug===a.itemSlug}},actions:{*navigate(e){e.preventDefault();const{actions:t}=yield Promise.resolve().then(n.bind(n,438));a.urlRegionDisplay=a.base_url+"/"+e.target.href,console.log("mavigating to ",a.urlRegionDisplay),yield t.navigate(e.target.href)},*prefetch(){const{ref:e}=(0,o.getElement)();yield*i(e)}},callbacks:{newPage(){const e=(0,o.getServerState)();a.prev=e.prev,a.next=e.next,a.currentSlug=e.currentSlug},*prefetch(){const{ref:e}=(0,o.getElement)();yield*i(e)}}});var s,l;
+import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
+/******/ var __webpack_modules__ = ({
+
+/***/ "@wordpress/interactivity-router":
+/*!**************************************************!*\
+  !*** external "@wordpress/interactivity-router" ***!
+  \**************************************************/
+/***/ ((module) => {
+
+module.exports = import("@wordpress/interactivity-router");;
+
+/***/ }),
+
+/***/ "@wordpress/interactivity":
+/*!*******************************************!*\
+  !*** external "@wordpress/interactivity" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__;
+
+/***/ })
+
+/******/ });
+/************************************************************************/
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 	if (cachedModule !== undefined) {
+/******/ 		return cachedModule.exports;
+/******/ 	}
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		// no module.id needed
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
+/************************************************************************/
+/******/ /* webpack/runtime/make namespace object */
+/******/ (() => {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ })();
+/******/ 
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
+/*!*********************!*\
+  !*** ./src/view.js ***!
+  \*********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
+
+const isValidLink = ref => ref && ref instanceof window.HTMLAnchorElement && ref.href && (!ref.target || ref.target === '_self') && ref.origin === window.location.origin;
+
+// Shared prefetch logic
+const prefetchLink = function* (ref) {
+  if (isValidLink(ref)) {
+    const {
+      actions
+    } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
+    yield actions.prefetch(ref.href);
+  }
+};
+const {
+  state
+} = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)('router-2f43f8', {
+  state: {
+    urlRegionDisplay: window.location.href,
+    get areNavigationLinksVisible() {
+      return !state.prev && !state.next;
+    },
+    get itemSlug() {
+      const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return ctx.item.split('|')[0];
+    },
+    get itemName() {
+      const ctx = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getContext)();
+      return ctx.item.split('|')[1];
+    },
+    get isCurrentSlug() {
+      return state.currentSlug === state.itemSlug;
+    }
+  },
+  actions: {
+    *navigate(e) {
+      e.preventDefault();
+      const {
+        actions
+      } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
+      state.urlRegionDisplay = state.base_url + '/' + e.target.href;
+      console.log('mavigating to ', state.urlRegionDisplay);
+      yield actions.navigate(e.target.href);
+    },
+    *prefetch() {
+      const {
+        ref
+      } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)();
+      yield* prefetchLink(ref);
+    }
+  },
+  callbacks: {
+    newPage() {
+      const serverState = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getServerState)();
+      state.prev = serverState.prev;
+      state.next = serverState.next;
+      state.currentSlug = serverState.currentSlug;
+    },
+    *prefetch() {
+      const {
+        ref
+      } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.getElement)();
+      yield* prefetchLink(ref);
+    }
+  }
+});
+})();
+
+
+//# sourceMappingURL=view.js.map
