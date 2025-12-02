@@ -21,10 +21,11 @@ $state    = array(
 		'george-harrison|George',
 		'ringo-starr|Ringo',
 	),
+	'prev'        => '',
+	'next'        => '',
 );
 
 
-/*
 if ( ! function_exists( 'format_url' ) ) {
 	// Helper function to properly format URLs.
 	$format_url = function ( $base, $path ) {
@@ -45,19 +46,18 @@ if ( ! function_exists( 'format_url' ) ) {
 		return $base_with_slash . $path_clean;
 	};
 }
-*/
-
 if ( $attributes['prev'] ) {
-	$state['prev'] = $base_url . '/' . $attributes['prev'];
+	$state['prev'] = $format_url( $base_url, $attributes['prev'] );
 }
 if ( $attributes['next'] ) {
-	$state['next'] = $base_url . '/' . $attributes['next'];
+	$state['next'] = $format_url( $base_url, $attributes['next'] );
 }
 
 wp_interactivity_state(
 	'router-2f43f8',
 	$state,
 );
+
 
 ?>
 
