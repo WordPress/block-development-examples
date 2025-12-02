@@ -44,9 +44,9 @@ const { state } = store( 'router-2f43f8', {
 			const { actions } = yield import(
 				'@wordpress/interactivity-router'
 			);
-
-			state.urlRegionDisplay = state.base_url + '/' + e.target.href;
-			console.log( 'mavigating to ', state.urlRegionDisplay );
+			state.urlRegionDisplay = e.target.href;
+			console.log( 'Navigating to: ', state.urlRegionDisplay );
+			console.log( 'Base URL: ', state.base_url );
 			yield actions.navigate( e.target.href );
 		},
 		*prefetch() {

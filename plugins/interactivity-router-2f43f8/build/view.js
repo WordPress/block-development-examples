@@ -106,8 +106,9 @@ const {
       const {
         actions
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
-      state.urlRegionDisplay = state.base_url + '/' + e.target.href;
-      console.log('mavigating to ', state.urlRegionDisplay);
+      state.urlRegionDisplay = e.target.href;
+      console.log('Navigating to: ', state.urlRegionDisplay);
+      console.log('Base URL: ', state.base_url);
       yield actions.navigate(e.target.href);
     },
     *prefetch() {
