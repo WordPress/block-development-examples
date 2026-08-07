@@ -80,6 +80,12 @@ nbproject/private/
 test-results
 artifacts
 
+# Artifacts produced by `npm run deploy`: the collected zips, the per-plugin
+# zips wp-scripts emits, and the scope folders it nests them in.
+zips/
+plugins/*/*.zip
+plugins/*/@*/
+
 # PHP lint
 phpcs-report.xml
 

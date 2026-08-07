@@ -23,12 +23,13 @@ jobs:
                   REPO_NAME: ${{ github.event.repository.name }}
               run: ./.github/workflows/scripts/fetch_contributors.sh
 
-            # Remove temp file before creating PR
+            # fetch_contributors.sh leaves this behind; without removing it the
+            # temp file ends up committed to the automated PR.
             - name: Clean up temp file
-              run: rm -f .temp.json
+              run: rm -f _data/examples.temp.json
 
             - name: Create Pull Request
-              uses: peter-evans/create-pull-request@v5
+              uses: peter-evans/create-pull-request@v7
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
                   commit-message: Update GitHub contributors

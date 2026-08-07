@@ -1,6 +1,6 @@
 # Block Development Examples
 
-[![Release with Examples Zips](https://github.com/WordPress/block-development-examples/actions/workflows/release-zips.yml/badge.svg)](https://github.com/WordPress/block-development-examples/actions/workflows/release-zips.yml) [![🔍 Static Linting](https://github.com/WordPress/block-development-examples/actions/workflows/static-linting.yml/badge.svg)](https://github.com/WordPress/block-development-examples/actions/workflows/static-linting.yml)
+[![Release with Examples Zips](https://github.com/WordPress/block-development-examples/actions/workflows/release-zips.yml/badge.svg)](https://github.com/WordPress/block-development-examples/actions/workflows/release-zips.yml) [![🔍 Static Linting](https://github.com/WordPress/block-development-examples/actions/workflows/static-linting.yml/badge.svg)](https://github.com/WordPress/block-development-examples/actions/workflows/static-linting.yml) [![🎭 End-to-end Tests](https://github.com/WordPress/block-development-examples/actions/workflows/e2e.yml/badge.svg)](https://github.com/WordPress/block-development-examples/actions/workflows/e2e.yml)
 
 > [!IMPORTANT]  
 > Go to the Block Development Examples Web App to navigate through the examples
