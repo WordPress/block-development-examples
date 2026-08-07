@@ -1,0 +1,47 @@
+name: '🎭 End-to-end Tests'
+
+on:
+    pull_request:
+    push:
+        branches:
+            - trunk
+
+jobs:
+    e2e:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version-file: .nvmrc
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm i
+
+            - name: Build all examples
+              run: npm run build
+
+            - name: Install Playwright browsers
+              run: npx playwright install chromium --with-deps
+
+            - name: Run end-to-end tests
+              run: npm run test:e2e
+              env:
+                  CI: true
+
+            - name: Upload artifacts on failure
+              if: failure()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: e2e-artifacts
+                  path: artifacts/
+                  retention-days: 7
+
+        name: Block insertion

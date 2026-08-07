@@ -1,3 +1,0 @@
-<!-- wp:block-development-examples/copyright-date-block-09aac3 {"fallbackCurrentYear":"2023"} -->
-<p class="wp-block-block-development-examples-copyright-date-block-09aac3">© 2023</p>
-<!-- /wp:block-development-examples/copyright-date-block-09aac3 -->

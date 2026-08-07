@@ -1,3 +1,0 @@
-<!-- wp:block-development-examples/minimal-block-no-build-e621a6 -->
-<p>Hello World - Frontend</p>
-<!-- /wp:block-development-examples/minimal-block-no-build-e621a6 -->
