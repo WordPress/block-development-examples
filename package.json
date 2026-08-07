@@ -62,7 +62,7 @@
 		"@types/markdown-table": "^2.0.0",
 		"@types/node": "^22.10.2",
 		"@wordpress/e2e-test-utils-playwright": "^0.25.0",
-		"@wordpress/env": "^8.11.0",
+		"@wordpress/env": "^10.39.0",
 		"@wordpress/scripts": "^27.8.0",
 		"clean-webpack-plugin": "^4.0.0",
 		"gh-pages": "^6.1.1",
