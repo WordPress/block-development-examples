@@ -15,9 +15,7 @@
 		"lint:php": "composer run lint",
 		"format:php": "composer run fix",
 		"packages-update": "wp-scripts packages-update",
-		"plugin-zip": "wp-scripts plugin-zip",
-		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
+		"plugin-zip": "wp-scripts plugin-zip"
 	},
 	"files": [
 		"*"

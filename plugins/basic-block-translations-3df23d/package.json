@@ -17,8 +17,6 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start",
-		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js",
 		"make-pot": "wp i18n make-pot . languages/awp.pot --slug=awp --domain=awp --exclude=node_modules,src",
 		"make-json": "wp i18n make-json languages/ --no-purge"
 	},

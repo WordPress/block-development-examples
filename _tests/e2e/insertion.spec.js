@@ -1,22 +1,24 @@
+import path from 'path';
 import { test, expect } from '@wordpress/e2e-test-utils-playwright';
-import getNamesBlocksFromBlockJsonFiles from '../utils/getBlocksRepo';
+import getBlocksRepo from '../utils/getBlocksRepo';
 
-import { plugins } from '../../.wp-env.json';
-const pluginsPathsToTest = plugins.filter( ( plugin ) =>
-	plugin.includes( 'plugins' )
-);
-const blocksRepo = getNamesBlocksFromBlockJsonFiles( pluginsPathsToTest );
+const PLUGINS_PATH = path.join( __dirname, '..', '..', 'plugins' );
+const blocksRepo = getBlocksRepo( PLUGINS_PATH );
 
 test.describe( 'Block added to block editor', () => {
 	test.beforeEach( async ( { admin } ) => {
 		await admin.createNewPost();
 	} );
 
-	blocksRepo.forEach( async ( block ) => {
-		test( block, async ( { editor } ) => {
-			await editor.insertBlock( { name: block } );
+	blocksRepo.forEach( ( { name, parent } ) => {
+		test( name, async ( { editor } ) => {
+			// Blocks declaring a parent cannot be inserted at the document
+			// root, so they are nested inside the block they belong to.
+			await editor.insertBlock(
+				parent ? { name: parent, innerBlocks: [ { name } ] } : { name }
+			);
 			expect( await editor.getEditedPostContent() ).toContain(
-				`<!-- wp:${ block }`
+				`<!-- wp:${ name }`
 			);
 		} );
 	} );

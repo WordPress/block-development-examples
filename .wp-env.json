@@ -1,8 +1,9 @@
 {
-	"phpVersion": "7.4",
-	"plugins": [
-		"https://downloads.wordpress.org/plugin/gutenberg.zip"
-	],
+	"phpVersion": "8.2",
+	"plugins": [],
+	"mappings": {
+		"wp-content/plugins": "./plugins"
+	},
 	"config": {
 		"WP_DEBUG": true,
 		"WP_DEBUG_LOG": true,

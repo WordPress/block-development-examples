@@ -1,3 +1,0 @@
-<!-- wp:block-development-examples/inner-blocks-dcd824 -->
-<div class="wp-block-block-development-examples-inner-blocks-dcd824"></div>
-<!-- /wp:block-development-examples/inner-blocks-dcd824 -->
