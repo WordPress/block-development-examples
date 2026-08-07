@@ -1,54 +1,52 @@
-name: "🚀 Generate Examples Zips and Create Release"
+name: '🚀 Generate Examples Zips and Create Release'
 
 on:
     push:
         branches:
-            - trunk # Or your default branch
+            - trunk
+        # Only cut a release when something that ends up inside a zip changed.
+        # Use the manual trigger below for anything else.
+        paths:
+            - 'plugins/**'
+            - 'package.json'
+            - 'pnpm-lock.yaml'
+            - '.nvmrc'
     workflow_dispatch:
 
+# Releases share the `latest` tag, so overlapping runs must queue rather than
+# race while uploading assets to it.
+concurrency:
+    group: ${{ github.workflow }}
+    cancel-in-progress: false
 
 jobs:
     zip-packages:
         runs-on: ubuntu-latest
 
         steps:
-            # Checkout the repository
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
-            # Set up Node.js and install dependencies
-            - name: Set up Node.js
-              uses: actions/setup-node@v3
+            # pnpm must be set up before setup-node so that `cache: pnpm` can
+            # locate the pnpm store. The version comes from `packageManager`.
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
               with:
-                  node-version: '16' # Use your preferred Node.js version
-            - uses: pnpm/action-setup@v4
-              with:
-                  version: 8.7.1
+                  node-version-file: .nvmrc
+                  cache: pnpm
 
             - name: Install dependencies
               run: pnpm install
 
-            # Create zips directory
-            - name: Create zips directory
-              run: mkdir -p zips
-
-            # Run the plugin-zip script to generate zip files
+            # Builds every example and collects the zips into ./zips
             - name: Generate zip files
               run: |
                   npm run deploy
-                  ls -la zips/  # Debug: List contents of zips directory
+                  ls -la zips/
 
-            # Install GitHub CLI
-            - name: Install GitHub CLI
-              run: sudo apt-get install -y gh
-
-            # Authenticate with GitHub CLI
-            - name: Authenticate GitHub CLI
-              env:
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: gh auth setup-git -h github.com
-
-            # Create GitHub Release
             - name: Create GitHub Release
               id: create_release
               env:
@@ -63,16 +61,12 @@ jobs:
                     --title "Release $RELEASE_TAG" \
                     --notes "This release contains the latest package zips."
 
-            # Upload the zips to the Release with consistent names
             - name: Upload Zips to Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                   for file in zips/*.zip; do
                     [ -e "$file" ] || continue
-                    # Extract the base name without path and extension
-                    filename=$(basename "$file")
-                    # Upload to the versioned release
                     gh release upload "${{ env.RELEASE_TAG }}" "$file"
                   done
 
@@ -87,7 +81,7 @@ jobs:
                       echo "Publishing the draft release..."
                       gh release edit latest --draft=false
                     fi
-            
+
                     # Update the existing release
                     gh release edit latest \
                       --title "Latest Release" \
@@ -100,7 +94,7 @@ jobs:
                       --notes "This is always the latest release. For permanent links, use the dated releases." \
                       --latest
                   fi
-            
+
                   # Upload files to the latest release
                   for file in zips/*.zip; do
                     [ -e "$file" ] || continue

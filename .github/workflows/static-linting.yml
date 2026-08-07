@@ -1,4 +1,4 @@
-name: "🔍 Static Linting"
+name: '🔍 Static Linting'
 
 on:
     pull_request:
@@ -6,16 +6,19 @@ on:
         branches:
             - trunk
 
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
 jobs:
     php:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - name: Install dependencies
               uses: php-actions/composer@v6
             - name: Lint PHP files
-              if: github.ref != 'refs/pull/11/merge'
               run: composer run lint
 
         name: PHP Files
@@ -23,27 +26,25 @@ jobs:
     other:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                node-version: [18, 'lts/*']
-
         steps:
-            - uses: actions/checkout@v3
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
-              with:
-                  node-version: ${{ matrix.node-version }}
+            - uses: actions/checkout@v4
+
+            # pnpm must be set up before setup-node so that `cache: pnpm` can
+            # locate the pnpm store. The version comes from `packageManager`.
             - name: Setup pnpm
               uses: pnpm/action-setup@v4
 
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version-file: .nvmrc
+                  cache: pnpm
+
             - name: Install dependencies
-              if: github.ref != 'refs/pull/11/merge'
               run: pnpm i
             - name: Lint JavaScript files
-              if: github.ref != 'refs/pull/11/merge'
               run: npm run lint:js
             - name: Lint CSS files
-              if: github.ref != 'refs/pull/11/merge'
               run: npm run lint:css
               env:
                   CI: true

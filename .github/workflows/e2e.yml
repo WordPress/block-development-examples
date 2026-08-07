@@ -6,6 +6,10 @@ on:
         branches:
             - trunk
 
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
 jobs:
     e2e:
         runs-on: ubuntu-latest
@@ -13,6 +17,8 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            # pnpm must be set up before setup-node so that `cache: pnpm` can
+            # locate the pnpm store. The version comes from `packageManager`.
             - name: Setup pnpm
               uses: pnpm/action-setup@v4
 

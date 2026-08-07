@@ -2,7 +2,34 @@
 
 This directory contains GitHub Actions workflows that automate various tasks in the repository. Below is an overview of each workflow:
 
+## Toolchain
+
+Every workflow that needs Node.js reads the version from `.nvmrc` via `node-version-file`, and every workflow that needs pnpm reads the version from the `packageManager` field in the root `package.json`. Neither is pinned inside a workflow, so local development and CI cannot drift apart.
+
+`pnpm/action-setup` always runs **before** `actions/setup-node`, because `cache: pnpm` can only locate the pnpm store once pnpm is installed.
+
+Installs run with pnpm's default CI behaviour (`--frozen-lockfile`), so a `pnpm-lock.yaml` that is out of date with the `package.json` files fails the run instead of silently resolving different versions.
+
 ## Main Workflows
+
+### 🔍 Static Linting (`static-linting.yml`)
+
+Performs code quality checks:
+
+-   PHP file linting using Composer
+-   JavaScript file linting
+-   CSS file linting
+-   Triggered on pull requests and trunk branch pushes
+
+### 🎭 End-to-end Tests (`e2e.yml`)
+
+Verifies that every example block can be inserted in the editor:
+
+-   Builds all examples, which doubles as build verification for pull requests
+-   Starts `wp-env` and activates every example plugin
+-   Runs the Playwright suite in `_tests/e2e`
+-   Uploads Playwright artifacts (traces, screenshots) when the run fails
+-   Triggered on pull requests and trunk branch pushes
 
 ### 🚀 Generate Examples Zips and Create Release (`release-zips.yml`)
 
@@ -11,20 +38,8 @@ Handles the creation and deployment of plugin zip packages:
 -   Generates zip files for all examples
 -   Creates versioned releases with date-based tags
 -   Maintains a "latest" release that's always up to date
--   Can be triggered manually or on push to trunk branch
--   Uses pnpm for dependency management
--   Runs on Node.js environment
-
-### 🔍 Static Linting (`static-linting.yml`)
-
-Performs comprehensive code quality checks:
-
--   PHP file linting using Composer
--   JavaScript file linting
--   CSS file linting
--   Runs on Node.js 18 and latest LTS versions
--   Uses pnpm for package management
--   Triggered on pull requests and trunk branch pushes
+-   Triggered manually, or on push to trunk when files that affect a zip change (`plugins/**`, `package.json`, `pnpm-lock.yaml`, `.nvmrc`) — docs-only commits do not cut a release
+-   Runs are serialized, since concurrent runs would race while uploading assets to the shared `latest` release
 
 ## Data Management Workflows
 
@@ -34,17 +49,19 @@ Performs comprehensive code quality checks:
 
 -   Updates basic contributor information
 -   Maintains contributor records
--   Can be manually triggered
+-   Manually triggered only
 
 #### Contributor Details (`contributor-details.yml`)
 
 -   Fetches and updates detailed contributor information
 -   Updates contributor metadata
--   Supports manual triggering
+-   Manually triggered only
+
+Both open a pull request with their changes rather than committing to trunk directly.
 
 ## Scripts Directory
 
-The `scripts/` directory contains supporting shell scripts used by these workflows.
+The `scripts/` directory contains supporting shell scripts used by these workflows. They rely only on `curl` and `jq`, both preinstalled on the runners, and expect to be run from the repository root.
 
 ## Workflow Permissions
 
@@ -59,5 +76,4 @@ Workflows require appropriate GitHub permissions for:
 
 -   Push to trunk branch
 -   Pull request events
--   Manual triggers via workflow_dispatch
--   Scheduled runs (for specific workflows)
+-   Manual triggers via `workflow_dispatch`
